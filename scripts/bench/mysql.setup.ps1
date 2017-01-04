@@ -1,0 +1,29 @@
+$mysqlDir = App-Dir "Bench.MySQL"
+$mysqlPath = App-Path "Bench.MySQL"
+$dataDir = Get-AppConfigValue "Bench.MySQL" "MySqlDataDir"
+
+if (!(Test-Path $dataDir -PathType Container)) {
+    $_ = mkdir $dataDir
+    $logFile = "$dataDir\$env:COMPUTERNAME.err"
+    if (Test-Path $logFile) {
+        del $logFile
+    }
+    $initFile = App-SetupResource "Bench.MySQL" "init.sql"
+    & "$mysqlPath\mysqld.exe" --initialize --init-file $initFile --log_syslog=0 "--basedir=$mysqlDir" "--datadir=$dataDir"
+}
+
+if (!(Test-Path "$mysqlPath\mysql_start.cmd")) {
+    $cmdScript = App-SetupResource "Bench.MySQL" "mysql_start.cmd"
+    cp $cmdScript $mysqlPath
+    Write-Host "Run 'mysql_start' on the Bench shell to start the MySQL server."
+}
+if (!(Test-Path "$mysqlPath\mysql_stop.cmd")) {
+    $cmdScript = App-SetupResource "Bench.MySQL" "mysql_stop.cmd"
+    cp $cmdScript $mysqlPath
+    Write-Host "Run 'mysql_stop' on the Bench shell to stop a running MySQL server."
+}
+if (!(Test-Path "$mysqlPath\mysql_log.cmd")) {
+    $cmdScript = App-SetupResource "Bench.MySQL" "mysql_log.cmd"
+    cp $cmdScript $mysqlPath
+    Write-Host "Run 'mysql_log' to open the MySQL log file in the system editor."
+}
