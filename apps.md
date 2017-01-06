@@ -1,11 +1,5 @@
 # Default App Library
 
-[MS VC11]: https://www.microsoft.com/download/details.aspx?id=30679 "Microsoft Visual C++ Redistributable for Visual Studio 2012"
-[MS VC12]: https://www.microsoft.com/download/details.aspx?id=40784 "Microsoft Visual C++ Redistributable for Visual Studio 2013"
-[MS VC14]: https://www.microsoft.com/download/details.aspx?id=48145 "Microsoft Visual C++ Redistributable for Visual Studio 2015"
-[MinGW]: http://www.mingw.org/
-[CLR40CP]: http://www.microsoft.com/download/details.aspx?id=17113 "Microsoft.NET Framework 4.0 CLient Profile"
-
 ## Security
 
 ### OpenSSL
@@ -102,7 +96,7 @@ No proxy support yet (Version 1.3.0).
 PHP is a popular general-purpose scripting language that is especially suited to web development.
 Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
 
-This application needs the x86 version of the [Visual C++ 11 Redistributable][MS VC11] installed.
+This application needs the x86 version of the [Visual C++ 11 Redistributable](https://www.microsoft.com/download/details.aspx?id=30679) installed.
 
 * ID: `Bench.PHP5`
 * Label: PHP 5
@@ -119,7 +113,7 @@ This application needs the x86 version of the [Visual C++ 11 Redistributable][MS
 PHP is a popular general-purpose scripting language that is especially suited to web development.
 Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
 
-This application needs the x86 version of the [Visual C++ 14 Redistributable][MS VC14] installed.
+This application needs the x86 version of the [Visual C++ 14 Redistributable](https://www.microsoft.com/download/details.aspx?id=48145) installed.
 
 * ID: `Bench.PHP7`
 * Label: PHP 7
@@ -263,7 +257,7 @@ it gets out of your way and lets you focus on your code.
 
 ### MinGW
 
-[MinGW] provides a GNU development environment for Windows, including compilers for C/C++, Objective-C, Fortran, Ada, ...
+(http://www.mingw.org/) provides a GNU development environment for Windows, including compilers for C/C++, Objective-C, Fortran, Ada, ...
 
 The MinGW package manager MinGW Get:
 
@@ -558,9 +552,10 @@ The next generation code editor.
 * Exe: `LightTable.exe`
 * Launcher: $:Label$
 
-### Eclipse
+### Eclipse for Java
 
-Eclipse for Java development:
+The essential tools for any Java developer, including a Java IDE, a Git client,
+XML Editor, Mylyn, Maven and Gradle integration...
 
 * ID: `Bench.EclipseJava`
 * Label: Eclipse for Java
@@ -577,7 +572,10 @@ Eclipse for Java development:
 * Register: `false`
 * Launcher: $:Label$
 
-Eclipse for PHP development:
+### Eclipse for PHP
+
+The essential tools for any PHP developer, including PHP language support,
+Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 
 * ID: `Bench.EclipsePHP`
 * Label: Eclipse for PHP
@@ -594,7 +592,9 @@ Eclipse for PHP development:
 * Register: `false`
 * Launcher: $:Label$
 
-Eclipse for C/C++ development:
+### Eclipse for C/C++
+
+An IDE for C/C++ developers with Mylyn integration.
 
 * ID: `Bench.EclipseCpp`
 * Label: Eclipse for C++
@@ -987,8 +987,8 @@ MySQL Workbench is a unified visual tool for database architects, developers, an
 MySQL Workbench provides data modeling, SQL development, and comprehensive administration
 tools for server configuration, user administration, backup, and much more.
 
-This application needs the x86 version of the [Visual C++ 12 Redistributable][MS VC12],
-and the [Microsoft.NET Framework 4.0 Client Profile][CLR40CP] installed.
+This application needs the x86 version of the [Visual C++ 12 Redistributable](https://www.microsoft.com/download/details.aspx?id=40784),
+and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/download/details.aspx?id=17113) installed.
 
 * ID: `Bench.MySQLWB`
 * Label: MySQL Workbench
@@ -1044,7 +1044,7 @@ The Apache HTTP Server is a secure, efficient and extensible server
 that provides HTTP services in sync with the current HTTP standards.
 The Apache HTTP Server is the most popular web server since over 20 years.
 
-This application needs the x86 version of the [Visual C++ 14 Redistributable][MS VC14] installed.
+This application needs the x86 version of the [Visual C++ 14 Redistributable](https://www.microsoft.com/download/details.aspx?id=48145) installed.
 
 * ID: `Bench.Apache`
 * Website: <https://httpd.apache.org/>
