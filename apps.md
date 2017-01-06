@@ -243,6 +243,8 @@ it gets out of your way and lets you focus on your code.
 
 ### .NET Core SDK
 
+The build tools and compilers for platform independent .NET Core applications.
+
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
 * Website: <https://www.microsoft.com/net/core>
@@ -255,11 +257,9 @@ it gets out of your way and lets you focus on your code.
 * ArchiveName: `DotNetCore.SDK.zip`
 * Exe: `dotnet.exe`
 
-### MinGW
+### MinGW Get
 
-(http://www.mingw.org/) provides a GNU development environment for Windows, including compilers for C/C++, Objective-C, Fortran, Ada, ...
-
-The MinGW package manager MinGW Get:
+The package manager for [MinGW](http://www.mingw.org/).
 
 * ID: `Bench.MinGwGet`
 * Version: $Bench.MinGW:Version$
@@ -271,7 +271,9 @@ The MinGW package manager MinGW Get:
 * Path: `bin`
 * Exe: `bin\mingw-get.exe`
 
-Graphical user interface for MinGW Get:
+### MinGW Get GUI
+
+A graphical user interface for the package manager of [MinGW](http://www.mingw.org/).
 
 * ID: `Bench.MinGwGetGui`
 * Version: $Bench.MinGW:Version$
@@ -284,7 +286,10 @@ Graphical user interface for MinGW Get:
 * Register: `false`
 * Launcher: `MinGW Package Manager`
 
-Meta app MinGW with package manager and graphical user interface:
+### MinGW
+
+MinGW provides a GNU development environment for Windows,
+including compilers for C/C++, Objective-C, Fortran, Ada, ...
 
 * ID: `Bench.MinGW`
 * Typ: `meta`
@@ -301,11 +306,9 @@ Meta app MinGW with package manager and graphical user interface:
     + `mingw32-base`
     + `mingw32-gcc-g++`
 
-You can adapt the preselected MinGW packages by putting something like this in your `config\config.md`:
+You can adapt the preselected MinGW packages by putting something like this in your `config\apps.md`:
 
 ```Markdown
-### My MinGW Packages
-
 * ID: `Bench.MinGW`
 * Packages:
     + `mingw32-base`
@@ -315,7 +318,7 @@ You can adapt the preselected MinGW packages by putting something like this in y
     + `msys-grep`
 ```
 
-After the automatic setup by _Bench_, you can use the launcher shortcu
+After the automatic setup by _Bench_, you can use the launcher shortcut
 _MinGW Package Manager_ to start the GUI for _MinGW Get_
 and install more MinGW packages.
 
