@@ -1028,7 +1028,7 @@ The initial password for _postgres_ is `bench`.
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName: `postgresql-$:Version$-windows-binaries.zip`
 * ArchivePath: `pgsql`
-* Dir: `postgres`
+* Dir: `bench\postgres`
 * Path: `bin`
 * Exe: `bin\postgres.exe`
 * RegistryKeys: `Software\pgAdmin III`
