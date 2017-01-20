@@ -30,6 +30,8 @@ The GnuTLS Transport Layer Security Library.
 * ID: `Bench.GnuTLS`
 * Label: GNU TLS
 * Website: <http://www.gnutls.org/>
+* License: LGPL-2.1
+* LicenseUrl: <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
 * Version: 3.3.11
