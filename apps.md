@@ -789,11 +789,9 @@ for Python 3:
 * Typ: `python3-package`
 * Website: <https://pypi.python.org/pypi/pyreadline>
 
-### IPython
+### IPython 2
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
-
-for Python 2:
 
 * ID: `Bench.IPython2`
 * Label: IPython 2
@@ -806,7 +804,9 @@ for Python 2:
 * Exe: `Scripts\ipython2.exe`
 * Launcher: $:Label$
 
-for Python 3:
+### IPython 3
+
+IPython provides a rich architecture for computing with a powerful interactive shell.
 
 * ID: `Bench.IPython3`
 * Label: IPython 3
