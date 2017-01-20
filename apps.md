@@ -93,7 +93,7 @@ No proxy support yet (Version 1.3.0).
 * ArchivePath: `lib\net45`
 * Launcher: $:Label$
 
-## Platforms and Programming Languages
+## Languages and Platforms
 
 ### PHP 5
 
