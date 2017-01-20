@@ -34,7 +34,7 @@ The GnuTLS Transport Layer Security Library.
 * LicenseUrl: <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
-* Version: 3.3.11
+* Version: 3.4.15
 * Url: `http://sourceforge.net/projects/ezwinports/files/$:ArchiveName$`
 * ArchiveName: `gnutls-$:Version$-w32-bin.zip`
 * Dir: `bench\gnu`
