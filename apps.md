@@ -9,6 +9,8 @@ It is also a general-purpose cryptography library.
 
 * ID: `Bench.OpenSSL`
 * Website: <https://www.openssl.org/>
+* License: BSD-Style
+* LicenseUrl: https://www.openssl.org/source/license.html
 * Docs:
     + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
     + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
