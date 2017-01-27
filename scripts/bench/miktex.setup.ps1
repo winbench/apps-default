@@ -3,46 +3,41 @@ if (!(Test-Path $mpm)) {
     throw "MiKTeX Package Manager not found"
 }
 
-$packages = @(
-    "koma-script",
-    "upquote",
-    "mathspec",
-    "etoolbox",
-    "l3kernel",
-    "l3packages",
-    "tipa",
-    "xetex-def",
-    "realscripts",
-    "metalogo",
-    "microtype",
-    "url",
-    "polyglossia",
-    "makecmds",
-    "fancyvrb",
-    "booktabs"
-)
+$packages = Get-AppConfigListValue "Bench.MiKTeX" "DefaultPackages"
 
-function Extract-InstalledPackageNames() {
-    begin {
+function Extract-InstalledPackageNames()
+{
+    begin
+    {
         [regex]$ex = "\S+$"
     }
-    process {
-        if ($_.StartsWith("i ")) {
+    process
+    {
+        if ($_.StartsWith("i "))
+        {
             $m = $ex.Match($_)
-            if ($m.Success) {
+            if ($m.Success)
+            {
                 return $m.Value
             }
         }
     }
 }
 
-Write-Host "Installing missing LaTeX packages"
+Write-Host "Installing missing LaTeX packages..."
 
 $installed = & $mpm --list | Extract-InstalledPackageNames
 
-foreach ($package in $packages) {
-    if (!($installed -contains $package)) {
+foreach ($package in $packages)
+{
+    if (!($installed -contains $package))
+    {
+        Write-Host "... Package `"$package`" ..."
         & $mpm "--install=$package"
         $installed = & $mpm --list | Extract-InstalledPackageNames
+    }
+    else
+    {
+        Write-Host "... Package `"$package`" already installed."
     }
 }

@@ -113,7 +113,7 @@ This application needs the x86 version of the [Visual C++ 11 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 5.6.23
+* Version: 5.6.29
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName: `php-$:Version$-Win32-VC11-x86.zip`
 * Exe: `php.exe`
@@ -132,7 +132,7 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.0.8
+* Version: 7.0.14
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName: `php-$:Version$-Win32-VC14-x86.zip`
 * Exe: `php.exe`
@@ -174,9 +174,10 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>
-* Version: 112
-* Release: b15
-* Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:ArchiveName$`
+* Version: 121
+* Release: b13
+* LinkUUID: e9e7ea248e2c4826b92b3f075a80e441
+* Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName: `jre-8u$:Version$-windows-i586.tar.gz`
 * ArchivePath: `jre1.8.0_$:Version$`
@@ -228,7 +229,8 @@ The development kit is required for Java source code to get compiled.
     + Java SE 8 API: <http://docs.oracle.com/javase/8/docs/api/index.html>
 * Version: $Bench.JRE8:Version$
 * Release: $Bench.JRE8:Release$
-* Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:ArchiveName$`
+* LinkUUID: $Bench.JRE8:LinkUUID$
+* Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName: `jdk-8u$:Version$-windows-i586.exe`
 * Path: `bin`
@@ -269,6 +271,7 @@ The build tools and compilers for platform independent .NET Core applications.
 
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
+* Version: 1.1
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -277,7 +280,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
-* Url: `https://go.microsoft.com/fwlink/?LinkID=809127`
+* Url: `https://go.microsoft.com/fwlink/?LinkID=834993`
 * ArchiveName: `DotNetCore.SDK.zip`
 * Exe: `dotnet.exe`
 
@@ -364,7 +367,7 @@ install the LLVM-Plugin for Eclipse CDT.
 
 * ID: `Bench.Clang`
 * Label: LLVM Clang
-* Version: 3.8.1
+* Version: 3.9.1
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -383,7 +386,7 @@ Go is an open source programming language that makes it easy
 to build simple, reliable, and efficient software.
 
 * ID: `Bench.Go`
-* Version: 1.6
+* Version: 1.7.4
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -411,8 +414,8 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
 * VersionMajor: 19
-* VersionMinor: 0
-* ErtsVersion: 8.0
+* VersionMinor: 2
+* ErtsVersion: 8.2
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName: `otp_win32_$:Version$.exe`
@@ -457,7 +460,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.11.2
+* Version: 1.13.0
 * Url: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * ArchiveName: `atom-windows-$:Version$.zip`
 * ArchivePath: `Atom`
@@ -517,9 +520,9 @@ with extensions to support text editing.
     + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
     + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
     + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
-* Version: 24.5
+* Version: 25.1-2
 * Url: `http://ftp.gnu.org/gnu/emacs/windows/$:ArchiveName$`
-* ArchiveName: `emacs-$:Version$-bin-i686-mingw32.zip`
+* ArchiveName: `emacs-$:Version$-x86_64-w64-mingw32.zip`
 * Dir: `bench\gnu`
 * Path: `bin`
 * Exe: `bin\emacs.exe`
@@ -577,8 +580,8 @@ It is an improved version of the vi editor distributed with most UNIX systems.
     + Vimdoc: <http://vimdoc.sourceforge.net/>
     + User Manual: <http://vimdoc.sourceforge.net/htmldoc/usr_toc.html>
 * Dependencies: `Bench.VimRT`, `Bench.VimConsole`
-* VersionMajor: 7
-* VersionMinor: 4
+* VersionMajor: 8
+* VersionMinor: 0
 * Version: $:VersionMajor$.$:VersionMinor$
 * Release: $:VersionMajor$$:VersionMinor$
 * Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
@@ -614,7 +617,7 @@ XML Editor, Mylyn, Maven and Gradle integration...
 * Label: Eclipse for Java
 * Version: 4.6
 * CodeName: neon
-* Release: R
+* Release: 2
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
@@ -636,7 +639,7 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 * Label: Eclipse for PHP
 * Version: 4.6
 * CodeName: neon
-* Release: R
+* Release: 2
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
@@ -657,7 +660,7 @@ An IDE for C/C++ developers with Mylyn integration.
 * Label: Eclipse for C++
 * Version: 4.6
 * CodeName: neon
-* Release: R
+* Release: 2
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
@@ -706,7 +709,7 @@ The JavaScript Task Runner
     + Creating Tasks: <http://gruntjs.com/creating-tasks>
     + Command-Line: <http://gruntjs.com/using-the-cli>
     + API: <http://gruntjs.com/api/grunt>
-* Version: `>=0.4.5 <0.5.0`
+* Version: `>=1.0.0 <2.0.0`
 * Exe: `grunt.cmd`
 
 ### Bower
@@ -781,7 +784,7 @@ The console runner `nunit3-console.exe` executes tests on the console.
 * ID: `Bench.NUnitRunners`
 * Label: NUnit 3 Runners
 * Typ: `nuget-package`
-* PackageName: `NUnit.Runners`
+* PackageName: `NUnit.Console`
 * Website: <http://nunit.org/>
 * License: MIT
 * LicenseUrl: <http://nunit.org/nuget/nunit3-license.txt>
@@ -808,10 +811,10 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 
 * ID: `Bench.CMake`
 * Website: <https://cmake.org/>
-* MajorVersion: 3.6
-* Version: $:MajorVersion$.1
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
+* MajorVersion: 3.7
+* Version: $:MajorVersion$.2
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `cmake-$:Version$-win32-x86.zip`
 * ArchivePath: `cmake-$:Version$-win32-x86`
@@ -832,7 +835,7 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
     + Documentation: <http://jshint.com/docs/>
     + Command-Line: <http://jshint.com/docs/cli/>
     + API: <http://jshint.com/docs/api/>
-* Version: `>=2.8.0 <3.0.0`
+* Version: `>=2.9.0 <3.0.0`
 * Exe: `jshint.cmd`
 
 ### PyReadline
@@ -866,7 +869,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Typ: `python2-package`
 * PackageName: `ipython`
 * Dependencies: `Bench.PyReadline2`
-* Website: <http://pypi.python.org/pypi/ipython>
+* Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
 * Docs:
@@ -883,7 +886,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Typ: `python3-package`
 * PackageName: `ipython`
 * Dependencies: `Bench.PyReadline3`
-* Website: <http://pypi.python.org/pypi/ipython>
+* Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
 * Docs:
@@ -898,13 +901,14 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
 * ID: `Bench.Zeal`
 * Label: Zeal Docs
 * Website: <https://zealdocs.org>
-* Version: 0.2.1
 * License: GPL-3.0
+* Version: 0.3.1
 * Url: `https://bintray.com/artifact/download/zealdocs/windows/$:ArchiveName$`
 * ArchiveName: `zeal-$:Version$-windows-x86.msi`
 * ArchivePath: `SourceDir\PFiles\Zeal`
 * RegistryKeys: `Software\Zeal`
 * Launcher: $:Label$
+* Register: `false`
 
 ### Windows Sysinternals Suite
 
@@ -937,7 +941,7 @@ Sift - grep on steroids. A fast and powerful alternative to grep.
 * License: GPL-3.0
 * Docs:
     + Documentation: <https://sift-tool.org/docs>
-* Version: 0.8.0
+* Version: 0.9.0
 * Url: `https://sift-tool.org/downloads/sift/$:ArchiveName$`
 * ArchiveName: `sift_$:Version$_windows_386.zip`
 
@@ -954,9 +958,9 @@ that is easy to understand and handle.
     + Quick Tour: <http://tour.winmerge.org/>
     + Manual: <http://manual.winmerge.org/>
 * Version: 2.14.0
-* Url: `https://sourceforge.net/projects/portableapps/files/WinMerge%20Portable/$:ArchiveName$`
-* ArchiveName: `WinMergePortable_$:Version$.paf.exe`
-* ArchivePath: `App/winmerge`
+* Url: `http://downloads.sourceforge.net/winmerge/$:ArchiveName$`
+* ArchiveName: `WinMerge-$:Version$-exe.7z`
+* ArchivePath: `WinMerge-$:Version$-exe`
 * Exe: `WinMergeU.exe`
 * RegistryKeys: `Software\Thingamahoochie`
 * Register: `false`
@@ -998,7 +1002,7 @@ file transfer resume, proxy tunneling and more.
 * Docs:
     + Manual: <https://curl.haxx.se/docs/manual.html>
     + Man Page: <https://curl.haxx.se/docs/manpage.html>
-* Version: 7.50.1
+* Version: 7.52.1
 * Url: `https://bintray.com/artifact/download/vszakats/generic/$:ArchiveName$`
 * ArchiveName: `curl-$:Version$-win32-mingw.7z`
 * ArchivePath: `curl-$:Version$-win32-mingw`
@@ -1016,10 +1020,10 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.20.1
-* Url: `https://sourceforge.net/projects/portableapps/files/FileZilla%20Portable/$:ArchiveName$`
-* ArchiveName: `FileZillaPortable_$:Version$.paf.exe`
-* ArchivePath: `App/filezilla`
+* Version: 3.24.0
+* Url: `http://sourceforge.net/projects/filezilla/files/FileZilla_Client/$:Version$/$:ArchiveName$`
+* ArchiveName: `FileZilla_$:Version$_win32.zip`
+* ArchivePath: `FileZilla-$:Version$`
 * Exe: `filezilla.exe`
 * Register: `false`
 * Launcher: $:Label$
@@ -1061,7 +1065,7 @@ The initial password for _root_ is `bench`.
     + Data Types: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/data-types.html`
     + Functions: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/functions.html`
 * VersionMajor: 5.7
-* Version: $:VersionMajor$.14
+* Version: $:VersionMajor$.17
 * Url: `http://dev.mysql.com/get/Downloads/MySQL-$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `mysql-$:Version$-win32.zip`
 * ArchivePath: `mysql-$:Version$-win32`
@@ -1086,7 +1090,7 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 * License: GPL-2.0
 * Docs:
     + Documentation: <http://dev.mysql.com/doc/workbench/en/>
-* Version: 6.3.7
+* Version: 6.3.8
 * Url: `http://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
 * ArchiveName: `mysql-workbench-community-$:Version$-win32-noinstall.zip`
 * ArchivePath: `MySQL Workbench $:Version$ CE (win32)`
@@ -1114,17 +1118,17 @@ The initial password for _postgres_ is `bench`.
 * LicenseUrl: <https://opensource.org/licenses/postgresql>
 * Docs:
     + Documentation: <https://www.postgresql.org/docs/9.5/static/index.html>
-* Version: 9.5.3-1
+* Version: 9.6.1-1
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName: `postgresql-$:Version$-windows-binaries.zip`
 * ArchivePath: `pgsql`
 * Dir: `bench\postgres`
 * Path: `bin`
 * Exe: `bin\postgres.exe`
-* RegistryKeys: `Software\pgAdmin III`
-* Launcher: `PostgreSQL Admin 3`
-* LauncherExecutable: `bin\pgAdmin3.exe`
-* AdornedExecutables: `bin\pgAdmin3.exe`
+* RegistryKeys: `Software\pgAdmin Development Team`
+* Launcher: `PostgreSQL Admin 4`
+* LauncherExecutable: `pgAdmin 4\bin\pgAdmin4.exe`
+* AdornedExecutables: `pgAdmin 4\bin\pgAdmin4.exe`
 * PostgreSqlDataDir: `$HomeDir$\pg_data`
 * PostgreSqlLogFile: `$HomeDir$\pg.log`
 * Environment:
@@ -1145,7 +1149,7 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
-* Version: 2.4.23
+* Version: 2.4.25
 * Url: `http://www.apachelounge.com/download/VC14/binaries/$:ArchiveName$`
 * ArchiveName: `httpd-$:Version$-win32-VC14.zip`
 * ArchivePath: `Apache24`
@@ -1171,12 +1175,17 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.6.5
+* Version: 3.6.6
 * Url: `http://www.rabbitmq.com/releases/rabbitmq-server/v$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
 * Path: `sbin`
 * Exe: `sbin\rabbitmq-server.bat`
+
+The setup automatically activates the web management plugin.
+So after starting the server on the command line with `rabbitmq-server`,
+the web UI is available under <http://localhost:15672/>.
+At first start you can login with user `guest` and passwort `guest`.
 
 ## Writing
 
@@ -1191,8 +1200,8 @@ and related programs for Windows (all current variants).
 * Docs:
     + Manual: <http://docs.miktex.org/2.9/manual/>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: 2.9.5987
-* Url: `http://mirrors.ctan.org/systems/win32/miktex/setup/$:ArchiveName$`
+* Version: 2.9.6221
+* Url: `http://ctan.space-pro.be/tex-archive/systems/win32/miktex/setup/$:ArchiveName$`
 * ArchiveName: `miktex-portable-$:Version$.exe`
 * ArchivePath: `texmfs`
 * Path: `install\miktex\bin`
@@ -1200,6 +1209,24 @@ and related programs for Windows (all current variants).
 * Launcher: `MiKTeX Tray Icon`
 * LauncherExecutable: `install\miktex\bin\miktex-taskbar-icon.exe`
 * LauncherIcon: `install\miktex\bin\mo.exe`
+* DefaultPackages:
+    + `koma-script`
+    + `upquote`
+    + `mathspec`
+    + `etoolbox`
+    + `l3kernel`
+    + `l3packages`
+    + `tipa`
+    + `realscripts`
+    + `metalogo`
+    + `microtype`
+    + `url`
+    + `makecmds`
+    + `fancyvrb`
+    + `booktabs`
+
+**Note:** The packages installed by default (property `DefaultPackages`)
+are selected to suit the needs of the default LaTeX template of _Pandoc_.
 
 ### Pandoc
 
@@ -1212,7 +1239,7 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 1.17.2
+* Version: 1.19.1
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `pandoc-$:Release$-windows.msi`
@@ -1232,7 +1259,7 @@ The native file format used by JabRef is BibTeX, the standard LaTeX bibliography
 * Docs:
     + Help: <http://help.jabref.org/en/>
     + FAQ: <http://www.jabref.org/faq/>
-* Version: 3.5
+* Version: 3.8.1
 * Url: `https://github.com/JabRef/jabref/releases/download/v$:Version$/$:ResourceName$`
 * ResourceName: `JabRef-$:Version$.jar`
 * Exe: `$:ResourceName$`
@@ -1311,7 +1338,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.16
+* Version: 0.18.1
 * Url: `https://github.com/spf13/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `hugo_$:Version$_windows-32bit.zip`
 
@@ -1335,7 +1362,7 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
     + APIs: <http://www.graphicsmagick.org/programming.html>
     + Supported Formats: <http://www.graphicsmagick.org/programming.html>
     + Color Reference: <http://www.graphicsmagick.org/color.html>
-* Version: 1.3.24
+* Version: 1.3.25
 * Url: `http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
 * ArchiveName: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
 * ArchiveTyp: `inno`
@@ -1407,9 +1434,9 @@ and in visual interfaces for other technical domains.
     + Command-Line Invocation: <http://www.graphviz.org/content/command-line-invocation>
     + Output Formats: <http://www.graphviz.org/content/output-formats>
 * Version: 2.38
-* Url:`https://github.com/ErwinJanssen/graphviz/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName: `graphviz-$:Version$.msi`
-* ArchivePath: `SourceDir`
+* Url:`http://www.graphviz.org/pub/graphviz/stable/windows/$:ArchiveName$`
+* ArchiveName: `graphviz-$:Version$.zip`
+* ArchivePath: `release`
 * Path: `bin`
 * Exe: `bin\dot.exe`
 
@@ -1440,7 +1467,7 @@ Inkscape is a professional vector graphics editor for Windows, Mac OS X and Linu
 It's free and open source.
 
 * ID: `Bench.Inkscape`
-* Website: <https://inkscape.org/en/download/>
+* Website: <https://inkscape.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://inkscape.org/en/about/license/>
 * Docs:
@@ -1449,7 +1476,7 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 0.91-1
+* Version: 0.92.0
 * Url: <https://inkscape.org/en/gallery/item/3932/download/>
 * ArchiveName: `Inkscape-$:Version$-win32.7z`
 * ArchivePath: `inkscape`
@@ -1467,6 +1494,8 @@ GIMP provides you with sophisticated tools to get your job done.
 * ID: `Bench.Gimp`
 * Label: GIMP
 * Website: <http://www.gimp.org/>
+* License: GPL-3.0
+* LicenseUrl: <https://git.gnome.org/browse/gimp/plain/COPYING>
 * Docs:
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
@@ -1488,14 +1517,13 @@ unstructured models arising in 3D scanning, providing a set of tools for editing
 cleaning, healing, inspecting, rendering and converting this kind of meshes.
 
 * ID: `Bench.MeshLab`
-* VersionMajor: 1
-* VersionMinor: 3
-* VersionRevision: 3
-* Version: $:VersionMajor$.$:VersionMinor$.$:VersionRevision$
+* Version: 2016.12
 * Website: <http://meshlab.sourceforge.net/>
-* Url: `https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v$:Version$/$:ArchiveName$`
-* ArchiveName: `MeshLab_v$:VersionMajor$$:VersionMinor$$:VersionRevision$.exe`
-* Exe: `meshlab_32.exe`
+* License: GPL-3.0
+* LicenseUrl: <https://raw.githubusercontent.com/cnr-isti-vclab/meshlab/master/LICENSE.txt>
+* Url: `https://github.com/cnr-isti-vclab/meshlab/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `MeshLab$:Version$.exe`
+* Exe: `meshlab.exe`
 * Launcher: $:Label$
 
 ### Blender
@@ -1504,13 +1532,15 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 
 * ID: `Bench.Blender`
 * Website: <https://www.blender.org>
+* License: GPL-3.0
+* LicenseUrl: <https://www.blender.org/about/license/>
 * Docs:
     + Features: <https://www.blender.org/features/>
     + Tutorials: <https://www.blender.org/support/tutorials/>
     + Manual: <https://www.blender.org/manual/>
     + Python API: <https://www.blender.org/api/blender_python_api_2_78_1/>
 * Version: 2.78
-* VersionSuffix: ``
+* VersionSuffix: a
 * Url: `http://download.blender.org/release/Blender$:Version$/$:ArchiveName$`
 * ArchiveName: `blender-$:Version$$:VersionSuffix$-windows32.zip`
 * ArchivePath: `blender-$:Version$$:VersionSuffix$-windows32`
@@ -1523,6 +1553,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 * Build: 6706
 * Hash: f86a4e4
 * Website: <http://www.freecadweb.org/>
+* License: GPL-2.0
+* LicenseUrl: <https://raw.githubusercontent.com/FreeCAD/FreeCAD/master/COPYING>
 * Docs:
     + Features: <http://www.freecadweb.org/wiki/index.php?title=Feature_list>
     + Documentation: <http://www.freecadweb.org/wiki/>

@@ -79,6 +79,7 @@ $txt = $listenP.Replace($txt, "Listen $wwwListen")
 
 $php7 = App-Exe "Bench.PHP7"
 if ($php7) {
+    Write-Host "Found PHP 7 - registering php7apache2_4.dll in httpd.conf"
     $php7Dir = App-Dir "Bench.PHP7"
     $php7Module = "$php7Dir\php7apache2_4.dll"
 
@@ -99,6 +100,7 @@ if ($php7) {
 
 $php5 = App-Exe "Bench.PHP5"
 if ($php5 -and !$php7) {
+    Write-Host "Found PHP 5 - registering php5apache2_4.dll in httpd.conf"
     $php5Dir = App-Dir "Bench.PHP5"
     $php5Module = "$php5Dir\php5apache2_4.dll"
 
