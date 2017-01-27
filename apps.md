@@ -854,6 +854,17 @@ as well as deobfuscate scripts processed by <http://javascriptobfuscator.com/>.
 
 Supported commands: `js-beautify`, `css-beautify`, `html-beautify`
 
+### Tern
+
+Tern is a stand-alone, editor-independent JavaScript analyzer
+that can be used to improve the JavaScript integration of existing editors.
+
+* ID: `Bench.Tern`
+* Typ: `node-package`
+* Website: <https://github.com/ternjs/tern>
+* License: MIT
+* Version: `>=0.20.0 <=1.0.0`
+
 ### PyReadline
 
 Required for colors in IPython.
