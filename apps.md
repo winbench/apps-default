@@ -921,6 +921,23 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Exe: `Scripts\ipython3.exe`
 * Launcher: $:Label$
 
+### Jupyter
+
+Open source, interactive data science and scientific computing
+across over 40 programming languages.
+
+* ID: `Bench.Jupyter`
+* Typ: `python3-package`
+* Website: <https://jupyter.org>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
+* Docs:
+    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
+* Exe: `Scripts\jupyter.exe`
+* SetupTestFile: $:Exe$
+* Launcher: Jupyter Notebook
+* LauncherArguments: `notebook`
+
 ### Zeal
 
 An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
