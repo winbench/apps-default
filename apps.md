@@ -50,6 +50,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 
 * ID: `Bench.GnuPG`
 * Website: <https://gnupg.org>
+* License: GPL-3
 * Docs:
     + Manual: <https://gnupg.org/documentation/manuals/gnupg-2.0/>
     + Commands: <https://gnupg.org/documentation/manuals/gnupg-2.0/Operational-GPG-Commands.html>
@@ -66,6 +67,7 @@ PuTTY is a free (MIT-licensed) Win32 Telnet and SSH client.
 
 * ID: `Bench.Putty`
 * Website: <http://www.putty.org>
+* License: MIT
 * Docs:
     + User Manual: <http://the.earth.li/~sgtatham/putty/0.67/htmldoc/>
 * Version: latest
@@ -85,6 +87,8 @@ No proxy support yet (Version 1.3.0).
 * ID: `Bench.GitKraken`
 * Version: latest
 * Website: <https://www.gitkraken.com/>
+* License: Freemium
+* LicenseUrl: `LICENSE`
 * Docs:
     + FAQ: <https://www.gitkraken.com/faq>
 * Url: <https://release.gitkraken.com/win32/GitKrakenSetup.exe>
@@ -105,6 +109,8 @@ This application needs the x86 version of the [Visual C++ 11 Redistributable](ht
 * ID: `Bench.PHP5`
 * Label: PHP 5
 * Website: <http://www.php.net>
+* License: BSD-Style
+* LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
 * Version: 5.6.23
@@ -122,6 +128,8 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * ID: `Bench.PHP7`
 * Label: PHP 7
 * Website: <http://www.php.net>
+* License: BSD-Style
+* LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
 * Version: 7.0.8
@@ -138,6 +146,8 @@ The runtime environment is required for a compiled Java program to get executed.
 * ID: `Bench.JRE7`
 * Label: Java Runtime Environment 7
 * Website: <https://www.oracle.com/java/>
+* License: OBCL
+* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html>
 * Version: 7u80
@@ -160,6 +170,8 @@ The runtime environment is required for a compiled Java program to get executed.
 * ID: `Bench.JRE8`
 * Label: Java Runtime Environment 8
 * Website: <https://www.oracle.com/java/>
+* License: OBCL
+* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>
 * Version: 112
@@ -182,6 +194,8 @@ The development kit is required for Java source code to get compiled.
 * ID: `Bench.JDK7`
 * Label: Java Development Kit 7
 * Website: <https://www.oracle.com/java/>
+* License: OBCL
+* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html>
     + Documentation: <http://docs.oracle.com/javase/7/docs/>
@@ -206,6 +220,8 @@ The development kit is required for Java source code to get compiled.
 * ID: `Bench.JDK8`
 * Label: Java Development Kit 8
 * Website: <https://www.oracle.com/java/>
+* License: OBCL
+* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
     + Documentation: <http://docs.oracle.com/javase/8/docs/>
@@ -230,6 +246,8 @@ it gets out of your way and lets you focus on your code.
 * ID: `Bench.Leiningen`
 * Dependencies: `Bench.JDK8`, `Bench.GnuPG`, `Bench.Wget`
 * Website: <http://leiningen.org>
+* License: EPL-1.0
+* LicenseUrl: <https://raw.githubusercontent.com/technomancy/leiningen/stable/COPYING>
 * Docs:
     + Tutorial: <https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md>
     + Sample project.clj: <https://github.com/technomancy/leiningen/blob/stable/sample.project.clj>
@@ -252,6 +270,8 @@ The build tools and compilers for platform independent .NET Core applications.
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
 * Website: <https://www.microsoft.com/net/core>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
 * Docs:
     + Docs: <https://docs.microsoft.com/dotnet/>
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
@@ -266,6 +286,7 @@ The build tools and compilers for platform independent .NET Core applications.
 The package manager for [MinGW](http://www.mingw.org/).
 
 * ID: `Bench.MinGwGet`
+* License: MIT
 * Version: $Bench.MinGW:Version$
 * Release: $Bench.MinGW:Release$
 * Dependencies: `Bench.Wget`
@@ -280,6 +301,7 @@ The package manager for [MinGW](http://www.mingw.org/).
 A graphical user interface for the package manager of [MinGW](http://www.mingw.org/).
 
 * ID: `Bench.MinGwGetGui`
+* License: MIT
 * Version: $Bench.MinGW:Version$
 * Release: $Bench.MinGW:Release$
 * Dependencies: `Bench.MinGwGet`
@@ -301,6 +323,8 @@ including compilers for C/C++, Objective-C, Fortran, Ada, ...
 * Release: beta-20131004-1
 * Dependencies: `Bench.MinGwGet`, `Bench.MinGwGetGui`
 * Website: <http://www.mingw.org/>
+* License: MIT
+* LicenseUrl: <https://sourceforge.net/p/mingw/mingw-org-wsl/ci/21762bb4a1bd0c88c38eead03f59e8d994349e83/tree/LICENSE>
 * Docs:
     + FAQ: <http://mingw.org/wiki/FAQ>
     + HOWTO: <http://mingw.org/wiki/HOWTO>
@@ -342,6 +366,8 @@ install the LLVM-Plugin for Eclipse CDT.
 * Label: LLVM Clang
 * Version: 3.8.1
 * Website: <http://clang.llvm.org/>
+* License: UoI-NCSA
+* LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
 * Url: `http://llvm.org/releases/$:Version$/$:ArchiveName$`
 * ArchiveName: `LLVM-$:Version$-win32.exe`
 * Dir: `bench\llvm`
@@ -359,6 +385,8 @@ to build simple, reliable, and efficient software.
 * ID: `Bench.Go`
 * Version: 1.6
 * Website: <https://golang.org>
+* License: BSD-3-Clause
+* LicenseUrl: <https://golang.org/LICENSE>
 * Docs:
     + Overview: <https://golang.org/doc/>
     + FAQ: <https://golang.org/doc/faq>
@@ -379,6 +407,7 @@ Erlang is a programming language used to build massively scalable soft real-time
 
 * ID: `Bench.Erlang`
 * Website: <http://www.erlang.org/>
+* License: Apache-2.0
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
 * VersionMajor: 19
@@ -400,6 +429,8 @@ Erlang is a programming language used to build massively scalable soft real-time
 * ID: `Bench.CoffeeScript`
 * Typ: `node-package`
 * Website: <http://coffeescript.org/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/jashkenas/coffeescript/master/LICENSE>
 * Docs:
     + Usage: <http://coffeescript.org/#usage>
     + Language Reference: <http://coffeescript.org/#language>
@@ -419,6 +450,8 @@ is picked up from Atom._
 
 * ID: `Bench.Atom`
 * Website: <https://atom.io>
+* License: MIT
+* LicenseUrl: <https://github.com/atom/atom/blob/master/LICENSE.md>
 * Docs:
     + Packages: <https://atom.io/packages>
     + Themes: <https://atom.io/themes>
@@ -439,6 +472,8 @@ A cross platform code editor from Microsoft.
 * ID: `Bench.VSCode`
 * Label: Visual Studio Code
 * Website: <https://code.visualstudio.com/>
+* License: MS-L
+* LicenseUrl: <https://code.visualstudio.com/License/>
 * Docs:
     + Documentation: <https://code.visualstudio.com/Docs>
 * Version: latest
@@ -456,6 +491,7 @@ You'll love the slick user interface, extraordinary features and amazing perform
 * ID: `Bench.SublimeText3`
 * Label: Sublime Text 3
 * Website: <http://www.sublimetext.com/3>
+* License: Commercial
 * Docs:
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
@@ -476,6 +512,7 @@ with extensions to support text editing.
 * ID: `Bench.Emacs`
 * Dependencies: `Bench.GnuTLS`
 * Website: <https://www.gnu.org/software/emacs/>
+* License: GPL-3.0
 * Docs:
     + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
     + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
@@ -497,6 +534,7 @@ The best editor is neither Emacs nor Vim, it's Emacs and Vim!
 * Typ: `meta`
 * Dependencies: `Bench.Git`, `Bench.Emacs`
 * Website: <http://spacemacs.org/>
+* License: GPL-3.0
 * Docs:
     + Documentation: <http://spacemacs.org/doc/DOCUMENTATION.html>
     + Configuration Layers: <http://spacemacs.org/doc/LAYERS.html>
@@ -510,6 +548,8 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 
 * ID: `Bench.VimRT`
 * Version: $Bench.Vim:Version$
+* License: $Bench.Vim:License$
+* LicenseUrl: $Bench.Vim:LicenseUrl$
 * Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
 * ArchiveName: `vim$Bench.Vim:Release$rt.zip`
 * ArchivePath: `vim\vim$Bench.Vim:Release$`
@@ -520,6 +560,8 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * ID: `Bench.VimConsole`
 * Dependencies: `Bench.VimRT`
 * Version: $Bench.Vim:Version$
+* License: $Bench.Vim:License$
+* LicenseUrl: $Bench.Vim:LicenseUrl$
 * Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
 * ArchiveName: `vim$Bench.Vim:Release$w32.zip`
 * ArchivePath: `vim\vim$Bench.Vim:Release$`
@@ -528,6 +570,8 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 
 * ID: `Bench.Vim`
 * Website: <http://www.vim.org>
+* License: GPL compatible
+* LicenseUrl: <http://vimdoc.sourceforge.net/htmldoc/uganda.html#license>
 * Docs:
     + Overview: <http://www.vim.org/docs.php>
     + Vimdoc: <http://vimdoc.sourceforge.net/>
@@ -549,6 +593,8 @@ The next generation code editor.
 
 * ID: `Bench.LightTable`
 * Website: <http://lighttable.com>
+* License: MIT
+* LicenseUrl: <https://github.com/LightTable/LightTable/blob/master/LICENSE.md>
 * Docs:
     + Documentation: <http://docs.lighttable.com/>
 * Version: 0.8.1
@@ -571,6 +617,8 @@ XML Editor, Mylyn, Maven and Gradle integration...
 * Release: R
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
+* License: EFSUA
+* LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
 * ArchiveName: `eclipse-java-$:CodeName$-$:Release$-win32.zip`
 * ArchivePath: `eclipse`
@@ -591,6 +639,8 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 * Release: R
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
+* License: EFSUA
+* LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
 * ArchiveName: `eclipse-php-$:CodeName$-$:Release$-win32.zip`
 * ArchivePath: `eclipse`
@@ -610,6 +660,8 @@ An IDE for C/C++ developers with Mylyn integration.
 * Release: R
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
+* License: EFSUA
+* LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
 * ArchiveName: `eclipse-cpp-$:CodeName$-$:Release$-win32.zip`
 * ArchivePath: `eclipse`
@@ -627,6 +679,8 @@ The streaming build system.
 * ID: `Bench.Gulp`
 * Typ: `node-package`
 * Website: <http://gulpjs.com>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/gulpjs/gulp/master/LICENSE>
 * Docs:
     + npm Package: <https://www.npmjs.com/package/gulp>
     + Getting Started: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
@@ -643,6 +697,8 @@ The JavaScript Task Runner
 * ID: `Bench.Grunt`
 * Typ: `node-package`
 * Website: <http://gruntjs.com>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/gruntjs/grunt/master/LICENSE>
 * Docs:
     + npm Package: <https://www.npmjs.org/package/grunt>
     + Getting Started: <http://gruntjs.com/getting-started>
@@ -666,6 +722,8 @@ the right versions of the packages you need and their dependencies.
 * Typ: `node-package`
 * Dependencies: `Bench.Git`
 * Website: <https://bower.io/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/bower/bower/master/LICENSE>
 * Docs:
     + npm Package: <https://www.npmjs.com/package/bower>
     + Getting Started: <https://bower.io/#getting-started>
@@ -684,6 +742,7 @@ to help you stay productive.
 * Typ: `node-package`
 * PackageName: `yo`
 * Website: <http://yeoman.io/>
+* License: BSD-2-Clause
 * Docs:
     + npm Package: <https://www.npmjs.com/package/yo>
     + Getting Started: <http://yeoman.io/learning/index.html>
@@ -702,6 +761,7 @@ reporting and documentation from a central piece of information.
 * ID: `Bench.Maven`
 * Dependencies: `Bench.JRE8`, `Bench.GnuPG`
 * Website: <https://maven.apache.org>
+* License: Apache-2.0
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
@@ -723,6 +783,8 @@ The console runner `nunit3-console.exe` executes tests on the console.
 * Typ: `nuget-package`
 * PackageName: `NUnit.Runners`
 * Website: <http://nunit.org/>
+* License: MIT
+* LicenseUrl: <http://nunit.org/nuget/nunit3-license.txt>
 * Docs:
     + Documentation: <https://github.com/nunit/docs/wiki>
     + Console Runner: <https://github.com/nunit/docs/wiki/Console-Runner>
@@ -748,6 +810,8 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * MajorVersion: 3.6
 * Version: $:MajorVersion$.1
+* License: BSD-3-Clause
+* LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `cmake-$:Version$-win32-x86.zip`
 * ArchivePath: `cmake-$:Version$-win32-x86`
@@ -761,6 +825,8 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
 * ID: `Bench.JSHint`
 * Typ: `node-package`
 * Website: <http://jshint.com/>
+* License: MIT
+* LicenseUrl: <https://www.gnu.org/licenses/license-list.html#Expat>
 * Docs:
     + npm Package: <https://www.npmjs.com/package/jshint>
     + Documentation: <http://jshint.com/docs/>
@@ -780,6 +846,7 @@ for Python 2:
 * PackageName: `pyreadline`
 * Typ: `python2-package`
 * Website: <https://pypi.python.org/pypi/pyreadline>
+* License: BSD-3-Clause
 
 for Python 3:
 
@@ -788,6 +855,7 @@ for Python 3:
 * PackageName: `pyreadline`
 * Typ: `python3-package`
 * Website: <https://pypi.python.org/pypi/pyreadline>
+* License: BSD-3-Clause
 
 ### IPython 2
 
@@ -799,6 +867,8 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * PackageName: `ipython`
 * Dependencies: `Bench.PyReadline2`
 * Website: <http://pypi.python.org/pypi/ipython>
+* License: BSD-3-Clause
+* LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
 * Docs:
     + Documentation: <http://ipython.readthedocs.io/en/stable/>
 * Exe: `Scripts\ipython2.exe`
@@ -814,6 +884,8 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * PackageName: `ipython`
 * Dependencies: `Bench.PyReadline3`
 * Website: <http://pypi.python.org/pypi/ipython>
+* License: BSD-3-Clause
+* LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
 * Docs:
     + Documentation: <http://ipython.readthedocs.io/en/stable/>
 * Exe: `Scripts\ipython3.exe`
@@ -827,6 +899,7 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
 * Label: Zeal Docs
 * Website: <https://zealdocs.org>
 * Version: 0.2.1
+* License: GPL-3.0
 * Url: `https://bintray.com/artifact/download/zealdocs/windows/$:ArchiveName$`
 * ArchiveName: `zeal-$:Version$-windows-x86.msi`
 * ArchivePath: `SourceDir\PFiles\Zeal`
@@ -840,6 +913,8 @@ the Microsoft Windows operating systems and its processes.
 
 * ID: `Bench.SysInternals`
 * Website: <https://technet.microsoft.com/de-de/sysinternals>
+* License: proprietary
+* LicenseUrl: <https://technet.microsoft.com/de-de/sysinternals/bb469936>
 * Docs:
     + Downloads: <https://technet.microsoft.com/de-de/sysinternals/bb842062>
     + Forum: <http://forum.sysinternals.com/>
@@ -859,6 +934,7 @@ Sift - grep on steroids. A fast and powerful alternative to grep.
 
 * ID: `Bench.Sift`
 * Website: <https://sift-tool.org/>
+* License: GPL-3.0
 * Docs:
     + Documentation: <https://sift-tool.org/docs>
 * Version: 0.8.0
@@ -873,6 +949,7 @@ that is easy to understand and handle.
 
 * ID: `Bench.WinMerge`
 * Website: <http://winmerge.org/>
+* License: GPL-2.0
 * Docs:
     + Quick Tour: <http://tour.winmerge.org/>
     + Manual: <http://manual.winmerge.org/>
@@ -893,6 +970,7 @@ by using specified settings.
 * ID: `Bench.AntRenamer`
 * Label: Ant Renamer
 * Website: <http://antp.be/software/renamer>
+* License: GPL-3.0
 * Docs:
     + Forum: <http://forum.antp.be/phpbb2/index.php?c=5>
 * Version: latest
@@ -915,6 +993,8 @@ file transfer resume, proxy tunneling and more.
 
 * ID: `Bench.cURL`
 * Website: <http://curl.haxx.se/>
+* License: MIT
+* LicenseUrl: <https://curl.haxx.se/docs/copyright.html>
 * Docs:
     + Manual: <https://curl.haxx.se/docs/manual.html>
     + Man Page: <https://curl.haxx.se/docs/manpage.html>
@@ -931,6 +1011,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
 
 * ID: `Bench.FileZilla`
 * Website: <https://filezilla-project.org/>
+* License: GPL-3.0
 * Docs:
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
@@ -950,6 +1031,7 @@ A free portable derivative of Chromium, optimized for privacy.
 * ID: `Bench.Iron`
 * Label: SWare Iron
 * Website: <http://www.chromium.org/Home>
+* License: Mixed OS License
 * Version: latest
 * Url: <http://www.srware.net/downloads/IronPortable.zip>
 * ArchivePath: `IronPortable\Iron`
@@ -972,6 +1054,7 @@ The initial password for _root_ is `bench`.
 
 * ID: `Bench.MySQL`
 * Website: <http://www.mysql.com/>
+* License: GPL-2.0
 * Docs:
     + Documentation: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/`
     + SQL Syntax: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/sql-syntax.html`
@@ -1000,6 +1083,7 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 * ID: `Bench.MySQLWB`
 * Label: MySQL Workbench
 * Website: <http://dev.mysql.com/downloads/workbench/>
+* License: GPL-2.0
 * Docs:
     + Documentation: <http://dev.mysql.com/doc/workbench/en/>
 * Version: 6.3.7
@@ -1026,6 +1110,8 @@ The initial password for _postgres_ is `bench`.
 
 * ID: `Bench.PostgreSQL`
 * Website: <http://www.postgresql.org>
+* License: PostgreSQL
+* LicenseUrl: <https://opensource.org/licenses/postgresql>
 * Docs:
     + Documentation: <https://www.postgresql.org/docs/9.5/static/index.html>
 * Version: 9.5.3-1
@@ -1055,6 +1141,8 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 
 * ID: `Bench.Apache`
 * Website: <https://httpd.apache.org/>
+* License: Apache-2.0
+* LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
 * Version: 2.4.23
@@ -1077,6 +1165,8 @@ Open source and commercially supported
 
 * ID: `Bench.RabbitMQ`
 * Website: <http://www.rabbitmq.com>
+* License: MPL-1.1
+* LicenseUrl: <https://www.rabbitmq.com/mpl.html>
 * Docs:
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
@@ -1097,6 +1187,7 @@ and related programs for Windows (all current variants).
 
 * ID: `Bench.MiKTeX`
 * Website: <http://miktex.org/portable>
+* License: Mixed OS License
 * Docs:
     + Manual: <http://docs.miktex.org/2.9/manual/>
     + LaTeX Guides: <https://latex-project.org/guides/>
@@ -1116,6 +1207,8 @@ Pandoc is a library and command-line tool for converting from one markup format 
 
 * ID: `Bench.Pandoc`
 * Website: <https://github.com/jgm/pandoc/releases/latest>
+* License: GPL-2.0
+* LicenseUrl: `https://hackage.haskell.org/package/pandoc-$:Version$/src/COPYING.md`
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
@@ -1134,6 +1227,8 @@ The native file format used by JabRef is BibTeX, the standard LaTeX bibliography
 * ID: `Bench.JabRef`
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.jabref.org>
+* License: MIT
+* LicenseUrl: <https://github.com/JabRef/jabref/blob/master/LICENSE.md>
 * Docs:
     + Help: <http://help.jabref.org/en/>
     + FAQ: <http://www.jabref.org/faq/>
@@ -1152,6 +1247,7 @@ Premium LaTeX Editing for Windows.
 * ID: `Bench.TeXnicCenter`
 * Dependencies: `Bench.MiKTeX`
 * Website: <http://www.texniccenter.org>
+* License: GPL-2.0
 * Docs:
     + Features: <http://www.texniccenter.org/about/feature/>
     + Documentation: <http://texniccenter.sourceforge.net/>
@@ -1170,6 +1266,7 @@ one of the premier Open Source desktop applications.
 
 * ID: `Bench.Scribus`
 * Website: <https://www.scribus.net/>
+* License: GPL-2.0
 * Docs:
     + Wiki: <https://wiki.scribus.net/canvas/Scribus>
     + Manual: <https://wiki.scribus.net/canvas/Help:TOC>
@@ -1190,6 +1287,8 @@ Sass is the most mature, stable, and powerful professional grade CSS extension l
 * Label: SASS
 * Typ: `ruby-package`
 * Website: <http://sass-lang.com/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/sass/sass/stable/MIT-LICENSE>
 * Docs:
     + Guide: <http://sass-lang.com/guide>
     + Reference: <http://sass-lang.com/documentation/file.SASS_REFERENCE.html>
@@ -1203,6 +1302,8 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
 
 * ID: `Bench.Hugo`
 * Website: <https://gohugo.io/>
+* License: Apache-2.0
+* LicenseUrl: <https://github.com/spf13/hugo/blob/master/LICENSE.md>
 * Docs:
     + Introduction: <https://gohugo.io/overview/introduction/>
     + Commands: <https://gohugo.io/commands/>
@@ -1226,6 +1327,8 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
 * ID: `Bench.GraphicsMagick`
 * Label: Graphics Magick
 * Website: <http://www.graphicsmagick.org/>
+* License: Mixed OS License
+* LicenseUrl: <https://sourceforge.net/p/graphicsmagick/code/ci/default/tree/Copyright.txt>
 * Docs:
     + Utilities: <http://www.graphicsmagick.org/utilities.html>
     + FAQ: <http://www.graphicsmagick.org/FAQ.html>
@@ -1248,6 +1351,8 @@ No matter if they were designed by some standards committee, the community or a 
 
 * ID: `Bench.FFmpeg`
 * Website: <https://www.ffmpeg.org/>
+* License: LGPL-2.1
+* LicenseUrl: <https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md>
 * Docs:
     + Overview: <http://ffmpeg.org/documentation.html>
     + ffmpeg Tool: <http://ffmpeg.org/ffmpeg.html>
@@ -1270,6 +1375,7 @@ that plays most multimedia files, and various streaming protocols.
 * ID: `Bench.VLC`
 * Label: VLC Player
 * Website: <http://www.videolan.org/vlc/>
+* License: GPL-2.0
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
@@ -1289,6 +1395,8 @@ and in visual interfaces for other technical domains.
 
 * ID: `Bench.Graphviz`
 * Website: <http://www.graphviz.org/>
+* License: EPL-1.0
+* LicenseUrl: <http://www.graphviz.org/License.php>
 * Docs:
     + Overview: <http://www.graphviz.org/Documentation.php>
     + The DOT Language: <http://www.graphviz.org/content/dot-language>
@@ -1311,6 +1419,7 @@ Dia is a program to draw structured diagrams.
 
 * ID: `Bench.Dia`
 * Website: <https://wiki.gnome.org/Apps/Dia>
+* License: GPL-2.0
 * Docs:
     + Overview: <https://wiki.gnome.org/Apps/Dia/Documentation>
     + Manual: <http://dia-installer.de/doc/en/index.html>
@@ -1332,6 +1441,8 @@ It's free and open source.
 
 * ID: `Bench.Inkscape`
 * Website: <https://inkscape.org/en/download/>
+* License: GPL-2.0
+* LicenseUrl: <https://inkscape.org/en/about/license/>
 * Docs:
     + Manual: <http://tavmjong.free.fr/INKSCAPE/MANUAL/html/>
     + Tutorials: <https://inkscape.org/en/learn/tutorials/>
