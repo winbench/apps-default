@@ -1119,6 +1119,21 @@ The initial password for _root_ is `bench`.
 * Environment:
     + `MYSQL_DATA`: `$:MySqlDataDir$`
 
+### MySQL Utilities
+
+* ID: `Bench.MySQLUtils`
+* Label: MySQL Utilities
+* Website: <https://dev.mysql.com/downloads/utilities/>
+* License: GPL-2.0
+* Docs:
+    + Documentation: `https://dev.mysql.com/doc/mysql-utilities/$:VersionMajor$/en/`
+* VersionMajor: 1.6
+* Version: $:VersionMajor$.5
+* Url: `https://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
+* ArchiveName: `mysql-utilities-$:Version$-win32.msi`
+* ArchivePath: `SourceDir\MySQL\MySQL Utilities $:VersionMajor$`
+* SetupTestFile: `mysqlserverinfo.exe`
+
 ### MySQL Workbench
 
 MySQL Workbench is a unified visual tool for database architects, developers, and DBAs.
