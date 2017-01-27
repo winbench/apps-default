@@ -838,6 +838,22 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
 * Version: `>=2.9.0 <3.0.0`
 * Exe: `jshint.cmd`
 
+### JSBeautify
+
+This little beautifier will reformat and reindent bookmarklets, ugly JavaScript,
+unpack scripts packed by Dean Edward’s popular packer,
+as well as deobfuscate scripts processed by <http://javascriptobfuscator.com/>.
+
+* ID: `Bench.JSBeautify`
+* Typ: `node-package`
+* PackageName: `js-beautify`
+* Website: <http://jsbeautifier.org/>
+* License: MIT
+* Version: `>=1.6.8 <2.0.0`
+* Exe: `js-beautify.cmd`
+
+Supported commands: `js-beautify`, `css-beautify`, `html-beautify`
+
 ### PyReadline
 
 Required for colors in IPython.
