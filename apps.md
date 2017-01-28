@@ -466,7 +466,14 @@ is picked up from Atom._
 * ArchivePath: `Atom`
 * Environment:
     + ATOM_HOME: `$HomeDir$\.atom`
+* Exe: `atom.exe`
+* Path: `resources\cli`
 * Launcher: $:Label$
+* DefaultPackages:
+    + `minimap`
+    + `script`
+    + `git-plus`
+    + `language-powershell`
 
 ### Visual Studio Code
 
