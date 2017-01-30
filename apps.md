@@ -840,6 +840,21 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Path: `bin`
 * Exe: `bin\cmake.exe`
 
+### JSLint
+
+JSLint is a JavaScript program that looks for problems in JavaScript programs.
+Is is a code quality tool.
+
+* ID: `Bench.JSLint`
+* Typ: `node-package`
+* Website: <http://jslint.com/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/reid/node-jslint/master/LICENSE>
+* Docs:
+    + npm Package: <https://www.npmjs.com/package/jslint>
+    + Help: <http://jslint.com/help.html>
+* Exe: `jslint.cmd`
+
 ### JSHint
 
 JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.
