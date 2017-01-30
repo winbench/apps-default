@@ -884,22 +884,24 @@ that can be used to improve the JavaScript integration of existing editors.
 * License: MIT
 * Version: `>=0.20.0 <=1.0.0`
 
-### PyReadline
+
+
+### PyReadline for Python 2
 
 Required for colors in IPython.
 
-for Python 2:
-
-* ID: `Bench.PyReadline2`
+* ID: `Bench.Python2.PyReadline`
 * Label: PyReadline (Python 2)
 * PackageName: `pyreadline`
 * Typ: `python2-package`
 * Website: <https://pypi.python.org/pypi/pyreadline>
 * License: BSD-3-Clause
 
-for Python 3:
+### PyReadline for Python 3
 
-* ID: `Bench.PyReadline3`
+Required for colors in IPython.
+
+* ID: `Bench.Python3.PyReadline`
 * Label: PyReadline (Python 3)
 * PackageName: `pyreadline`
 * Typ: `python3-package`
@@ -910,11 +912,11 @@ for Python 3:
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
 
-* ID: `Bench.IPython2`
+* ID: `Bench.Python2.IPython`
 * Label: IPython 2
 * Typ: `python2-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.PyReadline2`
+* Dependencies: `Bench.Python2.PyReadline`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
@@ -927,11 +929,11 @@ IPython provides a rich architecture for computing with a powerful interactive s
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
 
-* ID: `Bench.IPython3`
+* ID: `Bench.Python3.IPython`
 * Label: IPython 3
 * Typ: `python3-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.PyReadline3`
+* Dependencies: `Bench.Python3.PyReadline`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
