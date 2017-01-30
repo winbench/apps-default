@@ -46,6 +46,7 @@
     + `Bench.Group.JavaDevelopment`
     + `Bench.Leiningen`
     + `Bench.BootClj`
+    + `Bench.Inlein`
     + `Bench.Nightcode`
 
 ### PHP Development
@@ -374,6 +375,25 @@ it gets out of your way and lets you focus on your code.
 * Exe: `lein.bat`
 * Environment:
     + `LEIN_JAR`: `$:Dir$\leiningen.jar`
+
+### Inlein
+
+Run Clojure scripts with dependencies, but without classpath pains.
+
+_Warning: This program is leaking into the Windows user home folder under `C:\Users\<currentuser>\.inlein`_.
+
+* ID: `Bench.Inlein`
+* Website: <http://inlein.org>
+* License: EPL-1.0
+* LicenseUrl: <https://raw.githubusercontent.com/hyPiRion/inlein/master/LICENSE>
+* Docs:
+    + Getting Started: <https://github.com/hyPiRion/inlein/wiki/Getting-Started>
+* Dependencies: `Bench.Leiningen`
+* Version: 0.1.0
+* Url: `https://github.com/hyPiRion/inlein/releases/download/$:Version$/inlein`
+* ResourceName: `inlein.bat`
+* Exe: `$:ResourceName$`
+* Dir: `bench\lein`
 
 ### Boot Clojure
 
