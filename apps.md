@@ -477,6 +477,16 @@ is picked up from Atom._
     + `git-plus`
     + `language-powershell`
 
+You can adapt the pre-installed Atom packages
+by putting something like this in your user app library in `config\apps.md`:
+
+```Markdown
+* ID: `Bench.Atom`
+* DefaultPackages:
+    + `git-plus`
+    + `language-powershell`
+```
+
 ### Visual Studio Code
 
 A cross platform code editor from Microsoft.
