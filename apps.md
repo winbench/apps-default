@@ -643,6 +643,19 @@ The next generation code editor.
 * Exe: `LightTable.exe`
 * Launcher: $:Label$
 
+### Nightcode
+
+An IDE for Clojure.
+
+* ID: `Bench.Nightcode`
+* Version: 2.3.0
+* Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
+* ResourceName: `Nightcode-$:Version$.jar`
+* Exe: `$:ResourceName$`
+* Launcher: $:Label$
+* LauncherExecutable: `$JRE8:Path$\javaw.exe`
+* LauncherArguments: `-jar`, `$:Exe$`
+
 ### Eclipse for Java
 
 The essential tools for any Java developer, including a Java IDE, a Git client,
