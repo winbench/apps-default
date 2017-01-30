@@ -1301,6 +1301,21 @@ by using specified settings.
 * Exe: `Renamer.exe`
 * Launcher: $:Label$
 
+### CDR Tools
+
+Cdrtools is a set of command line programs that allows to record CD/DVD/BluRay media. It includes the following commandline utilities:
+`cdrecord`, `readcd`, `cdda2wav`, `mkisofs`, `isodebug`, `isodump`, `isoinfo`, `isovfy`, `rscsi`.
+
+* ID: `Bench.CdrTools`
+* Label: CDR Tools
+* Website: <http://cdrtools.sourceforge.net/private/cdrecord.html>
+* License: GPL-2.0
+* Docs:
+    + Manual: <http://cdrtools.sourceforge.net/private/man/cdrecord/index.html>
+* Url: <https://sourceforge.net/projects/cdrtoolswin/files/1.0/Binaries/CDR-Tools.exe>
+* ArchiveName: `CDR-Tools.exe`
+* Exe: `mkisofs.exe`
+
 ## Network
 
 ### cURL
