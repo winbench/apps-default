@@ -899,7 +899,18 @@ that can be used to improve the JavaScript integration of existing editors.
 * License: MIT
 * Version: `>=0.20.0 <=1.0.0`
 
+### Bundler
 
+Bundler provides a consistent environment for Ruby projects
+by tracking and installing the exact gems and versions that are needed.
+
+* ID: `Bench.Bundler`
+* Typ: `ruby-package`
+* Website: <http://bundler.io>
+* License: MIT
+* LicenseUrl: <https://github.com/bundler/bundler/blob/master/LICENSE.md>
+* Docs:
+    Documentation: <http://bundler.io/docs.html>
 
 ### PyReadline for Python 2
 
