@@ -773,12 +773,16 @@ The next generation code editor.
 An IDE for Clojure.
 
 * ID: `Bench.Nightcode`
+* Dependencies: `Bench.JRE8`
+* Website: <https://sekao.net/nightcode/>
+* License: Public Domain
+* LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
 * Version: 2.3.0
 * Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
 * ResourceName: `Nightcode-$:Version$.jar`
 * Exe: `$:ResourceName$`
 * Launcher: $:Label$
-* LauncherExecutable: `$JRE8:Path$\javaw.exe`
+* LauncherExecutable: `$Bench.JRE8:Path$\javaw.exe`
 * LauncherArguments: `-jar`, `$:Exe$`
 
 ### Eclipse for Java
