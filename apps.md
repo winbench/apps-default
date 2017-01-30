@@ -444,6 +444,22 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Version: `>=1.10.0 <2.0.0`
 * Exe: `coffee.cmd`
 
+### R
+
+R is a free software for statistical computing and graphics.
+
+* ID: `Bench.R`
+* Website: <https://www.r-project.org>
+* Version: 3.3.2
+* Url: `https://mirrors.cicku.me/CRAN/bin/windows/base/$:ArchiveName$`
+* ArchiveName: `R-$:Version$-win.exe`
+* ArchiveTyp: `inno`
+* Dir: `bench\r`
+* Path: `bin`
+* Exe: `bin\R.exe`
+* Environment:
+    + `R_HOME`: `$:Dir$`
+
 ## Editors
 
 ### Atom
@@ -690,6 +706,26 @@ An IDE for C/C++ developers with Mylyn integration.
 * Dir: `bench\eclipse_cpp`
 * Exe: `eclipse.exe`
 * Register: `false`
+* Launcher: $:Label$
+
+### R Studio
+
+RStudio is an IDE for R.
+It includes a console, syntax-highlighting editor that supports
+direct code execution, as well as tools for plotting, history,
+debugging and workspace management.
+
+* ID: `Bench.RStudio`
+* Label: R Studio
+* Dependencies: `Bench.R`
+* Website: <https://www.rstudio.com>
+* License: AGPL-3.0
+* Version: 1.0.44
+* Url: `https://download1.rstudio.org/$:ArchiveName$`
+* ArchiveName: `RStudio-$:Version$.zip`
+* Dir: `r-studio`
+* Path: `bin`
+* Exe: `bin\rstudio.exe`
 * Launcher: $:Label$
 
 ## Software Development Utilities
