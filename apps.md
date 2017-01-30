@@ -1,5 +1,115 @@
 # Default App Library
 
+## Groups
+
+### Web Development
+
+* ID: `Bench.Group.WebDevelopment`
+* Label: Web Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.Group.JavaScriptDevelopment`
+    + `Bench.Bower`
+    + `Bench.Less`
+    + `Bench.Sass`
+    + `Bench.JSBeautify`
+
+### JavaScript Development
+
+* ID: `Bench.Group.JavaScriptDevelopment`
+* Label: JavaScript Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.Npm`
+    + `Bench.JSHint`
+    + `Bench.JSLint`
+    + `Bench.JSBeautify`
+    + `Bench.Tern`
+    + `Bench.Atom`
+
+### Java Development
+
+* ID: `Bench.Group.JavaDevelopment`
+* Label: Java Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.JDK8`
+    + `Bench.Maven`
+    + `Bench.EclipseJava`
+
+### Clojure Development
+
+* ID: `Bench.Group.ClojureDevelopment`
+* Label: Clojure Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.Group.JavaDevelopment`
+    + `Bench.Leiningen`
+    + `Bench.BootClj`
+    + `Bench.Nightcode`
+
+### PHP Development
+
+* ID: `Bench.Group.PHPDevelopment`
+* Label: PHP Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.PHP7`
+    + `Bench.Apache`
+    + `Bench.MySQL`
+    + `Bench.MySQLWB`
+    + `Bench.EclipsePHP`
+
+### Python 2 Development
+
+* ID: `Bench.Group.Python2Development`
+* Label: Python 2 Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.Python2`
+    + `Bench.Python2.IPython`
+    + `Bench.Python2.PEP8`
+
+### Python 3 Development
+
+* ID: `Bench.Group.Python3Development`
+* Label: Python 3 Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.Python3`
+    + `Bench.Python3.IPython`
+    + `Bench.Python3.PEP8`
+
+### Ruby Development
+
+* ID: `Bench.Group.RubyDevelopment`
+* Label: Ruby Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.Ruby`
+    + `Bench.RubyGems`
+    + `Bench.Bundler`
+
+### C/C++ Development
+
+* ID: `Bench.Group.CppDevelopment`
+* Label: C/C++ Development
+* Typ: `meta`
+* Dependencies:
+    + `Bench.MinGW`
+    + `Bench.CMake`
+    + `Bench.EclipseCpp`
+
+### LaTeX Writing
+
+* ID: `Bench.Group.LaTeXWriting`
+* Label: LaTeX Writing
+* Typ: `meta`
+* Dependencies:
+    + `Bench.MiKTeX`
+    + `Bench.TeXnicCenter`
+    + `Bench.JabRef`
+
 ## Security
 
 ### OpenSSL
