@@ -336,8 +336,10 @@ including compilers for C/C++, Objective-C, Fortran, Ada, ...
 * Packages:
     + `mingw32-base`
     + `mingw32-gcc-g++`
+    + `mingw32-autotools`
 
-You can adapt the preselected MinGW packages by putting something like this in your `config\apps.md`:
+You can adapt the preselected MinGW packages
+by putting something like this in your user app library in `config\apps.md`:
 
 ```Markdown
 * ID: `Bench.MinGW`
