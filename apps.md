@@ -1414,6 +1414,26 @@ one of the premier Open Source desktop applications.
 
 ## Web
 
+### Less
+
+Less is a CSS pre-processor, meaning that it extends the CSS language,
+adding features that allow variables, mixins, funtions and many other techniques
+that allow you to make CSS that is more maintainable, themable and extendable.
+
+Less runs inside Node, the browser and inside Rhino.
+There are also many 3rd party tools that allow you to compile your files and watch for changes.
+
+* ID: `Bench.Less`
+* Website: `lesscss.org`
+* License: Apache-2.0
+* Docs:
+    + Language Features: <http://lesscss.org/features/>
+    + Function Reference: <http://lesscss.org/functions/>
+* Typ: `node-package`
+* Exe: `lessc.cmd`
+
+The shell command of Less is `lessc`.
+
 ### SASS
 
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
