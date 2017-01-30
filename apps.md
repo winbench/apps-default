@@ -861,7 +861,7 @@ debugging and workspace management.
 * Version: 1.0.44
 * Url: `https://download1.rstudio.org/$:ArchiveName$`
 * ArchiveName: `RStudio-$:Version$.zip`
-* Dir: `r-studio`
+* Dir: `bench\r-studio`
 * Path: `bin`
 * Exe: `bin\rstudio.exe`
 * Launcher: $:Label$
