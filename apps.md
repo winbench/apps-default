@@ -265,6 +265,21 @@ it gets out of your way and lets you focus on your code.
 * Environment:
     + `LEIN_JAR`: `$:Dir$\leiningen.jar`
 
+### Boot Clojure
+
+Build tooling for Clojure.
+
+* ID: `Bench.BootClj`
+* Label: Boot Clojure
+* Dependencies: `Bench.JDK8`, `Bench.Maven`
+* Website: <http://boot-clj.com>
+* Docs:
+    + Wiki: <https://github.com/boot-clj/boot/wiki>
+* Version: latest
+* Url: <https://github.com/boot-clj/boot/releases/download/2.4.0/boot.exe>
+* ResourceName: `boot.exe`
+* Exe: `boot.exe`
+
 ### .NET Core SDK
 
 The build tools and compilers for platform independent .NET Core applications.
