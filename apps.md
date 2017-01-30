@@ -1864,6 +1864,21 @@ GIMP provides you with sophisticated tools to get your job done.
 * Exe: `bin\gimp-2.8.exe`
 * Launcher: $:Label$
 
+### XnView
+
+XnView is an efficient multimedia viewer, browser and converter.
+Really simple to use!
+Support of more than 500 image formats.
+
+* ID: `Bench.XnView`
+* Website: <http://www.xnview.com/>
+* License: Commercial
+* Version: latest
+* Url: `http://download.xnview.com/$:ArchiveName$`
+* ArchiveName: `XnView-win.zip`
+* ArchivePath: `XnView`
+* Launcher: $:Label$
+
 ## 3D Modeling
 
 ### MeshLab
