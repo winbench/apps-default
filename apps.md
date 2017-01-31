@@ -890,6 +890,20 @@ debugging and workspace management.
 * Exe: `bin\rstudio.exe`
 * Launcher: $:Label$
 
+### Resource Hacker™
+
+Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (\*.exe; \*.dll; \*.scr; \*.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (\*.rc), and edit resource files (\*.res) too.
+
+* ID: `Bench.ResourceHacker`
+* Label: Resource Hacker™
+* Version: latest
+* Website: <http://angusj.com/resourcehacker/>
+* License: Freeware
+* Url: `http://angusj.com/resourcehacker/$:ArchiveName$`
+* ArchiveName: `resource_hacker.zip`
+* Dir: `bench\reshack`
+* Launcher: $:Label$
+
 ## Software Development Utilities
 
 ### Gulp
