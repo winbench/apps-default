@@ -1911,6 +1911,7 @@ GIMP provides you with sophisticated tools to get your job done.
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
 * Exe: `bin\gimp-2.8.exe`
+* Register: `false`
 * Launcher: $:Label$
 
 ### XnView
