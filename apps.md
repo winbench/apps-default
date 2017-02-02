@@ -1965,6 +1965,32 @@ Open source digital audio workstation with VST support.
 * Register: `false`
 * Launcher: $:Label$
 
+### CamStudio Screen Recorder
+
+CamStudio is a great tool to create quick demos and screencasts on your computer
+in AVI and, if you wish, you can convert them into Flash format.
+
+CamStudio's features include options to highlight the cursor path during a
+recording session, automatic panning, and the ability to record with sound.
+
+An effects menu lets you annotate and append videos with comments,
+plus add a time stamp or watermark. CamStudio also captures screenshots
+if you set the frame rate, drag the mouse over the area for capture,
+and tap on the coordinates.
+
+* ID: `Bench.CamStudio`
+* Label: CamStudio Screen Recorder
+* Website: <http://camstudio.org/>
+* License: GPL-3.0
+* Version 2.7
+* Release: 2-7_r316
+* Url: `https://sourceforge.net/projects/camstudio/files/stable/CamStudio_Setup_2-7_r316.exe`
+* ArchiveName: `CamStudio_Setup_$:Release$.exe`
+* ArchiveTyp: `inno`
+* Exe: `Recorder.exe`
+* Register: `false`
+* Launcher: $:Label$
+
 ## 3D Modeling
 
 ### MeshLab
