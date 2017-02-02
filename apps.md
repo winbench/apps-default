@@ -1930,6 +1930,28 @@ Support of more than 500 image formats.
 * Register: `false`
 * Launcher: $:Label$
 
+### ExifTool
+
+ExifTool is a platform-independent Perl library plus a command-line application
+for reading, writing and editing meta information in a wide variety of files.
+
+ExifTool supports many different metadata formats including
+EXIF, GPS, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3,
+as well as the maker notes of many digital cameras by
+Canon, Casio, DJI, FLIR, FujiFilm, GE, HP, JVC/Victor, Kodak, Leaf,
+Minolta/Konica-Minolta, Motorola, Nikon, Nintendo, Olympus/Epson, Panasonic/Leica,
+Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
+
+* ID: `Bench.ExifTool`
+* Website: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
+* License: GPL, Artistic
+* LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
+* Docs:
+    + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
+* Version: 10.41
+* Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
+* ArchiveName: `exiftool-$:Version$.zip`
+
 ## 3D Modeling
 
 ### MeshLab
