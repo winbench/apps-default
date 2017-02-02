@@ -1927,6 +1927,7 @@ Support of more than 500 image formats.
 * Url: `http://download.xnview.com/$:ArchiveName$`
 * ArchiveName: `XnView-win.zip`
 * ArchivePath: `XnView`
+* Register: `false`
 * Launcher: $:Label$
 
 ## 3D Modeling
