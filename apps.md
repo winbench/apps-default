@@ -1952,6 +1952,19 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 
+### LMMS
+
+Open source digital audio workstation with VST support.
+
+* ID: `Bench.LMMS`
+* Website: <https://lmms.io/>
+* License: GPL-2.0
+* Version: 1.1.3
+* Url: `https://github.com/LMMS/lmms/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `lmms-$:Version$-win32.exe`
+* Register: `false`
+* Launcher: $:Label$
+
 ## 3D Modeling
 
 ### MeshLab
