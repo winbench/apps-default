@@ -55,7 +55,7 @@
 * Label: PHP Development
 * Typ: `meta`
 * Dependencies:
-    + `Bench.PHP7`
+    + `Bench.PHP5`
     + `Bench.Apache`
     + `Bench.MySQL`
     + `Bench.MySQLWB`
