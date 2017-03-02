@@ -60,6 +60,7 @@
     + `Bench.MySQL`
     + `Bench.MySQLWB`
     + `Bench.EclipsePHP`
+    + `Bench.Composer`
 
 ### Python 2 Development
 
@@ -966,6 +967,25 @@ the right versions of the packages you need and their dependencies.
     + Commands: <https://bower.io/docs/api/#commands>
 * Version: `>=1.7.0 <2.0.0`
 * Exe: `bower.cmd`
+
+### Composer
+
+Dependency Manager for PHP
+
+* ID: `Bench.Composer`
+* Label: Composer
+* Typ: `meta`
+* Dependencies: `Bench.Wget`, `Bench.PHP5`
+* Website: <https://getcomposer.org/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/composer/composer/master/LICENSE>
+* Docs:
+    + Documentation: <https://getcomposer.org/doc/>
+    + Packages: <https://packagist.org/>
+* Dir: `bench\composer`
+* Exe: `composer.bat`
+* SetupCheckFile: `composer.phar`
+* Register: `true`
 
 ### Yeoman
 
