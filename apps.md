@@ -1538,6 +1538,7 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * ArchivePath: `Apache24`
 * Path: `bin`
 * Exe: `bin\httpd.exe`
+* Launcher: Apache Web Server
 * HttpdDocumentRoot: `$HomeDir$\www`
 * HttpdListen: `127.0.0.1:80`
 
