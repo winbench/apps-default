@@ -1584,7 +1584,7 @@ and related programs for Windows (all current variants).
 * Docs:
     + Manual: <http://docs.miktex.org/2.9/manual/>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: 2.9.6221
+* Version: 2.9.6236
 * Url: `http://ctan.space-pro.be/tex-archive/systems/win32/miktex/setup/$:ArchiveName$`
 * ArchiveName: `miktex-portable-$:Version$.exe`
 * ArchivePath: `texmfs`
