@@ -1008,6 +1008,23 @@ to help you stay productive.
 * Version: `>=1.5.0 <2.0.0`
 * Exe: `yo.cmd`
 
+### AngularJS CLI
+
+HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+
+* ID: `Bench.AngularCli`
+* Typ: `node-package`
+* PackageName: `@angular/cli`
+* Website: <https://cli.angular.io/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/angular/angular-cli/master/LICENSE>
+* Docs:
+    + Angular: <https://angular.io/>
+    + Angular Docs: <https://angular.io/docs/ts/latest/>
+    + Angular CLI Quickstart: <https://angular.io/docs/ts/latest/cli-quickstart.html>
+    + Angular CLI Wiki: <https://github.com/angular/angular-cli/wiki>
+* Label: Angular CLI
+
 ### Maven
 
 Apache Maven is a software project management and comprehension tool.
