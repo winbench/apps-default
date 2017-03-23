@@ -127,8 +127,8 @@ It is also a general-purpose cryptography library.
     + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
     + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
     + Windows Build: <http://slproweb.com/products/Win32OpenSSL.html>
-* Version: 1.1.0c
-* Version2: 1_1_0c
+* Version: 1.1.0e
+* Version2: 1_1_0e
 * Url: `http://slproweb.com/download/$:ArchiveName$`
 * ArchiveName: `Win32OpenSSL-$:Version2$.exe`
 * ArchiveTyp: `inno`
