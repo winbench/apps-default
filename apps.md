@@ -626,7 +626,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.14.4
+* Version: 1.15.0
 * Url: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * ArchiveName: `atom-windows-$:Version$.zip`
 * ArchivePath: `Atom`
