@@ -599,7 +599,7 @@ R is a free software for statistical computing and graphics.
 * ID: `Bench.R`
 * Website: <https://www.r-project.org>
 * Version: 3.3.2
-* Url: `https://mirrors.cicku.me/CRAN/bin/windows/base/$:ArchiveName$`
+* Url: `http://cran.uni-muenster.de/bin/windows/base/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\r`
