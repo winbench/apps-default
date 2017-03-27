@@ -1325,7 +1325,7 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
     + `Bench.Python3.SciPyLib`
     + `Bench.Python3.Matplotlib`
     + `Bench.Python3.IPython`
-    + `Bench.Jupyter`
+    + `Bench.Python3.Jupyter`
     + `Bench.Python3.SymPy`
     + `Bench.Python3.Pandas`
 * Website: <https://www.scipy.org/>
