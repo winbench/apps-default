@@ -1185,12 +1185,12 @@ Required for colors in IPython.
 * Website: <https://pypi.python.org/pypi/pyreadline>
 * License: BSD-3-Clause
 
-### IPython 2
+### IPython for Python 2
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
 
 * ID: `Bench.Python2.IPython`
-* Label: IPython 2
+* Label: IPython (Python 2)
 * Typ: `python2-package`
 * PackageName: `ipython`
 * Dependencies: `Bench.Python2.PyReadline`
@@ -1200,14 +1200,14 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Docs:
     + Documentation: <http://ipython.readthedocs.io/en/stable/>
 * Exe: `Scripts\ipython2.exe`
-* Launcher: $:Label$
+* Launcher: IPython 2
 
-### IPython 3
+### IPython for Python 3
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
 
 * ID: `Bench.Python3.IPython`
-* Label: IPython 3
+* Label: IPython (Python 3)
 * Typ: `python3-package`
 * PackageName: `ipython`
 * Dependencies: `Bench.Python3.PyReadline`
@@ -1217,7 +1217,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Docs:
     + Documentation: <http://ipython.readthedocs.io/en/stable/>
 * Exe: `Scripts\ipython3.exe`
-* Launcher: $:Label$
+* Launcher: IPython 3
 
 ### PEP 8 for Python 2
 
