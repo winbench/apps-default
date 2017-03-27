@@ -1247,23 +1247,6 @@ pep8 is a tool to check your Python code against some of the style conventions i
     + PEP 8 Styleguide: <https://www.python.org/dev/peps/pep-0008/>
 * Exe: `Scripts\pep8.exe`
 
-### Jupyter
-
-Open source, interactive data science and scientific computing
-across over 40 programming languages.
-
-* ID: `Bench.Jupyter`
-* Typ: `python3-package`
-* Website: <https://jupyter.org>
-* License: BSD-3-Clause
-* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
-* Docs:
-    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
-* Exe: `Scripts\jupyter.exe`
-* SetupTestFile: $:Exe$
-* Launcher: Jupyter Notebook
-* LauncherArguments: `notebook`
-
 ### Zeal
 
 An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
@@ -1299,6 +1282,26 @@ the Microsoft Windows operating systems and its processes.
 * ArchiveName: `SysinternalsSuite.zip`
 * Exe: `procexp.exe`
 * Launcher: `Process Explorer`
+
+## Math and Science
+
+### jupyter for Python 3
+
+Open source, interactive data science and scientific computing
+across over 40 programming languages.
+
+* ID: `Bench.Python3.Jupyter`
+* Typ: `python3-package`
+* Label: jupyter (Python 3)
+* Website: <https://jupyter.org>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
+* Docs:
+    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
+* Exe: `Scripts\jupyter.exe`
+* SetupTestFile: $:Exe$
+* Launcher: jupyter Notebook
+* LauncherArguments: `notebook`
 
 ## Filesystem
 
