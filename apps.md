@@ -102,6 +102,17 @@
     + `Bench.CMake`
     + `Bench.EclipseCpp`
 
+### Data Science
+
+* ID: `Bench.Group.DataScience`
+* Typ: meta
+* Dependencies:
+    + `Bench.Python3.SciPy`
+    + `Bench.Python3.SciKitLearn`
+    + `Bench.SublimeText3`
+    + `Bench.R`
+    + `Bench.RStudio`
+
 ### LaTeX Writing
 
 * ID: `Bench.Group.LaTeXWriting`
@@ -1302,6 +1313,157 @@ across over 40 programming languages.
 * SetupTestFile: $:Exe$
 * Launcher: jupyter Notebook
 * LauncherArguments: `notebook`
+
+### SciPy for Python 3
+
+SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
+
+* ID: `Bench.Python3.SciPy`
+* Typ: meta
+* Dependencies:
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.SciPyLib`
+    + `Bench.Python3.Matplotlib`
+    + `Bench.Python3.IPython`
+    + `Bench.Jupyter`
+    + `Bench.Python3.SymPy`
+    + `Bench.Python3.Pandas`
+* Website: <https://www.scipy.org/>
+
+### NumPy + MKL for Python 3
+
+NumPy is the fundamental package for scientific computing with Python.
+
+It contains among other things:
+
+- a powerful N-dimensional array object
+- sophisticated (broadcasting) functions
+- tools for integrating C/C++ and Fortran code
+- useful linear algebra, Fourier transform, and random number capabilities
+
+Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases.
+
+* ID: `Bench.Python3.NumPy`
+* Label: NumPy (Python 3)
+* Dependencies: `Bench.Python3`
+* Website: <http://www.numpy.org/>
+* Docs:
+    + Manual: <https://docs.scipy.org/doc/numpy/>
+    + User Guide: <https://docs.scipy.org/doc/numpy/user/>
+    + Reference: <https://docs.scipy.org/doc/numpy/reference/>
+* License: BSD-3-Clause
+* LicenseUrl: <www.numpy.org/license.html>
+* Version: 1.12.1
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `numpy-$:Version$+mkl-cp34-cp34m-win32.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\numpy\version.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### SciPy library for Python 3
+
+The SciPy library is one of the core packages that make up the SciPy stack.
+It provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization.
+
+* ID: `Bench.Python3.SciPyLib`
+* Label: SciPy library (Python 3)
+* PackageName: `scipy`
+* Dependencies: `Bench.Python3.NumPy`
+* Website: <https://www.scipy.org/scipylib/>
+* Docs:
+    + Reference: <https://docs.scipy.org/doc/scipy/reference/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
+* Version: 0.19.0
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `scipy-$:Version$-cp34-cp34m-win32.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\scipy\version.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Matplotlib for Python 3
+
+Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+Matplotlib can be used in Python scripts, the Python and IPython shell, the jupyter notebook, web application servers, and four graphical user interface toolkits.
+
+* ID: `Bench.Python3.Matplotlib`
+* Label: Matplotlib (Python 3)
+* Typ: `python3-package`
+* Website: <http://matplotlib.org/>
+* Docs:
+    + Documentation: <http://matplotlib.org/contents.html>
+    + Examples: <http://matplotlib.org/examples/>
+    + Plotting Commands Summary: <http://matplotlib.org/api/pyplot_summary.html>
+* License: BSD compatible
+* LicenseUrl: <http://matplotlib.org/users/license.html>
+
+### SymPy for Python 3
+
+SymPy is a Python library for symbolic mathematics.
+It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python.
+
+* ID: `Bench.Python3.SymPy`
+* Label: SymPy (Python 3)
+* Typ: `python3-package`
+* Website: <http://www.sympy.org/>
+* Docs:
+    + Documentation: <http://docs.sympy.org/latest/index.html>
+    + Tutorial: <http://docs.sympy.org/latest/tutorial/index.html>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/sympy/sympy/master/LICENSE>
+
+### pandas for Python 3
+
+pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
+
+* ID: `Bench.Python3.Pandas`
+* Label: pandas (Python 3)
+* Typ: `python3-package`
+* Website: <http://pandas.pydata.org/>
+* Docs:
+    + Documentation: <http://pandas.pydata.org/pandas-docs/stable/>
+    + 10 Minutes to pandas: <http://pandas.pydata.org/pandas-docs/stable/10min.html>
+* License: BSD-3-Clause
+* LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
+
+### scikit-learn for Python 3
+
+Machine Learning in Python
+
+- Simple and efficient tools for data mining and data analysis
+- Accessible to everybody, and reusable in various contexts
+- Built on NumPy, SciPy, and matplotlib
+- Open source, commercially usable - BSD license
+
+* ID: `Bench.Python3.SciKitLearn`
+* Label: scikit-learn (Python 3)
+* Typ: `python3-package`
+* PackageName: `scikit-learn`
+* Dependencies:
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.SciPyLib`
+    + `Bench.Python3.Matplotlib`
+* Website: <http://scikit-learn.org>
+* Docs:
+    + Documentation: <http://scikit-learn.org/stable/documentation.html>
+    + Quick Start: <http://scikit-learn.org/stable/tutorial/basic/tutorial.html>
+    + Tutorials: <http://scikit-learn.org/stable/tutorial/index.html>
+    + User Guide: <http://scikit-learn.org/stable/user_guide.html>
+    + API Reference: <http://scikit-learn.org/stable/modules/classes.html>
+    + Examples: <http://scikit-learn.org/stable/auto_examples/index.html>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/scikit-learn/scikit-learn/master/COPYING>
+* SetupTestFile: `$:Dir$\lib\site-packages\sklearn\__init__.py`
 
 ## Filesystem
 
