@@ -105,6 +105,7 @@
 ### Data Science
 
 * ID: `Bench.Group.DataScience`
+* Label: Data Science
 * Typ: meta
 * Dependencies:
     + `Bench.Python3.SciPy`
