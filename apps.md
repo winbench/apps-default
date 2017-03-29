@@ -2026,7 +2026,7 @@ The command line interface for the open source video transcoder.
 * ID: `Bench.HandBrakeCLI`
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.0.2
+* Version: 1.0.3
 * Url: `https://handbrake.fr/rotation.php?file=$:ArchiveName$`
 * ArchiveName: `HandBrakeCLI-$:Version$-win-x86_64.zip`
 * Dir: `bench\handbrake`
@@ -2039,7 +2039,7 @@ The open source video transcoder.
 * ID: `Bench.HandBrake`
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.0.2
+* Version: 1.0.3
 * Url: `https://handbrake.fr/rotation.php?file=$:ArchiveName$`
 * ArchiveName: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Exe: `HandBrake.exe`
