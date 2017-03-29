@@ -1020,7 +1020,7 @@ to help you stay productive.
 * Version: `>=1.5.0 <2.0.0`
 * Exe: `yo.cmd`
 
-### AngularJS CLI
+### Angular CLI
 
 HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
 
@@ -1028,13 +1028,13 @@ HTML is great for declaring static documents, but it falters when we try to use 
 * Typ: `node-package`
 * PackageName: `@angular/cli`
 * Website: <https://cli.angular.io/>
-* License: MIT
-* LicenseUrl: <https://raw.githubusercontent.com/angular/angular-cli/master/LICENSE>
 * Docs:
     + Angular: <https://angular.io/>
     + Angular Docs: <https://angular.io/docs/ts/latest/>
     + Angular CLI Quickstart: <https://angular.io/docs/ts/latest/cli-quickstart.html>
     + Angular CLI Wiki: <https://github.com/angular/angular-cli/wiki>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/angular/angular-cli/master/LICENSE>
 * Label: Angular CLI
 
 ### Maven
@@ -1437,7 +1437,7 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 * License: BSD-3-Clause
 * LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
 
-### scikit-learn for Python 3
+### scikit-learn
 
 Machine Learning in Python
 
@@ -1447,7 +1447,7 @@ Machine Learning in Python
 - Open source, commercially usable - BSD license
 
 * ID: `Bench.Python3.SciKitLearn`
-* Label: scikit-learn (Python 3)
+* Label: scikit-learn
 * Typ: `python3-package`
 * PackageName: `scikit-learn`
 * Dependencies:
