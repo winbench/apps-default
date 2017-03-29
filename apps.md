@@ -1295,6 +1295,42 @@ the Microsoft Windows operating systems and its processes.
 * Exe: `procexp.exe`
 * Launcher: `Process Explorer`
 
+## Mobile Development
+
+### Apache Cordova
+
+Mobile apps with HTML, CSS & JS  
+Target multiple platforms with one code base  
+Free and open source
+
+* ID: `Bench.Cordova`
+* Typ: `node-package`
+* Website: <https://cordova.apache.org/>
+* Docs:
+    + Documentation: <https://cordova.apache.org/docs/en/latest/>
+    + CLI Reference: <https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html>
+* License: Apache-2.0
+
+### Ionic
+
+The top open source framework for building amazing mobile apps.
+
+Ionic is the beautiful, free and open source mobile SDK for developing native and progressive web apps with ease. 
+
+* ID: `Bench.Ionic`
+* Typ: `node-package`
+* Dependencies: `Bench.Cordova`
+* Website: <http://ionicframework.com/>
+* Docs:
+    + Documentation: <http://ionicframework.com/docs/>
+    + Components: <http://ionicframework.com/docs/v2/components/>
+    + API: <http://ionicframework.com/docs/v2/api/>
+    + CLI: <http://ionicframework.com/docs/v2/cli/>
+    + FAQ: <http://ionicframework.com/docs/v2/troubleshooting/>
+    + Forum: <https://forum.ionicframework.com/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/driftyco/ionic/master/LICENSE>
+
 ## Math and Science
 
 ### jupyter for Python 3
