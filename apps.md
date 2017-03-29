@@ -1355,8 +1355,9 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * License: BSD-3-Clause
 * LicenseUrl: <www.numpy.org/license.html>
 * Version: 1.12.1
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `numpy-$:Version$+mkl-cp34-cp34m-win32.whl`
+* ArchiveName: `numpy-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
@@ -1381,8 +1382,9 @@ It provides many user-friendly and efficient numerical routines such as routines
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
 * Version: 0.19.0
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `scipy-$:Version$-cp34-cp34m-win32.whl`
+* ArchiveName: `scipy-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
