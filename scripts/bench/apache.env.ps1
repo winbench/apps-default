@@ -75,7 +75,7 @@ $txt = $listenP.Replace($txt, "Listen $wwwListen")
 
 # Install PHP
 
-# Try PHP 7
+## Try PHP 7
 
 $php7 = App-Exe "Bench.PHP7"
 if ($php7) {
@@ -96,7 +96,7 @@ if ($php7) {
         "AddType application/x-httpd-php php php7"
 }
 
-# Try PHP 5
+## Try PHP 5
 
 $php5 = App-Exe "Bench.PHP5"
 if ($php5 -and !$php7) {
