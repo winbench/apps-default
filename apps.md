@@ -1617,6 +1617,25 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
 * Register: `false`
 * Launcher: $:Label$
 
+### WinSCP
+
+WinSCP is an open source free SFTP client, FTP client, WebDAV client and SCP client for Windows.
+Its main function is file transfer between a local and a remote computer.
+Beyond this, WinSCP offers scripting and basic file manager functionality.
+
+* ID: `Bench.WinSCP`
+* License: GPL-3.0
+* LicenseUrl: license.txt
+* Website: <https://winscp.net>
+* Docs:
+    + Introduction: <https://winscp.net/eng/docs/introduction>
+    + Documentation: <https://winscp.net/eng/docs/start>
+    + Command Line: <https://winscp.net/eng/docs/commandline>
+* Version: 5.9.4
+* Url: `https://winscp.net/download/$:ArchiveName$`
+* ArchiveName: `WinSCP-$:Version$-Portable.zip`
+* Launcher: $:Label$
+
 ### SRWare Iron
 
 A free portable derivative of Chromium, optimized for privacy.
