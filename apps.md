@@ -2245,7 +2245,7 @@ and tap on the coordinates.
 * Label: CamStudio Screen Recorder
 * Website: <http://camstudio.org/>
 * License: GPL-3.0
-* Version 2.7
+* Version: 2.7
 * Release: 2-7_r316
 * Url: `https://sourceforge.net/projects/camstudio/files/stable/CamStudio_Setup_2-7_r316.exe`
 * ArchiveName: `CamStudio_Setup_$:Release$.exe`
