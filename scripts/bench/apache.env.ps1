@@ -6,6 +6,7 @@ $confBackupFile = [IO.Path]::ChangeExtension($confFile, ".conf.bak")
 
 # Load configuration value
 
+$userConfigFile = Get-AppConfigValue "Bench.Apache" "UserConfigFile"
 $wwwDir = Safe-Dir (Get-AppConfigValue "Bench.Apache" "HttpdDocumentRoot")
 Debug "DocumentRoot = '$wwwDir'"
 $wwwListen = Get-AppConfigValue "Bench.Apache" "HttpdListen"
@@ -116,6 +117,18 @@ if ($php5 -and !$php7) {
         '^AddType\s+application/x-httpd-php\s+(.*?)$' `
         "AddType application/x-httpd-php php php5"
 }
+
+# Add user configuration file
+
+if (!(Test-Path $userConfigFile))
+{
+    Write-Host "Creating Apache custom configuration file: $userConfigFile"
+    $nl = [Environment]::NewLine
+    "# Apache Custom Configuration for Bench${nl}${nl}ServerName localhost" | Out-File $userConfigFile -Encoding Default
+}
+$userConfigFileName = [IO.Path]::GetFileName($userConfigFile)
+$userConfigPattern = "^Include\s.*" + [regex]::Escape($userConfigFileName) + "\s*$"
+$txt = Asure-PatternLine $txt $userConfigPattern "Include `"$(ApacheConformPath $userConfigFile)`""
 
 # Write configuration
 
