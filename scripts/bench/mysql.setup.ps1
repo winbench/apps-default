@@ -22,6 +22,10 @@ if (!(Test-Path "$mysqlPath\mysql_stop.cmd")) {
     cp $cmdScript $mysqlPath
     Write-Host "Run 'mysql_stop' on the Bench shell to stop a running MySQL server."
 }
+if (!(Test-Path "$mysqlPath\mysql_server.cmd")) {
+    $cmdScript = App-SetupResource "Bench.MySQL" "mysql_server.cmd"
+    cp $cmdScript $mysqlPath
+}
 if (!(Test-Path "$mysqlPath\mysql_log.cmd")) {
     $cmdScript = App-SetupResource "Bench.MySQL" "mysql_log.cmd"
     cp $cmdScript $mysqlPath

@@ -1682,6 +1682,8 @@ The initial password for _root_ is `bench`.
 * MySqlDataDir: `$HomeDir$\mysql_data`
 * Environment:
     + `MYSQL_DATA`: `$:MySqlDataDir$`
+* Launcher: MySQL Server
+* LauncherExecutable: `bin\mysql_server.cmd`
 
 ### MySQL Utilities
 
