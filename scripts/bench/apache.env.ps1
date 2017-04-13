@@ -127,7 +127,7 @@ if (!(Test-Path $userConfigFile))
     "# Apache Custom Configuration for Bench${nl}${nl}ServerName localhost" | Out-File $userConfigFile -Encoding Default
 }
 $userConfigFileName = [IO.Path]::GetFileName($userConfigFile)
-$userConfigPattern = "^Include\s.*" + [regex]::Escape($userConfigFileName) + "\s*$"
+$userConfigPattern = "^Include\s+`".*" + [regex]::Escape($userConfigFileName) + "`""
 $txt = Asure-PatternLine $txt $userConfigPattern "Include `"$(ApacheConformPath $userConfigFile)`""
 
 # Write configuration
