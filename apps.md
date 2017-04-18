@@ -1330,6 +1330,17 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 
 ## Math and Science
 
+### Tornado
+
+Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
+
+* ID: `Bench.Python.Tornado`
+* Label: Tornado
+* Typ: `python-package`
+* Version: 4.4.3
+* Website: <http://www.tornadoweb.org/>
+* License: Apache-2.0
+
 ### jupyter for Python 3
 
 Open source, interactive data science and scientific computing
@@ -1338,6 +1349,9 @@ across over 40 programming languages.
 * ID: `Bench.Python3.Jupyter`
 * Typ: `python3-package`
 * Label: jupyter (Python 3)
+* Dependencies:
+    + `Bench.Python3.IPython`
+    + `Bench.Python.Tornado`
 * Website: <https://jupyter.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
