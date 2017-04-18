@@ -1381,6 +1381,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 
 * ID: `Bench.Python3.NumPy`
 * Label: NumPy (Python 3)
+* PackageName: `numpy`
 * Dependencies: `Bench.Python3`
 * Website: <http://www.numpy.org/>
 * Docs:
@@ -1392,11 +1393,11 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * Version: 1.12.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `numpy-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\numpy\version.py`
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -1419,11 +1420,11 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Version: 0.19.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `scipy-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\scipy\version.py`
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
