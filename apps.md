@@ -1353,15 +1353,17 @@ across over 40 programming languages.
 SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
 
 * ID: `Bench.Python3.SciPy`
+* Label: SciPy (Python 3)
 * Typ: meta
 * Dependencies:
+    + `Bench.Python3`
     + `Bench.Python3.NumPy`
     + `Bench.Python3.SciPyLib`
-    + `Bench.Python3.Matplotlib`
     + `Bench.Python3.IPython`
     + `Bench.Python3.Jupyter`
-    + `Bench.Python3.SymPy`
-    + `Bench.Python3.Pandas`
+    + `Bench.Python.Matplotlib`
+    + `Bench.Python.SymPy`
+    + `Bench.Python.Pandas`
 * Website: <https://www.scipy.org/>
 
 ### NumPy + MKL for Python 3
@@ -1427,14 +1429,14 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
-### Matplotlib for Python 3
+### Matplotlib
 
 Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 Matplotlib can be used in Python scripts, the Python and IPython shell, the jupyter notebook, web application servers, and four graphical user interface toolkits.
 
-* ID: `Bench.Python3.Matplotlib`
-* Label: Matplotlib (Python 3)
-* Typ: `python3-package`
+* ID: `Bench.Python.Matplotlib`
+* Label: Matplotlib
+* Typ: `python-package`
 * Website: <http://matplotlib.org/>
 * Docs:
     + Documentation: <http://matplotlib.org/contents.html>
@@ -1443,14 +1445,14 @@ Matplotlib can be used in Python scripts, the Python and IPython shell, the jupy
 * License: BSD compatible
 * LicenseUrl: <http://matplotlib.org/users/license.html>
 
-### SymPy for Python 3
+### SymPy
 
 SymPy is a Python library for symbolic mathematics.
 It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python.
 
-* ID: `Bench.Python3.SymPy`
-* Label: SymPy (Python 3)
-* Typ: `python3-package`
+* ID: `Bench.Python.SymPy`
+* Label: SymPy
+* Typ: `python-package`
 * Website: <http://www.sympy.org/>
 * Docs:
     + Documentation: <http://docs.sympy.org/latest/index.html>
@@ -1458,13 +1460,13 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/sympy/sympy/master/LICENSE>
 
-### pandas for Python 3
+### pandas
 
 pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
-* ID: `Bench.Python3.Pandas`
-* Label: pandas (Python 3)
-* Typ: `python3-package`
+* ID: `Bench.Python.Pandas`
+* Label: pandas
+* Typ: `python-package`
 * Website: <http://pandas.pydata.org/>
 * Docs:
     + Documentation: <http://pandas.pydata.org/pandas-docs/stable/>
@@ -1488,7 +1490,7 @@ Machine Learning in Python
 * Dependencies:
     + `Bench.Python3.NumPy`
     + `Bench.Python3.SciPyLib`
-    + `Bench.Python3.Matplotlib`
+    + `Bench.Python.Matplotlib`
 * Website: <http://scikit-learn.org>
 * Docs:
     + Documentation: <http://scikit-learn.org/stable/documentation.html>
