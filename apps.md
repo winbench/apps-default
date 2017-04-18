@@ -1175,26 +1175,19 @@ by tracking and installing the exact gems and versions that are needed.
 * Docs:
     Documentation: <http://bundler.io/docs.html>
 
-### PyReadline for Python 2
+### PyReadline
 
 Required for colors in IPython.
 
-* ID: `Bench.Python2.PyReadline`
-* Label: PyReadline (Python 2)
+* ID: `Bench.Python.PyReadline`
+* Label: PyReadline
 * PackageName: `pyreadline`
-* Typ: `python2-package`
+* Typ: `python-package`
 * Website: <https://pypi.python.org/pypi/pyreadline>
 * License: BSD-3-Clause
 
-### PyReadline for Python 3
 
-Required for colors in IPython.
 
-* ID: `Bench.Python3.PyReadline`
-* Label: PyReadline (Python 3)
-* PackageName: `pyreadline`
-* Typ: `python3-package`
-* Website: <https://pypi.python.org/pypi/pyreadline>
 * License: BSD-3-Clause
 
 ### IPython for Python 2
