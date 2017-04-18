@@ -20,7 +20,7 @@
 * Label: JavaScript Development
 * Typ: `meta`
 * Dependencies:
-    + `Bench.Npm`
+    + `Bench.Node`
     + `Bench.JSHint`
     + `Bench.JSLint`
     + `Bench.JSBeautify`
@@ -55,7 +55,7 @@
 * Label: PHP Development
 * Typ: `meta`
 * Dependencies:
-    + `Bench.PHP5`
+    + `Bench.PHP7`
     + `Bench.Apache`
     + `Bench.MySQL`
     + `Bench.MySQLWB`
@@ -142,7 +142,8 @@ It is also a general-purpose cryptography library.
 * Version: 1.1.0e
 * Version2: 1_1_0e
 * Url: `http://slproweb.com/download/$:ArchiveName$`
-* ArchiveName: `Win32OpenSSL-$:Version2$.exe`
+* ArchiveName32Bit: `Win32OpenSSL-$:Version2$.exe`
+* ArchiveName64Bit: `Win64OpenSSL-$:Version2$.exe`
 * ArchiveTyp: `inno`
 * Path: `bin`
 * Exe: `bin\openssl.exe`
@@ -195,8 +196,10 @@ PuTTY is a free (MIT-licensed) Win32 Telnet and SSH client.
 * Docs:
     + User Manual: <http://the.earth.li/~sgtatham/putty/0.67/htmldoc/>
 * Version: latest
-* Url: <http://the.earth.li/~sgtatham/putty/latest/x86/putty.zip>
-* ArchiveName: `putty.zip`
+* Url32Bit: <http://the.earth.li/~sgtatham/putty/latest/w32/putty.zip>
+* Url64Bit: <http://the.earth.li/~sgtatham/putty/latest/w64/putty.zip>
+* ArchiveName32Bit: `putty_w32.zip`
+* ArchiveName64Bit: `putty_w64.zip`
 * RegistryKeys: `Software\SimonTatham`
 * Launcher: $:Label$
 
@@ -215,8 +218,10 @@ No proxy support yet (Version 1.3.0).
 * LicenseUrl: `LICENSE`
 * Docs:
     + FAQ: <https://www.gitkraken.com/faq>
-* Url: <https://release.gitkraken.com/win32/GitKrakenSetup.exe>
-* ArchiveName: `GitKrakenSetup.exe`
+* Url32Bit: <https://release.gitkraken.com/win32/GitKrakenSetup.exe>
+* Url64Bit: <https://release.gitkraken.com/win64/GitKrakenSetup.exe>
+* ArchiveName32Bit: `GitKrakenSetup_w32.exe`
+* ArchiveName64Bit: `GitKrakenSetup_w64.exe`
 * ArchiveTyp: `custom`
 * ArchivePath: `lib\net45`
 * Launcher: $:Label$
@@ -239,7 +244,8 @@ This application needs the x86 version of the [Visual C++ 11 Redistributable](ht
     + PHP Manual: <http://php.net/manual/en/>
 * Version: 5.6.29
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
-* ArchiveName: `php-$:Version$-Win32-VC11-x86.zip`
+* ArchiveName32Bit: `php-$:Version$-Win32-VC11-x86.zip`
+* ArchiveName64Bit: `php-$:Version$-Win32-VC11-x64.zip`
 * Exe: `php.exe`
 * Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
 
@@ -257,9 +263,10 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.1.2
+* Version: 7.1.3
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
-* ArchiveName: `php-$:Version$-Win32-VC14-x86.zip`
+* ArchiveName32Bit: `php-$:Version$-Win32-VC14-x86.zip`
+* ArchiveName64Bit: `php-$:Version$-Win32-VC14-x64.zip`
 * Exe: `php.exe`
 * Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
 
@@ -280,7 +287,8 @@ The runtime environment is required for a compiled Java program to get executed.
 * Release: b15
 * Url: `http://download.oracle.com/otn-pub/java/jdk/$:Version$-$:Release$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName: `jre-$:Version$-windows-i586.tar.gz`
+* ArchiveName32Bit: `jre-$:Version$-windows-i586.tar.gz`
+* ArchiveName64Bit: `jre-$:Version$-windows-x64.tar.gz`
 * ArchivePath: `jre1.7.0_80`
 * Path: `bin`
 * Exe: `bin\java.exe`
@@ -305,7 +313,8 @@ The runtime environment is required for a compiled Java program to get executed.
 * LinkUUID: e9e7ea248e2c4826b92b3f075a80e441
 * Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName: `jre-8u$:Version$-windows-i586.tar.gz`
+* ArchiveName32Bit: `jre-8u$:Version$-windows-i586.tar.gz`
+* ArchiveName64Bit: `jre-8u$:Version$-windows-x64.tar.gz`
 * ArchivePath: `jre1.8.0_$:Version$`
 * Path: `bin`
 * Exe: `bin\java.exe`
@@ -331,7 +340,8 @@ The development kit is required for Java source code to get compiled.
 * Release: $Bench.JRE7:Release$
 * Url: `http://download.oracle.com/otn-pub/java/jdk/$:Version$-$:Release$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName: `jdk-$:Version$-windows-i586.exe`
+* ArchiveName32Bit: `jdk-$:Version$-windows-i586.exe`
+* ArchiveName64Bit: `jdk-$:Version$-windows-x64.exe`
 * Path: `bin`
 * Exe: `bin\javac.exe`
 * Environment:
@@ -358,7 +368,8 @@ The development kit is required for Java source code to get compiled.
 * LinkUUID: $Bench.JRE8:LinkUUID$
 * Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName: `jdk-8u$:Version$-windows-i586.exe`
+* ArchiveName32Bit: `jdk-8u$:Version$-windows-i586.exe`
+* ArchiveName64Bit: `jdk-8u$:Version$-windows-x64.exe`
 * Path: `bin`
 * Exe: `bin\javac.exe`
 * Environment:
@@ -421,7 +432,7 @@ Build tooling for Clojure.
 * Docs:
     + Wiki: <https://github.com/boot-clj/boot/wiki>
 * Version: latest
-* Url: <https://github.com/boot-clj/boot/releases/download/2.4.0/boot.exe>
+* Url: <https://github.com/boot-clj/boot-bin/releases/download/latest/boot.exe>
 * ResourceName: `boot.exe`
 * Exe: `boot.exe`
 
@@ -431,7 +442,7 @@ The build tools and compilers for platform independent .NET Core applications.
 
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
-* Version: 1.1
+* Version: 1.0.1
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -440,8 +451,10 @@ The build tools and compilers for platform independent .NET Core applications.
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
-* Url: `https://go.microsoft.com/fwlink/?LinkID=834993`
-* ArchiveName: `DotNetCore.SDK.zip`
+* Url32Bit: <https://go.microsoft.com/fwlink/?linkid=843458>
+* Url64Bit: <https://go.microsoft.com/fwlink/?linkid=843454>
+* ArchiveName32Bit: `dotnet-dev-win-x86.$:Version$.zip`
+* ArchiveName64Bit: `dotnet-dev-win-x64.$:Version$.zip`
 * Exe: `dotnet.exe`
 
 ### MinGW Get
@@ -529,12 +542,13 @@ install the LLVM-Plugin for Eclipse CDT.
 
 * ID: `Bench.Clang`
 * Label: LLVM Clang
-* Version: 3.9.1
+* Version: 4.0.0
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
 * Url: `http://llvm.org/releases/$:Version$/$:ArchiveName$`
-* ArchiveName: `LLVM-$:Version$-win32.exe`
+* ArchiveName32Bit: `LLVM-$:Version$-win32.exe`
+* ArchiveName64Bit: `LLVM-$:Version$-win64.exe`
 * Dir: `bench\llvm`
 * Path: `bin`
 * Exe: `bin\clang.exe`
@@ -548,7 +562,7 @@ Go is an open source programming language that makes it easy
 to build simple, reliable, and efficient software.
 
 * ID: `Bench.Go`
-* Version: 1.7.4
+* Version: 1.8.1
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -559,7 +573,8 @@ to build simple, reliable, and efficient software.
     + Command-Line: <https://golang.org/doc/cmd>
     + Packages: <https://golang.org/pkg/>
 * Url: `https://storage.googleapis.com/golang/$:ArchiveName$`
-* ArchiveName: `go$:Version$.windows-386.zip`
+* ArchiveName32Bit: `go$:Version$.windows-386.zip`
+* ArchiveName64Bit: `go$:Version$.windows-amd64.zip`
 * ArchivePath: `go`
 * Path: `bin`
 * Exe: `bin\go.exe`
@@ -576,11 +591,12 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
 * VersionMajor: 19
-* VersionMinor: 2
-* ErtsVersion: 8.2
+* VersionMinor: 3
+* ErtsVersion: 8.3
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
-* ArchiveName: `otp_win32_$:Version$.exe`
+* ArchiveName32Bit: `otp_win32_$:Version$.exe`
+* ArchiveName64Bit: `otp_win64_$:Version$.exe`
 * ArchiveType: `generic`
 * ErtsDir: `erts-$:ErtsVersion$`
 * Path: `$:ErtsDir$\bin`
@@ -615,8 +631,9 @@ R is a free software for statistical computing and graphics.
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\r`
-* Path: `bin`
-* Exe: `bin\R.exe`
+* Path32Bit: `bin\i386`
+* Path64Bit: `bin\x64`
+* Exe: `$:Path$\R.exe`
 * Environment:
     + `R_HOME`: `$:Dir$`
 
@@ -638,10 +655,13 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.15.0
-* Url: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
-* ArchiveName: `atom-windows-$:Version$.zip`
-* ArchivePath: `Atom`
+* Version: 1.16.0
+* Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
+* Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
+* ArchiveName32Bit: `atom-windows-$:Version$.zip`
+* ArchiveName64Bit: `atom-x64-windows-$:Version$.zip`
+* ArchivePath32Bit: `Atom`
+* ArchivePath64Bit: `Atom x64`
 * Environment:
     + ATOM_HOME: `$HomeDir$\.atom`
 * Exe: `atom.exe`
@@ -696,7 +716,8 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Package Control: <https://packagecontrol.io/>
 * Version: Build 3126
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
-* ArchiveName: `Sublime Text $:Version$.zip`
+* ArchiveName32Bit: `Sublime Text $:Version$.zip`
+* ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
 * Exe: `sublime_text.exe`
 * Launcher: $:Label$
 
@@ -717,7 +738,8 @@ with extensions to support text editing.
     + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
 * Version: 25.1-2
 * Url: `http://ftp.gnu.org/gnu/emacs/windows/$:ArchiveName$`
-* ArchiveName: `emacs-$:Version$-x86_64-w64-mingw32.zip`
+* ArchiveName32Bit: `emacs-$:Version$-i686-w64-mingw32.zip`
+* ArchiveName64Bit: `emacs-$:Version$-x86_64-w64-mingw32.zip`
 * Dir: `bench\gnu`
 * Path: `bin`
 * Exe: `bin\emacs.exe`
@@ -812,7 +834,7 @@ An IDE for Clojure.
 * Website: <https://sekao.net/nightcode/>
 * License: Public Domain
 * LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
-* Version: 2.3.0
+* Version: 2.3.3
 * Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
 * ResourceName: `Nightcode-$:Version$.jar`
 * Exe: `$:ResourceName$`
@@ -827,15 +849,16 @@ XML Editor, Mylyn, Maven and Gradle integration...
 
 * ID: `Bench.EclipseJava`
 * Label: Eclipse for Java
-* Version: 4.6
 * CodeName: neon
-* Release: 2
+* Release: 3
+* Version: 4.6.$:Release$
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName: `eclipse-java-$:CodeName$-$:Release$-win32.zip`
+* ArchiveName32Bit: `eclipse-java-$:CodeName$-$:Release$-win32.zip`
+* ArchiveName64Bit: `eclipse-java-$:CodeName$-$:Release$-win32-x86_64.zip`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_java`
 * Exe: `eclipse.exe`
@@ -849,15 +872,16 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 
 * ID: `Bench.EclipsePHP`
 * Label: Eclipse for PHP
-* Version: 4.6
-* CodeName: neon
-* Release: 2
+* Version: $Bench.EclipseJava:Version$
+* CodeName: $Bench.EclipseJava:CodeName$
+* Release: $Bench.EclipseJava:Release$
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName: `eclipse-php-$:CodeName$-$:Release$-win32.zip`
+* ArchiveName32Bit: `eclipse-php-$:CodeName$-$:Release$-win32.zip`
+* ArchiveName64Bit: `eclipse-php-$:CodeName$-$:Release$-win32-x86_64.zip`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_php`
 * Exe: `eclipse.exe`
@@ -870,15 +894,16 @@ An IDE for C/C++ developers with Mylyn integration.
 
 * ID: `Bench.EclipseCpp`
 * Label: Eclipse for C++
-* Version: 4.6
-* CodeName: neon
-* Release: 2
+* Version: $Bench.EclipseJava:Version$
+* CodeName: $Bench.EclipseJava:CodeName$
+* Release: $Bench.EclipseJava:Release$
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName: `eclipse-cpp-$:CodeName$-$:Release$-win32.zip`
+* ArchiveName32Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32.zip`
+* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32-x86_64.zip`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_cpp`
 * Exe: `eclipse.exe`
@@ -987,7 +1012,7 @@ Dependency Manager for PHP
 * ID: `Bench.Composer`
 * Label: Composer
 * Typ: `meta`
-* Dependencies: `Bench.Wget`, `Bench.PHP5`
+* Dependencies: `Bench.Wget`, `Bench.PHP7`
 * Website: <https://getcomposer.org/>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/composer/composer/master/LICENSE>
@@ -1017,7 +1042,7 @@ to help you stay productive.
     + Tutorial: <http://yeoman.io/codelab/index.html>
     + Generators: <http://yeoman.io/generators/>
     + Creating a Generator: <http://yeoman.io/authoring/>
-* Version: `>=1.5.0 <2.0.0`
+* Version: `>=1.8.0 <2.0.0`
 * Exe: `yo.cmd`
 
 ### Angular CLI
@@ -1050,7 +1075,7 @@ reporting and documentation from a central piece of information.
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: `3.3.9`
+* Version: `3.5.0`
 * Url: `http://www-eu.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
@@ -1095,11 +1120,12 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* MajorVersion: 3.7
-* Version: $:MajorVersion$.2
+* MajorVersion: 3.8
+* Version: $:MajorVersion$.0
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
-* ArchiveName: `cmake-$:Version$-win32-x86.zip`
-* ArchivePath: `cmake-$:Version$-win32-x86`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `cmake-$:Version$-win32-x86`
+* ArchivePath64Bit: `cmake-$:Version$-win64-x64`
 * Path: `bin`
 * Exe: `bin\cmake.exe`
 
@@ -1198,7 +1224,8 @@ Required for IPython and jupyter on Python 2
 * Version: 1.5
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
@@ -1312,7 +1339,7 @@ Free and open source
 
 The top open source framework for building amazing mobile apps.
 
-Ionic is the beautiful, free and open source mobile SDK for developing native and progressive web apps with ease. 
+Ionic is the beautiful, free and open source mobile SDK for developing native and progressive web apps with ease.
 
 * ID: `Bench.Ionic`
 * Typ: `node-package`
@@ -1447,7 +1474,8 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * Version: 1.12.1
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
@@ -1484,7 +1512,8 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * Version: 1.12.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
@@ -1511,7 +1540,8 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Version: 0.19.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
@@ -1538,7 +1568,8 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Version: 0.19.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
@@ -1635,7 +1666,8 @@ Sift - grep on steroids. A fast and powerful alternative to grep.
     + Documentation: <https://sift-tool.org/docs>
 * Version: 0.9.0
 * Url: `https://sift-tool.org/downloads/sift/$:ArchiveName$`
-* ArchiveName: `sift_$:Version$_windows_386.zip`
+* ArchiveName32Bit: `sift_$:Version$_windows_386.zip`
+* ArchiveName64Bit: `sift_$:Version$_windows_amd64.zip`
 
 ### WinMerge
 
@@ -1709,10 +1741,11 @@ file transfer resume, proxy tunneling and more.
 * Docs:
     + Manual: <https://curl.haxx.se/docs/manual.html>
     + Man Page: <https://curl.haxx.se/docs/manpage.html>
-* Version: 7.52.1
+* Version: 7.53.1
 * Url: `https://bintray.com/artifact/download/vszakats/generic/$:ArchiveName$`
-* ArchiveName: `curl-$:Version$-win32-mingw.7z`
-* ArchivePath: `curl-$:Version$-win32-mingw`
+* ArchiveName: `$:ArchivePath$.7z`
+* ArchivePath32Bit: `curl-$:Version$-win32-mingw`
+* ArchivePath64Bit: `curl-$:Version$-win64-mingw`
 * Path: `bin`
 * Exe: `bin\curl.exe`
 
@@ -1791,10 +1824,11 @@ The initial password for _root_ is `bench`.
     + Data Types: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/data-types.html`
     + Functions: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/functions.html`
 * VersionMajor: 5.7
-* Version: $:VersionMajor$.17
+* Version: $:VersionMajor$.18
 * Url: `http://dev.mysql.com/get/Downloads/MySQL-$:VersionMajor$/$:ArchiveName$`
-* ArchiveName: `mysql-$:Version$-win32.zip`
-* ArchivePath: `mysql-$:Version$-win32`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `mysql-$:Version$-win32`
+* ArchivePath64Bit: `mysql-$:Version$-winx64`
 * Path: `bin`
 * Exe: `bin\mysqld.exe`
 * MySqlDataDir: `$HomeDir$\mysql_data`
@@ -1814,7 +1848,8 @@ The initial password for _root_ is `bench`.
 * VersionMajor: 1.6
 * Version: $:VersionMajor$.5
 * Url: `https://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
-* ArchiveName: `mysql-utilities-$:Version$-win32.msi`
+* ArchiveName32Bit: `mysql-utilities-$:Version$-win32.msi`
+* ArchiveName64Bit: `mysql-utilities-$:Version$-winx64.msi`
 * ArchivePath: `SourceDir\MySQL\MySQL Utilities $:VersionMajor$`
 * SetupTestFile: `mysqlserverinfo.exe`
 
@@ -1861,9 +1896,10 @@ The initial password for _postgres_ is `bench`.
 * LicenseUrl: <https://opensource.org/licenses/postgresql>
 * Docs:
     + Documentation: <https://www.postgresql.org/docs/9.5/static/index.html>
-* Version: 9.6.1-1
+* Version: 9.6.2-4
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
-* ArchiveName: `postgresql-$:Version$-windows-binaries.zip`
+* ArchiveName32Bit: `postgresql-$:Version$-windows-binaries.zip`
+* ArchiveName64Bit: `postgresql-$:Version$-windows-x64-binaries.zip`
 * ArchivePath: `pgsql`
 * Dir: `bench\postgres`
 * Path: `bin`
@@ -1894,7 +1930,8 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
 * Version: 2.4.25
 * Url: `http://www.apachelounge.com/download/VC14/binaries/$:ArchiveName$`
-* ArchiveName: `httpd-$:Version$-win32-VC14.zip`
+* ArchiveName32Bit: `httpd-$:Version$-win32-VC14.zip`
+* ArchiveName64Bit: `httpd-$:Version$-win64-VC14.zip`
 * ArchivePath: `Apache24`
 * Path: `bin`
 * Exe: `bin\httpd.exe`
@@ -1920,7 +1957,7 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.6.6
+* Version: 3.6.9
 * Url: `http://www.rabbitmq.com/releases/rabbitmq-server/v$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
@@ -1984,7 +2021,7 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 1.19.1
+* Version: 1.19.2.1
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `pandoc-$:Release$-windows.msi`
@@ -2103,9 +2140,10 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.18.1
+* Version: 0.20.2
 * Url: `https://github.com/spf13/hugo/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName: `hugo_$:Version$_windows-32bit.zip`
+* ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
+* ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
 
 ## Multimedia
 
@@ -2129,7 +2167,8 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
     + Color Reference: <http://www.graphicsmagick.org/color.html>
 * Version: 1.3.25
 * Url: `http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
-* ArchiveName: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
+* ArchiveName32Bit: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
+* ArchiveName64Bit: `GraphicsMagick-$:Version$-Q16-win64-dll.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\gm`
 * Exe: `gm.exe`
@@ -2153,9 +2192,11 @@ No matter if they were designed by some standards committee, the community or a 
     + ffserver Tool: <http://ffmpeg.org/ffserver.html>
     + Wiki: <https://trac.ffmpeg.org/wiki>
 * Version: latest
-* Url: `http://ffmpeg.zeranoe.com/builds/win32/shared/$:ArchiveName$`
-* ArchiveName: `ffmpeg-$:Version$-win32-shared.7z`
-* ArchivePath: `ffmpeg-$:Version$-win32-shared`
+* Url32Bit: `http://ffmpeg.zeranoe.com/builds/win32/shared/$:ArchiveName$`
+* Url64Bit: `http://ffmpeg.zeranoe.com/builds/win64/shared/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.7z`
+* ArchivePath32Bit: `ffmpeg-$:Version$-win32-shared`
+* ArchivePath64Bit: `ffmpeg-$:Version$-win64-shared`
 * Path: `bin`
 * Exe: `bin\ffmpeg.exe`
 
@@ -2166,9 +2207,10 @@ The command line interface for the open source video transcoder.
 * ID: `Bench.HandBrakeCLI`
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.0.3
+* Version: 1.0.7
 * Url: `https://handbrake.fr/rotation.php?file=$:ArchiveName$`
-* ArchiveName: `HandBrakeCLI-$:Version$-win-x86_64.zip`
+* ArchiveName32Bit: `HandBrakeCLI-$:Version$-win-i686.zip`
+* ArchiveName64Bit: `HandBrakeCLI-$:Version$-win-x86_64.zip`
 * Dir: `bench\handbrake`
 * Exe: `HandBrakeCLI.exe`
 
@@ -2179,9 +2221,10 @@ The open source video transcoder.
 * ID: `Bench.HandBrake`
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.0.3
+* Version: 1.0.7
 * Url: `https://handbrake.fr/rotation.php?file=$:ArchiveName$`
-* ArchiveName: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
+* ArchiveName32Bit: `HandBrake-$:Version$-i686-Win_GUI.exe`
+* ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Exe: `HandBrake.exe`
 * Launcher: $:Label$
 
@@ -2198,8 +2241,10 @@ that plays most multimedia files, and various streaming protocols.
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
 * Version: 2.2.4
-* Url: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName$`
-* ArchiveName: `vlc-$:Version$-win32.7z`
+* Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
+* Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
+* ArchiveName32Bit: `vlc-$:Version$-win32.7z`
+* ArchiveName64Bit: `vlc-$:Version$-win64.7z`
 * ArchivePath: `vlc-$:Version$`
 * Launcher: $:Label$
 
@@ -2267,9 +2312,11 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 0.92.0
-* Url: <https://inkscape.org/en/gallery/item/3932/download/>
-* ArchiveName: `Inkscape-$:Version$-win32.7z`
+* Version: 0.92.1
+* Url32Bit: `https://inkscape.org/gallery/item/10686/$:ArchiveName32Bit$`
+* Url64Bit: `https://inkscape.org/gallery/item/10687/$:ArchiveName64Bit$`
+* ArchiveName32Bit: `Inkscape-$:Version$.7z`
+* ArchiveName64Bit: `Inkscape-$:Version$-x64.7z`
 * ArchivePath: `inkscape`
 * Exe: `inkscape.exe`
 * Launcher: $:Label$
@@ -2290,7 +2337,7 @@ GIMP provides you with sophisticated tools to get your job done.
 * Docs:
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
-* Version: 2.8.18
+* Version: 2.8.20
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
@@ -2345,7 +2392,8 @@ Open source digital audio workstation with VST support.
 * License: GPL-2.0
 * Version: 1.1.3
 * Url: `https://github.com/LMMS/lmms/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName: `lmms-$:Version$-win32.exe`
+* ArchiveName32Bit: `lmms-$:Version$-win32.exe`
+* ArchiveName64Bit: `lmms-$:Version$-win64.exe`
 * Register: `false`
 * Launcher: $:Label$
 
@@ -2407,12 +2455,13 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Features: <https://www.blender.org/features/>
     + Tutorials: <https://www.blender.org/support/tutorials/>
     + Manual: <https://www.blender.org/manual/>
-    + Python API: <https://www.blender.org/api/blender_python_api_2_78_1/>
+    + Python API: <https://docs.blender.org/api/blender_python_api_2_78c_release/>
 * Version: 2.78
-* VersionSuffix: a
+* VersionSuffix: c
 * Url: `http://download.blender.org/release/Blender$:Version$/$:ArchiveName$`
-* ArchiveName: `blender-$:Version$$:VersionSuffix$-windows32.zip`
-* ArchivePath: `blender-$:Version$$:VersionSuffix$-windows32`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `blender-$:Version$$:VersionSuffix$-windows32`
+* ArchivePath64Bit: `blender-$:Version$$:VersionSuffix$-windows64`
 * Launcher: $:Label$
 
 ### FreeCAD
@@ -2431,6 +2480,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Power User: <http://www.freecadweb.org/wiki/index.php?title=Power_users_hub>
     + Development: <http://www.freecadweb.org/wiki/index.php?title=Developer_hub>
 * Url: `https://github.com/FreeCAD/FreeCAD/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `FreeCAD.$:Version$.$:Build$.$:Hash$-WIN-x86-installer.exe`
+* ArchiveName32Bit: `FreeCAD.$:Version$.$:Build$.$:Hash$-WIN-x86-installer.exe`
+* ArchiveName64Bit: `FreeCAD-$:Version$.$:Build$.$:Hash$-WIN-x64_Installer-1.exe`
 * Exe: `bin\freecad.exe`
 * Launcher: $:Label$
