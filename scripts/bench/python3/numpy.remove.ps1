@@ -1,5 +1,5 @@
 $pythonDir = App-Dir "Bench.Python3"
-$pip = App-Exe "Bench.Python3.Pip"
+$pip = "$pythonDir\Scripts\pip.exe"
 
 if (!(Test-Path $pythonDir))
 {
@@ -7,8 +7,8 @@ if (!(Test-Path $pythonDir))
 }
 if (!(Test-Path $pip))
 {
-    Write-Error "PIP 3 not found."
+    Write-Error "PIP for 3 not found."
     return
 }
 
-pip uninstall -y numpy
+& $pip uninstall -y numpy
