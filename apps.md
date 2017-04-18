@@ -1186,9 +1186,27 @@ Required for colors in IPython.
 * Website: <https://pypi.python.org/pypi/pyreadline>
 * License: BSD-3-Clause
 
+### Scandir for Python 2
 
+Required for IPython and jupyter on Python 2
 
+* ID: `Bench.Python2.Scandir`
+* Label: Scandir (Python 2)
+* PackageName: `scandir`
+* Dependencies: `Bench.Python2`
 * License: BSD-3-Clause
+* Version: 1.5
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
 
 ### IPython for Python 2
 
@@ -1198,7 +1216,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Label: IPython (Python 2)
 * Typ: `python2-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.Python2.PyReadline`
+* Dependencies: `Bench.Python.PyReadline`, `Bench.Python2.Scandir`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
@@ -1215,7 +1233,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Label: IPython (Python 3)
 * Typ: `python3-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.Python3.PyReadline`
+* Dependencies: `Bench.Python.PyReadline`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
