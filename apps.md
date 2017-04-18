@@ -70,7 +70,7 @@
 * Dependencies:
     + `Bench.Python2`
     + `Bench.Python2.IPython`
-    + `Bench.Python2.PEP8`
+    + `Bench.Python.PEP8`
 
 ### Python 3 Development
 
@@ -80,7 +80,7 @@
 * Dependencies:
     + `Bench.Python3`
     + `Bench.Python3.IPython`
-    + `Bench.Python3.PEP8`
+    + `Bench.Python.PEP8`
 
 ### Ruby Development
 
@@ -1231,27 +1231,13 @@ IPython provides a rich architecture for computing with a powerful interactive s
 * Exe: `Scripts\ipython3.exe`
 * Launcher: IPython 3
 
-### PEP 8 for Python 2
+### PEP 8
 
 pep8 is a tool to check your Python code against some of the style conventions in PEP 8.
 
-* ID: `Bench.Python2.PEP8`
-* Label: PEP8 (Python 2)
-* Typ: `python2-package`
-* Website: <https://pypi.python.org/pypi/pep8>
-* License: MIT
-* LicenseUrl: <https://raw.githubusercontent.com/PyCQA/pycodestyle/master/LICENSE>
-* Docs:
-    + PEP 8 Styleguide: <https://www.python.org/dev/peps/pep-0008/>
-* Exe: `Scripts\pep8.exe`
-
-### PEP 8 for Python 3
-
-pep8 is a tool to check your Python code against some of the style conventions in PEP 8.
-
-* ID: `Bench.Python3.PEP8`
-* Label: PEP8 (Python 3)
-* Typ: `python3-package`
+* ID: `Bench.Python.PEP8`
+* Label: PEP8
+* Typ: `python-package`
 * Website: <https://pypi.python.org/pypi/pep8>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/PyCQA/pycodestyle/master/LICENSE>
