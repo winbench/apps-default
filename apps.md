@@ -2276,6 +2276,28 @@ and in visual interfaces for other technical domains.
 * Path: `bin`
 * Exe: `bin\dot.exe`
 
+### Gephi
+
+Gephi is the leading visualization and exploration software for all kinds of graphs and networks.
+Gephi is open-source and free.
+
+* ID: `Bench.Gephi`
+* Dependencies: `Bench.JRE8`
+* Website: <https://gephi.org>
+* License: GPL-3.0
+* Docs:
+    + Features: <https://gephi.org/features/>
+    + Quick Start: <https://gephi.org/users/quick-start/>
+    + Supported Formats: <https://gephi.org/users/supported-graph-formats/>
+    + Developers: <https://gephi.org/developers/>
+* Version: 0.9.1
+* Url: `https://github.com/gephi/gephi/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `gephi-$:Version$-windows.exe`
+* ArchiveTyp: `inno`
+* Register: `false`
+* Exe: `bin\gephi.exe`
+* Launcher: $:Label$
+
 ### Dia
 
 Dia is a program to draw structured diagrams.
