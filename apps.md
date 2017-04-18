@@ -1341,6 +1341,28 @@ Tornado is a Python web framework and asynchronous networking library, originall
 * Website: <http://www.tornadoweb.org/>
 * License: Apache-2.0
 
+### jupyter for Python 2
+
+Open source, interactive data science and scientific computing
+across over 40 programming languages.
+
+* ID: `Bench.Python2.Jupyter`
+* Typ: `python2-package`
+* Label: jupyter (Python 2)
+* Dependencies:
+    + `Bench.Python2.Scandir`
+    + `Bench.Python2.IPython`
+    + `Bench.Python.Tornado`
+* Website: <https://jupyter.org>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
+* Docs:
+    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
+* Exe: `Scripts\jupyter.exe`
+* SetupTestFile: $:Exe$
+* Launcher: jupyter Notebook
+* LauncherArguments: `notebook`
+
 ### jupyter for Python 3
 
 Open source, interactive data science and scientific computing
@@ -1362,6 +1384,24 @@ across over 40 programming languages.
 * Launcher: jupyter Notebook
 * LauncherArguments: `notebook`
 
+### SciPy for Python 2
+
+SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
+
+* ID: `Bench.Python2.SciPy`
+* Label: SciPy (Python 2)
+* Typ: meta
+* Dependencies:
+    + `Bench.Python2`
+    + `Bench.Python2.NumPy`
+    + `Bench.Python2.SciPyLib`
+    + `Bench.Python2.IPython`
+    + `Bench.Python2.Jupyter`
+    + `Bench.Python.Matplotlib`
+    + `Bench.Python.SymPy`
+    + `Bench.Python.Pandas`
+* Website: <https://www.scipy.org/>
+
 ### SciPy for Python 3
 
 SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
@@ -1379,6 +1419,43 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
     + `Bench.Python.SymPy`
     + `Bench.Python.Pandas`
 * Website: <https://www.scipy.org/>
+
+### NumPy + MKL for Python 2
+
+NumPy is the fundamental package for scientific computing with Python.
+
+It contains among other things:
+
+- a powerful N-dimensional array object
+- sophisticated (broadcasting) functions
+- tools for integrating C/C++ and Fortran code
+- useful linear algebra, Fourier transform, and random number capabilities
+
+Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases.
+
+* ID: `Bench.Python2.NumPy`
+* Label: NumPy (Python 2)
+* PackageName: `numpy`
+* Dependencies: `Bench.Python2`
+* Website: <http://www.numpy.org/>
+* Docs:
+    + Manual: <https://docs.scipy.org/doc/numpy/>
+    + User Guide: <https://docs.scipy.org/doc/numpy/user/>
+    + Reference: <https://docs.scipy.org/doc/numpy/reference/>
+* License: BSD-3-Clause
+* LicenseUrl: <www.numpy.org/license.html>
+* Version: 1.12.1
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
 
 ### NumPy + MKL for Python 3
 
@@ -1410,6 +1487,33 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * ArchiveName: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ArchiveTyp: custom
 * Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### SciPy library for Python 2
+
+The SciPy library is one of the core packages that make up the SciPy stack.
+It provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization.
+
+* ID: `Bench.Python2.SciPyLib`
+* Label: SciPy library (Python 2)
+* PackageName: `scipy`
+* Dependencies: `Bench.Python2.NumPy`
+* Website: <https://www.scipy.org/scipylib/>
+* Docs:
+    + Reference: <https://docs.scipy.org/doc/scipy/reference/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
+* Version: 0.19.0
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 
