@@ -1690,6 +1690,26 @@ that is easy to understand and handle.
 * Register: `false`
 * Launcher: $:Label$
 
+### DiffMerge
+
+DiffMerge is an application to visually compare and merge files on Windows, OS X and Linux.
+
+* ID: `Bench.DiffMerge`
+* Website: <http://www.sourcegear.com/diffmerge/>
+* Docs:
+    + Documentation: `DiffMerge.chm`
+    + Command Line Arguments: <http://www.sourcegear.com/diffmerge/webhelp/chapter_clargs.html>
+* License: Closed Source
+* LicenseUrl: <http://www.sourcegear.com/diffmerge/webhelp/chapter_sourcegearlicenseagreement.html>
+* Version: 4.2.0
+* Release: 4_2_0_697_stable
+* Url: `http://download-us.sourcegear.com/DiffMerge/$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `DiffMerge_$:Release$_x86`
+* ArchivePath64Bit: `DiffMerge_$:Release$_x64`
+* Exe: `sgdm.exe`
+* Launcher: $:Label$
+
 ### Ant Renamer
 
 Ant Renamer is a free program that makes easier the renaming of lots of files and folders
