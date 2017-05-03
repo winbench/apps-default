@@ -2149,9 +2149,9 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 0.92.0
-* Url: <https://inkscape.org/en/gallery/item/3932/download/>
-* ArchiveName: `Inkscape-$:Version$-win32.7z`
+* Version: 0.92.1
+* Url: <https://inkscape.org/en/gallery/item/10686/download/>
+* ArchiveName: `Inkscape-$:Version$.7z`
 * ArchivePath: `inkscape`
 * Exe: `inkscape.exe`
 * Launcher: $:Label$
