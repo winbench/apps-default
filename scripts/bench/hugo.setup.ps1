@@ -1,7 +1,7 @@
 $targetDir = App-Dir "Bench.Hugo"
 $hugoVersion = App-Version "Bench.Hugo"
 
-if (Get-ConfigValue "Use64Bit")
+if (Get-ConfigBooleanValue "Use64Bit")
 {
     $originalExe = "hugo_${hugoVersion}_windows_amd64.exe"
 }
@@ -12,5 +12,6 @@ else
 
 if (Test-Path "$targetDir\$originalExe")
 {
+    Write-Host "Found $originalExe, renaming it to hugo.exe"
     move "$targetDir\$originalExe" "$targetDir\hugo.exe"
 }
