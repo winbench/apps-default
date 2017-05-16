@@ -110,6 +110,7 @@
 * Dependencies:
     + `Bench.Python3.SciPy`
     + `Bench.Python3.SciKitLearn`
+    + `Bench.TensorFlow`
     + `Bench.SublimeText3`
     + `Bench.R`
     + `Bench.RStudio`
@@ -1655,6 +1656,28 @@ Machine Learning in Python
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scikit-learn/scikit-learn/master/COPYING>
 * SetupTestFile: `$:Dir$\lib\site-packages\sklearn\__init__.py`
+
+### TensorFlow
+
+TensorFlow™ is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
+
+TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well. 
+
+* ID: `Bench.TensorFlow`
+* Label: TensorFlow
+* Typ: `python3-package`
+* Dependencies:
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.SciPyLib`
+    + `Bench.Python.Pandas`
+* Website: <https://www.tensorflow.org>
+* Docs:
+    + Documentation: <https://www.tensorflow.org/community/documentation>
+    + API: <https://www.tensorflow.org/api_docs/>
+    + API for Python: <https://www.tensorflow.org/api_docs/python/>
+* License: Apache-2.0
+* Version: latest
+* Only64Bit: `true`
 
 ## Filesystem
 
