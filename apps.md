@@ -1045,6 +1045,20 @@ to help you stay productive.
 * Version: `>=1.8.0 <2.0.0`
 * Exe: `yo.cmd`
 
+### Plop
+
+Micro-generator framework that makes it easy for an entire team to create files with a level of uniformity.
+
+* ID: `Bench.Plop`
+* Typ: `node-package`
+* Website: <https://plopjs.com/>
+* Docs:
+    + Documentation: <https://plopjs.com/documentation/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/amwmedia/plop/master/LICENSE>
+* Version: latest
+* Exe: `plop.cmd`
+
 ### Angular CLI
 
 HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
