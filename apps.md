@@ -608,6 +608,10 @@ Erlang is a programming language used to build massively scalable soft real-time
 
 ### CoffeeScript
 
+CoffeeScript is a little language that compiles into JavaScript.
+Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart.
+CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.
+
 * ID: `Bench.CoffeeScript`
 * Typ: `node-package`
 * Website: <http://coffeescript.org/>
