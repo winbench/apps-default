@@ -1371,17 +1371,6 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 
 ## Math and Science
 
-### Tornado
-
-Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-
-* ID: `Bench.Python.Tornado`
-* Label: Tornado
-* Typ: `python-package`
-* Version: 4.4.3
-* Website: <http://www.tornadoweb.org/>
-* License: Apache-2.0
-
 ### jupyter for Python 2
 
 Open source, interactive data science and scientific computing
@@ -1973,6 +1962,17 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * HttpdDocumentRoot: `$HomeDir$\www`
 * HttpdListen: `127.0.0.1:80`
 * UserConfigFile: `$HomeDir$\httpd-bench.conf`
+
+### Tornado
+
+Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
+
+* ID: `Bench.Python.Tornado`
+* Label: Tornado
+* Typ: `python-package`
+* Version: 4.4.3
+* Website: <http://www.tornadoweb.org/>
+* License: Apache-2.0
 
 ### RabbitMQ
 
