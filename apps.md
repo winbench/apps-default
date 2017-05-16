@@ -625,6 +625,24 @@ CoffeeScript is an attempt to expose the good parts of JavaScript in a simple wa
 * Version: `>=1.10.0 <2.0.0`
 * Exe: `coffee.cmd`
 
+### TypeScript
+
+TypeScript is a language for application-scale JavaScript.
+TypeScript adds optional types, classes, and modules to JavaScript.
+TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS.
+TypeScript compiles to readable, standards-based JavaScript. 
+
+* ID: `Bench.TypeScript`
+* Typ: `node-package`
+* Website: <http://www.typescriptlang.org/>
+* License: Apache-2.0
+* Docs:
+    + Documentation: <http://www.typescriptlang.org/docs/home.html>
+    + TypeScript in 5 minutes: <http://www.typescriptlang.org/docs/handbook/ts-in-5.html>
+    + Quick Start Guides: <http://www.typescriptlang.org/samples/index.html>
+* Version: latest
+* Exe: `tsc.cmd`
+
 ### R
 
 R is a free software for statistical computing and graphics.
