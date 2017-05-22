@@ -933,6 +933,24 @@ An IDE for C/C++ developers with Mylyn integration.
 * Register: `false`
 * Launcher: $:Label$
 
+### JetBrains IntelliJ IDEA Community
+
+Capable and Ergonomic IDE for JVM.
+
+* ID: `Bench.IdeaIC`
+* Label: IntelliJ IDEA Community
+* Website: <https://www.jetbrains.com/idea/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/idea/documentation/>
+* License: Apache-2.0
+* Version: 2017.1.3
+* Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
+* ArchiveName: `ideaIC-$:Version$.win.zip`
+* Dir: `bench\idea_community`
+* Exe32Bit: `bin\idea.exe`
+* Exe64Bit: `bin\idea64.exe`
+* Launcher: $:Label$
+
 ### R Studio
 
 RStudio is an IDE for R.
