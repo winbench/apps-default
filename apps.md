@@ -951,6 +951,24 @@ Capable and Ergonomic IDE for JVM.
 * Exe64Bit: `bin\idea64.exe`
 * Launcher: $:Label$
 
+### JetBrains PyCharm Community
+
+Python IDE for Professional Developers
+
+* ID: `Bench.PyCharmCommunity`
+* Label: PyCharm Community
+* Website: <https://www.jetbrains.com/pycharm/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
+* License: Apache-2.0
+* Version: 2017.1.2
+* Url: `https://download.jetbrains.com/python/$:ArchiveName$`
+* ArchiveName: `pycharm-community-$:Version$.zip`
+* Dir: `bench\pycharm_community`
+* Exe32Bit: `bin\pycharm.exe`
+* Exe64Bit: `bin\pycharm64.exe`
+* Launcher: $:Label$
+
 ### R Studio
 
 RStudio is an IDE for R.
