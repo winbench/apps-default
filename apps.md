@@ -309,9 +309,9 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>
-* Version: 121
-* Release: b13
-* LinkUUID: e9e7ea248e2c4826b92b3f075a80e441
+* Version: 131
+* Release: b11
+* LinkUUID: d54c1d3a095b4ff2b6607d096fa80163
 * Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName32Bit: `jre-8u$:Version$-windows-i586.tar.gz`
