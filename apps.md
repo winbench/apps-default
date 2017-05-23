@@ -955,7 +955,7 @@ Capable and Ergonomic IDE for JVM.
 
 Python IDE for Professional Developers
 
-* ID: `Bench.PyCharmCommunity`
+* ID: `Bench.PyCharmCE`
 * Label: PyCharm Community
 * Website: <https://www.jetbrains.com/pycharm/>
 * Docs:
