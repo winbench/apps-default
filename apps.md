@@ -1156,6 +1156,25 @@ reporting and documentation from a central piece of information.
 * Path: `bin`
 * Exe: `bin\mvn.cmd`
 
+### Gradle
+
+From mobile apps to microservices, from small startups to big enterprises, Gradle helps teams build, automate and deliver better software, faster. 
+
+**WARNING:**
+Gradle is writing to the `.gradle` folder in the Windows user profile directory and the setup creates a `gradle.properties` file for the proxy configuration if not already present.
+
+* ID: `Bench.Gradle`
+* Website: <https://gradle.org/>
+* License: Apache-2.0
+* Docs:
+    + Documentation: <https://gradle.org/docs>
+* Version: 3.5
+* Url: `https://services.gradle.org/distributions/$:ArchiveName$`
+* ArchiveName: `gradle-$:Version$-bin.zip`
+* ArchivePath: `gradle-$:Version$`
+* Path: `bin`
+* Exe: `bin\gradle.bat`
+
 ### NUnit 3 Runner
 
 NUnit is a unit-testing framework for all .Net languages.
