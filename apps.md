@@ -1498,6 +1498,36 @@ The setup script includes the installation of the Intel _Hardware Accelerated eX
     + `platforms;android-$:PlatformVersion$`
     + `system-images;android-$:PlatformVersion$;google_apis;x86`
 
+### Android Studio
+
+Android Studio provides the fastest tools for building apps on every type of Android device.
+
+World-class code editing, debugging, performance tooling, a flexible build system, and an instant build/deploy system all allow you to focus on building unique and high quality apps.
+
+**HINT:** At the first run of Android Studio, you need to point it to the
+Android SDK root directory in `%BENCH_HOME%\lib\apps\bench\android-sdk`.
+Otherwise it will download and set up an additional Android SDK in the Windows user profile.
+
+* ID: `Bench.AndroidStudio`
+* Label: Android Studio
+* Dependencies: `Bench.AndroidSDK`
+* Website: <https://developer.android.com/studio/>
+* License: Proprietary
+* LicenseUrl: <https://developer.android.com/studio/terms.html>
+* Version: 2.3.2.0
+* Build: 162.3934792
+* Url: `https://dl.google.com/dl/android/studio/ide-zips/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `android-studio-ide-$:Build$-windows32.zip`
+* ArchiveName64Bit: `android-studio-ide-$:Build$-windows.zip`
+* ArchivePath: `android-studio`
+* Dir: `bench\android-studio`
+* Exe32Bit: `bin\studio.exe`
+* Exe64Bit: `bin\studio64.exe`
+* Environment:
+    + `STUDIO_PROPERTIES`: `$HomeDir$\android-studio.properties`
+    + `STUDIO_VM_OPTIONS`: `$HomeDir$\android-studio.vmoptions`
+* Launcher: $:Label$
+
 ## Math and Science
 
 ### jupyter for Python 2
