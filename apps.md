@@ -953,7 +953,7 @@ Capable and Ergonomic IDE for JVM.
 
 ### JetBrains PyCharm Community
 
-Python IDE for Professional Developers
+Python IDE for Professional Developers.
 
 * ID: `Bench.PyCharmCE`
 * Label: PyCharm Community
