@@ -1447,6 +1447,57 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/driftyco/ionic/master/LICENSE>
 
+### Android SDK
+
+Android SDK includes the complete set of development and debugging tools for Android.
+
+**WARNING:**
+The Android SDK will write into the home directory of your Windows user profile.
+It will create the directory `.android` and will store the AVDs there,
+which can reach a considerable size.
+
+**WARNING:**
+The setup script for Android SDK can _not_ be run unattended, because it requires user interaction to accept the license agreements.
+
+**WARNING:**
+The setup script includes the installation of the Intel _Hardware Accelerated eXecution Manager_, which requires admin privileges for installation and is not contained by the Bench isolation.
+
+* ID: `Bench.AndroidSDK`
+* Label: Android SDK
+* Dependencies: `Bench.JRE8`
+* Website: <https://developer.android.com/studio/command-line/>
+* License: Proprietary
+* LicenseUrl: <https://developer.android.com/studio/terms.html>
+* Docs:
+    + SDK Manager: <https://developer.android.com/studio/command-line/sdkmanager.html>
+    + AVD Manager: <https://developer.android.com/studio/command-line/avdmanager.html>
+    + JOBB: <https://developer.android.com/studio/command-line/jobb.html>
+    + Lint: <https://developer.android.com/studio/write/lint.html>
+    + Monkeyrunner: <https://developer.android.com/studio/test/monkeyrunner/index.html>
+    + Emulator: <https://developer.android.com/studio/run/emulator-commandline.html>
+    + API Guides: <https://developer.android.com/guide/index.html>
+    + Package Index: <https://developer.android.com/reference/packages.html>
+* Version: 3859397
+* BuildToolsVersion: 25.0.3
+* PlatformVersion: 25
+* Url: `https://dl.google.com/android/repository/$:ArchiveName$`
+* ArchiveName: `sdk-tools-windows-$:Version$.zip`
+* Dir: `bench\android-sdk`
+* Path: `tools\bin`, `tools`
+* Exe: `tools\bin\sdkmanager.bat`
+* Environment:
+    + `ANDROID_SDK_ROOT`: `$:Dir$`
+* Launcher: Android Emulator
+* LauncherExecutable: `tools\emulator.exe`
+* LauncherArguments: `-avd`, `bench_x86`
+* InitialPackages:
+    + `extras;intel;Hardware_Accelerated_Execution_Manager`
+    + `extras;google;usb_driver`
+    + `emulator`
+    + `build-tools;$:BuildToolsVersion$`
+    + `platforms;android-$:PlatformVersion$`
+    + `system-images;android-$:PlatformVersion$;google_apis;x86`
+
 ## Math and Science
 
 ### jupyter for Python 2
