@@ -1887,7 +1887,7 @@ DiffMerge is an application to visually compare and merge files on Windows, OS X
 * LicenseUrl: <http://www.sourcegear.com/diffmerge/webhelp/chapter_sourcegearlicenseagreement.html>
 * Version: 4.2.0
 * Release: 4_2_0_697_stable
-* Url: `http://download-us.sourcegear.com/DiffMerge/$:Version$/$:ArchiveName$`
+* Url: `http://download.sourcegear.com/DiffMerge/$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `DiffMerge_$:Release$_x86`
 * ArchivePath64Bit: `DiffMerge_$:Release$_x64`
