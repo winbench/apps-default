@@ -140,8 +140,8 @@ It is also a general-purpose cryptography library.
     + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
     + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
     + Windows Build: <http://slproweb.com/products/Win32OpenSSL.html>
-* Version: 1.1.0e
-* Version2: 1_1_0e
+* Version: 1.1.0f
+* Version2: 1_1_0f
 * Url: `http://slproweb.com/download/$:ArchiveName$`
 * ArchiveName32Bit: `Win32OpenSSL-$:Version2$.exe`
 * ArchiveName64Bit: `Win64OpenSSL-$:Version2$.exe`
@@ -264,7 +264,7 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.1.3
+* Version: 7.1.5
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC14-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC14-x64.zip`
@@ -364,7 +364,7 @@ _Warning: This program is leaking into the Windows user home folder under `C:\Us
 * Docs:
     + Getting Started: <https://github.com/hyPiRion/inlein/wiki/Getting-Started>
 * Dependencies: `Bench.Leiningen`
-* Version: 0.1.0
+* Version: 0.2.0
 * Url: `https://github.com/hyPiRion/inlein/releases/download/$:Version$/inlein`
 * ResourceName: `inlein.bat`
 * Exe: `$:ResourceName$`
@@ -391,7 +391,7 @@ The build tools and compilers for platform independent .NET Core applications.
 
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
-* Version: 1.0.1
+* Version: 1.0.4
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -400,8 +400,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
-* Url32Bit: <https://go.microsoft.com/fwlink/?linkid=843458>
-* Url64Bit: <https://go.microsoft.com/fwlink/?linkid=843454>
+* Url: `https://download.microsoft.com/download/E/7/8/E782433E-7737-4E6C-BFBF-290A0A81C3D7/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-dev-win-x86.$:Version$.zip`
 * ArchiveName64Bit: `dotnet-dev-win-x64.$:Version$.zip`
 * Exe: `dotnet.exe`
@@ -491,7 +490,7 @@ install the LLVM-Plugin for Eclipse CDT.
 
 * ID: `Bench.Clang`
 * Label: LLVM Clang
-* Version: 4.0.0
+* Version: 4.0.1
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -511,7 +510,7 @@ Go is an open source programming language that makes it easy
 to build simple, reliable, and efficient software.
 
 * ID: `Bench.Go`
-* Version: 1.8.1
+* Version: 1.8.3
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -597,7 +596,7 @@ R is a free software for statistical computing and graphics.
 
 * ID: `Bench.R`
 * Website: <https://www.r-project.org>
-* Version: 3.3.3
+* Version: 3.4.0
 * Url: `http://cran.uni-muenster.de/bin/windows/base/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
@@ -626,7 +625,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.16.0
+* Version: 1.18.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -668,6 +667,7 @@ A cross platform code editor from Microsoft.
 * Version: latest
 * Url: <http://go.microsoft.com/fwlink/?LinkID=623231>
 * ArchiveName: `VSCode-win32.zip`
+* ArchivePath: `VSCode-win32-ia32`
 * Dir: `bench\code`
 * Exe: `code.exe`
 * Launcher: $:Label$
@@ -707,10 +707,10 @@ with extensions to support text editing.
     + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
     + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
     + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
-* Version: 25.1-2
+* Version: 25.2
 * Url: `http://ftp.gnu.org/gnu/emacs/windows/$:ArchiveName$`
-* ArchiveName32Bit: `emacs-$:Version$-i686-w64-mingw32.zip`
-* ArchiveName64Bit: `emacs-$:Version$-x86_64-w64-mingw32.zip`
+* ArchiveName32Bit: `emacs-$:Version$-i686.zip`
+* ArchiveName64Bit: `emacs-$:Version$-x86_64.zip`
 * Dir: `bench\gnu`
 * Path: `bin`
 * Exe: `bin\emacs.exe`
@@ -820,9 +820,9 @@ XML Editor, Mylyn, Maven and Gradle integration...
 
 * ID: `Bench.EclipseJava`
 * Label: Eclipse for Java
-* CodeName: neon
-* Release: 3
-* Version: 4.6.$:Release$
+* CodeName: oxygen
+* Release: R
+* Version: 4.7.$:Release$
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
@@ -891,7 +891,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2017.1.3
+* Version: 2017.1.4
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -909,7 +909,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2017.1.2
+* Version: 2017.1.4
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
@@ -929,7 +929,7 @@ debugging and workspace management.
 * Dependencies: `Bench.R`
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
-* Version: 1.0.136
+* Version: 1.0.143
 * Url: `https://download1.rstudio.org/$:ArchiveName$`
 * ArchiveName: `RStudio-$:Version$.zip`
 * Dir: `bench\r-studio`
@@ -1049,7 +1049,7 @@ to help you stay productive.
     + Tutorial: <http://yeoman.io/codelab/index.html>
     + Generators: <http://yeoman.io/generators/>
     + Creating a Generator: <http://yeoman.io/authoring/>
-* Version: `>=1.8.0 <2.0.0`
+* Version: `>=2.0.0 <3.0.0`
 * Exe: `yo.cmd`
 
 ### Plop
@@ -1161,7 +1161,7 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
 * MajorVersion: 3.8
-* Version: $:MajorVersion$.0
+* Version: $:MajorVersion$.2
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
@@ -1581,7 +1581,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <www.numpy.org/license.html>
-* Version: 1.12.1
+* Version: 1.13.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -1619,7 +1619,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <www.numpy.org/license.html>
-* Version: 1.12.1
+* Version: 1.13.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -1647,7 +1647,7 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 0.19.0
+* Version: 0.19.1
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -1675,7 +1675,7 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 0.19.0
+* Version: 0.19.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -1767,7 +1767,7 @@ Machine Learning in Python
 
 TensorFlow™ is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
 
-TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well. 
+TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well.
 
 * ID: `Bench.TensorFlow`
 * Label: TensorFlow
@@ -1893,7 +1893,7 @@ file transfer resume, proxy tunneling and more.
 * Docs:
     + Manual: <https://curl.haxx.se/docs/manual.html>
     + Man Page: <https://curl.haxx.se/docs/manpage.html>
-* Version: 7.53.1
+* Version: 7.54.1
 * Url: `https://bintray.com/artifact/download/vszakats/generic/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.7z`
 * ArchivePath32Bit: `curl-$:Version$-win32-mingw`
@@ -1912,7 +1912,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.25.1
+* Version: 3.26.2
 * Url: `http://sourceforge.net/projects/filezilla/files/FileZilla_Client/$:Version$/$:ArchiveName$`
 * ArchiveName: `FileZilla_$:Version$_win32.zip`
 * ArchivePath: `FileZilla-$:Version$`
@@ -1934,8 +1934,8 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.9.4
-* Url: `https://winscp.net/download/$:ArchiveName$`
+* Version: 5.9.6
+* Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
 
@@ -2021,9 +2021,10 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 * Docs:
     + Documentation: <http://dev.mysql.com/doc/workbench/en/>
 * Version: 6.3.8
-* Url: `http://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
-* ArchiveName: `mysql-workbench-community-$:Version$-win32-noinstall.zip`
-* ArchivePath: `MySQL Workbench $:Version$ CE (win32)`
+* Url: `https://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
+* ArchiveName32Bit: `mysql-workbench-community-$:Version$-win32-noinstall.zip`
+* ArchiveName64Bit: `mysql-workbench-community-$:Version$-winx64-noinstall.zip`
+* ArchivePath: `MySQL Workbench $:Version$ CE (winx64)`
 * Exe: `MySQLWorkbench.exe`
 * Register: `false`
 * Launcher: $:Label$
@@ -2048,7 +2049,7 @@ The initial password for _postgres_ is `bench`.
 * LicenseUrl: <https://opensource.org/licenses/postgresql>
 * Docs:
     + Documentation: <https://www.postgresql.org/docs/9.5/static/index.html>
-* Version: 9.6.2-4
+* Version: 9.6.3-2
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-windows-binaries.zip`
 * ArchiveName64Bit: `postgresql-$:Version$-windows-x64-binaries.zip`
@@ -2080,7 +2081,7 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
-* Version: 2.4.25
+* Version: 2.4.26
 * Url: `http://www.apachelounge.com/download/VC14/binaries/$:ArchiveName$`
 * ArchiveName32Bit: `httpd-$:Version$-win32-VC14.zip`
 * ArchiveName64Bit: `httpd-$:Version$-win64-VC14.zip`
@@ -2099,7 +2100,7 @@ Tornado is a Python web framework and asynchronous networking library, originall
 * ID: `Bench.Python.Tornado`
 * Label: Tornado
 * Typ: `python-package`
-* Version: 4.4.3
+* Version: 4.5.1
 * Website: <http://www.tornadoweb.org/>
 * License: Apache-2.0
 
@@ -2120,7 +2121,7 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.6.9
+* Version: 3.6.10
 * Url: `http://www.rabbitmq.com/releases/rabbitmq-server/v$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
@@ -2145,8 +2146,8 @@ and related programs for Windows (all current variants).
 * Docs:
     + Manual: <http://docs.miktex.org/2.9/manual/>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: 2.9.6326
-* Url: `http://ctan.space-pro.be/tex-archive/systems/win32/miktex/setup/$:ArchiveName$`
+* Version: 2.9.6361
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `miktex-portable-$:Version$.exe`
 * ArchivePath: `texmfs`
 * Path: `install\miktex\bin`
@@ -2303,8 +2304,8 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.20.2
-* Url: `https://github.com/spf13/hugo/releases/download/v$:Version$/$:ArchiveName$`
+* Version: 0.24.1
+* Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
 
@@ -2403,7 +2404,7 @@ that plays most multimedia files, and various streaming protocols.
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
-* Version: 2.2.4
+* Version: 2.2.6
 * Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
 * Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
@@ -2498,8 +2499,7 @@ It's free and open source.
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
 * Version: 0.92.1
-* Url32Bit: `https://inkscape.org/gallery/item/10686/$:ArchiveName32Bit$`
-* Url64Bit: `https://inkscape.org/gallery/item/10687/$:ArchiveName64Bit$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `Inkscape-$:Version$.7z`
 * ArchiveName64Bit: `Inkscape-$:Version$-x64.7z`
 * ArchivePath: `inkscape`
@@ -2522,7 +2522,7 @@ GIMP provides you with sophisticated tools to get your job done.
 * Docs:
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
-* Version: 2.8.20
+* Version: 2.8.22
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
@@ -2564,7 +2564,7 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 10.41
+* Version: 10.57
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 
