@@ -271,31 +271,6 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * Exe: `php.exe`
 * Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
 
-### Java Runtime Environment 7
-
-According to Oracle, Java is the world's #1 programming language.
-
-The runtime environment is required for a compiled Java program to get executed.
-
-* ID: `Bench.JRE7`
-* Label: Java Runtime Environment 7
-* Website: <https://www.oracle.com/java/>
-* License: OBCL
-* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
-* Docs:
-    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html>
-* Version: 7u80
-* Release: b15
-* Url: `http://download.oracle.com/otn-pub/java/jdk/$:Version$-$:Release$/$:ArchiveName$`
-* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName32Bit: `jre-$:Version$-windows-i586.tar.gz`
-* ArchiveName64Bit: `jre-$:Version$-windows-x64.tar.gz`
-* ArchivePath: `jre1.7.0_80`
-* Path: `bin`
-* Exe: `bin\java.exe`
-* Environment:
-    + `JAVA_CMD`: `$:Exe$`
-
 ### Java Runtime Environment 8
 
 According to Oracle, Java is the world's #1 programming language.
@@ -321,33 +296,6 @@ The runtime environment is required for a compiled Java program to get executed.
 * Exe: `bin\java.exe`
 * Environment:
     + `JAVA_CMD`: `$:Exe$`
-
-### Java Development Kit 7
-
-According to Oracle, Java is the world's #1 programming language.
-
-The development kit is required for Java source code to get compiled.
-
-* ID: `Bench.JDK7`
-* Label: Java Development Kit 7
-* Website: <https://www.oracle.com/java/>
-* License: OBCL
-* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
-* Docs:
-    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html>
-    + Documentation: <http://docs.oracle.com/javase/7/docs/>
-    + Java SE 7 API: <http://docs.oracle.com/javase/7/docs/api/index.html>
-* Version: $Bench.JRE7:Version$
-* Release: $Bench.JRE7:Release$
-* Url: `http://download.oracle.com/otn-pub/java/jdk/$:Version$-$:Release$/$:ArchiveName$`
-* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName32Bit: `jdk-$:Version$-windows-i586.exe`
-* ArchiveName64Bit: `jdk-$:Version$-windows-x64.exe`
-* Path: `bin`
-* Exe: `bin\javac.exe`
-* Environment:
-    + `JAVA_HOME`: `$:Dir$`
-    + `JAVA_CMD`: `$:Dir$\jre\bin\java.exe`
 
 ### Java Development Kit 8
 
