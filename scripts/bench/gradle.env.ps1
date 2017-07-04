@@ -6,6 +6,9 @@ function GetProxyInfo()
 {
     $result = @{}
     $result.UseProxy = Get-ConfigBooleanValue "UseProxy"
+
+    if (!$result.UseProxy) { return $result }
+
     $result.Bypass = Get-ConfigListValue "ProxyBypass"
 
     $p = [regex]"^https?:\/\/(?<host>.+?):(?<port>\d+)\/?$"
