@@ -609,6 +609,45 @@ R is a free software for statistical computing and graphics.
 
 ## Editors
 
+### Notepad2
+
+Notepad2 is a fast and light-weight Notepad-like text editor with syntax highlighting.
+This program can be run out of the box without installation, and does not touch your system's registry.
+
+* ID: `Bench.Notepad2`
+* Website: <http://www.flos-freeware.ch/notepad2.html>
+* License: BSD-3-Clause
+* LicenseUrl: `License.txt`
+* Docs:
+    + Readme: <http://www.flos-freeware.ch/doc/Notepad2.txt>
+    + FAQ: <http://www.flos-freeware.ch/doc/notepad2-FAQs.html>
+    + Encoding Tutorial: <http://www.flos-freeware.ch/doc/notepad2-Encoding.html>
+* Version: 4.2.25
+* Url: `http://www.flos-freeware.ch/zip/$:ArchiveName$`
+* ArchiveName32Bit: `notepad2_$:Version$_x86.zip`
+* ArchiveName64Bit: `notepad2_$:Version$_x64.zip`
+* Register: `false`
+* Launcher: $:Label$
+
+### Markdown Edit
+
+Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on producing text documents that can be transformed into Web pages and documents. It places an emphasis on content and keyboard shortcuts. Don't let this dissuade you. Markdown Edit is a power-house of an editor. It does its job quietly and without fanfare.
+
+* ID: `Bench.MarkdownEdit`
+* Label: Markdown Edit
+* Website: <http://markdownedit.com/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/mike-ward/Markdown-Edit/master/LICENSE.txt>
+* Docs:
+    + Documentation: <https://github.com/mike-ward/Markdown-Edit/wiki/01.-Home>
+    + Keyboard Shortcuts: <https://github.com/mike-ward/Markdown-Edit/wiki/05.-Keyboard-Shortcuts>
+* Version: 1.33
+* Url: `https://github.com/mike-ward/Markdown-Edit/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `MarkdownEdit.zip`
+* Exe: `mde.exe`
+* Register: `false`
+* Launcher: $:Label$
+
 ### Atom
 
 A hackable text editor for the 21st Century.
