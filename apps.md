@@ -629,6 +629,28 @@ This program can be run out of the box without installation, and does not touch 
 * Register: `false`
 * Launcher: $:Label$
 
+### Notepad++
+
+Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
+
+* ID: `Bench.NotepadPlusPlus`
+* Website: <https://notepad-plus-plus.org>
+* License: GPL-3.0
+* LicenseUrl: <https://www.gnu.org/copyleft/gpl.html>
+* Docs:
+    + Features: <https://notepad-plus-plus.org/features/>
+    + Community: <https://notepad-plus-plus.org/community/>
+    + Wiki: <http://docs.notepad-plus-plus.org>
+* Label: Notepad++
+* MajorVersion: 7
+* Version: `$:MajorVersion$.4.2`
+* Url: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `npp.$:Version$.bin.7z`
+* ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
+* Exe: `notepad++.exe`
+* Launcher: $:Label$
+* ConfigurationDir: `$AppDataDir$\Notepad++`
+
 ### Markdown Edit
 
 Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on producing text documents that can be transformed into Web pages and documents. It places an emphasis on content and keyboard shortcuts. Don't let this dissuade you. Markdown Edit is a power-house of an editor. It does its job quietly and without fanfare.
