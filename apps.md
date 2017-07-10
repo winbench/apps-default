@@ -577,7 +577,7 @@ CoffeeScript is an attempt to expose the good parts of JavaScript in a simple wa
 TypeScript is a language for application-scale JavaScript.
 TypeScript adds optional types, classes, and modules to JavaScript.
 TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS.
-TypeScript compiles to readable, standards-based JavaScript. 
+TypeScript compiles to readable, standards-based JavaScript.
 
 * ID: `Bench.TypeScript`
 * Typ: `node-package`
@@ -964,7 +964,7 @@ The streaming build system.
 * LicenseUrl: <https://raw.githubusercontent.com/gulpjs/gulp/master/LICENSE>
 * Docs:
     + npm Package: <https://www.npmjs.com/package/gulp>
-    + Getting Started: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+    + Getting Started: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md>
     + API: <https://github.com/gulpjs/gulp/blob/master/docs/API.md>
     + Command-Line: <https://github.com/gulpjs/gulp/blob/master/docs/CLI.md>
     + Unofficial Documentation: <http://gulpjs.org/>
