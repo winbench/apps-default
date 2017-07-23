@@ -385,6 +385,20 @@ Build tooling for Clojure.
 * ResourceName: `boot.exe`
 * Exe: `boot.exe`
 
+### ScriptCS
+
+Write .Net apps with a text editor, NuGet, and the power of Roslyn!
+
+* ID: `Bench.ScriptCS`
+* Typ: `nuget-package`
+* Website: <http://scriptcs.net/>
+* License: Apache-2.0
+* Version: latest
+* Docs:
+    + Wiki: <https://github.com/scriptcs/scriptcs/wiki>
+* Exe: `$:Path$\scriptcs.exe`
+* Launcher: $:Label$
+
 ### .NET Core SDK
 
 The build tools and compilers for platform independent .NET Core applications.
