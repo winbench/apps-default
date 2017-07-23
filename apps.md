@@ -2707,6 +2707,26 @@ Open source digital audio workstation with VST support.
 * Register: `false`
 * Launcher: $:Label$
 
+### SonicPI
+
+The Live Coding Music Synth for Everyone.
+
+Simple enough for computing and music lessons.  
+Powerful enough for professional musicians.
+
+* ID: `Bench.SonicPI`
+* Website: <http://sonic-pi.net/>
+* License: MIT
+* LicenseUrl: <https://github.com/samaaron/sonic-pi/blob/master/LICENSE.md>
+* Version: 2.11.1
+* Url: `http://sonic-pi.net/files/releases/v$:Version$/$:ArchiveName$`
+* ArchiveName: `Sonic-Pi-for-Win-Portable-v$:Version$.paf.exe`
+* ArchivePath: `App\Sonic Pi`
+* Exe: `app\gui\qt\release\sonic-pi.exe`
+* Register: `false`
+* RegistryKeys: `Software\sonic-pi.net`
+* Launcher: $:Label$
+
 ### CamStudio Screen Recorder
 
 CamStudio is a great tool to create quick demos and screencasts on your computer
