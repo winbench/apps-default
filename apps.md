@@ -2487,6 +2487,27 @@ No matter if they were designed by some standards committee, the community or a 
 * Path: `bin`
 * Exe: `bin\ffmpeg.exe`
 
+### SoX
+
+SoX is a cross-platform command line utility that can convert
+various formats of computer audio files in to other formats.
+It can also apply various effects to these sound files,
+and, as an added bonus, SoX can play and record audio files on most platforms.
+
+* ID: `Bench.SoX`
+* Website: <http://sox.sourceforge.net/>
+* License: GPL-2.0
+* Docs:
+    + Documentation: <http://sox.sourceforge.net/Docs/Documentation>
+    + CLI sox: <http://sox.sourceforge.net/sox.html>
+    + CLI soxi: <http://sox.sourceforge.net/soxi.html>
+* Version: 14.4.2
+* Url: `https://sourceforge.net/projects/sox/files/sox/$:Version$/$:ArchiveName$`
+* ArchiveName: `sox-$:Version$-win32.zip`
+* ArchivePath: `sox-$:Version$`
+* Path: `cmd`
+* Exe: `$:Path$\sox.cmd`
+
 ### HandBrake CLI
 
 The command line interface for the open source video transcoder.
