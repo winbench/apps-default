@@ -2515,6 +2515,20 @@ The open source video transcoder.
 * Exe: `HandBrake.exe`
 * Launcher: $:Label$
 
+### YouTubeDL
+
+youtube-dl is a command-line program to download videos from YouTube.com and other sites.
+
+* ID: `Bench.YouTubeDL`
+* Website: <https://rg3.github.io/youtube-dl/>
+* License: Unlicense
+* LicenseUrl: <https://raw.githubusercontent.com/rg3/youtube-dl/master/LICENSE>
+* Docs:
+    + Supported Sites: <https://rg3.github.io/youtube-dl/supportedsites.html>
+    + CLI: <https://github.com/rg3/youtube-dl/blob/master/README.md#description>
+* Typ: `python-package`
+* PackageName: `youtube_dl`
+
 ### VLC
 
 VLC is a free and open source cross-platform multimedia player and framework
