@@ -2048,6 +2048,37 @@ A free portable derivative of Chromium, optimized for privacy.
 
 ## Services
 
+### Tftpd32
+
+_This app switches automatically to Tftpd64 if the environment supports 64 Bit programs._
+
+Tftpd32 is a free, opensource IPv6 ready application which includes
+DHCP, TFTP, DNS, SNTP and Syslog servers as well as a TFTP client.
+The TFTP client and server are fully compatible with TFTP option support
+(tsize, blocksize and timeout), which allow the maximum performance
+when transferring the data.
+
+Some extended features such as directory facility, security tuning, interface filtering;
+progress bars and early acknowledgments enhance usefulness and throughput of the TFTP protocol
+for both client and server.
+
+The included DHCP server provides unlimited automatic or static IP address assignment.
+
+* ID: `Bench.TFTPD`
+* Website: <http://tftpd32.jounin.net/>
+* Docs:
+    + FAQ: <http://tftpd32.jounin.net/tftpd32_faq.html>
+* Label: Tftpd32
+* License: EUPL-1.1
+* LicenseUrl: <http://tftpd32.jounin.net/tftpd32_license.html>
+* Version: 4.60
+* Url: <http://down1.mastersign.de/bench/$:ArchiveName$>
+* ArchiveName32Bit: `tftpd32.$:Version$.zip`
+* ArchiveName64Bit: `tftpd64.$:Version$.zip`
+* Launcher: `$:Label$`
+* Exe32Bit: `tftpd32.exe`
+* Exe64Bit: `tftpf64.exe`
+
 ### MySQL
 
 According to Oracle:
