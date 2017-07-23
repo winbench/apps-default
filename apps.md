@@ -1292,6 +1292,23 @@ as well as deobfuscate scripts processed by <http://javascriptobfuscator.com/>.
 
 Supported commands: `js-beautify`, `css-beautify`, `html-beautify`
 
+### Mocha
+
+Mocha is a feature-rich JavaScript test framework running on Node.js
+and in the browser, making asynchronous testing simple and fun.
+Mocha tests run serially, allowing for flexible and accurate reporting,
+while mapping uncaught exceptions to the correct test cases.
+
+* ID: `Bench.Mocha`
+* Typ: `node-package`
+* Website: <http://mochajs.org/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/mochajs/mocha/master/LICENSE>
+* Version: latest
+* Docs:
+    + Getting Started: <http://mochajs.org/#getting-started>
+    + CLI: <http://mochajs.org/#usage>
+
 ### Tern
 
 Tern is a stand-alone, editor-independent JavaScript analyzer
