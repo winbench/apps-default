@@ -740,9 +740,10 @@ A cross platform code editor from Microsoft.
 * Docs:
     + Documentation: <https://code.visualstudio.com/Docs>
 * Version: latest
-* Url: <http://go.microsoft.com/fwlink/?LinkID=623231>
-* ArchiveName: `VSCode-win32.zip`
-* ArchivePath: `VSCode-win32-ia32`
+* Url32Bit: <http://go.microsoft.com/fwlink/?LinkID=623231>
+* Url64Bit: <https://go.microsoft.com/fwlink/?linkid=850641>
+* ArchiveName32Bit: `VSCode-win32-ia32.zip`
+* ArchiveName64Bit: `VSCode-win32-x64.zip`
 * Dir: `bench\code`
 * Exe: `code.exe`
 * Launcher: $:Label$
