@@ -2407,6 +2407,27 @@ Prometheus exporter for Memcached Server
 * LauncherWorkingDir: `$:Dir$`
 * LauncherArguments: `-memcached.address`, `localhost:11211`
 
+### Grafana
+
+The open platform for beautiful analytics and monitoring
+
+* ID: `Bench.Grafana`
+* Website: <https://grafana.com/>
+* Docs:
+    + Web Interface: <http://localhost:3000/>
+    + Configuration: <http://docs.grafana.org/installation/configuration/>
+    + Getting Started: <http://docs.grafana.org/guides/getting_started/>
+* Version: 4.4.1
+* Only64Bit: `true`
+* Url: `https://s3-us-west-2.amazonaws.com/grafana-releases/release/$:ArchiveName$`
+* ArchiveName64Bit: `grafana-$:Version$.windows-x64.zip`
+* ArchivePath: `grafana-$:Version$`
+* Path: `bin`
+* Exe: `bin\grafana-server.exe`
+* DataDir: `$HomeDir$\grafana`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Dir$`
+
 ## Writing
 
 ### MiKTeX
