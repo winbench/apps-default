@@ -621,6 +621,56 @@ R is a free software for statistical computing and graphics.
 * Environment:
     + `R_HOME`: `$:Dir$`
 
+### Docker Toolbox
+
+Docker provides a way to run applications securely isolated in a container,
+packaged with all its dependencies and libraries.
+
+**Warning:** This app does not install Virtual Box, as the Docker Toolbox Installer would.
+To find this app useful, you probably have to manually install 
+[Hyper-V](https://docs.docker.com/machine/drivers/hyper-v/),
+[VirtualBox](https://docs.docker.com/machine/drivers/virtualbox/),
+or [VmWare Workstation](https://github.com/pecigonzalo/docker-machine-vmwareworkstation) on your PC.
+For usage with VmWare Workstation activate the app _Docker Machine VmWare Workstation Driver_.
+
+* ID: `Bench.DockerToolbox`
+* Label: Docker Toolbox
+* Website: <https://www.docker.com/products/docker-toolbox>
+* License: Mixed OS
+* LicenseUrl: <https://www.docker.com/components-licenses>
+* Docs:
+    + Docker: <https://www.docker.com/>
+    + Get Started: <https://docs.docker.com/get-started/>
+    + User Guide: <https://docs.docker.com/engine/userguide/>
+    + Docker CLI: <https://docs.docker.com/engine/reference/commandline/cli/>
+    + Compose CLI: <https://docs.docker.com/compose/reference/overview/>
+    + Machine CLI: <https://docs.docker.com/machine/reference/>
+    + Docker File Reference: <https://docs.docker.com/engine/reference/builder/>
+    + Compose File Reference: <https://docs.docker.com/compose/compose-file/>
+* Version: 17.06.0a
+* Only64Bit: `true`
+* Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$-ce/$:ArchiveName$`
+* ArchiveName: `DockerToolbox-$:Version$-ce.exe`
+* ArchiveTyp: `inno`
+* Dir: `user\docker`
+* Exe: `docker.exe`
+
+### Docker Machine VmWare Workstation Driver
+
+This plugin for Docker Machine creates Docker hosts locally on a VMware Workstation.
+
+* ID: `Bench.DockerMachineVmWareWorkstation`
+* Label: Docker Machine VmWare Workstation Driver
+* Dependencies: `Bench.DockerToolbox`
+* Website: <https://github.com/pecigonzalo/docker-machine-vmwareworkstation>
+* License: Apache-2.0
+* Version: 1.1.0
+* Only64Bit: `true`
+* Url64Bit: `https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/download/v$:Version$/$:ResourceName$`
+* ResourceName: `docker-machine-driver-vmwareworkstation.exe`
+* Dir: `$Bench.DockerToolbox:Dir$`
+* Exe: `$:ResourceName$`
+
 ## Editors
 
 ### Notepad2
