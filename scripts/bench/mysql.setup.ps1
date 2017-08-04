@@ -1,5 +1,6 @@
 $mysqlDir = App-Dir "Bench.MySQL"
 $mysqlPath = App-Path "Bench.MySQL"
+$homeDir = Get-ConfigValue "HomeDir"
 $dataDir = Get-AppConfigValue "Bench.MySQL" "MySqlDataDir"
 
 if (!(Test-Path $dataDir -PathType Container)) {
@@ -30,4 +31,13 @@ if (!(Test-Path "$mysqlPath\mysql_log.cmd")) {
     $cmdScript = App-SetupResource "Bench.MySQL" "mysql_log.cmd"
     cp $cmdScript $mysqlPath
     Write-Host "Run 'mysql_log' to open the MySQL log file in the system editor."
+}
+
+if (!(Test-Path "${homeDir}\.my.cnf"))
+{
+@"
+[client]
+user=root
+password=bench
+"@ | Out-File "${homeDir}\.my.cnf" -Encoding Default
 }
