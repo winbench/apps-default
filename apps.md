@@ -2274,6 +2274,89 @@ by alleviating database load.
 * ArchivePath32Bit: `memcached-x86`
 * Launcher: $:Label$
 
+### Prometheus
+
+Power your metrics and alerting with a leading open-source monitoring solution.
+
+* ID: `Bench.Prometheus`
+* Website: <https://prometheus.io>
+* License: Apache-2.0
+* Docs:
+    + Web Interface: <http://localhost:9090/>
+    + Documentation: <https://prometheus.io/docs/introduction/overview/>
+    + Querying: <https://prometheus.io/docs/querying/basics/>
+    + HTTP API: <https://prometheus.io/docs/querying/api/>
+* Version: 1.7.1
+* Url: `https://github.com/prometheus/prometheus/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.tar.gz`
+* ArchivePath32Bit: `prometheus-$:Version$.windows-386`
+* ArchivePath64Bit: `prometheus-$:Version$.windows-amd64`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Dir$`
+* LauncherArguments:
+    + `-config.file`
+    + `$HomeDir$\prometheus.yml`
+    + `-storage.local.path`
+    + `$HomeDir$\prometheus_data`
+
+### Prometheus WMI Exporter
+
+Prometheus exporter for Windows machines using WMI 
+
+* ID: `Bench.Prometheus.WmiExporter`
+* Label: Prometheus WMI Exporter
+* Dependencies: `Bench.Prometheus`
+* Website: <https://github.com/martinlindhe/wmi_exporter>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/martinlindhe/wmi_exporter/master/LICENSE>
+* Version: 0.2.6
+* Url: `https://github.com/martinlindhe/wmi_exporter/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `wmi_exporter-386.zip`
+* ArchiveName64Bit: `wmi_exporter-amd64.zip`
+* Dir: `bench\prometheus_wmi`
+* Exe: `wmi_exporter.exe`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Dir$`
+
+### Prometheus MySQL Exporter
+
+Prometheus exporter for MySQL Server
+
+* ID: `Bench.Prometheus.MySqlExporter`
+* Label: Prometheus MySQL Exporter
+* Dependencies: `Bench.Prometheus`, `Bench.MySQL`
+* Website: <https://github.com/prometheus/mysqld_exporter>
+* License: Apache-2.0
+* Version: 0.10.0
+* Url: `https://github.com/prometheus/mysqld_exporter/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.tar.gz`
+* ArchivePath32Bit: `mysqld_exporter-$:Version$.windows-386`
+* ArchivePath64Bit: `mysqld_exporter-$:Version$.windows-amd64`
+* Dir: `bench\prometheus_mysqld`
+* Exe: `mysqld_exporter.exe`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Dir$`
+
+### Prometheus Memcached Exporter
+
+Prometheus exporter for Memcached Server
+
+* ID: `Bench.Prometheus.MemcachedExporter`
+* Label: Prometheus Memcached Exporter
+* Dependencies: `Bench.Prometheus`, `Bench.Memcached`
+* Website: <https://github.com/prometheus/memcached_exporter>
+* License: Apache-2.0
+* Version: 0.3.0
+* Url: `https://github.com/prometheus/memcached_exporter/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.tar.gz`
+* ArchivePath32Bit: `memcached_exporter-$:Version$.windows-386`
+* ArchivePath64Bit: `memcached_exporter-$:Version$.windows-amd64`
+* Dir: `bench\prometheus_memcached`
+* Exe: `memcached_exporter.exe`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Dir$`
+* LauncherArguments: `-memcached.address`, `localhost:11211`
+
 ## Writing
 
 ### MiKTeX
