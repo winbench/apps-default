@@ -2257,6 +2257,23 @@ So after starting the server on the command line with `rabbitmq-server`,
 the web UI is available under <http://localhost:15672/>.
 At first start you can login with user `guest` and passwort `guest`.
 
+### Memcached
+
+Free & open source, high-performance, distributed memory object caching system,
+generic in nature, but intended for use in speeding up dynamic web applications
+by alleviating database load.
+
+* ID: `Bench.Memcached`
+* Website: <http://memcached.org/>
+* License: BSD-3-Clause
+* Version: 1.4.5
+* Url: `https://blog.elijaa.org/public/$:ArchiveName$`
+* ArchiveName64Bit: `memcached-$:Version$-win64.zip`
+* ArchiveName32Bit: `memcached-$:Version$-win32.zip`
+* ArchivePath64Bit: `memcached-amd64`
+* ArchivePath32Bit: `memcached-x86`
+* Launcher: $:Label$
+
 ## Writing
 
 ### MiKTeX
