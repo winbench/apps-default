@@ -2497,6 +2497,7 @@ The open platform for beautiful analytics and monitoring
 
 * ID: `Bench.Grafana`
 * Website: <https://grafana.com/>
+* License: Apache-2.0
 * Docs:
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
