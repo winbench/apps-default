@@ -2390,7 +2390,10 @@ Prometheus exporter for MySQL Server
 * Dir: `bench\prometheus_mysqld`
 * Exe: `mysqld_exporter.exe`
 * Launcher: $:Label$
+* LauncherArguments: `-web.listen-address`, `127.0.0.1:$:Port$`
 * LauncherWorkingDir: `$:Dir$`
+* JobName: `mysql`
+* Port: 9104
 
 ### Prometheus RabbitMQ Exporter
 
