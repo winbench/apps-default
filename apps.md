@@ -2351,6 +2351,26 @@ Power your metrics and alerting with a leading open-source monitoring solution.
     + `-storage.local.path`
     + `$HomeDir$\prometheus_data`
 
+### Prometheus Push Gateway
+
+* ID: `Bench.Prometheus.PushGateway`
+* Label: Prometheus Push Gateway
+* Dependencies: `Bench.Prometheus`, `Bench.PushGateway`
+* Website: <https://github.com/prometheus/pushgateway>
+* License: Apache-2.0
+* Version: 0.4.0
+* Url: `https://github.com/prometheus/pushgateway/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.tar.gz`
+* ArchivePath32Bit: `pushgateway-$:Version$.windows-386`
+* ArchivePath64Bit: `pushgateway-$:Version$.windows-amd64`
+* Dir: `bench\pushgateway`
+* Exe: `pushgateway.exe`
+* Launcher: $:Label$
+* LauncherArguments: `-web.listen-address`, `127.0.0.1:$:Port$`
+* LauncherWorkingDir: `$:Dir$`
+* JobName: `pushgateway`
+* Port: 9091
+
 ### Prometheus WMI Exporter
 
 Prometheus exporter for Windows machines using WMI 
