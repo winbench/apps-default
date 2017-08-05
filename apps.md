@@ -2361,7 +2361,7 @@ The Pushgateway then exposes these metrics to Prometheus.
 
 * ID: `Bench.Prometheus.PushGateway`
 * Label: Prometheus Push Gateway
-* Dependencies: `Bench.Prometheus`, `Bench.PushGateway`
+* Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/prometheus/pushgateway>
 * License: Apache-2.0
 * Version: 0.4.0
