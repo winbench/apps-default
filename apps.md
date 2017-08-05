@@ -2389,6 +2389,30 @@ Prometheus exporter for MySQL Server
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Dir$`
 
+### Prometheus RabbitMQ Exporter
+
+Prometheus exporter for RabbitMQ
+
+* ID: `Bench.Prometheus.RabbitMqExporter`
+* Label: Prometheus RabbitMQ Exporter
+* Dependencies: `Bench.Prometheus`, `Bench.RabbitMQ`
+* Website: <https://github.com/kbudde/rabbitmq_exporter>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/kbudde/rabbitmq_exporter/master/LICENSE>
+* Version: 0.20.0
+* Url: `https://github.com/kbudde/rabbitmq_exporter/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.tar.gz`
+* ArchivePath32Bit: `rabbitmq_exporter-$:Version$.windows-386`
+* ArchivePath64Bit: `rabbitmq_exporter-$:Version$.windows-amd64`
+* Dir: `bench\prometheus_rabbitmq`
+* Exe: `rabbitmq_exporter.cmd`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Dir$`
+* Port: 9672
+* JobName: `rabbitmq`
+* IncludeQueues: `.*`
+* SkipQueues: `^$`
+
 ### Prometheus Memcached Exporter
 
 Prometheus exporter for Memcached Server
