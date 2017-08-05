@@ -2368,7 +2368,10 @@ Prometheus exporter for Windows machines using WMI
 * Dir: `bench\prometheus_wmi`
 * Exe: `wmi_exporter.exe`
 * Launcher: $:Label$
+* LauncherArguments: `-telemetry.addr`, `:$:Port$`
 * LauncherWorkingDir: `$:Dir$`
+* JobName: `wmi`
+* Port: 9182
 
 ### Prometheus MySQL Exporter
 
