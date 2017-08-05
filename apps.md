@@ -2502,7 +2502,7 @@ The open platform for beautiful analytics and monitoring
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
     + Getting Started: <http://docs.grafana.org/guides/getting_started/>
-* Version: 4.4.1
+* Version: 4.4.2
 * Only64Bit: `true`
 * Url: `https://s3-us-west-2.amazonaws.com/grafana-releases/release/$:ArchiveName$`
 * ArchiveName64Bit: `grafana-$:Version$.windows-x64.zip`
