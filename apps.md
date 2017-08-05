@@ -2437,7 +2437,10 @@ Prometheus exporter for Memcached Server
 * Exe: `memcached_exporter.exe`
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Dir$`
-* LauncherArguments: `-memcached.address`, `localhost:11211`
+* LauncherArguments: `-memcached.address`, `$:MemcachedAddress$`, `-web.listen-address`, `127.0.0.1:$:Port$`
+* JobName: `memcached`
+* Port: 9150
+* MemcachedAddress: `localhost:11211`
 
 ### Grafana
 
