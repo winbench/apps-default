@@ -1055,7 +1055,7 @@ debugging and workspace management.
 * Dependencies: `Bench.R`
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
-* Version: 1.0.143
+* Version: 1.0.153
 * Url: `https://download1.rstudio.org/$:ArchiveName$`
 * ArchiveName: `RStudio-$:Version$.zip`
 * Dir: `bench\r-studio`
