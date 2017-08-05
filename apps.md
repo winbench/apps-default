@@ -2393,6 +2393,29 @@ Prometheus exporter for Windows machines using WMI
 * JobName: `wmi`
 * Port: 9182
 
+### Prometheus Grok Exporter
+
+Prometheus exporter for arbitrary unstructured log data
+
+* ID: `Bench.Prometheus.GrokExporter`
+* Label: Prometheus Grok Exporter
+* Dependencies: `Bench.Prometheus`
+* Website: <https://github.com/fstab/grok_exporter>
+* License: Apache-2.0
+* Version: 0.2.1
+* Only64Bit: `true`
+* Url: `https://github.com/fstab/grok_exporter/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath64Bit: `grok_exporter-$:Version$.windows-amd64`
+* Dir: `bench\prometheus_grok`
+* Exe: `grok_exporter.exe`
+* Launcher: $:Label$
+* LauncherArguments: `-config`, `$:ConfigFile$`
+* LauncherWorkingDir: `$:Dir$`
+* JobName: `grok`
+* Port: 9144
+* ConfigFile: `$HomeDir$\grok_config.yml`
+
 ### Prometheus MySQL Exporter
 
 Prometheus exporter for MySQL Server
