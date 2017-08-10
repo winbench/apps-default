@@ -750,7 +750,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.18.0
+* Version: 1.19.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
