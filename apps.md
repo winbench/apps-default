@@ -264,7 +264,7 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.1.5
+* Version: 7.1.7
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC14-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC14-x64.zip`
