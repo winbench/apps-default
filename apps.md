@@ -2247,7 +2247,7 @@ The Apache HTTP Server is a secure, efficient and extensible server
 that provides HTTP services in sync with the current HTTP standards.
 The Apache HTTP Server is the most popular web server since over 20 years.
 
-This application needs the x86 version of the [Visual C++ 14 Redistributable](https://www.microsoft.com/download/details.aspx?id=48145) installed.
+This application needs the _Visual C++ 15 Redistributable_ [32 Bit Version](https://go.microsoft.com/fwlink/?LinkId=746571) or [64 Bit Version](https://go.microsoft.com/fwlink/?LinkId=746572) installed.
 
 * ID: `Bench.Apache`
 * Website: <https://httpd.apache.org/>
@@ -2255,10 +2255,10 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
-* Version: 2.4.26
-* Url: `http://www.apachelounge.com/download/VC14/binaries/$:ArchiveName$`
-* ArchiveName32Bit: `httpd-$:Version$-win32-VC14.zip`
-* ArchiveName64Bit: `httpd-$:Version$-win64-VC14.zip`
+* Version: 2.4.27
+* Url: `http://www.apachelounge.com/download/VC15/binaries/$:ArchiveName$`
+* ArchiveName32Bit: `httpd-$:Version$-win32-VC15.zip`
+* ArchiveName64Bit: `httpd-$:Version$-win64-VC15.zip`
 * ArchivePath: `Apache24`
 * Path: `bin`
 * Exe: `bin\httpd.exe`
