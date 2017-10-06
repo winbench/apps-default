@@ -2265,6 +2265,25 @@ The initial password for _postgres_ is `bench`.
 * Environment:
 	+ `PGDATA`: `$:PostgreSqlDataDir$`
 	+ `PG_LOG`: `$:PostgreSqlLogFile$`
+   
+### Fake Sendmail
+
+`sendmail.exe` is a simple windows console application that emulates sendmail's "-t" option
+to deliver emails piped via stdin.
+
+It is intended to ease running unix code that has `sendmail` hardcoded as an email delivery means.
+It doesn't support deferred delivery, and requires an smtp server to perform the actual delivery of the messages.
+
+Alternatively it can store emails as files in a directory for debugging.
+
+This app automatically registers itself in PHP 5 and PHP 7.
+
+* ID: `Bench.FakeSendmail`
+* Website: `https://www.glob.com.au/sendmail/`
+* Url: `https://www.glob.com.au/sendmail/$:ArchiveName$`
+* ArchiveName: `sendmail.zip`
+* Exe: `sendmail.exe`
+* MailDeliveryDir: `$HomeDir$\fakesendmails`
 
 ### Apache
 
