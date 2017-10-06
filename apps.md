@@ -1207,6 +1207,30 @@ HTML is great for declaring static documents, but it falters when we try to use 
 * LicenseUrl: <https://raw.githubusercontent.com/angular/angular-cli/master/LICENSE>
 * Label: Angular CLI
 
+### PhantomJS
+
+Full web stack &ndash; No browser required
+
+PhantomJS is a headless WebKit scriptable with a JavaScript API.
+It has **fast** and **native** support for various web standards:
+DOM handling, CSS selector, JSON, Canvas, and SVG.
+
+* ID: `Bench.PhantomJS`
+* Website: <http://phantomjs.org/>
+* Docs:
+    + Documentation: <http://phantomjs.org/documentation/>
+    + API: <http://phantomjs.org/api/>
+    + Examples: <http://phantomjs.org/examples/>
+    + FAQ: <http://phantomjs.org/faq.html>
+* License: BSD-3-Clause
+* Version: 2.1.1
+* Url: `https://bitbucket.org/ariya/phantomjs/downloads/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath: `phantomjs-$:Version$-windows`
+* Path: `bin`
+* Exe: `$:Path$\phantomjs.exe`
+* Launcher: $:Label$
+
 ### Maven
 
 Apache Maven is a software project management and comprehension tool.
