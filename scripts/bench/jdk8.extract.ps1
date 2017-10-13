@@ -1,7 +1,7 @@
 param ($archive, $targetDir)
 $7z = App-Exe "Bench.7z"
 
-if (Get-ConfigValue Use64Bit)
+if (Get-ConfigBooleanValue Use64Bit)
 {
     $jdkexDir = Empty-Dir "$(Get-ConfigValue "TempDir")\jdk8ex64"
     $cabPath = ".rsrc\1033\JAVA_CAB10"
