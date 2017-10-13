@@ -330,7 +330,7 @@ With a focus on project automation and declarative configuration,
 it gets out of your way and lets you focus on your code.
 
 * ID: `Bench.Leiningen`
-* Dependencies: `Bench.JDK8`, `Bench.GnuPG`, `Bench.Wget`
+* Dependencies: `Bench.JDK8`, `Bench.GnuPG`, `Bench.cURL`
 * Website: <http://leiningen.org>
 * License: EPL-1.0
 * LicenseUrl: <https://raw.githubusercontent.com/technomancy/leiningen/stable/COPYING>

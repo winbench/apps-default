@@ -8,8 +8,10 @@ $leinJar = $leinEnv["LEIN_JAR"]
 
 if (!(Test-Path $leinJar))
 {
-    $wgetPath = App-Path "Bench.Wget"
-    $env:PATH = "$wgetPath;${env:PATH}"
+    $curlPath = App-Path "Bench.cURL"
+    $env:PATH = "$curlPath;${env:PATH}"
+
+    $env:HTTP_CLIENT = "curl -f -L -o"
 
     $env:LEIN_JAR = $leinJar
     Write-Host "Installing Leiningen to: $leinJar"
