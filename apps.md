@@ -323,6 +323,28 @@ The development kit is required for Java source code to get compiled.
     + `JAVA_HOME`: `$:Dir$`
     + `JAVA_CMD`: `$:Dir$\jre\bin\java.exe`
 
+### JRE 8 Midi Soundbank
+
+* ID: `Bench.JRE8.MidiSoundbank`
+* Label: JRE 8 Midi Soundbank
+* Dependencies: `Bench.JRE8`
+* Website: <http://www.oracle.com/technetwork/java/soundbanks-135798.html>
+* Url: <http://www.oracle.com/technetwork/java/soundbank-deluxe-150042.zip>
+* ArchiveName: `java-midi-soundbank-deluxe.zip`
+* Dir: `$Bench.JRE8:Dir$\lib\audio`
+* SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
+
+### JDK 8 Midi Soundbank
+
+* ID: `Bench.JDK8.MidiSoundbank`
+* Label: JDK 8 Midi Soundbank
+* Dependencies: `Bench.JDK8`
+* Website: `$Bench.JRE8.MidiSoundbank:Website$`
+* Url: `$Bench.JRE8.MidiSoundbank:Url$`
+* ArchiveName: `$Bench.JRE8.MidiSoundbank:ArchiveName$`
+* Dir: `$Bench.JDK8:Dir$\lib\audio`
+* SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
+
 ### Leiningen
 
 Leiningen is the easiest way to use Clojure.
