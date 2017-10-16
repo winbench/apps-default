@@ -2591,6 +2591,7 @@ and related programs for Windows (all current variants).
     + `url`
     + `makecmds`
     + `fancyvrb`
+    + `fancyhdr`
     + `booktabs`
 
 **Note:** The packages installed by default (property `DefaultPackages`)
