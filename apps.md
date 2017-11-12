@@ -2732,6 +2732,23 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
 
+## Desktop
+
+### MultiMonitorTool
+
+Enable/disable/configure multiple monitors on Windows.
+
+* ID: `Bench.MultiMonitorTool`
+* Website: <http://www.nirsoft.net/utils/multi_monitor_tool.html>
+* Docs:
+    + Help: `MultiMonitorTool.chm`
+* License: Freeware
+* Version: latest
+* Url: `http://www.nirsoft.net/utils/$:ArchiveName$`
+* ArchiveName32Bit: `multimonitortool.zip`
+* ArchiveName64Bit: `multimonitortool-x64.zip`
+* Launcher: $:Label$
+
 ## Multimedia
 
 ### Graphics Magick
