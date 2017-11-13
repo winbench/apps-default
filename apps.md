@@ -345,6 +345,58 @@ The development kit is required for Java source code to get compiled.
 * Dir: `$Bench.JDK8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
 
+### Java Runtime Environment 9
+
+According to Oracle, Java is the world's #1 programming language.
+
+The runtime environment is required for a compiled Java program to get executed.
+
+* ID: `Bench.JRE9`
+* Label: Java Runtime Environment 9
+* Website: <https://www.oracle.com/java/>
+* License: OBCL
+* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
+* Docs:
+    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html>
+* Version: 9.0.1
+* Release: 11
+* Only64Bit: `true`
+* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:ArchiveName$`
+* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
+* ArchiveName64Bit: `jre-$:Version$_windows-x64_bin.tar.gz`
+* ArchivePath: `jre-$:Version$`
+* Path: `bin`
+* Exe: `bin\java.exe`
+* Environment:
+    + `JAVA_CMD`: `$:Exe$`
+
+### Java Development Kit 9
+
+According to Oracle, Java is the world's #1 programming language.
+
+The development kit is required for Java source code to get compiled.
+
+* ID: `Bench.JDK9`
+* Label: Java Development Kit 9
+* Website: <https://www.oracle.com/java/>
+* License: OBCL
+* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
+* Docs:
+    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
+    + Documentation: <http://docs.oracle.com/javase/9/docs/>
+    + Java SE 9 API: <http://docs.oracle.com/javase/9/docs/api/index.html>
+* Version: $Bench.JRE9:Version$
+* Release: $Bench.JRE9:Release$
+* Only64Bit: `true`
+* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:ArchiveName$`
+* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
+* ArchiveName64Bit: `jdk-$:Version$_windows-x64_bin.exe`
+* Path: `bin`
+* Exe: `bin\javac.exe`
+* Environment:
+    + `JAVA_HOME`: `$:Dir$`
+    + `JAVA_CMD`: `$:Dir$\jre\bin\java.exe`
+
 ### Leiningen
 
 Leiningen is the easiest way to use Clojure.
