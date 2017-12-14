@@ -693,6 +693,23 @@ R is a free software for statistical computing and graphics.
 * Environment:
     + `R_HOME`: `$:Dir$`
 
+### AutoHotKey
+
+The ultimate automation scripting language for Windows.
+
+* ID: `Bench.AutoHotkey`
+* Website: <https://autohotkey.com/>
+* License: GPL-2.0
+* LicenseUrl: license.txt
+* Docs:
+    + Documentation: <https://autohotkey.com/docs/AutoHotkey.htm>
+* Version: 1.1.26.01
+* Url: `https://github.com/Lexikos/AutoHotkey_L/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `AutoHotkey_$:Version$_setup.exe`
+* Exe32Bit: `AutoHotkeyU32.exe`
+* Exe64Bit: `AutoHotkeyU64.exe`
+* Launcher: $:Label$
+
 ### Docker Toolbox
 
 Docker provides a way to run applications securely isolated in a container,
