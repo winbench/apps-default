@@ -1168,6 +1168,20 @@ Resource Hacker™ has been designed to be the complete resource editing tool: c
 
 ## Software Development Utilities
 
+### Yarn
+
+Fast, reliable, and secure dependency management.
+(alternative for _npm_)
+
+* ID: `Bench.Yarn`
+* Typ: `node-package`
+* Website: <https://yarnpkg.com/>
+* Docs:
+    + Documentation: <https://yarnpkg.com/en/docs>
+* License: BSD-2-Clause
+* Version: latest
+* Exe: `yarn.cmd`
+
 ### Gulp
 
 The streaming build system.
