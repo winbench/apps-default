@@ -1197,7 +1197,7 @@ The streaming build system.
     + API: <https://github.com/gulpjs/gulp/blob/master/docs/API.md>
     + Command-Line: <https://github.com/gulpjs/gulp/blob/master/docs/CLI.md>
     + Unofficial Documentation: <http://gulpjs.org/>
-* Version: `>=3.9.0 <4.0.0`
+* Version: `>=4.0.0 <5.0.0`
 * Exe: `gulp.cmd`
 
 ### Grunt
