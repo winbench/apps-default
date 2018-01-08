@@ -1452,7 +1452,6 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
     + Documentation: <http://jshint.com/docs/>
     + Command-Line: <http://jshint.com/docs/cli/>
     + API: <http://jshint.com/docs/api/>
-* Version: `>=2.9.0 <3.0.0`
 * Exe: `jshint.cmd`
 
 ### JSBeautify
@@ -1466,7 +1465,6 @@ as well as deobfuscate scripts processed by <http://javascriptobfuscator.com/>.
 * PackageName: `js-beautify`
 * Website: <http://jsbeautifier.org/>
 * License: MIT
-* Version: `>=1.7.0 <1.8.0`
 * Exe: `js-beautify.cmd`
 
 Supported commands: `js-beautify`, `css-beautify`, `html-beautify`
