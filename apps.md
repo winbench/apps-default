@@ -2697,7 +2697,7 @@ The native file format used by JabRef is BibTeX, the standard LaTeX bibliography
 * Docs:
     + Help: <http://help.jabref.org/en/>
     + FAQ: <http://www.jabref.org/faq/>
-* Version: 4.0
+* Version: 4.1
 * Url: `https://github.com/JabRef/jabref/releases/download/v$:Version$/$:ResourceName$`
 * ResourceName: `JabRef-$:Version$.jar`
 * Exe: `$:ResourceName$`
