@@ -80,7 +80,7 @@
 * Dependencies:
     + `Bench.Python3`
     + `Bench.Python3.IPython`
-    + `Bench.Python.PEP8`
+    + `Bench.Python.PyCodeStyle`
 
 ### Ruby Development
 
@@ -1567,6 +1567,8 @@ IPython provides a rich architecture for computing with a powerful interactive s
 
 ### PEP 8
 
+**SUPERSEEDED** by _pycodestyle_
+
 pep8 is a tool to check your Python code against some of the style conventions in PEP 8.
 
 * ID: `Bench.Python.PEP8`
@@ -1578,6 +1580,20 @@ pep8 is a tool to check your Python code against some of the style conventions i
 * Docs:
     + PEP 8 Styleguide: <https://www.python.org/dev/peps/pep-0008/>
 * Exe: `Scripts\pep8.exe`
+
+### pycodestyle
+
+pycodestyle (formerly called pep8) - Python style guide checker
+
+* ID: `Bench.Python.PyCodeStyle`
+* Typ: `python-package`
+* Website: <https://pypi.python.org/pypi/pycodestyle>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/PyCQA/pycodestyle/master/LICENSE>
+* Docs:
+    + pycodestyle documentation: <http://pycodestyle.pycqa.org/>
+    + PEP 8 Styleguide: <https://www.python.org/dev/peps/pep-0008/>
+* Exe: `Scripts\pycodestyle.exe`
 
 ### Zeal
 
