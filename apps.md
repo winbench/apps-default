@@ -3190,6 +3190,27 @@ and tap on the coordinates.
 * Register: `false`
 * Launcher: $:Label$
 
+### Open Broadcaster Software
+
+Free and open source software for video recording and live streaming.
+
+* ID: `Bench.OBS`
+* Label: OBS Studio
+* Website: <https://obsproject.com>
+* Docs:
+    + Help: <https://obsproject.com/help>
+* License: GPL-2.0
+* LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
+* Version: 21.0.1
+* Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
+* ArchiveName: `OBS-Studio-$:Version$-Full.zip`
+* Path32Bit: `bin\32Bit`
+* Path64Bit: `bin\64Bit`
+* Exe32Bit: `bin\32Bit\obs32.exe`
+* Exe64Bit: `bin\64Bit\obs64.exe`
+* Launcher: $:Label$
+* LauncherWorkingDir: `$:Path$`
+
 ## 3D Modeling
 
 ### MeshLab
