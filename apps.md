@@ -1775,6 +1775,29 @@ across over 40 programming languages.
 * Launcher: jupyter Notebook
 * LauncherArguments: `notebook`, `%*`
 
+### MarkupSafe for Python 3
+
+* ID: `Bench.Python3.MarkupSafe`
+* Label: MarkupSafe (Python 3)
+* PackageName: `MarkupSafe`
+* Dependencies: `Bench.Python3.Pip`
+* Website: <https://github.com/pallets/markupsafe>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/pallets/markupsafe/master/LICENSE>
+* Version: 1.0
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
 ### jupyter for Python 3
 
 Open source, interactive data science and scientific computing
@@ -1785,6 +1808,7 @@ across over 40 programming languages.
 * Label: jupyter (Python 3)
 * Dependencies:
     + `Bench.Python3.IPython`
+    + `Bench.Python3.MarkupSafe`
     + `Bench.Python.Tornado`
 * Website: <https://jupyter.org>
 * License: BSD-3-Clause
