@@ -1773,7 +1773,7 @@ across over 40 programming languages.
 * Exe: `Scripts\jupyter.exe`
 * SetupTestFile: $:Exe$
 * Launcher: jupyter Notebook
-* LauncherArguments: `notebook`
+* LauncherArguments: `notebook`, `%*`
 
 ### jupyter for Python 3
 
@@ -1794,7 +1794,7 @@ across over 40 programming languages.
 * Exe: `Scripts\jupyter.exe`
 * SetupTestFile: $:Exe$
 * Launcher: jupyter Notebook
-* LauncherArguments: `notebook`
+* LauncherArguments: `notebook`, `%*`
 
 ### SciPy for Python 2
 
