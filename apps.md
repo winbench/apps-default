@@ -90,7 +90,6 @@
 * Dependencies:
     + `Bench.Ruby`
     + `Bench.RubyGems`
-    + `Bench.Bundler`
 
 ### C/C++ Development
 
