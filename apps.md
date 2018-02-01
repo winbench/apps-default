@@ -1880,7 +1880,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <www.numpy.org/license.html>
-* Version: 1.13.3
+* Version: 1.14.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -1918,7 +1918,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <www.numpy.org/license.html>
-* Version: 1.13.3
+* Version: 1.14.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2032,6 +2032,129 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
     + 10 Minutes to pandas: <http://pandas.pydata.org/pandas-docs/stable/10min.html>
 * License: BSD-3-Clause
 * LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
+
+### Pillow
+
+Pillow is the friendly PIL fork by Alex Clark and Contributors.
+PIL is the _Python Imaging Library_ by Fredrik Lundh and Contributors.
+
+* ID: `Bench.Python.Pillow`
+* Label: Pillow
+* Typ: `python-package`
+* Website: <http://python-pillow.org>
+* License: PIL-SL
+* LicenseUrl: <https://raw.githubusercontent.com/python-pillow/Pillow/master/LICENSE>
+* SetupTestFile: `$:Dir$\lib\site-packages\PIL\__init__.py`
+
+### PyShp
+
+The Python Shapefile Library (pyshp) reads and writes ESRI Shapefiles in pure Python.
+
+* ID: `Bench.Python.PyShp`
+* Label: PyShp
+* Typ: `python-package`
+* Website: <https://github.com/GeospatialPython/pyshp>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/GeospatialPython/pyshp/master/LICENSE.TXT>
+* SetupTestFile: `$:Dir$\lib\site-packages\shapefile.py`
+
+### PyProj for Python 2
+
+Performs cartographic transformations and geodetic computations.
+
+* ID: `Bench.Python2.PyProj`
+* Label: PyProj (Python 2)
+* Dependencies:
+    + `Bench.Python2`
+* Website: <https://jswhit.github.io/pyproj/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://jswhit.github.io/pyproj/>
+* Version: 1.9.5.1
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+
+### PyProj for Python 3
+
+Performs cartographic transformations and geodetic computations.
+
+* ID: `Bench.Python3.PyProj`
+* Label: PyProj (Python 3)
+* Dependencies:
+    + `Bench.Python3.Pip`
+* Website: <https://jswhit.github.io/pyproj/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://jswhit.github.io/pyproj/>
+* Version: 1.9.5.1
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+
+### Basemap for Python 2
+
+* ID: `Bench.Python2.Basemap`
+* Label: Basemap (Python 2)
+* PackageName: `basemap`
+* Dependencies:
+    + `Bench.Python2`
+    + `Bench.Python2.NumPy`
+    + `Bench.Python2.PyProj`
+    + `Bench.Python.Matplotlib`
+    + `Bench.Python.Pillow`
+    + `Bench.Python.PyShp`
+* Website: <https://github.com/matplotlib/basemap>
+* License: GPL-2.0
+* Version: 1.1.0
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Basemap for Python 3
+
+* ID: `Bench.Python3.Basemap`
+* Label: Basemap (Python 3)
+* PackageName: `basemap`
+* Dependencies:
+    + `Bench.Python3.Pip`
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.PyProj`
+    + `Bench.Python.Matplotlib`
+    + `Bench.Python.Pillow`
+    + `Bench.Python.PyShp`
+* Website: <https://github.com/matplotlib/basemap>
+* License: GPL-2.0
+* Version: 1.1.0
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
 
 ### scikit-learn
 
