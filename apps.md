@@ -907,6 +907,33 @@ You'll love the slick user interface, extraordinary features and amazing perform
 * Launcher: $:Label$
 * DataDir: `$AppDataDir$\Sublime Text 3`
 
+### Sublime Text 3 Package Control
+
+* ID: Bench.SublimeText3.PackageControl
+* Dependencies: `Bench.SublimeText3`
+* Label: Sublime Text 3 Package Control
+* Website: <https://packagecontrol.io>
+* Url: <https://packagecontrol.io/Package%20Control.sublime-package>
+* ResourceName: `Package Control.sublime-package`
+* Dir: `$Bench.SublimeText3:DataDir$\Installed Packages`
+* Register: false
+* SetupTestFile: `$:Dir$\$:ResourceName$`
+* Packages:
+    + `SideBarEnhancements`
+    + `AutoFileName`
+    + `BracketHighlighter`
+    + `TrailingSpaces`
+    + `AutoHotkey`
+    + `TOML`
+    + `LESS`
+    + `PowerShell`
+    + `MarkdownEditing`
+    + `Emmet`
+    + `Dockerfile Syntax Highlighting`
+    + `SublimeLinter`
+    + `SublimeLinter-pycodestyle`
+    + `SublimeLinter-jshint`
+
 ### Emacs
 
 An extensible, customizable, free text editor - and more.
