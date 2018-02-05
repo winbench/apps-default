@@ -905,6 +905,7 @@ You'll love the slick user interface, extraordinary features and amazing perform
 * ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
 * Exe: `sublime_text.exe`
 * Launcher: $:Label$
+* DataDir: `$AppDataDir$\Sublime Text 3`
 
 ### Emacs
 
