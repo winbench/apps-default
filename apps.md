@@ -3385,6 +3385,24 @@ Free and open source software for video recording and live streaming.
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Path$`
 
+## Avidemux
+
+Avidemux is a free video editor designed for simple cutting, filtering and encoding tasks.
+It supports many file types, including AVI, DVD compatible MPEG files, MP4 and ASF, using a variety of codecs.
+Tasks can be automated using projects, job queue and powerful scripting capabilities.
+
+* ID: `Bench.Avidemux`
+* Website: <http://avidemux.sourceforge.net/>
+* Docs:
+    + Documentation: <http://www.avidemux.org/admWiki/doku.php?id=build:doctop>
+* License: GPL-2.0
+* Version: 2.7.0
+* Url: `https://sourceforge.net/projects/avidemux/files/avidemux/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `avidemux_$:Version$_win32.exe`
+* ArchiveName64Bit: `avidemux_$:Version$_win64.exe`
+* ArchiveType: `inno`
+* Launcher: $:Label$
+
 ## 3D Modeling
 
 ### MeshLab
