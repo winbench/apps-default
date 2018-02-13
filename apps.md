@@ -357,10 +357,11 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html>
-* Version: 9.0.1
+* Version: 9.0.4
 * Release: 11
+* LinkUUID: c2514751926b4512b076cc82f959763f
 * Only64Bit: `true`
-* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:ArchiveName$`
+* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName64Bit: `jre-$:Version$_windows-x64_bin.tar.gz`
 * ArchivePath: `jre-$:Version$`
@@ -386,8 +387,9 @@ The development kit is required for Java source code to get compiled.
     + Java SE 9 API: <http://docs.oracle.com/javase/9/docs/api/index.html>
 * Version: $Bench.JRE9:Version$
 * Release: $Bench.JRE9:Release$
+* LinkUUID: $Bench.JRE9:LinkUUID$
 * Only64Bit: `true`
-* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:ArchiveName$`
+* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName64Bit: `jdk-$:Version$_windows-x64_bin.exe`
 * Path: `bin`
