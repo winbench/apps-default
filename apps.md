@@ -3109,7 +3109,7 @@ The command line interface for the open source video transcoder.
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
 * Version: 1.0.7
-* Url: `https://handbrake.fr/mirror/$:ArchiveName$`
+* Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `HandBrakeCLI-$:Version$-win-i686.zip`
 * ArchiveName64Bit: `HandBrakeCLI-$:Version$-win-x86_64.zip`
 * Dir: `bench\handbrake`
@@ -3123,7 +3123,7 @@ The open source video transcoder.
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
 * Version: 1.0.7
-* Url: `https://handbrake.fr/mirror/$:ArchiveName$`
+* Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `HandBrake-$:Version$-i686-Win_GUI.exe`
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Exe: `HandBrake.exe`
