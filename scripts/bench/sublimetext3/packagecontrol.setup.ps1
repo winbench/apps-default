@@ -48,3 +48,9 @@ if (!(Test-Path $packageControlSettings))
     )
     $lines | writeUtf8File $packageControlSettings
 }
+
+$resDir = App-SetupResource "Bench.SublimeText3.PackageControl" "."
+gci "$resDir\*.sublime-*" `
+    | ? { !(Test-Path "$userPackageDir\$([IO.Path]::GetFileName($_))") } `
+    | % { Write-Host "- install customization $([IO.Path]::GetFileName($_))"; $_ } `
+    | % { copy $_ $userPackagesDir }

@@ -922,9 +922,11 @@ You'll love the slick user interface, extraordinary features and amazing perform
 * SetupTestFile: `$:Dir$\$:ResourceName$`
 * Packages:
     + `SideBarEnhancements`
+    + `Console Exec`
     + `AutoFileName`
     + `BracketHighlighter`
     + `TrailingSpaces`
+    + `INI`
     + `AutoHotkey`
     + `TOML`
     + `LESS`
@@ -935,6 +937,9 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + `SublimeLinter`
     + `SublimeLinter-pycodestyle`
     + `SublimeLinter-jshint`
+    + `Git`
+    + `Gist`
+    + `Gulp`
 
 ### Emacs
 

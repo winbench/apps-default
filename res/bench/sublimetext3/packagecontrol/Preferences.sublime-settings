@@ -1,0 +1,11 @@
+{
+	"close_windows_when_empty": true,
+	"font_size": 13,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"line_numbers": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Adaptive.sublime-theme"
+}
