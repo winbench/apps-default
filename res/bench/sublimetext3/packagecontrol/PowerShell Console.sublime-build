@@ -1,4 +1,4 @@
 {
-	"cmd": ["powershell", "-NoLogo", "-ExecutionPolicy", "ByPass", "$file"],
+	"cmd": ["powershell", "-NoLogo", "-ExecutionPolicy", "ByPass", "& \"$file\""],
 	"target": "console_exec"
 }
