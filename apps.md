@@ -3008,7 +3008,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.31.1
+* Version: 0.36.1
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
