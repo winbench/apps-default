@@ -3407,7 +3407,7 @@ Free and open source software for video recording and live streaming.
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Path$`
 
-## Avidemux
+### Avidemux
 
 Avidemux is a free video editor designed for simple cutting, filtering and encoding tasks.
 It supports many file types, including AVI, DVD compatible MPEG files, MP4 and ASF, using a variety of codecs.
