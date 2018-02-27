@@ -3350,7 +3350,7 @@ Powerful enough for professional musicians.
 * Website: <http://sonic-pi.net/>
 * License: MIT
 * LicenseUrl: <https://github.com/samaaron/sonic-pi/blob/master/LICENSE.md>
-* Version: 2.11.1
+* Version: 3.1.0
 * Url: `http://sonic-pi.net/files/releases/v$:Version$/$:ArchiveName$`
 * ArchiveName: `Sonic-Pi-for-Win-Portable-v$:Version$.paf.exe`
 * ArchivePath: `App\Sonic Pi`
