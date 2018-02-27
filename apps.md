@@ -632,7 +632,6 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName32Bit: `otp_win32_$:Version$.exe`
 * ArchiveName64Bit: `otp_win64_$:Version$.exe`
-* ArchiveType: `generic`
 * ErtsDir: `erts-$:ErtsVersion$`
 * Path: `$:ErtsDir$\bin`
 * Exe: `$:ErtsDir$\bin\erl.exe`
@@ -3422,7 +3421,6 @@ Tasks can be automated using projects, job queue and powerful scripting capabili
 * Url: `https://sourceforge.net/projects/avidemux/files/avidemux/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `avidemux_$:Version$_win32.exe`
 * ArchiveName64Bit: `avidemux_$:Version$_win64.exe`
-* ArchiveType: `inno`
 * Launcher: $:Label$
 
 ## 3D Modeling
