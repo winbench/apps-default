@@ -3423,6 +3423,22 @@ Tasks can be automated using projects, job queue and powerful scripting capabili
 * ArchiveName64Bit: `avidemux_$:Version$_win64.exe`
 * Launcher: $:Label$
 
+### OpenShot
+
+We designed OpenShot Video Editor to be an easy to use, quick to learn, and surprisingly powerful video editor.
+
+* ID: `Bench.OpenShot`
+* Website: <https://www.openshot.org>
+* License: GPL-3.0
+* Version: 2.4.1
+* Only64Bit: true
+* Url: `https://github.com/OpenShot/openshot-qt/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `OpenShot-v$:Version$-x86_64.exe`
+* ArchiveTyp: `inno`
+* Register: false
+* Exe: `launch.exe`
+* Launcher: $:Label$
+
 ## 3D Modeling
 
 ### MeshLab
