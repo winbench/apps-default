@@ -3078,7 +3078,7 @@ No matter if they were designed by some standards committee, the community or a 
 * Version: latest
 * Url32Bit: `http://ffmpeg.zeranoe.com/builds/win32/shared/$:ArchiveName$`
 * Url64Bit: `http://ffmpeg.zeranoe.com/builds/win64/shared/$:ArchiveName$`
-* ArchiveName: `$:ArchivePath$.7z`
+* ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `ffmpeg-$:Version$-win32-shared`
 * ArchivePath64Bit: `ffmpeg-$:Version$-win64-shared`
 * Path: `bin`
