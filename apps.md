@@ -682,7 +682,7 @@ R is a free software for statistical computing and graphics.
 
 * ID: `Bench.R`
 * Website: <https://www.r-project.org>
-* Version: 3.4.3
+* Version: 3.4.4
 * Url: `http://cran.uni-muenster.de/bin/windows/base/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
