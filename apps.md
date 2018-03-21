@@ -2577,7 +2577,7 @@ This application needs the _Visual C++ 15 Redistributable_ [32 Bit Version](http
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
-* Version: 2.4.29
+* Version: 2.4.32
 * Url: `http://www.apachelounge.com/download/VC15/binaries/$:ArchiveName$`
 * ArchiveName32Bit: `httpd-$:Version$-win32-VC15.zip`
 * ArchiveName64Bit: `httpd-$:Version$-win64-VC15.zip`
