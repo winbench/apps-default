@@ -109,8 +109,10 @@
 * Label: Data Science
 * Typ: meta
 * Dependencies:
+    + `Bench.Python3`
     + `Bench.Python3.SciPy`
     + `Bench.Python3.SciKitLearn`
+    + `Bench.Python3.Spyder`
     + `Bench.TensorFlow`
     + `Bench.SublimeText3`
     + `Bench.R`
@@ -1027,6 +1029,25 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * ArchivePath: `vim\vim$:Release$`
 * Exe: `gvim.exe`
 * Launcher: $:Label$
+
+### Spyder
+
+The Scientific PYthon Development EnviRonment
+
+* ID: `Bench.Python3.Spyder`
+* Label: Spyder 3
+* Website: <https://github.com/spyder-ide/spyder>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/spyder-ide/spyder/master/LICENSE>
+* Typ: `python3-package`
+* Exe: `$:Path$\spyder3.exe`
+* Dependencies:
+    + `Bench.Python3.IPython`
+    + `Bench.Python3.Jupyter`
+    + `Bench.Python.PyCodeStyle`
+    + `Bench.Python.Tornado`
+* Launcher: $:Label$
+* LauncherIcon: `$:Dir$\Lib\site-packages\spyder\doc\_static\favicon.ico`
 
 ### LightTable
 
