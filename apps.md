@@ -69,6 +69,7 @@
 * Typ: `meta`
 * Dependencies:
     + `Bench.Python2`
+    + `Bench.Pipenv`
     + `Bench.Python2.IPython`
     + `Bench.Python.PEP8`
 
@@ -79,6 +80,7 @@
 * Typ: `meta`
 * Dependencies:
     + `Bench.Python3`
+    + `Bench.Pipenv`
     + `Bench.Python3.IPython`
     + `Bench.Python.PyCodeStyle`
 
@@ -1544,6 +1546,18 @@ that can be used to improve the JavaScript integration of existing editors.
 * Website: <https://github.com/ternjs/tern>
 * License: MIT
 * Version: `>=0.20.0 <=1.0.0`
+
+### Pipenv
+
+Pipenv -- the officially recommended Python packaging tool from Python.org, free (as in freedom).
+
+Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
+
+* ID: `Bench.Pipenv`
+* Typ: `python-package`
+* Website: <https://pipenv.org>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/pypa/pipenv/master/LICENSE>
 
 ### PyReadline
 
