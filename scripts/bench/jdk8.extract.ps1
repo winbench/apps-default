@@ -1,8 +1,8 @@
 param ($archive, $targetDir)
 $7z = App-Exe "Bench.7z"
 
-if (Get-ConfigBooleanValue Use64Bit)
-{
+# if (Get-ConfigBooleanValue Use64Bit)
+# {
     $jdkexDir = Empty-Dir "$(Get-ConfigValue "TempDir")\jdk8ex64"
     $cabPath = ".rsrc\1033\JAVA_CAB10"
     $toolsZipPath = "$jdkexDir\tools.zip"
@@ -15,19 +15,19 @@ if (Get-ConfigBooleanValue Use64Bit)
     }
 
     & $7z x "-o$targetDir" "-x!lib\missioncontrol*" "-x!bin\jmc.exe" "-x!javafx-src.zip" "$toolsZipPath" | Out-Null
-}
-else
-{
-    $jdkexDir = Empty-Dir "$(Get-ConfigValue "TempDir")\jdk8ex"
+# }
+# else
+# {
+#     $jdkexDir = Empty-Dir "$(Get-ConfigValue "TempDir")\jdk8ex"
 
-    & $7z x "-o$jdkexDir" "$archive" | Out-Null
+#     & $7z x "-o$jdkexDir" "$archive" | Out-Null
 
-    if (!(Test-Path "$jdkexDir\tools.zip")) {
-        throw "Did not find the expected content in the JDK archive"
-    }
+#     if (!(Test-Path "$jdkexDir\tools.zip")) {
+#         throw "Did not find the expected content in the JDK archive"
+#     }
 
-    & $7z x "-o$targetDir" "-x!lib\missioncontrol*" "-x!bin\jmc.exe" "-x!javafx-src.zip" "$jdkexDir\tools.zip" | Out-Null
-}
+#     & $7z x "-o$targetDir" "-x!lib\missioncontrol*" "-x!bin\jmc.exe" "-x!javafx-src.zip" "$jdkexDir\tools.zip" | Out-Null
+# }
 
 Purge-Dir $jdkexDir
 

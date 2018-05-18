@@ -1,7 +1,8 @@
 param ($archive, $targetDir)
 $7z = App-Exe "Bench.7z"
 
-$jdkexDir = Empty-Dir "$(Get-ConfigValue "TempDir")\jdk9ex64"
+
+$jdkexDir = Empty-Dir "$(Get-ConfigValue "TempDir")\jdkex64"
 #$cabPath = ".rsrc\1033\JAVA_CAB10"
 $toolsZipPath = "$jdkexDir\tools.zip"
 

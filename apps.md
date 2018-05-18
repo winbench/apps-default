@@ -143,8 +143,8 @@ It is also a general-purpose cryptography library.
     + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
     + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
     + Windows Build: <http://slproweb.com/products/Win32OpenSSL.html>
-* Version: 1.1.0g
-* Version2: 1_1_0g
+* Version: 1.1.0h
+* Version2: 1_1_0h
 * Url: `http://slproweb.com/download/$:ArchiveName$`
 * ArchiveName32Bit: `Win32OpenSSL-$:Version2$.exe`
 * ArchiveName64Bit: `Win64OpenSSL-$:Version2$.exe`
@@ -163,9 +163,14 @@ The GnuTLS Transport Layer Security Library.
 * LicenseUrl: <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
-* Version: 3.4.15
-* Url: `http://sourceforge.net/projects/ezwinports/files/$:ArchiveName$`
-* ArchiveName: `gnutls-$:Version$-w32-bin.zip`
+* Version: 3.6.0.1
+* Release: 3_6_0_1
+* Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32/DLLs`
+* Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64/DLLs`
+* ArchiveName32Bit: `gnutls-$:Version$-w32-bin.zip`
+* ArchiveName64Bit: `gnutls-$:Version$-w64-bin.zip`
+* ArchivePath32Bit: `win32-build`
+* ArchivePath64Bit: `win64-build`
 * Dir: `bench\gnu`
 * Path: `bin`
 * Exe: `bin\gnutls-cli.exe`
@@ -183,7 +188,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * Docs:
     + Manual: <https://gnupg.org/documentation/manuals/gnupg-2.0/>
     + Commands: <https://gnupg.org/documentation/manuals/gnupg-2.0/Operational-GPG-Commands.html>
-* Version: 2.2.3
+* Version: 2.2.6
 * Url: `https://sourceforge.net/projects/portableapps/files/GPG Plugin Portable/$:ArchiveName$`
 * ArchiveName: `GPG_Plugin_Portable_$:Version$.paf.exe`
 * Dir: `bench\gpg`
@@ -235,7 +240,11 @@ The downright luxurious Git client, for Windows, Mac & Linux.
 PHP is a popular general-purpose scripting language that is especially suited to web development.
 Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
 
-This application needs the x86 version of the [Visual C++ 11 Redistributable](https://www.microsoft.com/download/details.aspx?id=30679) installed.
+This application needs the
+[Visual C++ Redistributable 2012 32Bit](http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU3/vcredist_x86.exe)
+or the
+[Visual C++ Redistributable 2012 64Bit](http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU3/vcredist_x64.exe)
+installed.
 
 * ID: `Bench.PHP5`
 * Label: PHP 5
@@ -244,10 +253,12 @@ This application needs the x86 version of the [Visual C++ 11 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 5.6.31
-* Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
+* Version: 5.6.35
+* Url: `https://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC11-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC11-x64.zip`
+* DownloadHeaders:
+    + `User-Agent`: `Bench`
 * Exe: `php.exe`
 * Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
 
@@ -256,7 +267,11 @@ This application needs the x86 version of the [Visual C++ 11 Redistributable](ht
 PHP is a popular general-purpose scripting language that is especially suited to web development.
 Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
 
-This application needs the x86 version of the [Visual C++ 14 Redistributable](https://www.microsoft.com/download/details.aspx?id=48145) installed.
+This application needs the
+[Visual C++ Redistributable 2017 32Bit](https://go.microsoft.com/fwlink/?LinkId=746571)
+or the
+[Visual C++ Redistributable 2017 64Bit](https://go.microsoft.com/fwlink/?LinkId=746572)
+installed.
 
 * ID: `Bench.PHP7`
 * Label: PHP 7
@@ -265,10 +280,12 @@ This application needs the x86 version of the [Visual C++ 14 Redistributable](ht
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.1.9
+* Version: 7.2.4
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
-* ArchiveName32Bit: `php-$:Version$-Win32-VC14-x86.zip`
-* ArchiveName64Bit: `php-$:Version$-Win32-VC14-x64.zip`
+* ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
+* ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
+* DownloadHeaders:
+    + `User-Agent`: `Bench`
 * Exe: `php.exe`
 * Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
 
@@ -285,9 +302,9 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>
-* Version: 161
-* Release: b12
-* LinkUUID: 2f38c3b165be4555a1fa6e98c45e0808
+* Version: 172
+* Release: b11
+* LinkUUID: a58eab1ec242421181065cdc37240b08
 * Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName32Bit: `jre-8u$:Version$-windows-i586.tar.gz`
@@ -348,22 +365,22 @@ The development kit is required for Java source code to get compiled.
 * Dir: `$Bench.JDK8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
 
-### Java Runtime Environment 9
+### Java Runtime Environment 10
 
 According to Oracle, Java is the world's #1 programming language.
 
 The runtime environment is required for a compiled Java program to get executed.
 
-* ID: `Bench.JRE9`
-* Label: Java Runtime Environment 9
+* ID: `Bench.JRE`
+* Label: Java Runtime Environment 10
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html>
-* Version: 9.0.4
-* Release: 11
-* LinkUUID: c2514751926b4512b076cc82f959763f
+* Version: 10.0.1
+* Release: 10
+* LinkUUID: fb4372174a714e6b8c52526dc134031e
 * Only64Bit: `true`
 * Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
@@ -374,24 +391,24 @@ The runtime environment is required for a compiled Java program to get executed.
 * Environment:
     + `JAVA_CMD`: `$:Exe$`
 
-### Java Development Kit 9
+### Java Development Kit 10
 
 According to Oracle, Java is the world's #1 programming language.
 
 The development kit is required for Java source code to get compiled.
 
-* ID: `Bench.JDK9`
-* Label: Java Development Kit 9
+* ID: `Bench.JDK`
+* Label: Java Development Kit 10
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
-    + Documentation: <http://docs.oracle.com/javase/9/docs/>
-    + Java SE 9 API: <http://docs.oracle.com/javase/9/docs/api/index.html>
-* Version: $Bench.JRE9:Version$
-* Release: $Bench.JRE9:Release$
-* LinkUUID: $Bench.JRE9:LinkUUID$
+    + Documentation: <http://docs.oracle.com/javase/10/docs/>
+    + Java SE 10 API: <http://docs.oracle.com/javase/10/docs/api/index.html>
+* Version: $Bench.JRE:Version$
+* Release: $Bench.JRE:Release$
+* LinkUUID: $Bench.JRE:LinkUUID$
 * Only64Bit: `true`
 * Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
@@ -400,7 +417,7 @@ The development kit is required for Java source code to get compiled.
 * Exe: `bin\javac.exe`
 * Environment:
     + `JAVA_HOME`: `$:Dir$`
-    + `JAVA_CMD`: `$:Dir$\jre\bin\java.exe`
+    + `JAVA_CMD`: `$:Dir$\bin\java.exe`
 
 ### Leiningen
 
@@ -409,7 +426,7 @@ With a focus on project automation and declarative configuration,
 it gets out of your way and lets you focus on your code.
 
 * ID: `Bench.Leiningen`
-* Dependencies: `Bench.JDK8`, `Bench.GnuPG`, `Bench.cURL`
+* Dependencies: `Bench.JDK`, `Bench.GnuPG`, `Bench.cURL`
 * Website: <http://leiningen.org>
 * License: EPL-1.0
 * LicenseUrl: <https://raw.githubusercontent.com/technomancy/leiningen/stable/COPYING>
@@ -453,7 +470,7 @@ Build tooling for Clojure.
 
 * ID: `Bench.BootClj`
 * Label: Boot Clojure
-* Dependencies: `Bench.JDK8`, `Bench.Maven`
+* Dependencies: `Bench.JDK`, `Bench.Maven`
 * Website: <http://boot-clj.com>
 * Docs:
     + Wiki: <https://github.com/boot-clj/boot/wiki>
@@ -482,7 +499,7 @@ The build tools and compilers for platform independent .NET Core applications.
 
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
-* Version: 2.0.3
+* Version: 2.1.200
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -491,7 +508,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
-* Url: `https://download.microsoft.com/download/D/7/2/D725E47F-A4F1-4285-8935-A91AE2FCC06A/$:ArchiveName$`
+* Url: `https://download.microsoft.com/download/3/7/1/37189942-C91D-46E9-907B-CF2B2DE584C7/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-sdk-$:Version$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:Version$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -581,7 +598,7 @@ install the LLVM-Plugin for Eclipse CDT.
 
 * ID: `Bench.Clang`
 * Label: LLVM Clang
-* Version: 5.0.0
+* Version: 6.0.0
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -601,7 +618,7 @@ Go is an open source programming language that makes it easy
 to build simple, reliable, and efficient software.
 
 * ID: `Bench.Go`
-* Version: 1.9.2
+* Version: 1.10.2
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -630,8 +647,8 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
 * VersionMajor: 20
-* VersionMinor: 1
-* ErtsVersion: 9.1
+* VersionMinor: 3
+* ErtsVersion: 9.3
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName32Bit: `otp_win32_$:Version$.exe`
@@ -686,7 +703,7 @@ R is a free software for statistical computing and graphics.
 
 * ID: `Bench.R`
 * Website: <https://www.r-project.org>
-* Version: 3.4.4
+* Version: 3.5.0
 * Url: `http://cran.uni-muenster.de/bin/windows/base/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
@@ -707,7 +724,7 @@ The ultimate automation scripting language for Windows.
 * LicenseUrl: license.txt
 * Docs:
     + Documentation: <https://autohotkey.com/docs/AutoHotkey.htm>
-* Version: 1.1.26.01
+* Version: 1.1.28.02
 * Url: `https://github.com/Lexikos/AutoHotkey_L/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `AutoHotkey_$:Version$_setup.exe`
 * Exe32Bit: `AutoHotkeyU32.exe`
@@ -720,7 +737,7 @@ Docker provides a way to run applications securely isolated in a container,
 packaged with all its dependencies and libraries.
 
 **Warning:** This app does not install Virtual Box, as the Docker Toolbox Installer would.
-To find this app useful, you probably have to manually install 
+To find this app useful, you probably have to manually install
 [Hyper-V](https://docs.docker.com/machine/drivers/hyper-v/),
 [VirtualBox](https://docs.docker.com/machine/drivers/virtualbox/),
 or [VmWare Workstation](https://github.com/pecigonzalo/docker-machine-vmwareworkstation) on your PC.
@@ -740,7 +757,7 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
     + Machine CLI: <https://docs.docker.com/machine/reference/>
     + Docker File Reference: <https://docs.docker.com/engine/reference/builder/>
     + Compose File Reference: <https://docs.docker.com/compose/compose-file/>
-* Version: 18.02.0
+* Version: 18.03.0
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$-ce/$:ArchiveName$`
 * ArchiveName: `DockerToolbox-$:Version$-ce.exe`
@@ -800,7 +817,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * MajorVersion: 7
-* Version: `$:MajorVersion$.5.1`
+* Version: `$:MajorVersion$.5.6`
 * Url: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -843,7 +860,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.22.1
+* Version: 1.27.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -904,7 +921,7 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
     + Package Control: <https://packagecontrol.io/>
-* Version: Build 3143
+* Version: Build 3176
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * ArchiveName32Bit: `Sublime Text $:Version$.zip`
 * ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
@@ -1021,7 +1038,7 @@ It is an improved version of the vi editor distributed with most UNIX systems.
     + User Manual: <http://vimdoc.sourceforge.net/htmldoc/usr_toc.html>
 * Dependencies: `Bench.VimRT`, `Bench.VimConsole`
 * VersionMajor: 8
-* VersionMinor: 0
+* VersionMinor: 1
 * Version: $:VersionMajor$.$:VersionMinor$
 * Release: $:VersionMajor$$:VersionMinor$
 * Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
@@ -1072,16 +1089,16 @@ The next generation code editor.
 An IDE for Clojure.
 
 * ID: `Bench.Nightcode`
-* Dependencies: `Bench.JRE8`
+* Dependencies: `Bench.JDK`
 * Website: <https://sekao.net/nightcode/>
 * License: Public Domain
 * LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
-* Version: 2.5.3
+* Version: 2.6.0
 * Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
 * ResourceName: `Nightcode-$:Version$.jar`
 * Exe: `$:ResourceName$`
 * Launcher: $:Label$
-* LauncherExecutable: `$Bench.JRE8:Path$\javaw.exe`
+* LauncherExecutable: `$Bench.JDK:Path$\javaw.exe`
 * LauncherArguments: `-jar`, `$:Exe$`
 
 ### Eclipse for Java
@@ -1092,9 +1109,9 @@ XML Editor, Mylyn, Maven and Gradle integration...
 * ID: `Bench.EclipseJava`
 * Label: Eclipse for Java
 * CodeName: oxygen
-* Release: 1a
+* Release: 3a
 * Version: 4.7.$:Release$
-* Dependencies: `Bench.JRE8`
+* Dependencies: `Bench.JDK`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
@@ -1162,7 +1179,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.1
+* Version: 2018.1.3
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -1180,7 +1197,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.1
+* Version: 2018.1.3
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
@@ -1200,7 +1217,7 @@ debugging and workspace management.
 * Dependencies: `Bench.R`
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
-* Version: 1.1.383
+* Version: 1.1.453
 * Url: `https://download1.rstudio.org/$:ArchiveName$`
 * ArchiveName: `RStudio-$:Version$.zip`
 * Dir: `bench\r-studio`
@@ -1414,13 +1431,13 @@ Based on the concept of a project object model (POM), Maven can manage a project
 reporting and documentation from a central piece of information.
 
 * ID: `Bench.Maven`
-* Dependencies: `Bench.JRE8`, `Bench.GnuPG`
+* Dependencies: `Bench.JDK`, `Bench.GnuPG`
 * Website: <https://maven.apache.org>
 * License: Apache-2.0
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: `3.5.2`
+* Version: `3.5.3`
 * Url: `http://www-eu.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
@@ -1430,18 +1447,18 @@ reporting and documentation from a central piece of information.
 
 ### Gradle
 
-From mobile apps to microservices, from small startups to big enterprises, Gradle helps teams build, automate and deliver better software, faster. 
+From mobile apps to microservices, from small startups to big enterprises, Gradle helps teams build, automate and deliver better software, faster.
 
 **WARNING:**
 Gradle is writing to the `.gradle` folder in the Windows user profile directory and the setup creates a `gradle.properties` file for the proxy configuration if not already present.
 
 * ID: `Bench.Gradle`
 * Website: <https://gradle.org/>
-* Dependencies: `Bench.JDK8`
+* Dependencies: `Bench.JDK`
 * License: Apache-2.0
 * Docs:
     + Documentation: <https://gradle.org/docs>
-* Version: 4.3.1
+* Version: 4.7
 * Url: `https://services.gradle.org/distributions/$:ArchiveName$`
 * ArchiveName: `gradle-$:Version$-bin.zip`
 * ArchivePath: `gradle-$:Version$`
@@ -1485,8 +1502,8 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* MajorVersion: 3.10
-* Version: $:MajorVersion$.0
+* MajorVersion: 3.11
+* Version: $:MajorVersion$.2
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
@@ -1687,7 +1704,7 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
 * Website: <https://zealdocs.org>
 * License: GPL-3.0
 * Version32Bit: 0.3.1
-* Version64Bit: 0.4.0
+* Version64Bit: 0.5.0
 * Url: `https://bintray.com/artifact/download/zealdocs/windows/$:ArchiveName$`
 * ArchiveName32Bit: `zeal-$:Version$-windows-x86.msi`
 * ArchiveName64Bit: `zeal-$:Version$-windows-x64.msi`

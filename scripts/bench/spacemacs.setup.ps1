@@ -25,8 +25,9 @@ if (!(Test-Path $spacemacsConfig -PathType Leaf) -and !(Test-Path $spacemacsConf
 }
 
 $spacemacsDir = [IO.Path]::Combine($homeDir, ".emacs.d")
+$setupTestFile = Get-AppConfigValue "Bench.Emacs" "SetupTestFile"
 
-if (!(Test-Path $spacemacsDir -PathType Container)) {
+if (!(Test-Path $spacemacsDir -PathType Container) -or !(Test-Path $setupTestFile)) {
     Write-Host "Cloning Spacemacs ..."
     Run-Git @("clone", "https://github.com/syl20bnr/spacemacs.git", "`"$spacemacsDir`"")
     Write-Host ""
