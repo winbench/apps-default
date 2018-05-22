@@ -287,7 +287,7 @@ installed.
 * DownloadHeaders:
     + `User-Agent`: `Bench`
 * Exe: `php.exe`
-* Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
+* Extensions: `curl`, `fileinfo`, `imap`, `mbstring`, `mysqli`, `openssl`, `pdo_mysql`, `pdo_pgsql`, `pdo_sqlite`, `pgsql`, `sqlite3`, `soap`
 
 ### Java Runtime Environment 8
 
