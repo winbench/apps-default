@@ -6,7 +6,7 @@
 
 * ID: `Bench.Group.WebDevelopment`
 * Label: Web Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.Group.JavaScriptDevelopment`
     + `Bench.Bower`
@@ -18,7 +18,7 @@
 
 * ID: `Bench.Group.JavaScriptDevelopment`
 * Label: JavaScript Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.Node`
     + `Bench.JSHint`
@@ -31,7 +31,7 @@
 
 * ID: `Bench.Group.JavaDevelopment`
 * Label: Java Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.JDK8`
     + `Bench.Maven`
@@ -41,7 +41,7 @@
 
 * ID: `Bench.Group.ClojureDevelopment`
 * Label: Clojure Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.Group.JavaDevelopment`
     + `Bench.Leiningen`
@@ -53,7 +53,7 @@
 
 * ID: `Bench.Group.PHPDevelopment`
 * Label: PHP Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.PHP7`
     + `Bench.Apache`
@@ -66,7 +66,7 @@
 
 * ID: `Bench.Group.Python2Development`
 * Label: Python 2 Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.Python2`
     + `Bench.Pipenv`
@@ -77,7 +77,7 @@
 
 * ID: `Bench.Group.Python3Development`
 * Label: Python 3 Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.Python3`
     + `Bench.Pipenv`
@@ -88,7 +88,7 @@
 
 * ID: `Bench.Group.RubyDevelopment`
 * Label: Ruby Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.Ruby`
     + `Bench.RubyGems`
@@ -97,7 +97,7 @@
 
 * ID: `Bench.Group.CppDevelopment`
 * Label: C/C++ Development
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.MinGW`
     + `Bench.CMake`
@@ -107,7 +107,7 @@
 
 * ID: `Bench.Group.DataScience`
 * Label: Data Science
-* Typ: meta
+* Typ: `group`
 * Dependencies:
     + `Bench.Python3`
     + `Bench.Python3.SciPy`
@@ -122,7 +122,7 @@
 
 * ID: `Bench.Group.LaTeXWriting`
 * Label: LaTeX Writing
-* Typ: `meta`
+* Typ: `group`
 * Dependencies:
     + `Bench.MiKTeX`
     + `Bench.TeXnicCenter`
