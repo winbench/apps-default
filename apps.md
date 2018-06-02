@@ -136,6 +136,9 @@ OpenSSL is an open source project that provides a robust, commercial-grade, and 
 It is also a general-purpose cryptography library.
 
 * ID: `Bench.OpenSSL`
+* Tags:
+    + cryptography
+    + cli
 * Website: <https://www.openssl.org/>
 * License: BSD-Style
 * LicenseUrl: https://www.openssl.org/source/license.html
@@ -157,6 +160,10 @@ It is also a general-purpose cryptography library.
 The GnuTLS Transport Layer Security Library.
 
 * ID: `Bench.GnuTLS`
+* Tags:
+    + cryptography
+    + network
+    + cli
 * Label: GNU TLS
 * Website: <http://www.gnutls.org/>
 * License: LGPL-2.1
@@ -183,6 +190,11 @@ as well as access modules for all kinds of public key directories.
 GnuPG, also known as GPG, is a command line tool with features for easy integration with other applications.
 
 * ID: `Bench.GnuPG`
+* Tags:
+    + pgp
+    + cryptography
+    + email
+    + cli
 * Website: <https://gnupg.org>
 * License: GPL-3
 * Docs:
@@ -200,6 +212,10 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 PuTTY is a free (MIT-licensed) Win32 Telnet and SSH client.
 
 * ID: `Bench.Putty`
+* Tags:
+    + network
+    + ssh
+    + gui
 * Website: <http://www.putty.org>
 * License: MIT
 * Docs:
@@ -219,6 +235,8 @@ PuTTY is a free (MIT-licensed) Win32 Telnet and SSH client.
 The downright luxurious Git client, for Windows, Mac & Linux.
 
 * ID: `Bench.GitKraken`
+* Tags:
+    + gui
 * Version: latest
 * Website: <https://www.gitkraken.com/>
 * License: Freemium
@@ -248,6 +266,12 @@ installed.
 
 * ID: `Bench.PHP5`
 * Label: PHP 5
+* Tags:
+    + language
+    + interperter
+    + web
+    + cgi
+    + cli
 * Website: <http://www.php.net>
 * License: BSD-Style
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
@@ -275,6 +299,12 @@ installed.
 
 * ID: `Bench.PHP7`
 * Label: PHP 7
+* Tags:
+    + language
+    + interperter
+    + web
+    + cgi
+    + cli
 * Website: <http://www.php.net>
 * License: BSD-Style
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
@@ -297,6 +327,10 @@ The runtime environment is required for a compiled Java program to get executed.
 
 * ID: `Bench.JRE8`
 * Label: Java Runtime Environment 8
+* Tags:
+    + language
+    + runtime
+    + cli
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -323,6 +357,12 @@ The development kit is required for Java source code to get compiled.
 
 * ID: `Bench.JDK8`
 * Label: Java Development Kit 8
+* Tags:
+    + cli
+    + language
+    + runtime
+    + compiler
+    + sdk
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -347,6 +387,11 @@ The development kit is required for Java source code to get compiled.
 
 * ID: `Bench.JRE8.MidiSoundbank`
 * Label: JRE 8 Midi Soundbank
+* Tags:
+    + java
+    + resource
+    + music
+    + sound
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.oracle.com/technetwork/java/soundbanks-135798.html>
 * Url: <http://www.oracle.com/technetwork/java/soundbank-deluxe-150042.zip>
@@ -358,6 +403,11 @@ The development kit is required for Java source code to get compiled.
 
 * ID: `Bench.JDK8.MidiSoundbank`
 * Label: JDK 8 Midi Soundbank
+* Tags:
+    + java
+    + resource
+    + music
+    + sound
 * Dependencies: `Bench.JDK8`
 * Website: `$Bench.JRE8.MidiSoundbank:Website$`
 * Url: `$Bench.JRE8.MidiSoundbank:Url$`
@@ -373,6 +423,10 @@ The runtime environment is required for a compiled Java program to get executed.
 
 * ID: `Bench.JRE`
 * Label: Java Runtime Environment 10
+* Tags:
+    + cli
+    + language
+    + runtime
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -399,6 +453,12 @@ The development kit is required for Java source code to get compiled.
 
 * ID: `Bench.JDK`
 * Label: Java Development Kit 10
+* Tags:
+    + cli
+    + language
+    + runtime
+    + compiler
+    + sdk
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -426,6 +486,12 @@ With a focus on project automation and declarative configuration,
 it gets out of your way and lets you focus on your code.
 
 * ID: `Bench.Leiningen`
+* Tags:
+    + cli
+    + clojure
+    + java
+    + scaffolding
+    + project automation
 * Dependencies: `Bench.JDK`, `Bench.GnuPG`, `Bench.cURL`
 * Website: <http://leiningen.org>
 * License: EPL-1.0
@@ -452,6 +518,10 @@ Run Clojure scripts with dependencies, but without classpath pains.
 _Warning: This program is leaking into the Windows user home folder under `C:\Users\<currentuser>\.inlein`_.
 
 * ID: `Bench.Inlein`
+* Tags:
+    + cli
+    + clojure
+    + scripting
 * Website: <http://inlein.org>
 * License: EPL-1.0
 * LicenseUrl: <https://raw.githubusercontent.com/hyPiRion/inlein/master/LICENSE>
@@ -470,6 +540,11 @@ Build tooling for Clojure.
 
 * ID: `Bench.BootClj`
 * Label: Boot Clojure
+* Tags:
+    + clojure
+    + scripting
+    + project automation
+    + cli
 * Dependencies: `Bench.JDK`, `Bench.Maven`
 * Website: <http://boot-clj.com>
 * Docs:
@@ -484,6 +559,12 @@ Build tooling for Clojure.
 Write .Net apps with a text editor, NuGet, and the power of Roslyn!
 
 * ID: `Bench.ScriptCS`
+* Tags:
+    + csharp
+    + c#
+    + scripting
+    + language
+    + cli
 * Typ: `nuget-package`
 * Website: <http://scriptcs.net/>
 * License: Apache-2.0
@@ -499,6 +580,16 @@ The build tools and compilers for platform independent .NET Core applications.
 
 * ID: `Bench.DotNetCore`
 * Label: .NET Core SDK
+* Tags:
+    + cli
+    + language
+    + compiler
+    + clr
+    + csharp
+    + c#
+    + vb.net
+    + visual basic
+    + project automation
 * Version: 2.1.200
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
@@ -518,6 +609,9 @@ The build tools and compilers for platform independent .NET Core applications.
 The package manager for [MinGW](http://www.mingw.org/).
 
 * ID: `Bench.MinGwGet`
+* Tags:
+    + cli
+    + package manager
 * License: MIT
 * Version: $Bench.MinGW:Version$
 * Release: $Bench.MinGW:Release$
@@ -533,6 +627,9 @@ The package manager for [MinGW](http://www.mingw.org/).
 A graphical user interface for the package manager of [MinGW](http://www.mingw.org/).
 
 * ID: `Bench.MinGwGetGui`
+* Tags:
+    + gui
+    + package manager
 * License: MIT
 * Version: $Bench.MinGW:Version$
 * Release: $Bench.MinGW:Release$
@@ -550,6 +647,16 @@ MinGW provides a GNU development environment for Windows,
 including compilers for C/C++, Objective-C, Fortran, Ada, ...
 
 * ID: `Bench.MinGW`
+* Tags:
+    + gui
+    + cli
+    + msys
+    + package manager
+    + make
+    + gcc
+    + compiler
+    + rsync
+    + grep
 * Typ: `meta`
 * Version: 0.6.2
 * Release: beta-20131004-1
@@ -598,6 +705,14 @@ install the LLVM-Plugin for Eclipse CDT.
 
 * ID: `Bench.Clang`
 * Label: LLVM Clang
+* Tags:
+    + cli
+    + language
+    + compiler
+    + c
+    + c++
+    + objective c
+    + objective c++
 * Version: 6.0.0
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
@@ -618,6 +733,12 @@ Go is an open source programming language that makes it easy
 to build simple, reliable, and efficient software.
 
 * ID: `Bench.Go`
+* Tags:
+    + cli
+    + language
+    + compiler
+    + golang
+    + sdk
 * Version: 1.10.2
 * Website: <https://golang.org>
 * License: BSD-3-Clause
@@ -642,6 +763,13 @@ to build simple, reliable, and efficient software.
 Erlang is a programming language used to build massively scalable soft real-time systems with requirements on high availability. Some of its uses are in telecoms, banking, e-commerce, computer telephony and instant messaging. Erlang's runtime system has built-in support for concurrency, distribution and fault tolerance.
 
 * ID: `Bench.Erlang`
+* Tags:
+    + cli
+    + language
+    + compiler
+    + erts
+    + otp
+    + sdk
 * Website: <http://www.erlang.org/>
 * License: Apache-2.0
 * Docs:
@@ -667,6 +795,12 @@ Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous 
 CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.
 
 * ID: `Bench.CoffeeScript`
+* Tags:
+    + cli
+    + language
+    + compiler
+    + transpiler
+    + javascript
 * Typ: `node-package`
 * Website: <http://coffeescript.org/>
 * License: MIT
@@ -687,6 +821,13 @@ TypeScript supports tools for large-scale JavaScript applications for any browse
 TypeScript compiles to readable, standards-based JavaScript.
 
 * ID: `Bench.TypeScript`
+* Tags:
+    + cli
+    + language
+    + compiler
+    + transpiler
+    + ts
+    + javascript
 * Typ: `node-package`
 * Website: <http://www.typescriptlang.org/>
 * License: Apache-2.0
@@ -702,6 +843,13 @@ TypeScript compiles to readable, standards-based JavaScript.
 R is a free software for statistical computing and graphics.
 
 * ID: `Bench.R`
+* Tags:
+    + cli
+    + language
+    + interpreter
+    + statistics
+    + science
+    + plotting
 * Website: <https://www.r-project.org>
 * Version: 3.5.0
 * Url: `http://cran.uni-muenster.de/bin/windows/base/$:ArchiveName$`
@@ -719,6 +867,13 @@ R is a free software for statistical computing and graphics.
 The ultimate automation scripting language for Windows.
 
 * ID: `Bench.AutoHotkey`
+* Tags:
+    + cli
+    + language
+    + ahk
+    + desktop
+    + shortcut
+    + keybinding
 * Website: <https://autohotkey.com/>
 * License: GPL-2.0
 * LicenseUrl: license.txt
@@ -745,6 +900,12 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
 
 * ID: `Bench.DockerToolbox`
 * Label: Docker Toolbox
+* Tags:
+    + cli
+    + docker
+    + package manager
+    + container
+    + virtualization
 * Website: <https://www.docker.com/products/docker-toolbox>
 * License: Mixed OS
 * LicenseUrl: <https://www.docker.com/components-licenses>
@@ -771,6 +932,10 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
 
 * ID: `Bench.DockerMachineVmWareWorkstation`
 * Label: Docker Machine VmWare Workstation Driver
+* Tags:
+    + docker
+    + virtualization
+    + vmware
 * Dependencies: `Bench.DockerToolbox`
 * Website: <https://github.com/pecigonzalo/docker-machine-vmwareworkstation>
 * License: Apache-2.0
@@ -789,6 +954,10 @@ Notepad2 is a fast and light-weight Notepad-like text editor with syntax highlig
 This program can be run out of the box without installation, and does not touch your system's registry.
 
 * ID: `Bench.Notepad2`
+* Tags:
+    + gui
+    + editor
+    + text editor
 * Website: <http://www.flos-freeware.ch/notepad2.html>
 * License: BSD-3-Clause
 * LicenseUrl: `License.txt`
@@ -808,6 +977,10 @@ This program can be run out of the box without installation, and does not touch 
 Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
 
 * ID: `Bench.NotepadPlusPlus`
+* Tags:
+    + gui
+    + editor
+    + text editor
 * Website: <https://notepad-plus-plus.org>
 * License: GPL-3.0
 * LicenseUrl: <https://www.gnu.org/copyleft/gpl.html>
@@ -831,6 +1004,10 @@ Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on produc
 
 * ID: `Bench.MarkdownEdit`
 * Label: Markdown Edit
+* Tags:
+    + gui
+    + editor
+    + markdown
 * Website: <http://markdownedit.com/>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/mike-ward/Markdown-Edit/master/LICENSE.txt>
@@ -852,6 +1029,14 @@ _Hint: Install the `env-from-shell` package to make sure the Bench environment
 is picked up from Atom._
 
 * ID: `Bench.Atom`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + package manager
+    + coffeescript
+    + text editor
+    + folder editor
 * Website: <https://atom.io>
 * License: MIT
 * LicenseUrl: <https://github.com/atom/atom/blob/master/LICENSE.md>
@@ -894,6 +1079,14 @@ A cross platform code editor from Microsoft.
 
 * ID: `Bench.VSCode`
 * Label: Visual Studio Code
+* Tags:
+    + gui
+    + editor
+    + ide
+    + package manager
+    + typescript
+    + text editor
+    + folder editor
 * Website: <https://code.visualstudio.com/>
 * License: MS-L
 * LicenseUrl: <https://code.visualstudio.com/License/>
@@ -915,6 +1108,13 @@ You'll love the slick user interface, extraordinary features and amazing perform
 
 * ID: `Bench.SublimeText3`
 * Label: Sublime Text 3
+* Tags:
+    + gui
+    + editor
+    + ide
+    + python
+    + text editor
+    + folder editor
 * Website: <http://www.sublimetext.com>
 * License: Commercial
 * Docs:
@@ -932,6 +1132,9 @@ You'll love the slick user interface, extraordinary features and amazing perform
 ### Sublime Text 3 Package Control
 
 * ID: Bench.SublimeText3.PackageControl
+* Tags:
+    + package manager
+    + python
 * Dependencies: `Bench.SublimeText3`
 * Label: Sublime Text 3 Package Control
 * Website: <https://packagecontrol.io>
@@ -969,6 +1172,18 @@ GNU Emacs at its core is an interpreter for Emacs Lisp, a dialect of the Lisp pr
 with extensions to support text editing.
 
 * ID: `Bench.Emacs`
+* Tags:
+    + gui
+    + cli
+    + editor
+    + ide
+    + interpreter
+    + language
+    + lisp
+    + common lisp
+    + package manager
+    + text editor
+    + folder editor
 * Dependencies: `Bench.GnuTLS`
 * Website: <https://www.gnu.org/software/emacs/>
 * License: GPL-3.0
@@ -991,6 +1206,16 @@ with extensions to support text editing.
 The best editor is neither Emacs nor Vim, it's Emacs and Vim!
 
 * ID: `Bench.Spacemacs`
+* Tags:
+    + gui
+    + cli
+    + editor
+    + ide
+    + emacs
+    + keybinding
+    + shortcut
+    + text editor
+    + folder editor
 * Typ: `meta`
 * Dependencies: `Bench.Git`, `Bench.Emacs`
 * Website: <http://spacemacs.org/>
@@ -1007,6 +1232,9 @@ Vim is a highly configurable text editor built to enable efficient text editing.
 It is an improved version of the vi editor distributed with most UNIX systems.
 
 * ID: `Bench.VimRT`
+* Tags:
+    + vim
+    + runtime
 * Version: $Bench.Vim:Version$
 * License: $Bench.Vim:License$
 * LicenseUrl: $Bench.Vim:LicenseUrl$
@@ -1018,6 +1246,11 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * SetupTestFile: `scripts.vim`
 
 * ID: `Bench.VimConsole`
+* Tags:
+    + cli
+    + editor
+    + ide
+    + vim
 * Dependencies: `Bench.VimRT`
 * Version: $Bench.Vim:Version$
 * License: $Bench.Vim:License$
@@ -1029,6 +1262,12 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * Exe: `vim.exe`
 
 * ID: `Bench.Vim`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + text editor
+    + folder editor
 * Website: <http://www.vim.org>
 * License: GPL compatible
 * LicenseUrl: <http://vimdoc.sourceforge.net/htmldoc/uganda.html#license>
@@ -1053,6 +1292,11 @@ The Scientific PYthon Development EnviRonment
 
 * ID: `Bench.Python3.Spyder`
 * Label: Spyder 3
+* Tags:
+    + gui
+    + editor
+    + ide
+    + python
 * Website: <https://github.com/spyder-ide/spyder>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/spyder-ide/spyder/master/LICENSE>
@@ -1071,6 +1315,11 @@ The Scientific PYthon Development EnviRonment
 The next generation code editor.
 
 * ID: `Bench.LightTable`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + clojure
 * Website: <http://lighttable.com>
 * License: MIT
 * LicenseUrl: <https://github.com/LightTable/LightTable/blob/master/LICENSE.md>
@@ -1089,6 +1338,11 @@ The next generation code editor.
 An IDE for Clojure.
 
 * ID: `Bench.Nightcode`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + clojure
 * Dependencies: `Bench.JDK`
 * Website: <https://sekao.net/nightcode/>
 * License: Public Domain
@@ -1108,6 +1362,12 @@ XML Editor, Mylyn, Maven and Gradle integration...
 
 * ID: `Bench.EclipseJava`
 * Label: Eclipse for Java
+* Tags:
+    + gui
+    + ide
+    + java
+    + maven
+    + ant
 * CodeName: oxygen
 * Release: 3a
 * Version: 4.7.$:Release$
@@ -1131,6 +1391,10 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 
 * ID: `Bench.EclipsePHP`
 * Label: Eclipse for PHP
+* Tags:
+    + gui
+    + ide
+    + php
 * Version: $Bench.EclipseJava:Version$
 * CodeName: $Bench.EclipseJava:CodeName$
 * Release: $Bench.EclipseJava:Release$
@@ -1153,6 +1417,11 @@ An IDE for C/C++ developers with Mylyn integration.
 
 * ID: `Bench.EclipseCpp`
 * Label: Eclipse for C++
+* Tags:
+    + gui
+    + ide
+    + c
+    + c++
 * Version: $Bench.EclipseJava:Version$
 * CodeName: $Bench.EclipseJava:CodeName$
 * Release: $Bench.EclipseJava:Release$
@@ -1175,6 +1444,17 @@ Capable and Ergonomic IDE for JVM.
 
 * ID: `Bench.IdeaIC`
 * Label: IntelliJ IDEA Community
+* Tags:
+    + gui
+    + ide
+    + java
+    + compiler
+    + language
+    + kotlin
+    + groovy
+    + scala
+    + maven
+    + gradle
 * Website: <https://www.jetbrains.com/idea/>
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
@@ -1193,6 +1473,11 @@ Python IDE for Professional Developers.
 
 * ID: `Bench.PyCharmCE`
 * Label: PyCharm Community
+* Tags:
+    + gui
+    + ide
+    + python
+    + science
 * Website: <https://www.jetbrains.com/pycharm/>
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
@@ -1214,6 +1499,13 @@ debugging and workspace management.
 
 * ID: `Bench.RStudio`
 * Label: R Studio
+* Tags:
+    + gui
+    + ide
+    + r
+    + science
+    + statistics
+    + plotting
 * Dependencies: `Bench.R`
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
@@ -1231,6 +1523,9 @@ Resource Hacker™ has been designed to be the complete resource editing tool: c
 
 * ID: `Bench.ResourceHacker`
 * Label: Resource Hacker™
+* Tags:
+    + gui
+    + editor
 * Version: latest
 * Website: <http://angusj.com/resourcehacker/>
 * License: Freeware
@@ -1247,6 +1542,11 @@ Fast, reliable, and secure dependency management.
 (alternative for _npm_)
 
 * ID: `Bench.Yarn`
+* Tags:
+    + cli
+    + package manager
+    + npm
+    + node
 * Typ: `node-package`
 * Website: <https://yarnpkg.com/>
 * Docs:
@@ -1260,6 +1560,10 @@ Fast, reliable, and secure dependency management.
 The streaming build system.
 
 * ID: `Bench.Gulp`
+* Tags:
+    + cli
+    + project automation
+    + javascript
 * Typ: `node-package`
 * Website: <http://gulpjs.com>
 * License: MIT
@@ -1278,6 +1582,9 @@ The streaming build system.
 The JavaScript Task Runner
 
 * ID: `Bench.Grunt`
+* Tags:
+    + cli
+    + project automation
 * Typ: `node-package`
 * Website: <http://gruntjs.com>
 * License: MIT
@@ -1302,6 +1609,10 @@ Bower doesn’t concatenate or minify code or do anything else - it just install
 the right versions of the packages you need and their dependencies.
 
 * ID: `Bench.Bower`
+* Tags:
+    + cli
+    + package manager
+    + web
 * Typ: `node-package`
 * Dependencies: `Bench.Git`
 * Website: <https://bower.io/>
@@ -1320,6 +1631,10 @@ Dependency Manager for PHP
 
 * ID: `Bench.Composer`
 * Label: Composer
+* Tags:
+    + cli
+    + php
+    + package manager
 * Typ: `meta`
 * Dependencies: `Bench.Wget`, `Bench.PHP7`
 * Website: <https://getcomposer.org/>
@@ -1341,6 +1656,10 @@ Yeoman helps you to kickstart new projects, prescribing best practices and tools
 to help you stay productive.
 
 * ID: `Bench.Yeoman`
+* Tags:
+    + cli
+    + scaffolding
+    + javascript
 * Typ: `node-package`
 * PackageName: `yo`
 * Website: <http://yeoman.io/>
@@ -1359,6 +1678,10 @@ to help you stay productive.
 Micro-generator framework that makes it easy for an entire team to create files with a level of uniformity.
 
 * ID: `Bench.Plop`
+* Tags:
+    + cli
+    + scaffolding
+    + javascript
 * Typ: `node-package`
 * Website: <https://plopjs.com/>
 * Docs:
@@ -1373,6 +1696,12 @@ Micro-generator framework that makes it easy for an entire team to create files 
 HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
 
 * ID: `Bench.AngularCli`
+* Tags:
+    + cli
+    + scaffolding
+    + project automation
+    + typescript
+    + web
 * Typ: `node-package`
 * PackageName: `@angular/cli`
 * Website: <https://cli.angular.io/>
@@ -1394,6 +1723,10 @@ It has **fast** and **native** support for various web standards:
 DOM handling, CSS selector, JSON, Canvas, and SVG.
 
 * ID: `Bench.PhantomJS`
+* Tags:
+    + cli
+    + browser
+    + web
 * Website: <http://phantomjs.org/>
 * Docs:
     + Documentation: <http://phantomjs.org/documentation/>
@@ -1416,6 +1749,12 @@ _The web framework for perfectionists with deadlines._
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 
 * ID: `Bench.Django`
+* Tags:
+    + cli
+    + scaffolding
+    + project automation
+    + python
+    + web
 * Typ: `python3-package`
 * Website: <https://www.djangoproject.com>
 * Docs:
@@ -1431,6 +1770,11 @@ Based on the concept of a project object model (POM), Maven can manage a project
 reporting and documentation from a central piece of information.
 
 * ID: `Bench.Maven`
+* Tags:
+    + cli
+    + java
+    + package manager
+    + project automation
 * Dependencies: `Bench.JDK`, `Bench.GnuPG`
 * Website: <https://maven.apache.org>
 * License: Apache-2.0
@@ -1453,6 +1797,9 @@ From mobile apps to microservices, from small startups to big enterprises, Gradl
 Gradle is writing to the `.gradle` folder in the Windows user profile directory and the setup creates a `gradle.properties` file for the proxy configuration if not already present.
 
 * ID: `Bench.Gradle`
+* Tags:
+    + cli
+    + project automation
 * Website: <https://gradle.org/>
 * Dependencies: `Bench.JDK`
 * License: Apache-2.0
@@ -1472,6 +1819,10 @@ The console runner `nunit3-console.exe` executes tests on the console.
 
 * ID: `Bench.NUnitRunners`
 * Label: NUnit 3 Runners
+* Tags:
+    + gui
+    + clr
+    + testing
 * Typ: `nuget-package`
 * PackageName: `NUnit.Console`
 * Website: <http://nunit.org/>
@@ -1499,6 +1850,11 @@ To setup a C/C++ project with CMake and MinGW (`mingw32-make`), you have to acti
 Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefiles" <project folder>` to generate the `Makefile`. Run `cmake --build <project folder>` to compile the project.
 
 * ID: `Bench.CMake`
+* Tags:
+    + cli
+    + project automation
+    + c
+    + c++
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
@@ -1517,6 +1873,10 @@ JSLint is a JavaScript program that looks for problems in JavaScript programs.
 Is is a code quality tool.
 
 * ID: `Bench.JSLint`
+* Tags:
+    + cli
+    + javascript
+    + linter
 * Typ: `node-package`
 * Website: <http://jslint.com/>
 * License: BSD-3-Clause
@@ -1531,6 +1891,10 @@ Is is a code quality tool.
 JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.
 
 * ID: `Bench.JSHint`
+* Tags:
+    + cli
+    + javascript
+    + linter
 * Typ: `node-package`
 * Website: <http://jshint.com/>
 * License: MIT
@@ -1549,6 +1913,13 @@ unpack scripts packed by Dean Edward’s popular packer,
 as well as deobfuscate scripts processed by <http://javascriptobfuscator.com/>.
 
 * ID: `Bench.JSBeautify`
+* Tags:
+    + cli
+    + javascript
+    + json
+    + html
+    + web
+    + formatting
 * Typ: `node-package`
 * PackageName: `js-beautify`
 * Website: <http://jsbeautifier.org/>
@@ -1565,6 +1936,10 @@ Mocha tests run serially, allowing for flexible and accurate reporting,
 while mapping uncaught exceptions to the correct test cases.
 
 * ID: `Bench.Mocha`
+* Tags:
+    + cli
+    + testing
+    + javascript
 * Typ: `node-package`
 * Website: <http://mochajs.org/>
 * License: MIT
@@ -1580,6 +1955,9 @@ Tern is a stand-alone, editor-independent JavaScript analyzer
 that can be used to improve the JavaScript integration of existing editors.
 
 * ID: `Bench.Tern`
+* Tags:
+    + parser
+    + javascript
 * Typ: `node-package`
 * Website: <https://github.com/ternjs/tern>
 * License: MIT
@@ -1592,6 +1970,10 @@ Pipenv -- the officially recommended Python packaging tool from Python.org, free
 Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
 
 * ID: `Bench.Pipenv`
+* Tags:
+    + cli
+    + package manager
+    + python
 * Typ: `python-package`
 * Website: <https://pipenv.org>
 * License: MIT
@@ -1637,6 +2019,12 @@ IPython provides a rich architecture for computing with a powerful interactive s
 
 * ID: `Bench.Python2.IPython`
 * Label: IPython (Python 2)
+* Tags:
+    + cli
+    + repl
+    + interactive
+    + shell
+    + python
 * Typ: `python2-package`
 * PackageName: `ipython`
 * Dependencies: `Bench.Python.PyReadline`, `Bench.Python2.Scandir`
@@ -1654,6 +2042,12 @@ IPython provides a rich architecture for computing with a powerful interactive s
 
 * ID: `Bench.Python3.IPython`
 * Label: IPython (Python 3)
+* Tags:
+    + cli
+    + repl
+    + interactive
+    + shell
+    + python
 * Typ: `python3-package`
 * PackageName: `ipython`
 * Dependencies: `Bench.Python.PyReadline`
@@ -1686,6 +2080,10 @@ pep8 is a tool to check your Python code against some of the style conventions i
 pycodestyle (formerly called pep8) - Python style guide checker
 
 * ID: `Bench.Python.PyCodeStyle`
+* Tags:
+    + cli
+    + linter
+    + python
 * Typ: `python-package`
 * Website: <https://pypi.python.org/pypi/pycodestyle>
 * License: MIT
@@ -1720,6 +2118,24 @@ A collection of tools by Mark Russinovich, to inspect and investigate
 the Microsoft Windows operating systems and its processes.
 
 * ID: `Bench.SysInternals`
+* Tags:
+    + gui
+    + cli
+    + bginfo
+    + dbgview
+    + autoruns
+    + disk2vhd
+    + diskmon
+    + notmyfault
+    + portmon
+    + procexp
+    + procmon
+    + rootkitrevealer
+    + tcpview
+    + vmmap
+    + winobj
+    + zoomit
+    + pstools
 * Website: <https://technet.microsoft.com/de-de/sysinternals>
 * License: proprietary
 * LicenseUrl: <https://technet.microsoft.com/de-de/sysinternals/bb469936>
@@ -1743,6 +2159,10 @@ Target multiple platforms with one code base
 Free and open source
 
 * ID: `Bench.Cordova`
+* Tags:
+    + cli
+    + mobile
+    + sdk
 * Typ: `node-package`
 * Website: <https://cordova.apache.org/>
 * Docs:
@@ -1757,6 +2177,10 @@ The top open source framework for building amazing mobile apps.
 Ionic is the beautiful, free and open source mobile SDK for developing native and progressive web apps with ease.
 
 * ID: `Bench.Ionic`
+* Tags:
+    + cli
+    + mobile
+    + sdk
 * Typ: `node-package`
 * Dependencies: `Bench.Cordova`
 * Website: <http://ionicframework.com/>
@@ -1787,6 +2211,11 @@ The setup script includes the installation of the Intel _Hardware Accelerated eX
 
 * ID: `Bench.AndroidSDK`
 * Label: Android SDK
+* Tags:
+    + cli
+    + mobile
+    + sdk
+    + android
 * Dependencies: `Bench.JRE8`
 * Website: <https://developer.android.com/studio/command-line/>
 * License: Proprietary
@@ -1833,6 +2262,10 @@ Otherwise it will download and set up an additional Android SDK in the Windows u
 
 * ID: `Bench.AndroidStudio`
 * Label: Android Studio
+* Tags:
+    + gui
+    + ide
+    + android
 * Dependencies: `Bench.AndroidSDK`
 * Website: <https://developer.android.com/studio/>
 * License: Proprietary
@@ -1859,8 +2292,14 @@ Open source, interactive data science and scientific computing
 across over 40 programming languages.
 
 * ID: `Bench.Python2.Jupyter`
-* Typ: `python2-package`
 * Label: jupyter (Python 2)
+* Tags:
+    + gui
+    + notebook
+    + python
+    + science
+    + plotting
+* Typ: `python2-package`
 * Dependencies:
     + `Bench.Python2.Scandir`
     + `Bench.Python2.IPython`
@@ -1904,8 +2343,14 @@ Open source, interactive data science and scientific computing
 across over 40 programming languages.
 
 * ID: `Bench.Python3.Jupyter`
-* Typ: `python3-package`
 * Label: jupyter (Python 3)
+* Tags:
+    + gui
+    + notebook
+    + python
+    + science
+    + plotting
+* Typ: `python3-package`
 * Dependencies:
     + `Bench.Python3.IPython`
     + `Bench.Python3.MarkupSafe`
@@ -1926,6 +2371,9 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
 
 * ID: `Bench.Python2.SciPy`
 * Label: SciPy (Python 2)
+* Tags:
+    + science
+    + python
 * Typ: meta
 * Dependencies:
     + `Bench.Python2`
@@ -1944,6 +2392,9 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
 
 * ID: `Bench.Python3.SciPy`
 * Label: SciPy (Python 3)
+* Tags:
+    + science
+    + python
 * Typ: meta
 * Dependencies:
     + `Bench.Python3`
@@ -2095,6 +2546,9 @@ Matplotlib can be used in Python scripts, the Python and IPython shell, the jupy
 
 * ID: `Bench.Python.Matplotlib`
 * Label: Matplotlib
+* Tags:
+    + plotting
+    + python
 * Typ: `python-package`
 * Website: <http://matplotlib.org/>
 * Docs:
@@ -2140,6 +2594,9 @@ PIL is the _Python Imaging Library_ by Fredrik Lundh and Contributors.
 
 * ID: `Bench.Python.Pillow`
 * Label: Pillow
+* Tags:
+    + graphics
+    + python
 * Typ: `python-package`
 * Website: <http://python-pillow.org>
 * License: PIL-SL
@@ -2204,7 +2661,10 @@ Performs cartographic transformations and geodetic computations.
 
 * ID: `Bench.Python2.Basemap`
 * Label: Basemap (Python 2)
-* PackageName: `basemap`
+* Tags:
+    + plotting
+    + geography
+    + python
 * Dependencies:
     + `Bench.Python2`
     + `Bench.Python2.NumPy`
@@ -2232,7 +2692,10 @@ Thanks a lot to Christoph Golke for his service.
 
 * ID: `Bench.Python3.Basemap`
 * Label: Basemap (Python 3)
-* PackageName: `basemap`
+* Tags:
+    + plotting
+    + geography
+    + python
 * Dependencies:
     + `Bench.Python3.Pip`
     + `Bench.Python3.NumPy`
@@ -2267,6 +2730,9 @@ Machine Learning in Python
 
 * ID: `Bench.Python3.SciKitLearn`
 * Label: scikit-learn
+* Tags:
+    + python
+    + machine learning
 * Typ: `python3-package`
 * PackageName: `scikit-learn`
 * Dependencies:
@@ -2293,6 +2759,10 @@ TensorFlow was originally developed by researchers and engineers working on the 
 
 * ID: `Bench.TensorFlow`
 * Label: TensorFlow
+* Tags:
+    + python
+    + machine learning
+    + deep learning
 * Typ: `python3-package`
 * Dependencies:
     + `Bench.Python3.NumPy`
@@ -2314,6 +2784,11 @@ TensorFlow was originally developed by researchers and engineers working on the 
 Sift - grep on steroids. A fast and powerful alternative to grep.
 
 * ID: `Bench.Sift`
+* Tags:
+    + cli
+    + grep
+    + search
+    + filesystem
 * Website: <https://sift-tool.org/>
 * License: GPL-3.0
 * Docs:
@@ -2330,6 +2805,11 @@ WinMerge can compare both folders and files, presenting differences in a visual 
 that is easy to understand and handle.
 
 * ID: `Bench.WinMerge`
+* Tags:
+    + gui
+    + diff
+    + compare
+    + filesystem
 * Website: <http://winmerge.org/>
 * License: GPL-2.0
 * Docs:
@@ -2349,6 +2829,11 @@ that is easy to understand and handle.
 DiffMerge is an application to visually compare and merge files on Windows, OS X and Linux.
 
 * ID: `Bench.DiffMerge`
+* Tags:
+    + gui
+    + diff
+    + compare
+    + filesystem
 * Website: <http://www.sourcegear.com/diffmerge/>
 * Docs:
     + Documentation: `DiffMerge.chm`
@@ -2371,6 +2856,9 @@ by using specified settings.
 
 * ID: `Bench.AntRenamer`
 * Label: Ant Renamer
+* Tags:
+    + gui
+    + filesystem
 * Website: <http://antp.be/software/renamer>
 * License: GPL-3.0
 * Docs:
@@ -2389,6 +2877,11 @@ Cdrtools is a set of command line programs that allows to record CD/DVD/BluRay m
 
 * ID: `Bench.CdrTools`
 * Label: CDR Tools
+* Tags:
+    + cli
+    + cd
+    + dvd
+    + optical drive
 * Website: <http://cdrtools.sourceforge.net/private/cdrecord.html>
 * License: GPL-2.0
 * Docs:
@@ -2404,6 +2897,10 @@ Cdrtools is a set of command line programs that allows to record CD/DVD/BluRay m
 FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and FTPS (FTP over SSL/TLS).
 
 * ID: `Bench.FileZilla`
+* Tags:
+    + gui
+    + ftp
+    + network
 * Website: <https://filezilla-project.org/>
 * License: GPL-3.0
 * Docs:
@@ -2425,6 +2922,13 @@ Its main function is file transfer between a local and a remote computer.
 Beyond this, WinSCP offers scripting and basic file manager functionality.
 
 * ID: `Bench.WinSCP`
+* Tags:
+    + gui
+    + ftp
+    + ssh
+    + sftp
+    + scp
+    + network
 * License: GPL-3.0
 * LicenseUrl: license.txt
 * Website: <https://winscp.net>
@@ -2443,6 +2947,10 @@ A free portable derivative of Chromium, optimized for privacy.
 
 * ID: `Bench.Iron`
 * Label: SWare Iron
+* Tags:
+    + gui
+    + chromium
+    + browser
 * Website: <http://www.chromium.org/Home>
 * License: Mixed OS License
 * Version: latest
@@ -2471,6 +2979,14 @@ for both client and server.
 The included DHCP server provides unlimited automatic or static IP address assignment.
 
 * ID: `Bench.TFTPD`
+* Tags:
+    + gui
+    + server
+    + network
+    + tftp
+    + dhcp
+    + dns
+    + syslog
 * Website: <http://tftpd32.jounin.net/>
 * Docs:
     + FAQ: <http://tftpd32.jounin.net/tftpd32_faq.html>
@@ -2497,6 +3013,12 @@ You can stop the MySQL server by running `mysql_stop` in the _Bench_ shell.
 The initial password for _root_ is `bench`.
 
 * ID: `Bench.MySQL`
+* Label:
+    + cli
+    + server
+    + database
+    + sql
+    + relational
 * Website: <http://www.mysql.com/>
 * License: GPL-2.0
 * Docs:
@@ -2522,6 +3044,9 @@ The initial password for _root_ is `bench`.
 
 * ID: `Bench.MySQLUtils`
 * Label: MySQL Utilities
+* Tags:
+    + cli
+    + mysql
 * Website: <https://dev.mysql.com/downloads/utilities/>
 * License: GPL-2.0
 * Docs:
@@ -2545,6 +3070,10 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 
 * ID: `Bench.MySQLWB`
 * Label: MySQL Workbench
+* Tags:
+    + gui
+    + mysql
+    + ide
 * Website: <http://dev.mysql.com/downloads/workbench/>
 * License: GPL-2.0
 * Docs:
@@ -2573,6 +3102,12 @@ Contains the _PostgreSQL Server_ and the management tool _pgAdminIII_.
 The initial password for _postgres_ is `bench`.
 
 * ID: `Bench.PostgreSQL`
+* Tags:
+    + cli
+    + server
+    + database
+    + sql
+    + relational
 * Website: <http://www.postgresql.org>
 * License: PostgreSQL
 * LicenseUrl: <https://opensource.org/licenses/postgresql>
@@ -2609,6 +3144,9 @@ Alternatively it can store emails as files in a directory for debugging.
 This app automatically registers itself in PHP 5 and PHP 7.
 
 * ID: `Bench.FakeSendmail`
+* Tags:
+    + cli
+    + email
 * Website: `https://www.glob.com.au/sendmail/`
 * Url: `https://www.glob.com.au/sendmail/$:ArchiveName$`
 * ArchiveName: `sendmail.zip`
@@ -2624,6 +3162,12 @@ The Apache HTTP Server is the most popular web server since over 20 years.
 This application needs the _Visual C++ 15 Redistributable_ [32 Bit Version](https://go.microsoft.com/fwlink/?LinkId=746571) or [64 Bit Version](https://go.microsoft.com/fwlink/?LinkId=746572) installed.
 
 * ID: `Bench.Apache`
+* Tags:
+    + cli
+    + server
+    + network
+    + http
+    + web
 * Website: <https://httpd.apache.org/>
 * License: Apache-2.0
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
@@ -2647,6 +3191,10 @@ Tornado is a Python web framework and asynchronous networking library, originall
 
 * ID: `Bench.Python.Tornado`
 * Label: Tornado
+* Tags:
+    + server
+    + http
+    + python
 * Typ: `python-package`
 * Version: 4.5.2
 * Website: <http://www.tornadoweb.org/>
@@ -2662,6 +3210,12 @@ Supports a huge number of developer platforms,
 Open source and commercially supported
 
 * ID: `Bench.RabbitMQ`
+* Tags:
+    + cli
+    + server
+    + message queue
+    + broker
+    + amqp
 * Website: <http://www.rabbitmq.com>
 * License: MPL-1.1
 * LicenseUrl: <https://www.rabbitmq.com/mpl.html>
@@ -2688,6 +3242,11 @@ generic in nature, but intended for use in speeding up dynamic web applications
 by alleviating database load.
 
 * ID: `Bench.Memcached`
+* Tags:
+    + cli
+    + server
+    + cache
+    + in-memory
 * Website: <http://memcached.org/>
 * License: BSD-3-Clause
 * Version: 1.4.5
@@ -2705,6 +3264,12 @@ by alleviating database load.
 Power your metrics and alerting with a leading open-source monitoring solution.
 
 * ID: `Bench.Prometheus`
+* Tags:
+    + cli
+    + server
+    + database
+    + time series
+    + metrics
 * Website: <https://prometheus.io>
 * License: Apache-2.0
 * Docs:
@@ -2735,6 +3300,11 @@ The Pushgateway then exposes these metrics to Prometheus.
 
 * ID: `Bench.Prometheus.PushGateway`
 * Label: Prometheus Push Gateway
+* Tags:
+    + cli
+    + server
+    + monitoring
+    + metrics
 * Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/prometheus/pushgateway>
 * License: Apache-2.0
@@ -2757,6 +3327,12 @@ Prometheus exporter for Windows machines using WMI
 
 * ID: `Bench.Prometheus.WmiExporter`
 * Label: Prometheus WMI Exporter
+* Tags:
+    + cli
+    + server
+    + monitoring
+    + system
+    + node
 * Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/martinlindhe/wmi_exporter>
 * License: MIT
@@ -2779,6 +3355,13 @@ Prometheus exporter for arbitrary unstructured log data
 
 * ID: `Bench.Prometheus.GrokExporter`
 * Label: Prometheus Grok Exporter
+* Tags:
+    + cli
+    + server
+    + monitoring
+    + log
+    + logfile
+    + parser
 * Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/fstab/grok_exporter>
 * License: Apache-2.0
@@ -2870,6 +3453,12 @@ Prometheus exporter for Memcached Server
 The open platform for beautiful analytics and monitoring
 
 * ID: `Bench.Grafana`
+* Tags:
+    + server
+    + web
+    + monitoring
+    + plotting
+    + dashboard
 * Website: <https://grafana.com/>
 * License: Apache-2.0
 * Docs:
