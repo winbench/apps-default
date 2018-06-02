@@ -1045,7 +1045,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.27.0
+* Version: 1.27.2
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -1459,7 +1459,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.1.3
+* Version: 2018.1.4
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -1482,7 +1482,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.1.3
+* Version: 2018.1.4
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
@@ -1859,7 +1859,7 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
 * MajorVersion: 3.11
-* Version: $:MajorVersion$.2
+* Version: $:MajorVersion$.3
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
