@@ -4125,7 +4125,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 ### FreeCAD
 
 * ID: `Bench.FreeCAD`
-* Version: 0.16.6712
+* Version: 0.17
+* Release: $:Version$.13522.3bb5ff4
 * Website: <http://www.freecadweb.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://raw.githubusercontent.com/FreeCAD/FreeCAD/master/COPYING>
@@ -4136,7 +4137,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Power User: <http://www.freecadweb.org/wiki/index.php?title=Power_users_hub>
     + Development: <http://www.freecadweb.org/wiki/index.php?title=Developer_hub>
 * Url: `https://github.com/FreeCAD/FreeCAD/releases/download/$:Version$/$:ArchiveName$`
-* Only64Bit: `true`
-* ArchiveName64Bit: `FreeCAD-$:Version$_x64_setup.exe`
+* ArchiveName: `$:ArchivePath$.7z`
+* ArchivePath32Bit: `FreeCAD-$:Release$-WIN-x86-portable`
+* ArchivePath64Bit: `FreeCAD-$:Release$-WIN-x64-portable`
 * Exe: `bin\freecad.exe`
 * Launcher: $:Label$
