@@ -1191,8 +1191,9 @@ with extensions to support text editing.
     + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
     + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
     + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
-* Version: 25.3
-* Url: `http://ftp.gnu.org/gnu/emacs/windows/$:ArchiveName$`
+* MajorVersion: 26
+* Version: $:MajorVersion$.1
+* Url: `http://ftp.gnu.org/gnu/emacs/windows/emacs-$:MajorVersion$/$:ArchiveName$`
 * ArchiveName32Bit: `emacs-$:Version$-i686.zip`
 * ArchiveName64Bit: `emacs-$:Version$-x86_64.zip`
 * Dir: `bench\gnu`
