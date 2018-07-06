@@ -3988,6 +3988,33 @@ and in visual interfaces for other technical domains.
 * Environment:
     + `GRAPHVIZ_DOT`: `$:Exe$`
 
+### PlantUML
+
+PlantUML allows to define UML diagrams with text files in a simple and intuitive language.
+
+* ID: `Bench.PlantUML`
+* Tags:
+    + cli
+    + graphics
+    + uml
+    + diagram
+    + compiler
+* Dependencies: `Bench.JRE`, `Bench.Graphviz`, `Bench.ImageMagick`
+* Website: <http://plantuml.com>
+* License: GPL-3.0
+* Docs:
+    + Language Specification: <http://plantuml.com/sitemap-language-specification>
+    + Language Reference: <http://plantuml.com/PlantUML_Language_Reference_Guide.pdf>
+    + Command Line: <http://plantuml.com/command-line>
+    + Advanced Usage: <http://plantuml.com/sitemap-advanced-usage>
+* Version: latest
+* Url: `https://sourceforge.net/projects/plantuml/files/$:ResourceName$`
+* ResourceName: `plantuml.jar`
+* Exe: `plantuml.bat`
+* Launcher: $:Label$
+* LauncherExecutable: `plantuml-gui.bat`
+* LauncherIcon: `logo.ico`
+
 ### Gephi
 
 Gephi is the leading visualization and exploration software for all kinds of graphs and networks.
