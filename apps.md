@@ -3836,6 +3836,8 @@ and in visual interfaces for other technical domains.
 * ArchivePath: `release`
 * Path: `bin`
 * Exe: `bin\dot.exe`
+* Environment:
+    + `GRAPHVIZ_DOT`: `$:Exe$`
 
 ### Gephi
 
