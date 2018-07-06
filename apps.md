@@ -4041,7 +4041,7 @@ Gephi is open-source and free.
 * Exe32Bit: `bin\gephi.exe`
 * Exe64Bit: `bin\gephi64.exe`
 * Launcher: $:Label$
-* LauncherArguments: `--jdkhome`, `$Bench.JRE8:Dir$`
+* LauncherArguments: `--jdkhome`, `$Bench.JRE:Dir$`
 
 ### Dia
 
