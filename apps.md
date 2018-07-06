@@ -3759,6 +3759,34 @@ Enable/disable/configure multiple monitors on Windows.
 
 ## Multimedia
 
+### ImageMagick
+
+Use ImageMagick® to create, edit, compose, or convert bitmap images.
+It can read and write images in a variety of formats (over 200)
+including PNG, JPEG, GIF, HEIC, TIFF, DPX, EXR, WebP, Postscript, PDF, and SVG.
+Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images,
+adjust image colors, apply various special effects,
+or draw text, lines, polygons, ellipses and Bézier curves.
+
+* ID: `Bench.ImageMagick`
+* Tags:
+    + cli
+    + im
+    + magick
+    + graphics
+* Website: <https://www.imagemagick.org/>
+* Docs:
+    + Lokale Website: `$:Dir$\www\index.html`
+    + Command Line: `$:Dir$\www\command-line-processing.html`
+* Version: 7.0.8-5
+* License: GPL-3.0 compatible
+* LicenseUrl: <https://www.imagemagick.org/script/license.php>
+* Url: `https://www.imagemagick.org/download/binaries/$:ArchiveName$`
+* ArchiveName32Bit: `ImageMagick-$:Version$-portable-Q16-x86.zip`
+* ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-x64.zip`
+* Exe: `magick.exe`
+* IncludeCompatibilityTools: `false`
+
 ### Graphics Magick
 
 GraphicsMagick is the swiss army knife of image processing. It provides a robust
