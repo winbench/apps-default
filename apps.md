@@ -196,7 +196,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
     + email
     + cli
 * Website: <https://gnupg.org>
-* License: GPL-3
+* License: GPL-3.0
 * Docs:
     + Manual: <https://gnupg.org/documentation/manuals/gnupg-2.0/>
     + Commands: <https://gnupg.org/documentation/manuals/gnupg-2.0/Operational-GPG-Commands.html>
