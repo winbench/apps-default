@@ -2000,7 +2000,7 @@ Required for IPython and jupyter on Python 2
 * PackageName: `scandir`
 * Dependencies: `Bench.Python2`
 * License: BSD-3-Clause
-* Version: 1.6
+* Version: 1.7
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2438,8 +2438,8 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + User Guide: <https://docs.scipy.org/doc/numpy/user/>
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
-* LicenseUrl: <www.numpy.org/license.html>
-* Version: 1.14.0
+* LicenseUrl: <http://www.numpy.org/license.html>
+* Version: 1.14.5
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2482,8 +2482,8 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + User Guide: <https://docs.scipy.org/doc/numpy/user/>
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
-* LicenseUrl: <www.numpy.org/license.html>
-* Version: 1.14.0
+* LicenseUrl: <http://www.numpy.org/license.html>
+* Version: 1.14.5
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2938,7 +2938,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
 * Version: 3.29.0
-* Url: `http://sourceforge.net/projects/filezilla/files/FileZilla_Client/$:Version$/$:ArchiveName$`
+* Url: `https://sourceforge.net/projects/filezilla/files/FileZilla_Client/$:Version$/$:ArchiveName$`
 * ArchiveName: `FileZilla_$:Version$_win32.zip`
 * ArchivePath: `FileZilla-$:Version$`
 * Exe: `filezilla.exe`
@@ -3023,7 +3023,7 @@ The included DHCP server provides unlimited automatic or static IP address assig
 * Label: Tftpd32
 * License: EUPL-1.1
 * LicenseUrl: <http://tftpd32.jounin.net/tftpd32_license.html>
-* Version: 4.60
+* Version: 4.62
 * Url: <http://down1.mastersign.de/bench/$:ArchiveName$>
 * ArchiveName32Bit: `tftpd32.$:Version$.zip`
 * ArchiveName64Bit: `tftpd64.$:Version$.zip`
@@ -3353,7 +3353,7 @@ The Pushgateway then exposes these metrics to Prometheus.
 
 ### Prometheus WMI Exporter
 
-Prometheus exporter for Windows machines using WMI 
+Prometheus exporter for Windows machines using WMI
 
 * ID: `Bench.Prometheus.WmiExporter`
 * Label: Prometheus WMI Exporter
@@ -3538,15 +3538,14 @@ and related programs for Windows (all current variants).
 * Docs:
     + Manual: <http://docs.miktex.org/2.9/manual/>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: 2.9.6521
+* Version: 2.9.6753
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `miktex-portable-$:Version$.exe`
-* ArchivePath: `texmfs`
-* Path: `install\miktex\bin`
-* Exe: `install\miktex\bin\latex.exe`
+* ArchivePath: `texmfs\install`
+* Path: `miktex\bin`
+* Exe: `miktex\bin\latex.exe`
 * Launcher: `MiKTeX Tray Icon`
-* LauncherExecutable: `install\miktex\bin\miktex-taskbar-icon.exe`
-* LauncherIcon: `install\miktex\bin\mo.exe`
+* LauncherExecutable: `miktex\bin\miktex-taskbar-icon.exe`
 * DefaultPackages:
     + `koma-script`
     + `upquote`
@@ -3584,11 +3583,12 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 2.1
+* Version: 2.2.1
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `pandoc-$:Release$-windows.msi`
-* ArchivePath: `SourceDir\Pandoc`
+* ArchiveName32Bit: `pandoc-$:Release$-windows-i386.zip`
+* ArchiveName64Bit: `pandoc-$:Release$-windows-x86_64.zip`
+* ArchivePath: `pandoc-$:Release$`
 * Exe: `pandoc.exe`
 
 ### JabRef
@@ -3610,7 +3610,7 @@ The native file format used by JabRef is BibTeX, the standard LaTeX bibliography
 * Docs:
     + Help: <http://help.jabref.org/en/>
     + FAQ: <http://www.jabref.org/faq/>
-* Version: 4.1
+* Version: 4.3.1
 * Url: `https://github.com/JabRef/jabref/releases/download/v$:Version$/$:ResourceName$`
 * ResourceName: `JabRef-$:Version$.jar`
 * Exe: `$:ResourceName$`
@@ -3634,7 +3634,7 @@ Premium LaTeX Editing for Windows.
     + Features: <http://www.texniccenter.org/about/feature/>
     + Documentation: <http://texniccenter.sourceforge.net/>
 * Version: 2.02
-* Url: `http://sourceforge.net/projects/texniccenter/files/TeXnicCenter/$:Version$%20Stable/$:ArchiveName$`
+* Url: `https://sourceforge.net/projects/texniccenter/files/TeXnicCenter/$:Version$%20Stable/$:ArchiveName$`
 * ArchiveName: `TXCSetup_$:Version$Stable_Win32.exe`
 * ArchiveTyp: `inno`
 * RegistryKeys: `SOFTWARE\ToolsCenter`
@@ -3659,7 +3659,7 @@ one of the premier Open Source desktop applications.
     + Wiki: <https://wiki.scribus.net/canvas/Scribus>
     + Manual: <https://wiki.scribus.net/canvas/Help:TOC>
     + HowTo: <https://wiki.scribus.net/canvas/Category:HOWTO>
-* Version: 1.4.6
+* Version: 1.4.7
 * Url: `https://sourceforge.net/projects/scribus/files/scribus/$:Version$/$:ArchiveName$`
 * ArchiveName: `scribus-$:Version$-windows.exe`
 * Register: `false`
@@ -3732,7 +3732,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.36.1
+* Version: 0.42.2
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
@@ -3781,8 +3781,8 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
     + APIs: <http://www.graphicsmagick.org/programming.html>
     + Supported Formats: <http://www.graphicsmagick.org/programming.html>
     + Color Reference: <http://www.graphicsmagick.org/color.html>
-* Version: 1.3.26
-* Url: `http://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
+* Version: 1.3.30
+* Url: `https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
 * ArchiveName64Bit: `GraphicsMagick-$:Version$-Q16-win64-dll.exe`
 * ArchiveTyp: `inno`
@@ -3854,7 +3854,7 @@ The command line interface for the open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.0.7
+* Version: 1.1.1
 * Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `HandBrakeCLI-$:Version$-win-i686.zip`
 * ArchiveName64Bit: `HandBrakeCLI-$:Version$-win-x86_64.zip`
@@ -3872,7 +3872,7 @@ The open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.0.7
+* Version: 1.1.1
 * Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `HandBrake-$:Version$-i686-Win_GUI.exe`
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
@@ -3915,7 +3915,7 @@ that plays most multimedia files, and various streaming protocols.
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
-* Version: 2.2.6
+* Version: 3.0.3
 * Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
 * Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
@@ -3966,11 +3966,11 @@ Gephi is the leading visualization and exploration software for all kinds of gra
 Gephi is open-source and free.
 
 * ID: `Bench.Gephi`
-* Dependencies: `Bench.JRE8`
 * Tags:
     + gui
     + graph
     + data science
+* Dependencies: `Bench.JRE`
 * Website: <https://gephi.org>
 * License: GPL-3.0
 * Docs:
@@ -4032,7 +4032,7 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 0.92.2
+* Version: 0.92.3
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `Inkscape-$:Version$.7z`
 * ArchiveName64Bit: `Inkscape-$:Version$-x64.7z`
@@ -4061,11 +4061,12 @@ GIMP provides you with sophisticated tools to get your job done.
 * Docs:
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
-* Version: 2.8.22
+* MajorVersion: 2.10
+* Version: $:MajorVersion$.2
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
-* Exe: `bin\gimp-2.8.exe`
+* Exe: `bin\gimp-$:MajorVersion$.exe`
 * Register: `false`
 * Launcher: $:Label$
 
@@ -4111,7 +4112,7 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 10.67
+* Version: 11.05
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 
@@ -4208,7 +4209,7 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
-* Version: 21.0.1
+* Version: 21.1.2
 * Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `OBS-Studio-$:Version$-Full.zip`
 * Path32Bit: `bin\32Bit`
@@ -4232,7 +4233,7 @@ Tasks can be automated using projects, job queue and powerful scripting capabili
 * Docs:
     + Documentation: <http://www.avidemux.org/admWiki/doku.php?id=build:doctop>
 * License: GPL-2.0
-* Version: 2.7.0
+* Version: 2.7.1
 * Url: `https://sourceforge.net/projects/avidemux/files/avidemux/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `avidemux_$:Version$_win32.exe`
 * ArchiveName64Bit: `avidemux_$:Version$_win64.exe`
@@ -4248,7 +4249,7 @@ We designed OpenShot Video Editor to be an easy to use, quick to learn, and surp
     + video
 * Website: <https://www.openshot.org>
 * License: GPL-3.0
-* Version: 2.4.1
+* Version: 2.4.2
 * Only64Bit: true
 * Url: `https://github.com/OpenShot/openshot-qt/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `OpenShot-v$:Version$-x86_64.exe`
@@ -4300,7 +4301,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Manual: <https://www.blender.org/manual/>
     + Python API: <https://docs.blender.org/api/blender_python_api_2_79_release/>
 * Version: 2.79
-* VersionSuffix: ``
+* VersionSuffix: `b`
 * Url: `http://download.blender.org/release/Blender$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `blender-$:Version$$:VersionSuffix$-windows32`
