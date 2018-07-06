@@ -2100,6 +2100,10 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
 
 * ID: `Bench.Zeal`
 * Label: Zeal Docs
+* Tags:
+    + docs
+    + documentation
+    + offline
 * Website: <https://zealdocs.org>
 * License: GPL-3.0
 * Version32Bit: 0.3.1
@@ -2297,7 +2301,6 @@ across over 40 programming languages.
 * Tags:
     + gui
     + notebook
-    + python
     + science
     + plotting
 * Typ: `python2-package`
@@ -2374,7 +2377,6 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
 * Label: SciPy (Python 2)
 * Tags:
     + science
-    + python
 * Typ: meta
 * Dependencies:
     + `Bench.Python2`
@@ -2395,7 +2397,6 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
 * Label: SciPy (Python 3)
 * Tags:
     + science
-    + python
 * Typ: meta
 * Dependencies:
     + `Bench.Python3`
@@ -2423,6 +2424,12 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 
 * ID: `Bench.Python2.NumPy`
 * Label: NumPy (Python 2)
+* Tags:
+    + math
+    + numeric
+    + linear algebra
+    + fft
+    + random
 * PackageName: `numpy`
 * Dependencies: `Bench.Python2`
 * Website: <http://www.numpy.org/>
@@ -2461,6 +2468,12 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 
 * ID: `Bench.Python3.NumPy`
 * Label: NumPy (Python 3)
+* Tags:
+    + math
+    + numeric
+    + linear algebra
+    + fft
+    + random
 * PackageName: `numpy`
 * Dependencies: `Bench.Python3`
 * Website: <http://www.numpy.org/>
@@ -2491,6 +2504,8 @@ It provides many user-friendly and efficient numerical routines such as routines
 
 * ID: `Bench.Python2.SciPyLib`
 * Label: SciPy library (Python 2)
+* Tags:
+    + science
 * PackageName: `scipy`
 * Dependencies: `Bench.Python2.NumPy`
 * Website: <https://www.scipy.org/scipylib/>
@@ -2519,6 +2534,8 @@ It provides many user-friendly and efficient numerical routines such as routines
 
 * ID: `Bench.Python3.SciPyLib`
 * Label: SciPy library (Python 3)
+* Tags:
+    + science
 * PackageName: `scipy`
 * Dependencies: `Bench.Python3.NumPy`
 * Website: <https://www.scipy.org/scipylib/>
@@ -2549,7 +2566,6 @@ Matplotlib can be used in Python scripts, the Python and IPython shell, the jupy
 * Label: Matplotlib
 * Tags:
     + plotting
-    + python
 * Typ: `python-package`
 * Website: <http://matplotlib.org/>
 * Docs:
@@ -2566,6 +2582,10 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 
 * ID: `Bench.Python.SymPy`
 * Label: SymPy
+* Tags:
+    + math
+    + symbolic
+    + algebra
 * Typ: `python-package`
 * Website: <http://www.sympy.org/>
 * Docs:
@@ -2580,6 +2600,8 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 
 * ID: `Bench.Python.Pandas`
 * Label: pandas
+* Tags:
+    + data science
 * Typ: `python-package`
 * Website: <http://pandas.pydata.org/>
 * Docs:
@@ -2597,7 +2619,6 @@ PIL is the _Python Imaging Library_ by Fredrik Lundh and Contributors.
 * Label: Pillow
 * Tags:
     + graphics
-    + python
 * Typ: `python-package`
 * Website: <http://python-pillow.org>
 * License: PIL-SL
@@ -2610,6 +2631,9 @@ The Python Shapefile Library (pyshp) reads and writes ESRI Shapefiles in pure Py
 
 * ID: `Bench.Python.PyShp`
 * Label: PyShp
+* Tags:
+    + shapefile
+    + esri
 * Typ: `python-package`
 * Website: <https://github.com/GeospatialPython/pyshp>
 * License: MIT
@@ -2622,6 +2646,10 @@ Performs cartographic transformations and geodetic computations.
 
 * ID: `Bench.Python2.PyProj`
 * Label: PyProj (Python 2)
+* Tags:
+    + math
+    + cartographic
+    + geodetic
 * Dependencies:
     + `Bench.Python2`
 * Website: <https://jswhit.github.io/pyproj/>
@@ -2643,6 +2671,10 @@ Performs cartographic transformations and geodetic computations.
 
 * ID: `Bench.Python3.PyProj`
 * Label: PyProj (Python 3)
+* Tags:
+    + math
+    + cartographic
+    + geodetic
 * Dependencies:
     + `Bench.Python3.Pip`
 * Website: <https://jswhit.github.io/pyproj/>
@@ -2665,7 +2697,7 @@ Performs cartographic transformations and geodetic computations.
 * Tags:
     + plotting
     + geography
-    + python
+    + maps
 * Dependencies:
     + `Bench.Python2`
     + `Bench.Python2.NumPy`
@@ -2696,7 +2728,6 @@ Thanks a lot to Christoph Golke for his service.
 * Tags:
     + plotting
     + geography
-    + python
 * Dependencies:
     + `Bench.Python3.Pip`
     + `Bench.Python3.NumPy`
@@ -2732,7 +2763,6 @@ Machine Learning in Python
 * ID: `Bench.Python3.SciKitLearn`
 * Label: scikit-learn
 * Tags:
-    + python
     + machine learning
 * Typ: `python3-package`
 * PackageName: `scikit-learn`
@@ -2761,7 +2791,6 @@ TensorFlow was originally developed by researchers and engineers working on the 
 * ID: `Bench.TensorFlow`
 * Label: TensorFlow
 * Tags:
-    + python
     + machine learning
     + deep learning
 * Typ: `python3-package`
@@ -3386,6 +3415,10 @@ Prometheus exporter for MySQL Server
 
 * ID: `Bench.Prometheus.MySqlExporter`
 * Label: Prometheus MySQL Exporter
+* Tags:
+    + cli
+    + server
+    + monitoring
 * Dependencies: `Bench.Prometheus`, `Bench.MySQL`
 * Website: <https://github.com/prometheus/mysqld_exporter>
 * License: Apache-2.0
@@ -3408,6 +3441,10 @@ Prometheus exporter for RabbitMQ
 
 * ID: `Bench.Prometheus.RabbitMqExporter`
 * Label: Prometheus RabbitMQ Exporter
+* Tags:
+    + cli
+    + server
+    + monitoring
 * Dependencies: `Bench.Prometheus`, `Bench.RabbitMQ`
 * Website: <https://github.com/kbudde/rabbitmq_exporter>
 * License: MIT
@@ -3432,6 +3469,10 @@ Prometheus exporter for Memcached Server
 
 * ID: `Bench.Prometheus.MemcachedExporter`
 * Label: Prometheus Memcached Exporter
+* Tags:
+    + cli
+    + server
+    + monitoring
 * Dependencies: `Bench.Prometheus`, `Bench.Memcached`
 * Website: <https://github.com/prometheus/memcached_exporter>
 * License: Apache-2.0
@@ -3485,6 +3526,13 @@ MiKTeX (pronounced mick-tech) is an up-to-date implementation of TeX/LaTeX
 and related programs for Windows (all current variants).
 
 * ID: `Bench.MiKTeX`
+* Tags:
+    + cli
+    + gui
+    + latex
+    + tex
+    + writing
+    + pdf
 * Website: <http://miktex.org/portable>
 * License: Mixed OS License
 * Docs:
@@ -3524,6 +3572,12 @@ are selected to suit the needs of the default LaTeX template of _Pandoc_.
 Pandoc is a library and command-line tool for converting from one markup format to another.
 
 * ID: `Bench.Pandoc`
+* Tags:
+    + cli
+    + writing
+    + latex
+    + html
+    + pdf
 * Website: <http://pandoc.org>
 * License: GPL-2.0
 * LicenseUrl: `https://hackage.haskell.org/package/pandoc-$:Version$/src/COPYING.md`
@@ -3543,6 +3597,12 @@ JabRef is an open source bibliography reference manager.
 The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format.
 
 * ID: `Bench.JabRef`
+* Tags:
+    + gui
+    + writing
+    + bibliography
+    + bibtex
+    + latex
 * Dependencies: `Bench.JRE8`
 * Website: <http://www.jabref.org>
 * License: MIT
@@ -3563,6 +3623,10 @@ The native file format used by JabRef is BibTeX, the standard LaTeX bibliography
 Premium LaTeX Editing for Windows.
 
 * ID: `Bench.TeXnicCenter`
+* Tags:
+    + gui
+    + writing
+    + latex
 * Dependencies: `Bench.MiKTeX`
 * Website: <http://www.texniccenter.org>
 * License: GPL-2.0
@@ -3583,6 +3647,12 @@ Since its humble beginning in the spring of 2001, Scribus has evolved into
 one of the premier Open Source desktop applications.
 
 * ID: `Bench.Scribus`
+* Tags:
+    + gui
+    + graphics
+    + layout
+    + dtp
+    + writing
 * Website: <https://www.scribus.net/>
 * License: GPL-2.0
 * Docs:
@@ -3607,6 +3677,10 @@ Less runs inside Node, the browser and inside Rhino.
 There are also many 3rd party tools that allow you to compile your files and watch for changes.
 
 * ID: `Bench.Less`
+* Tags:
+    + cli
+    + css
+    + transpiler
 * Website: `lesscss.org`
 * License: Apache-2.0
 * Docs:
@@ -3623,6 +3697,10 @@ Sass is the most mature, stable, and powerful professional grade CSS extension l
 
 * ID: `Bench.Sass`
 * Label: SASS
+* Tags:
+    + cli
+    + css
+    + transpiler
 * Typ: `ruby-package`
 * Website: <http://sass-lang.com/>
 * License: MIT
@@ -3639,6 +3717,11 @@ Hugo flexibly works with many formats and is ideal for blogs, docs, portfolios
 and much more. Hugo’s speed fosters creativity and makes building a website fun again.
 
 * ID: `Bench.Hugo`
+* Tags:
+    + cli
+    + html
+    + static website
+    + markdown
 * Website: <https://gohugo.io/>
 * License: Apache-2.0
 * LicenseUrl: <https://github.com/spf13/hugo/blob/master/LICENSE.md>
@@ -3661,6 +3744,9 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
 Enable/disable/configure multiple monitors on Windows.
 
 * ID: `Bench.MultiMonitorTool`
+* Tags:
+    + gui
+    + desktop
 * Website: <http://www.nirsoft.net/utils/multi_monitor_tool.html>
 * Docs:
     + Help: `MultiMonitorTool.chm`
@@ -3681,6 +3767,10 @@ and manipulating an image in over 88 major formats including important formats
 like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
 
 * ID: `Bench.GraphicsMagick`
+* Tags:
+    + cli
+    + gm
+    + graphics
 * Label: Graphics Magick
 * Website: <http://www.graphicsmagick.org/>
 * License: Mixed OS License
@@ -3707,6 +3797,9 @@ It supports the most obscure ancient formats up to the cutting edge.
 No matter if they were designed by some standards committee, the community or a corporation.
 
 * ID: `Bench.FFmpeg`
+* Tags:
+    + cli
+    + video
 * Website: <https://www.ffmpeg.org/>
 * License: LGPL-2.1
 * LicenseUrl: <https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md>
@@ -3734,6 +3827,9 @@ It can also apply various effects to these sound files,
 and, as an added bonus, SoX can play and record audio files on most platforms.
 
 * ID: `Bench.SoX`
+* Tags:
+    + cli
+    + audio
 * Website: <http://sox.sourceforge.net/>
 * License: GPL-2.0
 * Docs:
@@ -3752,6 +3848,10 @@ and, as an added bonus, SoX can play and record audio files on most platforms.
 The command line interface for the open source video transcoder.
 
 * ID: `Bench.HandBrakeCLI`
+* Tags:
+    + cli
+    + video
+    + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
 * Version: 1.0.7
@@ -3766,6 +3866,10 @@ The command line interface for the open source video transcoder.
 The open source video transcoder.
 
 * ID: `Bench.HandBrake`
+* Tags:
+    + gui
+    + video
+    + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
 * Version: 1.0.7
@@ -3780,6 +3884,10 @@ The open source video transcoder.
 youtube-dl is a command-line program to download videos from YouTube.com and other sites.
 
 * ID: `Bench.YouTubeDL`
+* Tags:
+    + cli
+    + video
+    + downloader
 * Website: <https://rg3.github.io/youtube-dl/>
 * License: Unlicense
 * LicenseUrl: <https://raw.githubusercontent.com/rg3/youtube-dl/master/LICENSE>
@@ -3795,6 +3903,12 @@ VLC is a free and open source cross-platform multimedia player and framework
 that plays most multimedia files, and various streaming protocols.
 
 * ID: `Bench.VLC`
+* Tags:
+    + gui
+    + audio
+    + video
+    + player
+    + videolan
 * Label: VLC Player
 * Website: <http://www.videolan.org/vlc/>
 * License: GPL-2.0
@@ -3818,6 +3932,13 @@ bioinformatics,  software engineering, database and web design, machine learning
 and in visual interfaces for other technical domains.
 
 * ID: `Bench.Graphviz`
+* Tags:
+    + cli
+    + graphics
+    + diagram
+    + dot
+    + compiler
+    + graph
 * Website: <http://www.graphviz.org/>
 * License: EPL-1.0
 * LicenseUrl: <http://www.graphviz.org/License.php>
@@ -3846,6 +3967,10 @@ Gephi is open-source and free.
 
 * ID: `Bench.Gephi`
 * Dependencies: `Bench.JRE8`
+* Tags:
+    + gui
+    + graph
+    + data science
 * Website: <https://gephi.org>
 * License: GPL-3.0
 * Docs:
@@ -3868,6 +3993,10 @@ Gephi is open-source and free.
 Dia is a program to draw structured diagrams.
 
 * ID: `Bench.Dia`
+* Tags:
+    + gui
+    + graphics
+    + diagram
 * Website: <https://wiki.gnome.org/Apps/Dia>
 * License: GPL-2.0
 * Docs:
@@ -3890,6 +4019,10 @@ Inkscape is a professional vector graphics editor for Windows, Mac OS X and Linu
 It's free and open source.
 
 * ID: `Bench.Inkscape`
+* Tags:
+    + gui
+    + graphics
+    + vector
 * Website: <https://inkscape.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://inkscape.org/en/about/license/>
@@ -3916,6 +4049,11 @@ Whether you are a graphic designer, photographer, illustrator, or scientist,
 GIMP provides you with sophisticated tools to get your job done.
 
 * ID: `Bench.Gimp`
+* Tags:
+    + gui
+    + graphics
+    + bitmap
+    + photo
 * Label: GIMP
 * Website: <http://www.gimp.org/>
 * License: GPL-3.0
@@ -3938,6 +4076,11 @@ Really simple to use!
 Support of more than 500 image formats.
 
 * ID: `Bench.XnView`
+* Tags:
+    + gui
+    + photo
+    + graphics
+    + viewer
 * Website: <http://www.xnview.com/>
 * License: Commercial
 * Version: latest
@@ -3960,6 +4103,9 @@ Minolta/Konica-Minolta, Motorola, Nikon, Nintendo, Olympus/Epson, Panasonic/Leic
 Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 
 * ID: `Bench.ExifTool`
+* Tags:
+    + cli
+    + photo
 * Website: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
 * License: GPL, Artistic
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
@@ -3974,6 +4120,12 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 Open source digital audio workstation with VST support.
 
 * ID: `Bench.LMMS`
+* Tags:
+    + gui
+    + daw
+    + audio
+    + midi
+    + vst
 * Website: <https://lmms.io/>
 * License: GPL-2.0
 * Version: 1.1.3
@@ -3991,6 +4143,11 @@ Simple enough for computing and music lessons.
 Powerful enough for professional musicians.
 
 * ID: `Bench.SonicPI`
+* Tags:
+    + gui
+    + music
+    + audio
+    + ruby
 * Website: <http://sonic-pi.net/>
 * License: MIT
 * LicenseUrl: <https://github.com/samaaron/sonic-pi/blob/master/LICENSE.md>
@@ -4017,6 +4174,11 @@ if you set the frame rate, drag the mouse over the area for capture,
 and tap on the coordinates.
 
 * ID: `Bench.CamStudio`
+* Tags:
+    + gui
+    + desktop
+    + video
+    + recording
 * Label: CamStudio Screen Recorder
 * Website: <http://camstudio.org/>
 * License: GPL-3.0
@@ -4034,6 +4196,12 @@ and tap on the coordinates.
 Free and open source software for video recording and live streaming.
 
 * ID: `Bench.OBS`
+* Tags:
+    + gui
+    + desktop
+    + video
+    + recording
+    + streaming
 * Label: OBS Studio
 * Website: <https://obsproject.com>
 * Docs:
@@ -4057,6 +4225,9 @@ It supports many file types, including AVI, DVD compatible MPEG files, MP4 and A
 Tasks can be automated using projects, job queue and powerful scripting capabilities.
 
 * ID: `Bench.Avidemux`
+* Tags:
+    + gui
+    + video
 * Website: <http://avidemux.sourceforge.net/>
 * Docs:
     + Documentation: <http://www.avidemux.org/admWiki/doku.php?id=build:doctop>
@@ -4072,6 +4243,9 @@ Tasks can be automated using projects, job queue and powerful scripting capabili
 We designed OpenShot Video Editor to be an easy to use, quick to learn, and surprisingly powerful video editor.
 
 * ID: `Bench.OpenShot`
+* Tags:
+    + gui
+    + video
 * Website: <https://www.openshot.org>
 * License: GPL-3.0
 * Version: 2.4.1
@@ -4094,6 +4268,9 @@ unstructured models arising in 3D scanning, providing a set of tools for editing
 cleaning, healing, inspecting, rendering and converting this kind of meshes.
 
 * ID: `Bench.MeshLab`
+* Tags:
+    + gui
+    + 3d
 * Version: 2016.12
 * Website: <http://meshlab.sourceforge.net/>
 * License: GPL-3.0
@@ -4108,6 +4285,12 @@ cleaning, healing, inspecting, rendering and converting this kind of meshes.
 Blender is the open source, cross platform suite of tools for 3D creation.
 
 * ID: `Bench.Blender`
+* Tags:
+    + gui
+    + 3d
+    + video
+    + audio
+    + python
 * Website: <https://www.blender.org>
 * License: GPL-3.0
 * LicenseUrl: <https://www.blender.org/about/license/>
@@ -4127,6 +4310,11 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 ### FreeCAD
 
 * ID: `Bench.FreeCAD`
+* Tags:
+    + gui
+    + 3d
+    + cad
+    + python
 * Version: 0.17
 * Release: $:Version$.13522.3bb5ff4
 * Website: <http://www.freecadweb.org/>
