@@ -268,7 +268,7 @@ installed.
 * Label: PHP 5
 * Tags:
     + language
-    + interperter
+    + interpreter
     + web
     + cgi
     + cli
@@ -301,7 +301,7 @@ installed.
 * Label: PHP 7
 * Tags:
     + language
-    + interperter
+    + interpreter
     + web
     + cgi
     + cli
