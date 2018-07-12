@@ -3057,7 +3057,7 @@ The initial password for _root_ is `bench`.
     + Data Types: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/data-types.html`
     + Functions: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/functions.html`
 * VersionMajor: 5.7
-* Version: $:VersionMajor$.20
+* Version: $:VersionMajor$.22
 * Url: `http://dev.mysql.com/get/Downloads/MySQL-$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `mysql-$:Version$-win32`
