@@ -3043,7 +3043,7 @@ You can stop the MySQL server by running `mysql_stop` in the _Bench_ shell.
 The initial password for _root_ is `bench`.
 
 * ID: `Bench.MySQL`
-* Label:
+* Tags:
     + cli
     + server
     + database
