@@ -3778,10 +3778,10 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.8-5
+* Version: 7.0.8-6
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://www.imagemagick.org/script/license.php>
-* Url: `https://www.imagemagick.org/download/binaries/$:ArchiveName$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `ImageMagick-$:Version$-portable-Q16-x86.zip`
 * ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-x64.zip`
 * Exe: `magick.exe`
