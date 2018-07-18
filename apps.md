@@ -435,9 +435,9 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html>
-* Version: 10.0.1
-* Release: 10
-* LinkUUID: fb4372174a714e6b8c52526dc134031e
+* Version: 10.0.2
+* Release: 13
+* LinkUUID: 19aef61b38124481863b1413dce1855f
 * Only64Bit: `true`
 * Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
