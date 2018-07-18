@@ -331,6 +331,7 @@ The runtime environment is required for a compiled Java program to get executed.
     + language
     + runtime
     + cli
+    + jvm
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -363,6 +364,7 @@ The development kit is required for Java source code to get compiled.
     + runtime
     + compiler
     + sdk
+    + jvm
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -427,6 +429,7 @@ The runtime environment is required for a compiled Java program to get executed.
     + cli
     + language
     + runtime
+    + jvm
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
@@ -459,6 +462,7 @@ The development kit is required for Java source code to get compiled.
     + runtime
     + compiler
     + sdk
+    + jvm
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
