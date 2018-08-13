@@ -856,7 +856,7 @@ R is a free software for statistical computing and graphics.
     + plotting
 * Website: <https://www.r-project.org>
 * Version: 3.5.0
-* Url: `http://cran.uni-muenster.de/bin/windows/base/$:ArchiveName$`
+* Url: `http://cran.uni-muenster.de/bin/windows/base/old/$:Version$/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\r`
@@ -883,7 +883,7 @@ The ultimate automation scripting language for Windows.
 * LicenseUrl: license.txt
 * Docs:
     + Documentation: <https://autohotkey.com/docs/AutoHotkey.htm>
-* Version: 1.1.28.02
+* Version: 1.1.29.01
 * Url: `https://github.com/Lexikos/AutoHotkey_L/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `AutoHotkey_$:Version$_setup.exe`
 * Exe32Bit: `AutoHotkeyU32.exe`
@@ -922,7 +922,7 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
     + Machine CLI: <https://docs.docker.com/machine/reference/>
     + Docker File Reference: <https://docs.docker.com/engine/reference/builder/>
     + Compose File Reference: <https://docs.docker.com/compose/compose-file/>
-* Version: 18.03.0
+* Version: 18.06.0
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$-ce/$:ArchiveName$`
 * ArchiveName: `DockerToolbox-$:Version$-ce.exe`
@@ -994,7 +994,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * MajorVersion: 7
-* Version: `$:MajorVersion$.5.6`
+* Version: `$:MajorVersion$.5.8`
 * Url: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -1049,7 +1049,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.27.2
+* Version: 1.29.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -1373,9 +1373,9 @@ XML Editor, Mylyn, Maven and Gradle integration...
     + java
     + maven
     + ant
-* CodeName: oxygen
-* Release: 3a
-* Version: 4.7.$:Release$
+* CodeName: photon
+* Release: R
+* Version: 4.8.$:Release$
 * Dependencies: `Bench.JDK`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
@@ -1464,7 +1464,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.1.6
+* Version: 2018.2.1
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -1487,7 +1487,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.1.4
+* Version: 2018.2.1
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
@@ -1514,7 +1514,7 @@ debugging and workspace management.
 * Dependencies: `Bench.R`
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
-* Version: 1.1.453
+* Version: 1.1.456
 * Url: `https://download1.rstudio.org/$:ArchiveName$`
 * ArchiveName: `RStudio-$:Version$.zip`
 * Dir: `bench\r-studio`
@@ -1863,8 +1863,8 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* MajorVersion: 3.11
-* Version: $:MajorVersion$.3
+* MajorVersion: 3.12
+* Version: $:MajorVersion$.1
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
