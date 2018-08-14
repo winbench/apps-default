@@ -117,6 +117,8 @@
     + `Bench.SublimeText3`
     + `Bench.R`
     + `Bench.RStudio`
+    + `Bench.Graphviz`
+    + `Bench.Gephi`
 
 ### LaTeX Writing
 
