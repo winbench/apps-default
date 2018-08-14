@@ -2686,6 +2686,38 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 * License: BSD-3-Clause
 * LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
 
+### Embulk
+
+Embulk is a open-source bulk data loader that helps data transfer
+between various databases, storages, file formats, and cloud services.
+
+Embulk supports:
+
+- Automatic guessing of input file formats
+- Parallel & distributed execution to deal with big data sets
+- Transaction control to guarantee All-or-Nothing
+- Resuming
+- Plugins released on RubyGems.org
+
+**WARNING:** Embulk does write to the Windows user profile `C:\Users\<user>\.embulk`
+and does not respect the environment variable `HOME` or `USERPROFILE`.
+
+**WARNING:** Embulk writes an error if the Bench environment resides under a path with spaces.
+
+* ID: `Bench.Embulk`
+* Tags:
+    + cli
+    + data science
+    + database
+* Dependencies: `Bench.JRE8`
+* Website: <https://github.com/embulk/embulk>
+* Docs:
+    + Documentation: <http://www.embulk.org/docs/>
+* Version: latest
+* Url: `http://dl.embulk.org/$:ResourceName$`
+* ResourceName: `embulk-latest.jar`
+* Exe: `embulk.cmd`
+
 ### Data Build Tool
 
 **Powerful command line data transformations**
