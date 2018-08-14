@@ -117,6 +117,7 @@
     + `Bench.SublimeText3`
     + `Bench.R`
     + `Bench.RStudio`
+    + `Bench.Python.Dbt`
     + `Bench.Python3.Superset`
     + `Bench.Graphviz`
     + `Bench.Gephi`
@@ -2684,6 +2685,27 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
     + 10 Minutes to pandas: <http://pandas.pydata.org/pandas-docs/stable/10min.html>
 * License: BSD-3-Clause
 * LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
+
+### Data Build Tool
+
+**Powerful command line data transformations**
+
+dbt (data build tool) is a command line tool
+that enables data analysts and engineers to transform data
+in their warehouse more effectively.
+
+* ID: `Bench.Python.Dbt`
+* Label: dbt
+* Tags:
+    + cli
+    + data science
+    + database
+    + sql
+* Typ: `python-package`
+* Website: <https://www.getdbt.com/>
+* Docs:
+    + Documentation: <https://docs.getdbt.com/reference>
+* License: Apache-2.0
 
 ### Apache Superset for Python 2
 
