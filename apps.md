@@ -1995,29 +1995,6 @@ Required for colors in IPython.
 * Website: <https://pypi.python.org/pypi/pyreadline>
 * License: BSD-3-Clause
 
-### Scandir for Python 2
-
-Required for IPython and jupyter on Python 2
-
-* ID: `Bench.Python2.Scandir`
-* Label: Scandir (Python 2)
-* PackageName: `scandir`
-* Dependencies: `Bench.Python2`
-* License: BSD-3-Clause
-* Version: 1.7
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$.py`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
-
 ### IPython for Python 2
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
@@ -2032,7 +2009,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
     + python
 * Typ: `python2-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.Python.PyReadline`, `Bench.Python2.Scandir`
+* Dependencies: `Bench.Python.PyReadline`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
@@ -2309,7 +2286,6 @@ across over 40 programming languages.
     + plotting
 * Typ: `python2-package`
 * Dependencies:
-    + `Bench.Python2.Scandir`
     + `Bench.Python2.IPython`
     + `Bench.Python.Tornado`
 * Website: <https://jupyter.org>
