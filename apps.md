@@ -117,6 +117,7 @@
     + `Bench.SublimeText3`
     + `Bench.R`
     + `Bench.RStudio`
+    + `Bench.Python3.Superset`
     + `Bench.Graphviz`
     + `Bench.Gephi`
 
@@ -2351,6 +2352,98 @@ across over 40 programming languages.
 * Launcher: jupyter Notebook
 * LauncherArguments: `notebook`, `%*`
 
+### GeoHash for Python 2
+
+* ID: `Bench.Python2.GeoHash`
+* Label: GeoHash (Python 2)
+* Tags:
+    + geography
+* PackageName: `python_geohash`
+* Dependencies: `Bench.Python2`
+* Website: <https://github.com/hkwi/python-geohash>
+* License: Apache-2.0
+* LicenseUrl: <https://github.com/hkwi/python-geohash/raw/master/README>
+* Version: 0.8.5
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
+
+### GeoHash for Python 3
+
+* ID: `Bench.Python3.GeoHash`
+* Label: GeoHash (Python 3)
+* Tags:
+    + geography
+* PackageName: `python_geohash`
+* Dependencies: `Bench.Python3.Pip`
+* Website: <https://github.com/hkwi/python-geohash>
+* License: Apache-2.0
+* LicenseUrl: <https://github.com/hkwi/python-geohash/raw/master/README>
+* Version: 0.8.5
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
+
+### MySQL Client for Python 2
+
+* ID: `Bench.Python2.MySqlClient`
+* Label: mysqlclient (Python 2)
+* Tags:
+    + database
+    + sql
+* PackageName: `mysqlclient`
+* Dependencies: `Bench.Python2`
+* Website: <https://github.com/PyMySQL/mysqlclient-python>
+* License: GPL-2
+* Version: 1.3.13
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
+
+### MySQL Client for Python 3
+
+* ID: `Bench.Python3.MySqlClient`
+* Label: mysqlclient (Python 3)
+* Tags:
+    + database
+    + sql
+* PackageName: `mysqlclient`
+* Dependencies: `Bench.Python3.Pip`
+* Website: <https://github.com/PyMySQL/mysqlclient-python>
+* License: GPL-2
+* Version: 1.3.13
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
+
+### Psycopg 2
+
+* ID: `Bench.Python.Psycopg2`
+* Typ: `python-package`
+* Tags:
+    + database
+    + sql
+
 ### SciPy for Python 2
 
 SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
@@ -2591,6 +2684,87 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
     + 10 Minutes to pandas: <http://pandas.pydata.org/pandas-docs/stable/10min.html>
 * License: BSD-3-Clause
 * LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
+
+### Apache Superset for Python 2
+
+Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application.
+
+* ID: `Bench.Python2.Superset`
+* Label: Superset (Python 2)
+* Tags:
+    + data science
+    + analysis
+    + database
+    + visualization
+    + web-app
+    + business intelligence
+    + sql
+* Typ: `python2-package`
+* Dependencies:
+    + `Bench.Python2.GeoHash`
+    + `Bench.Python2.NumPy`
+    + `Bench.Python2.MySqlClient`
+    + `Bench.Python.Pandas`
+    + `Bench.Python.Tornado`
+    + `Bench.Python.Psycopg2`
+* Website: <https://superset.incubator.apache.org/>
+* License: Apache-2.0
+* Exe: `$:Path$\superset.cmd`
+* Launcher: $:Label$
+* LauncherExecutable: `$Bench.Python2:Exe$`
+* LauncherArguments: `-c`, `from superset import app; app.run(port=$:Port$)`
+* LauncherWorkingDir: `$HomeDir$\.superset`
+* LoadExamples: `true`
+* AdminUser: `admin`
+* AdminPassword: `bench`
+* Port: 8088
+* DefaultRowLimit: 10000
+* MapBoxApiKey: `provide your API key here`
+
+You can override the following app properties in your user app library
+to customize the setup:
+`LoadExamples`, `AdminUser`, `AdminPassword`, `Port`, `DefaultRowLimit`, `MapBoxApiKey`
+
+### Apache Superset for Python 3
+
+Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application.
+
+* ID: `Bench.Python3.Superset`
+* Label: Superset (Python 3)
+* Tags:
+    + data science
+    + analysis
+    + database
+    + visualization
+    + web-app
+    + business intelligence
+    + sql
+* Typ: `python3-package`
+* Dependencies:
+    + `Bench.Python3.GeoHash`
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.MySqlClient`
+    + `Bench.Python3.MarkupSafe`
+    + `Bench.Python.Pandas`
+    + `Bench.Python.Tornado`
+    + `Bench.Python.Psycopg2`
+* Website: <https://superset.incubator.apache.org/>
+* License: Apache-2.0
+* Exe: `$:Path$\superset.cmd`
+* Launcher: $:Label$
+* LauncherExecutable: `$Bench.Python3:Exe$`
+* LauncherArguments: `-c`, `from superset import app; app.run(port=$:Port$)`
+* LauncherWorkingDir: `$HomeDir$\.superset`
+* LoadExamples: `true`
+* AdminUser: `admin`
+* AdminPassword: `bench`
+* Port: 8088
+* DefaultRowLimit: 10000
+* MapBoxApiKey: `provide your API key here`
+
+You can override the following app properties in your user app library
+to customize the setup:
+`LoadExamples`, `AdminUser`, `AdminPassword`, `Port`, `DefaultRowLimit`, `MapBoxApiKey`
 
 ### Pillow
 
