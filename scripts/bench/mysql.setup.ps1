@@ -2,6 +2,9 @@ $mysqlDir = App-Dir "Bench.MySQL"
 $mysqlPath = App-Path "Bench.MySQL"
 $homeDir = Get-ConfigValue "HomeDir"
 $dataDir = Get-AppConfigValue "Bench.MySQL" "MySqlDataDir"
+$optionFile = Get-AppConfigValue "Bench.MySQL" "MySqlServerOptionFile"
+$defaultOptionFile = "$homeDir\mysqld.cnf"
+$optionResFile = App-SetupResource "Bench.MySQL" "mysqld.cnf"
 
 if (!(Test-Path $dataDir -PathType Container)) {
     $_ = mkdir $dataDir
@@ -10,7 +13,9 @@ if (!(Test-Path $dataDir -PathType Container)) {
         del $logFile
     }
     $initFile = App-SetupResource "Bench.MySQL" "init.sql"
-    & "$mysqlPath\mysqld.exe" --initialize --init-file $initFile --log_syslog=0 "--basedir=$mysqlDir" "--datadir=$dataDir"
+    & "$mysqlPath\mysqld.exe"  "--defaults-extra-file=$optionFile" "--log_syslog=0" `
+        "--basedir=$mysqlDir" "--datadir=$dataDir" `
+        --initialize --init-file $initFile
 }
 
 if (!(Test-Path "$mysqlPath\mysql_start.cmd")) {
@@ -31,6 +36,10 @@ if (!(Test-Path "$mysqlPath\mysql_log.cmd")) {
     $cmdScript = App-SetupResource "Bench.MySQL" "mysql_log.cmd"
     cp $cmdScript $mysqlPath
     Write-Host "Run 'mysql_log' to open the MySQL log file in the system editor."
+}
+
+if (!(Test-Path $defaultOptionFile)) {
+    cp $optionResFile $defaultOptionFile
 }
 
 if (!(Test-Path "${homeDir}\.my.cnf"))

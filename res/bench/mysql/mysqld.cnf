@@ -1,0 +1,4 @@
+[mysqld]
+innodb_buffer_pool_size = 1G # 50%-70% of total RAM
+innodb_log_file_size = 128M
+innodb_flush_log_at_trx_commit = 1 # may change to 2 or 0

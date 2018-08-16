@@ -3274,8 +3274,10 @@ The initial password for _root_ is `bench`.
 * ArchivePath64Bit: `mysql-$:Version$-winx64`
 * Path: `bin`
 * Exe: `bin\mysqld.exe`
+* MySqlServerOptionFile: `$HomeDir$\mysqld.cnf`
 * MySqlDataDir: `$HomeDir$\mysql_data`
 * Environment:
+    + `MYSQL_SERVER_OPTION_FILE`: `$:MySqlServerOptionFile$`
     + `MYSQL_DATA`: `$:MySqlDataDir$`
 * Launcher: MySQL Server
 * LauncherExecutable: `bin\mysql_server.cmd`
