@@ -3279,6 +3279,7 @@ The initial password for _root_ is `bench`.
 * Environment:
     + `MYSQL_SERVER_OPTION_FILE`: `$:MySqlServerOptionFile$`
     + `MYSQL_DATA`: `$:MySqlDataDir$`
+    + `TZ`: `UTC`
 * Launcher: MySQL Server
 * LauncherExecutable: `bin\mysql_server.cmd`
 
