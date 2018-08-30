@@ -7,7 +7,7 @@ java.exe -jar `"%~dp0\plantuml.jar`" %*" `
     | Out-File "$appDir\plantuml.bat" -Encoding Default
 
 "@ECHO OFF
-START `"PlantUML`" javaw.exe -jar `"%~dp0\plantuml.jar`" -gui" `
+START `"PlantUML`" javaw.exe -jar `"%~dp0\plantuml.jar`" -gui -charset UTF8" `
     | Out-File "$appDir\plantuml-gui.bat" -Encoding Default
 
 # Create ICO File
