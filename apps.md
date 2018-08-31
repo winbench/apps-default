@@ -2102,6 +2102,32 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
 * Launcher: $:Label$
 * Register: `false`
 
+### SQLite Browser
+
+DB Browser for SQLite is a high quality, visual, open source tool to create,
+design, and edit database files compatible with SQLite.
+
+It is for users and developers wanting to create databases, search, and edit data.
+It uses a familiar spreadsheet-like interface, and you don't need to learn
+complicated SQL commands.
+
+* ID: `Bench.SQLiteBrowser`
+* Label: DB Browser for SQLite
+* Tags:
+    + gui
+    + sql
+    + sqlite
+* Website: <http://sqlitebrowser.org/>
+* Docs:
+    + Wiki: <https://github.com/sqlitebrowser/sqlitebrowser/wiki>
+* License: GPL-3.0
+* Version: 3.10.1
+* Url: `https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `DB.Browser.for.SQLite-$:Version$-win32.exe`
+* ArchiveName64Bit: `DB.Browser.for.SQLite-$:Version$-win64.exe`
+* Exe: `DB Browser for SQLite.exe`
+* Launcher: $:Label$
+
 ### Windows Sysinternals Suite
 
 A collection of tools by Mark Russinovich, to inspect and investigate
