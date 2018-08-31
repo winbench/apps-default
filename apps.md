@@ -3332,17 +3332,23 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 
 ### PostgreSQL
 
-PostgreSQL is a powerful, open source object-relational database system.
-It has more than 15 years of active development and a proven architecture
-that has earned it a strong reputation for reliability, data integrity, and correctness.
+PostgreSQL is a powerful, open source object-relational database system with
+over 30 years of active development that has earned it a strong reputation
+for reliability, feature robustness, and performance.
+
 It is fully ACID compliant, has full support for foreign keys, joins, views,
 triggers, and stored procedures (in multiple languages).
 It also supports storage of binary large objects, including pictures, sounds, or video.
 It has native programming interfaces for C/C++, Java, .Net, Perl, Python,
 Ruby, Tcl, ODBC, among others
 
-Contains the _PostgreSQL Server_ and the management tool _pgAdminIII_.
+Contains the _PostgreSQL Server_ and the management tool _pgAdmin 4_.
 The initial password for _postgres_ is `bench`.
+
+To run the server open a Bench Shell and run `postgresql_server.cmd`.
+You can also use `postgresql_start.cmd` and `postgresql_stop.cmd`
+if you do not want a console window to hang around.
+Use `postgresql_log.cmd` to open the servers log file.
 
 * ID: `Bench.PostgreSQL`
 * Tags:
@@ -3353,26 +3359,58 @@ The initial password for _postgres_ is `bench`.
     + relational
 * Website: <http://www.postgresql.org>
 * License: PostgreSQL
-* LicenseUrl: <https://opensource.org/licenses/postgresql>
+* LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
-    + Documentation: <https://www.postgresql.org/docs/9.6/static/index.html>
-* Version: 9.6.6
+    + Documentation: <https://www.postgresql.org/docs/10.5/static/index.html>
+* Version: 10.5
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
-* ArchiveName64Bit: `postgresql-$:Version$-2-windows-x64-binaries.zip`
+* ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
 * ArchivePath: `pgsql`
 * Dir: `bench\postgres`
 * Path: `bin`
 * Exe: `bin\postgres.exe`
-* RegistryKeys: `Software\pgAdmin Development Team`
-* Launcher: `PostgreSQL Admin 4`
-* LauncherExecutable: `pgAdmin 4\bin\pgAdmin4.exe`
-* AdornedExecutables: `pgAdmin 4\bin\pgAdmin4.exe`
+* Launcher: `PostgreSQL Server`
+* LauncherExecutable: `bin\postgresql_server.cmd`
 * PostgreSqlDataDir: `$HomeDir$\pg_data`
 * PostgreSqlLogFile: `$HomeDir$\pg.log`
 * Environment:
 	+ `PGDATA`: `$:PostgreSqlDataDir$`
 	+ `PG_LOG`: `$:PostgreSqlLogFile$`
+
+### PostgreSQL Admin 4
+
+pgAdmin is the leading Open Source management tool for Postgres,
+the world’s most advanced Open Source database.
+pgAdmin 4 is designed to meet the needs of both novice and experienced
+Postgres users alike, providing a powerful graphical interface
+that simplifies the creation, maintenance and use of database objects.
+
+pgAdmin consists of a locally running, Python based web server,
+which is controlled by a status icon in the Windows task bar.
+The user interface is displayed via a web browser.
+
+* ID: `Bench.PgAdmin`
+* Label: PostgreSQL Admin 4
+* Tags:
+    + web
+    + client
+    + postgresql
+    + sql
+* Website: <https://www.pgadmin.org/>
+* License: PostgreSQL
+* LicenseUrl: <https://www.postgresql.org/about/licence/>
+* Docs:
+    + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
+* Version: 3.2
+* Dir: `$Bench.PostgreSQL:Dir$`
+* Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
+* ArchiveName: `pgadmin4-$:Version$-x86.exe`
+* ArchiveTyp: `inno`
+* Dir: `bench\pgadmin`
+* Path: `runtime`
+* Exe: `runtime\pgAdmin4.exe`
+* Launcher: `$:Label$`
 
 ### Fake Sendmail
 

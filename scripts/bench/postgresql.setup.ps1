@@ -6,18 +6,15 @@ if (!(Test-Path $dataDir -PathType Container)) {
     Write-Host "Initializing PostgreSQL database in $dataDir"
     pushd $pgPath
     $pwFile = App-SetupResource "Bench.PostgreSQL" "defaultpw.txt"
-    .\initdb.exe "--pgdata=$dataDir" "--username=postgres" "--pwfile=$pwFile" | Out-File $logFile -Encoding OEM
+    .\initdb.exe "--pgdata=$dataDir" `
+        "--encoding=UTF8" `
+        "--username=postgres" "--pwfile=$pwFile" `
+        | Out-File $logFile -Encoding OEM
     popd
     Write-Host "Login to PostgreSQL with user 'postgres' and password 'bench'."
     if ($LASTEXITCODE -ne 0) {
         throw "Error during initialization of the PostgreSQL data directory: Exit Code = $LASTEXITCODE."
     }
-}
-$regFile = Get-AppRegistryFileName "Bench.PostgreSQL" "bench"
-if (!(Test-Path $regFile)) {
-    $regFileSource = App-SetupResource "Bench.PostgreSQL" "default.reg"
-    cp $regFileSource $regFile
-    Write-Host "Initialize default registry backup for pgAdmin III."
 }
 if (!(Test-Path "$pgPath\postgresql_start.cmd")) {
     $cmdFile = App-SetupResource "Bench.PostgreSQL" "postgresql_start.cmd"
@@ -33,4 +30,9 @@ if (!(Test-Path "$pgPath\postgresql_log.cmd")) {
     $cmdFile = App-SetupResource "Bench.PostgreSQL" "postgresql_log.cmd"
     cp $cmdFile $pgPath
     Write-Host "Run 'postgresql_log' to open the PostgreSQL log file in the system editor."
+}
+if (!(Test-Path "$pgPath\postgresql_server.cmd")) {
+    $cmdFile = App-SetupResource "Bench.PostgreSQL" "postgresql_server.cmd"
+    cp $cmdFile $pgPath
+    Write-Host "Run 'postgresql_server' to run the PostgreSQL server."
 }
