@@ -2541,7 +2541,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.15.0
+* Version: 1.14.5
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2585,7 +2585,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.15.0
+* Version: 1.14.5
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
