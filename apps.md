@@ -1053,7 +1053,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.29.0
+* Version: 1.30.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -1069,6 +1069,7 @@ is picked up from Atom._
     + `minimap`
     + `script`
     + `git-plus`
+    + `language-batchfile`
     + `language-powershell`
 
 You can adapt the pre-installed Atom packages
