@@ -3859,12 +3859,12 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 2.2.1
+* Version: 2.3
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `pandoc-$:Release$-windows-i386.zip`
-* ArchiveName64Bit: `pandoc-$:Release$-windows-x86_64.zip`
-* ArchivePath: `pandoc-$:Release$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `pandoc-$:Release$-windows-i386`
+* ArchivePath64Bit: `pandoc-$:Release$-windows-x86_64`
 * Exe: `pandoc.exe`
 
 ### JabRef
