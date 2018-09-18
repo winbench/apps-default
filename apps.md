@@ -1468,7 +1468,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.2.1
+* Version: 2018.2.3
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -1491,7 +1491,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.2.1
+* Version: 2018.2.3
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
