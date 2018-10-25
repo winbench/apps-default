@@ -149,8 +149,8 @@ It is also a general-purpose cryptography library.
     + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
     + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
     + Windows Build: <http://slproweb.com/products/Win32OpenSSL.html>
-* Version: 1.1.0h
-* Version2: 1_1_0h
+* Version: 1.1.0i
+* Version2: 1_1_0i
 * Url: `http://slproweb.com/download/$:ArchiveName$`
 * ArchiveName32Bit: `Win32OpenSSL-$:Version2$.exe`
 * ArchiveName64Bit: `Win64OpenSSL-$:Version2$.exe`
@@ -173,8 +173,8 @@ The GnuTLS Transport Layer Security Library.
 * LicenseUrl: <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
-* Version: 3.6.0.1
-* Release: 3_6_0_1
+* Version: 3.6.4
+* Release: 3_6_4
 * Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32/DLLs`
 * Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64/DLLs`
 * ArchiveName32Bit: `gnutls-$:Version$-w32-bin.zip`
@@ -203,7 +203,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * Docs:
     + Manual: <https://gnupg.org/documentation/manuals/gnupg-2.0/>
     + Commands: <https://gnupg.org/documentation/manuals/gnupg-2.0/Operational-GPG-Commands.html>
-* Version: 2.2.6
+* Version: 2.2.9
 * Url: `https://sourceforge.net/projects/portableapps/files/GPG Plugin Portable/$:ArchiveName$`
 * ArchiveName: `GPG_Plugin_Portable_$:Version$.paf.exe`
 * Dir: `bench\gpg`
@@ -280,7 +280,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 5.6.35
+* Version: 5.6.37
 * Url: `https://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC11-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC11-x64.zip`
@@ -313,7 +313,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.2.4
+* Version: 7.2.10
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -340,9 +340,9 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>
-* Version: 172
-* Release: b11
-* LinkUUID: a58eab1ec242421181065cdc37240b08
+* Version: 192
+* Release: b12
+* LinkUUID: 750e1c8617c5452694857ad95c3ee230
 * Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName32Bit: `jre-8u$:Version$-windows-i586.tar.gz`
@@ -997,7 +997,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * MajorVersion: 7
-* Version: `$:MajorVersion$.5.8`
+* Version: `$:MajorVersion$.5.9`
 * Url: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -1790,7 +1790,7 @@ reporting and documentation from a central piece of information.
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: `3.5.3`
+* Version: `3.5.4`
 * Url: `http://www-eu.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
@@ -2615,7 +2615,7 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.0.0
+* Version: 1.1.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3173,9 +3173,12 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.29.0
-* Url: `https://sourceforge.net/projects/filezilla/files/FileZilla_Client/$:Version$/$:ArchiveName$`
-* ArchiveName: `FileZilla_$:Version$_win32.zip`
+* Version: 3.37.4
+* Url: `https://download.filezilla-project.org/client/$:ArchiveName$`
+* DownloadHeaders:
+    + `User-Agent`: `Bench`
+* ArchiveName32Bit: `FileZilla_$:Version$_win32.zip`
+* ArchiveName64Bit: `FileZilla_$:Version$_win64.zip`
 * ArchivePath: `FileZilla-$:Version$`
 * Exe: `filezilla.exe`
 * Register: `false`
@@ -3202,7 +3205,7 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.11.2
+* Version: 5.13.4
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
@@ -3479,8 +3482,8 @@ This application needs the _Visual C++ 15 Redistributable_ [32 Bit Version](http
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
     + Documentation: <http://httpd.apache.org/docs/2.4/en/>
-* Version: 2.4.33
-* Url: `http://www.apachelounge.com/download/VC15/binaries/$:ArchiveName$`
+* Version: 2.4.37
+* Url: `https://home.apache.org/~steffenal/VC15/binaries/$:ArchiveName$`
 * ArchiveName32Bit: `httpd-$:Version$-win32-VC15.zip`
 * ArchiveName64Bit: `httpd-$:Version$-win64-VC15.zip`
 * ArchivePath: `Apache24`
@@ -4648,7 +4651,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + cad
     + python
 * Version: 0.17
-* Release: $:Version$.13522.3bb5ff4
+* Release: $:Version$.13541.9948ee4
 * Website: <http://www.freecadweb.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://raw.githubusercontent.com/FreeCAD/FreeCAD/master/COPYING>
@@ -4660,7 +4663,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Development: <http://www.freecadweb.org/wiki/index.php?title=Developer_hub>
 * Url: `https://github.com/FreeCAD/FreeCAD/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.7z`
-* ArchivePath32Bit: `FreeCAD-$:Release$-WIN-x86-portable`
+* Only64Bit: `true`
 * ArchivePath64Bit: `FreeCAD-$:Release$-WIN-x64-portable`
 * Exe: `bin\freecad.exe`
 * Launcher: $:Label$
