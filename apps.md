@@ -118,7 +118,6 @@
     + `Bench.R`
     + `Bench.RStudio`
     + `Bench.Python.Dbt`
-    + `Bench.Python3.Superset`
     + `Bench.Graphviz`
     + `Bench.Gephi`
 
