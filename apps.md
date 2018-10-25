@@ -420,45 +420,12 @@ The development kit is required for Java source code to get compiled.
 * Dir: `$Bench.JDK8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
 
-### Java Runtime Environment 10
+### Open JDK
 
 According to Oracle, Java is the world's #1 programming language.
-
-The runtime environment is required for a compiled Java program to get executed.
-
-* ID: `Bench.JRE`
-* Label: Java Runtime Environment 10
-* Tags:
-    + cli
-    + language
-    + runtime
-    + jvm
-* Website: <https://www.oracle.com/java/>
-* License: OBCL
-* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
-* Docs:
-    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html>
-* Version: 10.0.2
-* Release: 13
-* LinkUUID: 19aef61b38124481863b1413dce1855f
-* Only64Bit: `true`
-* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
-* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName64Bit: `jre-$:Version$_windows-x64_bin.tar.gz`
-* ArchivePath: `jre-$:Version$`
-* Path: `bin`
-* Exe: `bin\java.exe`
-* Environment:
-    + `JAVA_CMD`: `$:Exe$`
-
-### Java Development Kit 10
-
-According to Oracle, Java is the world's #1 programming language.
-
-The development kit is required for Java source code to get compiled.
 
 * ID: `Bench.JDK`
-* Label: Java Development Kit 10
+* Label: OpenJDK $:MajorVersion$
 * Tags:
     + cli
     + language
@@ -466,25 +433,24 @@ The development kit is required for Java source code to get compiled.
     + compiler
     + sdk
     + jvm
-* Website: <https://www.oracle.com/java/>
-* License: OBCL
-* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
+    + jre
+* Website: <https://jdk.java.net/>
+* License: GPL-2
+* LicenseUrl: <https://openjdk.java.net/legal/gplv2+ce.html>
 * Docs:
-    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
-    + Documentation: <http://docs.oracle.com/javase/10/docs/>
-    + Java SE 10 API: <http://docs.oracle.com/javase/10/docs/api/index.html>
-* Version: $Bench.JRE:Version$
-* Release: $Bench.JRE:Release$
-* LinkUUID: $Bench.JRE:LinkUUID$
+    + Downloads: <https://jdk.java.net/archive/>
+* MajorVersion: 11
+* Version: $:MajorVersion$.0.1
+* Release: 13
 * Only64Bit: `true`
-* Url64Bit: `http://download.oracle.com/otn-pub/java/jdk/$:Version$+$:Release$/$:LinkUUID$/$:ArchiveName$`
-* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName64Bit: `jdk-$:Version$_windows-x64_bin.exe`
+* Url64Bit: `https://download.java.net/java/GA/jdk$:MajorVersion$/$:Release$/GPL/$:ArchiveName$`
+* ArchiveName64Bit: `openjdk-$:Version$_windows-x64_bin.zip`
+* ArchivePath: `jdk-$:Version$`
 * Path: `bin`
-* Exe: `bin\javac.exe`
+* Exe: `bin\java.exe`
 * Environment:
     + `JAVA_HOME`: `$:Dir$`
-    + `JAVA_CMD`: `$:Dir$\bin\java.exe`
+    + `JAVA_CMD`: `$:Exe$`
 
 ### Leiningen
 
@@ -4278,7 +4244,7 @@ PlantUML allows to define UML diagrams with text files in a simple and intuitive
     + uml
     + diagram
     + compiler
-* Dependencies: `Bench.JRE`, `Bench.Graphviz`, `Bench.ImageMagick`
+* Dependencies: `Bench.JDK`, `Bench.Graphviz`, `Bench.ImageMagick`
 * Website: <http://plantuml.com>
 * License: GPL-3.0
 * Docs:
@@ -4304,7 +4270,7 @@ Gephi is open-source and free.
     + gui
     + graph
     + data science
-* Dependencies: `Bench.JRE`
+* Dependencies: `Bench.JDK`
 * Website: <https://gephi.org>
 * License: GPL-3.0
 * Docs:
@@ -4320,7 +4286,7 @@ Gephi is open-source and free.
 * Exe32Bit: `bin\gephi.exe`
 * Exe64Bit: `bin\gephi64.exe`
 * Launcher: $:Label$
-* LauncherArguments: `--jdkhome`, `$Bench.JRE:Dir$`
+* LauncherArguments: `--jdkhome`, `$Bench.JDK:Dir$`
 
 ### Dia
 
