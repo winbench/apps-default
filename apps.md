@@ -2909,7 +2909,7 @@ Performs cartographic transformations and geodetic computations.
     + `Bench.Python.PyShp`
 * Website: <https://github.com/matplotlib/basemap>
 * License: GPL-2.0
-* Version: 1.1.0
+* Version: 1.2.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2939,7 +2939,7 @@ Thanks a lot to Christoph Golke for his service.
     + `Bench.Python.PyShp`
 * Website: <https://github.com/matplotlib/basemap>
 * License: GPL-2.0
-* Version: 1.1.0
+* Version: 1.2.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
