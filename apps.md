@@ -4362,7 +4362,7 @@ GIMP provides you with sophisticated tools to get your job done.
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
 * MajorVersion: 2.10
-* Version: $:MajorVersion$.2
+* Version: $:MajorVersion$.6
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
