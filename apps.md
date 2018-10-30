@@ -175,8 +175,8 @@ The GnuTLS Transport Layer Security Library.
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
 * Version: 3.6.4
 * Release: 3_6_4
-* Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32/DLLs`
-* Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64/DLLs`
+* Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
+* Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64.DLLs`
 * ArchiveName32Bit: `gnutls-$:Version$-w32-bin.zip`
 * ArchiveName64Bit: `gnutls-$:Version$-w64-bin.zip`
 * ArchivePath32Bit: `win32-build`
