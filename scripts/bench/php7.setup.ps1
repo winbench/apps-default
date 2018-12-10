@@ -6,6 +6,8 @@ $sectionP = [regex]"^\[(?<section>\w+)\]$"
 $dirP = [regex]"^[\s;]*extension_dir\s*=\s*`"ext`"\s*$"
 $extensionP = [regex]"^[\s;]*extension\s*=\s*(?<extlib>.*?)\s*$"
 
+$extensionActivation = @{}
+
 $section = ""
 for ($i = 0; $i -lt $iniLines.Count; $i++)
 {
@@ -35,8 +37,16 @@ for ($i = 0; $i -lt $iniLines.Count; $i++)
         {
             if ($extlib -eq $ext -or $extlib -eq "${ext}.dll")
             {
-                "Activating dynamic PHP extension $ext"
+                if (!$extensionActivation.ContainsKey($extlib)) {
+                    # First line with extension loading statement
+                    "Activating dynamic PHP extension $ext"
+                } else {
+                    # Successive line with extension loading statement
+                    # -> deactivate predecessing statement
+                    $iniLines[$extensionActivation[$extlib]] = "; extension=$extlib"
+                }
                 $iniLines[$i] = "extension=$extlib"
+                $extensionActivation[$extlib] = $i
             }
         }
     }
