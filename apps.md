@@ -149,11 +149,14 @@ It is also a general-purpose cryptography library.
     + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
     + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
     + Windows Build: <http://slproweb.com/products/Win32OpenSSL.html>
-* Version: 1.1.0i
-* Version2: 1_1_0i
+* MajorVersion: 1
+* MinorVersion: 1
+* Revision: 1a
+* Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
+* Release: `$:MajorVersion$_$:MinorVersion$_$:Revision$`
 * Url: `http://slproweb.com/download/$:ArchiveName$`
-* ArchiveName32Bit: `Win32OpenSSL-$:Version2$.exe`
-* ArchiveName64Bit: `Win64OpenSSL-$:Version2$.exe`
+* ArchiveName32Bit: `Win32OpenSSL-$:Release$.exe`
+* ArchiveName64Bit: `Win64OpenSSL-$:Release$.exe`
 * ArchiveTyp: `inno`
 * Path: `bin`
 * Exe: `bin\openssl.exe`
@@ -173,8 +176,11 @@ The GnuTLS Transport Layer Security Library.
 * LicenseUrl: <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
-* Version: 3.6.4
-* Release: 3_6_4
+* MajorVersion: 3
+* MinorVersion: 6
+* Revision: 5
+* Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
+* Release: `$:MajorVersion$_$:MinorVersion$_$:Revision$`
 * Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
 * Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64.DLLs`
 * ArchiveName32Bit: `gnutls-$:Version$-w32-bin.zip`
@@ -280,7 +286,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 5.6.37
+* Version: 5.6.38
 * Url: `https://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC11-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC11-x64.zip`
@@ -313,7 +319,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.2.10
+* Version: 7.2.12
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -337,13 +343,13 @@ The runtime environment is required for a compiled Java program to get executed.
     + jvm
 * Website: <https://www.oracle.com/java/>
 * License: OBCL
-* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
+* LicenseUrl: <https://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
-    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>
+    + Downloads: <https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
 * Version: 192
 * Release: b12
 * LinkUUID: 750e1c8617c5452694857ad95c3ee230
-* Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
+* Url: `https://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName32Bit: `jre-8u$:Version$-windows-i586.tar.gz`
 * ArchiveName64Bit: `jre-8u$:Version$-windows-x64.tar.gz`
@@ -563,7 +569,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 2.1.200
+* Version: 2.2.101
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -572,7 +578,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
-* Url: `https://download.microsoft.com/download/3/7/1/37189942-C91D-46E9-907B-CF2B2DE584C7/$:ArchiveName$`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/25d4104d-1776-41cb-b96e-dff9e9bf1542/b878c013de90f0e6c91f6f3c98a2d592/$:ArchiveName$`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/f3962c7d-fdcf-4818-90cc-81ed7a0cef23/c649ab4926c382df9e2ea1351a5c337f/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-sdk-$:Version$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:Version$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -686,7 +693,7 @@ install the LLVM-Plugin for Eclipse CDT.
     + c++
     + objective c
     + objective c++
-* Version: 6.0.0
+* Version: 7.0.0
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -712,7 +719,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.10.2
+* Version: 1.11.3
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
