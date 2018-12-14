@@ -2299,7 +2299,7 @@ across over 40 programming languages.
 * ID: `Bench.Python3.MarkupSafe`
 * Label: MarkupSafe (Python 3)
 * PackageName: `MarkupSafe`
-* Dependencies: `Bench.Python3.Pip`
+* Dependencies: `Bench.Python3`
 * Website: <https://github.com/pallets/markupsafe>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/pallets/markupsafe/master/LICENSE>
@@ -2373,7 +2373,7 @@ across over 40 programming languages.
 * Tags:
     + geography
 * PackageName: `python_geohash`
-* Dependencies: `Bench.Python3.Pip`
+* Dependencies: `Bench.Python3`
 * Website: <https://github.com/hkwi/python-geohash>
 * License: Apache-2.0
 * LicenseUrl: <https://github.com/hkwi/python-geohash/raw/master/README>
@@ -2416,7 +2416,7 @@ across over 40 programming languages.
     + database
     + sql
 * PackageName: `mysqlclient`
-* Dependencies: `Bench.Python3.Pip`
+* Dependencies: `Bench.Python3`
 * Website: <https://github.com/PyMySQL/mysqlclient-python>
 * License: GPL-2
 * Version: 1.3.13
@@ -2878,7 +2878,7 @@ Performs cartographic transformations and geodetic computations.
     + cartographic
     + geodetic
 * Dependencies:
-    + `Bench.Python3.Pip`
+    + `Bench.Python3`
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
@@ -2931,7 +2931,7 @@ Thanks a lot to Christoph Golke for his service.
     + plotting
     + geography
 * Dependencies:
-    + `Bench.Python3.Pip`
+    + `Bench.Python3`
     + `Bench.Python3.NumPy`
     + `Bench.Python3.PyProj`
     + `Bench.Python.Matplotlib`
