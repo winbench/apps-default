@@ -160,6 +160,10 @@ It is also a general-purpose cryptography library.
 * ArchiveTyp: `inno`
 * Path: `bin`
 * Exe: `bin\openssl.exe`
+* VersionCheckUrl: <http://slproweb.com/products/Win32OpenSSL.html>
+* VersionCheckXPath: `//td/a/@href`
+* VersionCheckPattern: `/download/Win32OpenSSL-(?<Version>[\d_]+[a-z]?)\.exe$`
+* VersionCheckString: `$:Release$`
 
 ### GNU TLS
 
@@ -190,6 +194,10 @@ The GnuTLS Transport Layer Security Library.
 * Dir: `bench\gnu`
 * Path: `bin`
 * Exe: `bin\gnutls-cli.exe`
+* VersionCheckUrl: <https://www.gnutls.org/download.html>
+* VersionCheckXPath: `//table[@class='news']/descendant::tr/td/a`
+* VersionCheckPattern: `^gnutls_(?<Version>[\d_]+)\:mingw32`
+* VersionCheckString: `$:Release$`
 
 ### GnuPG
 
@@ -215,6 +223,9 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * Dir: `bench\gpg`
 * Path: `bin`
 * Exe: `bin\gpg.exe`
+* VersionCheckUrl: <https://sourceforge.net/projects/portableapps/files/GPG%20Plugin%20Portable/>
+* VersionCheckXPath: `/html/body/descendant::div[@id='files']/table/descendant::tr/th/a`
+* VersionCheckPattern: `GPG_Plugin_Portable_(?<Version>[\d\.]+)\.paf\.exe`
 
 ### Putty
 
@@ -294,6 +305,9 @@ installed.
     + `User-Agent`: `Bench`
 * Exe: `php.exe`
 * Extensions: `php_curl`, `php_fileinfo`, `php_imap`, `php_mbstring`, `php_mysql`, `php_mysqli`, `php_openssl`, `php_pdo_mysql`, `php_pdo_pgsql`, `php_pdo_sqlite`, `php_pgsql`, `php_sqlite3`, `php_soap`
+* VersionCheckUrl: <https://windows.php.net/downloads/releases/archives/>
+* VersionCheckXPath: `//a`
+* VersionCheckPattern: `php-(?<Version>5\.[\d\.]+)-Win32-VC\d+-x86\.zip`
 
 ### PHP 7
 
@@ -327,6 +341,9 @@ installed.
     + `User-Agent`: `Bench`
 * Exe: `php.exe`
 * Extensions: `curl`, `fileinfo`, `imap`, `mbstring`, `mysqli`, `openssl`, `pdo_mysql`, `pdo_pgsql`, `pdo_sqlite`, `pgsql`, `sqlite3`, `soap`
+* VersionCheckUrl: <https://windows.php.net/downloads/releases/archives/>
+* VersionCheckXPath: `//a`
+* VersionCheckPattern: `php-(?<Version>7\.[\d\.]+)-Win32-VC\d+-x86\.zip`
 
 ### Java Runtime Environment 8
 
@@ -358,6 +375,9 @@ The runtime environment is required for a compiled Java program to get executed.
 * Exe: `bin\java.exe`
 * Environment:
     + `JAVA_CMD`: `$:Exe$`
+* VersionCheckUrl: <https://www.oracle.com/technetwork/java/javase/downloads/index.html>
+* VersionCheckXPath: `//h3/a[@name='JDK8']`
+* VersionCheckPattern: `Java SE 8u(?<Version>\d+)`
 
 ### Java Development Kit 8
 
@@ -457,6 +477,9 @@ According to Oracle, Java is the world's #1 programming language.
 * Environment:
     + `JAVA_HOME`: `$:Dir$`
     + `JAVA_CMD`: `$:Exe$`
+* VersionCheckUrl: `https://jdk.java.net/$:MajorVersion$/`
+* VersionCheckXPath: `//div[@id='openjdk']/descendant::table/descendant::td/a/@href`
+* VersionCheckPattern: `jdk11/\d+/GPL/openjdk-(?<Version>[\d\.]+)_windows-x64_bin\.zip$`
 
 ### Leiningen
 
@@ -583,6 +606,9 @@ The build tools and compilers for platform independent .NET Core applications.
 * ArchiveName32Bit: `dotnet-sdk-$:Version$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:Version$-win-x64.zip`
 * Exe: `dotnet.exe`
+* VersionCheckUrl: <https://dotnet.microsoft.com/download>
+* VersionCheckXPath: `//div[@class='secondary-downloads']/descendant::th`
+* VersionCheckPattern: `Build apps - SDK v(?<Version>[\d\.]+)`
 
 ### MinGW Get
 
@@ -653,6 +679,9 @@ including compilers for C/C++, Objective-C, Fortran, Ada, ...
     + `mingw32-base`
     + `mingw32-gcc-g++`
     + `mingw32-autotools`
+* VersionCheckUrl: <https://sourceforge.net/projects/mingw/files/Installer/mingw-get/>
+* VersionCheckXPath: `/html/body/descendant::div[@id='files']/table/descendant::tr/th/a`
+* VersionCheckPattern: `mingw-get-(?<Version>[\d\.]+)`
 
 You can adapt the preselected MinGW packages
 by putting something like this in your user app library in `config\apps.md`:
@@ -706,6 +735,9 @@ install the LLVM-Plugin for Eclipse CDT.
 * Environment:
     + `CC`: `$:Dir$\bin\clang.exe`
     + `CXX`: `$:Dir$\bin\clang++.exe`
+* VersionCheckUrl: <http://releases.llvm.org/download.html>
+* VersionCheckXPath: `//ul/li/a/@href`
+* VersionCheckPattern: `/LLVM-(?<Version>[\d\.]+)-win32\.exe`
 
 ### Go
 
@@ -737,6 +769,9 @@ to build simple, reliable, and efficient software.
 * Exe: `bin\go.exe`
 * Environment:
     + `GOROOT`: `$:Dir$`
+* VersionCheckUrl: <https://golang.org/dl/>
+* VersionCheckXPath: `//td[@class='filename']/a`
+* VersionCheckPattern: `^go(?<Version>[\d\.]+?)\.windows-386\.zip$`
 
 ### Erlang
 
@@ -977,6 +1012,9 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
 * Exe: `notepad++.exe`
 * Launcher: $:Label$
 * ConfigurationDir: `$AppDataDir$\Notepad++`
+* VersionCheckUrl: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/`
+* VersionCheckXPath: `//table/descendant::tr/td/a`
+* VersionCheckPattern: `(?<Version>[\d\.]+)`
 
 ### Markdown Edit
 
