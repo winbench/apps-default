@@ -146,24 +146,21 @@ It is also a general-purpose cryptography library.
 * License: BSD-Style
 * LicenseUrl: https://www.openssl.org/source/license.html
 * Docs:
-    + Overview: <https://www.openssl.org/docs/man1.0.2/apps/openssl.html>
-    + Commands: <https://www.openssl.org/docs/man1.0.2/apps/>
-    + Windows Build: <http://slproweb.com/products/Win32OpenSSL.html>
+    + Overview: <https://www.openssl.org/docs/man1.1.1/>
+    + Commands: <https://www.openssl.org/docs/man1.1.1/man1/>
+    + Windows Builds: <https://bintray.com/vszakats/generic/openssl>
 * MajorVersion: 1
 * MinorVersion: 1
 * Revision: 1a
 * Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
-* Release: `$:MajorVersion$_$:MinorVersion$_$:Revision$`
-* Url: `http://slproweb.com/download/$:ArchiveName$`
-* ArchiveName32Bit: `Win32OpenSSL-$:Release$.exe`
-* ArchiveName64Bit: `Win64OpenSSL-$:Release$.exe`
-* ArchiveTyp: `inno`
-* Path: `bin`
-* Exe: `bin\openssl.exe`
-* VersionCheckUrl: <http://slproweb.com/products/Win32OpenSSL.html>
-* VersionCheckXPath: `//td/a/@href`
-* VersionCheckPattern: `/download/Win32OpenSSL-(?<Version>[\d_]+[a-z]?)\.exe$`
-* VersionCheckString: `$:Release$`
+* Url: `https://bintray.com/vszakats/generic/download_file?file_path=$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `openssl-$:Version$-win32-mingw`
+* ArchivePath64Bit: `openssl-$:Version$-win64-mingw`
+* Exe: `openssl.exe`
+* VersionCheckUrl: <https://bintray.com/vszakats/generic/openssl/_latestVersion>
+* VersionCheckXPath: `//span[@class='crumb']/a`
+* VersionCheckPattern: `(?<Version>[\d\.]+[a-z]?)`
 
 ### GNU TLS
 
