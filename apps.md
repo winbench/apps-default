@@ -3437,7 +3437,8 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 * Url: `https://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
 * ArchiveName32Bit: `mysql-workbench-community-$:Version$-win32-noinstall.zip`
 * ArchiveName64Bit: `mysql-workbench-community-$:Version$-winx64-noinstall.zip`
-* ArchivePath: `MySQL Workbench $:Version$ CE (winx64)`
+* ArchivePath32Bit: `MySQL Workbench $:Version$ CE (win32)`
+* ArchivePath64Bit: `MySQL Workbench $:Version$ CE (winx64)`
 * Exe: `MySQLWorkbench.exe`
 * Register: `false`
 * Launcher: $:Label$
