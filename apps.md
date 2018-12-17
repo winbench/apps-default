@@ -786,9 +786,9 @@ Erlang is a programming language used to build massively scalable soft real-time
 * License: Apache-2.0
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
-* VersionMajor: 20
-* VersionMinor: 3
-* ErtsVersion: 9.3
+* VersionMajor: 21
+* VersionMinor: 2
+* ErtsVersion: 10.2
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName32Bit: `otp_win32_$:Version$.exe`
@@ -799,6 +799,9 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Environment: `ERLANG_HOME=$:ErtsDir$`
 * Launcher: $:Label$
 * LauncherExecutable: `$:ErtsDir$\bin\werl.exe`
+* VersionCheckUrl: <http://www.erlang.org/downloads>
+* VersionCheckXPath: `//li`
+* VersionCheckPattern: `^OTP (?<Version>[\d\.]+)$`
 
 ### CoffeeScript
 
@@ -822,7 +825,7 @@ CoffeeScript is an attempt to expose the good parts of JavaScript in a simple wa
     + Language Reference: <http://coffeescript.org/#language>
     + Resources: <http://coffeescript.org/#resources>
 * PackageName: `coffee-script`
-* Version: `>=1.10.0 <2.0.0`
+* Version: `>=2.3.0 <3.0.0`
 * Exe: `coffee.cmd`
 
 ### TypeScript
@@ -873,6 +876,9 @@ R is a free software for statistical computing and graphics.
 * Exe: `$:Path$\R.exe`
 * Environment:
     + `R_HOME`: `$:Dir$`
+* VersionCheckUrl: <http://cran.uni-muenster.de/bin/windows/base/old/>
+* VersionCheckXPath: `/html/body/a`
+* VersionCheckPattern: `^R (?<Version>[\d\.]+)$`
 
 ### AutoHotKey
 
@@ -891,7 +897,7 @@ The ultimate automation scripting language for Windows.
 * LicenseUrl: license.txt
 * Docs:
     + Documentation: <https://autohotkey.com/docs/AutoHotkey.htm>
-* Version: 1.1.29.01
+* Version: 1.1.30.01
 * Url: `https://github.com/Lexikos/AutoHotkey_L/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `AutoHotkey_$:Version$_setup.exe`
 * Exe32Bit: `AutoHotkeyU32.exe`
@@ -930,10 +936,10 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
     + Machine CLI: <https://docs.docker.com/machine/reference/>
     + Docker File Reference: <https://docs.docker.com/engine/reference/builder/>
     + Compose File Reference: <https://docs.docker.com/compose/compose-file/>
-* Version: 18.06.0
+* Version: 18.09.0
 * Only64Bit: `true`
-* Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$-ce/$:ArchiveName$`
-* ArchiveName: `DockerToolbox-$:Version$-ce.exe`
+* Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `DockerToolbox-$:Version$.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\docker`
 * Exe: `docker.exe`
@@ -983,6 +989,9 @@ This program can be run out of the box without installation, and does not touch 
 * ArchiveName64Bit: `notepad2_$:Version$_x64.zip`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <http://www.flos-freeware.ch/notepad2.html>
+* VersionCheckXPath: `//div[@id='contents']/p/em`
+* VersionCheckPattern: `^Current Release\: Version (?<Version>[\d\.]+)`
 
 ### Notepad++
 
@@ -1002,7 +1011,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * MajorVersion: 7
-* Version: `$:MajorVersion$.5.9`
+* Version: `$:MajorVersion$.6.1`
 * Url: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -1029,7 +1038,7 @@ Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on produc
 * Docs:
     + Documentation: <https://github.com/mike-ward/Markdown-Edit/wiki/01.-Home>
     + Keyboard Shortcuts: <https://github.com/mike-ward/Markdown-Edit/wiki/05.-Keyboard-Shortcuts>
-* Version: 1.33
+* Version: 1.35
 * Url: `https://github.com/mike-ward/Markdown-Edit/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `MarkdownEdit.zip`
 * Exe: `mde.exe`
@@ -1060,7 +1069,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.30.0
+* Version: 1.33.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -1137,13 +1146,17 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
     + Package Control: <https://packagecontrol.io/>
-* Version: Build 3176
+* Release: 3176
+* Version: Build $:Release$
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * ArchiveName32Bit: `Sublime Text $:Version$.zip`
 * ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
 * Exe: `sublime_text.exe`
 * Launcher: $:Label$
 * DataDir: `$AppDataDir$\Sublime Text 3`
+* VersionCheckUrl: <https://www.sublimetext.com/3>
+* VersionCheckXPath: `//article/h3`
+* VersionCheckPattern: `[\d\.]+ \((?<Version>Build \d+)\)`
 
 ### Sublime Text 3 Package Control
 
@@ -1217,6 +1230,9 @@ with extensions to support text editing.
 * Exe: `bin\emacs.exe`
 * Launcher: $:Label$
 * LauncherExecutable: `$:Dir$\bin\runemacs.exe`
+* VersionCheckUrl: <https://ftp.gnu.org/gnu/emacs/>
+* VersionCheckXPath: `//td/a`
+* VersionCheckPattern: `emacs-(?<Version>[\d\.]+?)\.tar\.gz`
 
 ### Spacemacs
 
@@ -1302,6 +1318,9 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * ArchivePath: `vim\vim$:Release$`
 * Exe: `gvim.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <http://ftp.vim.org/pub/vim/pc/>
+* VersionCheckXPath: `//table[@class='readme']/descendant::pre`
+* VersionCheckPattern: `-- version (?<Version>[\d\.]+) --`
 
 ### Spyder
 
@@ -1385,21 +1404,25 @@ XML Editor, Mylyn, Maven and Gradle integration...
     + java
     + maven
     + ant
-* CodeName: photon
+* CodeName: 2018-09
+* Version: 4.9
 * Release: R
-* Version: 4.8.$:Release$
 * Dependencies: `Bench.JDK`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName32Bit: `eclipse-java-$:CodeName$-$:Release$-win32.zip`
-* ArchiveName64Bit: `eclipse-java-$:CodeName$-$:Release$-win32-x86_64.zip`
+* ArchiveName32Bit: `eclipse-java-$:CodeName$-win32.zip`
+* ArchiveName64Bit: `eclipse-java-$:CodeName$-win32-x86_64.zip`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_java`
 * Exe: `eclipse.exe`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://www.eclipse.org/downloads/packages/>
+* VersionCheckXPath: `//span[@class='windows']/a/@href`
+* VersionCheckPattern: `/technology/epp/downloads/release/(?<Version>[^/]+/[^/]+)/eclipse-java-.+?-win32\.zip$`
+* VersionCheckString: `$:CodeName$/$:Release$`
 
 ### Eclipse for PHP
 
@@ -1415,13 +1438,13 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 * Version: $Bench.EclipseJava:Version$
 * CodeName: $Bench.EclipseJava:CodeName$
 * Release: $Bench.EclipseJava:Release$
-* Dependencies: `Bench.JRE8`
+* Dependencies: `Bench.JDK`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName32Bit: `eclipse-php-$:CodeName$-$:Release$-win32.zip`
-* ArchiveName64Bit: `eclipse-php-$:CodeName$-$:Release$-win32-x86_64.zip`
+* ArchiveName32Bit: `eclipse-php-$:CodeName$-win32.zip`
+* ArchiveName64Bit: `eclipse-php-$:CodeName$-win32-x86_64.zip`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_php`
 * Exe: `eclipse.exe`
@@ -1442,13 +1465,13 @@ An IDE for C/C++ developers with Mylyn integration.
 * Version: $Bench.EclipseJava:Version$
 * CodeName: $Bench.EclipseJava:CodeName$
 * Release: $Bench.EclipseJava:Release$
-* Dependencies: `Bench.JRE8`
+* Dependencies: `Bench.JDK`
 * Website: <http://www.eclipse.org/>
 * License: EFSUA
 * LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
 * Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName32Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32.zip`
-* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32-x86_64.zip`
+* ArchiveName32Bit: `eclipse-cpp-$:CodeName$-win32.zip`
+* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-win32-x86_64.zip`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_cpp`
 * Exe: `eclipse.exe`
@@ -1476,13 +1499,16 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.3
+* Version: 2018.3.1
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
 * Exe32Bit: `bin\idea.exe`
 * Exe64Bit: `bin\idea64.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
+* VersionCheckJsonPath: `IIC/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
 
 ### JetBrains PyCharm Community
 
@@ -1499,13 +1525,16 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.3
+* Version: 2018.3.1
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
 * Exe32Bit: `bin\pycharm.exe`
 * Exe64Bit: `bin\pycharm64.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
+* VersionCheckJsonPath: `PCP/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
 
 ### R Studio
 
@@ -1526,13 +1555,16 @@ debugging and workspace management.
 * Dependencies: `Bench.R`
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
-* Version: 1.1.456
+* Version: 1.1.463
 * Url: `https://download1.rstudio.org/$:ArchiveName$`
 * ArchiveName: `RStudio-$:Version$.zip`
 * Dir: `bench\r-studio`
 * Path: `bin`
 * Exe: `bin\rstudio.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://www.rstudio.com/products/rstudio/download/>
+* VersionCheckXPath: `//h4/strong`
+* VersionCheckPattern: `RStudio Desktop (?<Version>[\d\.]+)`
 
 ### Resource Hacker™
 
@@ -1798,13 +1830,16 @@ reporting and documentation from a central piece of information.
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: `3.5.4`
-* Url: `http://www-eu.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
+* Version: `3.6.0`
+* Url: `http://www.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
 * Dir: `bench\mvn`
 * Path: `bin`
 * Exe: `bin\mvn.cmd`
+* VersionCheckUrl: <http://www.apache.org/dist/maven/maven-3/>
+* VersionCheckXPath: `/html/body/pre/a`
+* VersionCheckPattern: `(?<Version>[\d\.]+)`
 
 ### Gradle
 
@@ -1822,12 +1857,15 @@ Gradle is writing to the `.gradle` folder in the Windows user profile directory 
 * License: Apache-2.0
 * Docs:
     + Documentation: <https://gradle.org/docs>
-* Version: 4.7
+* Version: 5.0
 * Url: `https://services.gradle.org/distributions/$:ArchiveName$`
 * ArchiveName: `gradle-$:Version$-bin.zip`
 * ArchivePath: `gradle-$:Version$`
 * Path: `bin`
 * Exe: `bin\gradle.bat`
+* VersionCheckUrl: <https://services.gradle.org/distributions/>
+* VersionCheckXPath: `//ul/li/a/@href`
+* VersionCheckPattern: `gradle-(?<Version>[\d\.]+)-bin\.zip$`
 
 ### NUnit 3 Runner
 
@@ -1875,14 +1913,17 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* MajorVersion: 3.12
-* Version: $:MajorVersion$.1
+* MajorVersion: 3.13
+* Version: $:MajorVersion$.2
 * Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
 * ArchivePath64Bit: `cmake-$:Version$-win64-x64`
 * Path: `bin`
 * Exe: `bin\cmake.exe`
+* VersionCheckUrl: <https://cmake.org/files/LatestRelease/>
+* VersionCheckXPath: `/html/body/table/descendant::td/a`
+* VersionCheckPattern: `cmake-(?<Version>[\d\.]+)-win32-x86\.zip`
 
 ### JSLint
 
@@ -2099,16 +2140,17 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
     + offline
 * Website: <https://zealdocs.org>
 * License: GPL-3.0
-* Version32Bit: 0.3.1
-* Version64Bit: 0.5.0
+* Version: 0.6.1
 * Url: `https://bintray.com/artifact/download/zealdocs/windows/$:ArchiveName$`
 * ArchiveName32Bit: `zeal-$:Version$-windows-x86.msi`
 * ArchiveName64Bit: `zeal-$:Version$-windows-x64.msi`
-* ArchivePath32Bit: `SourceDir\PFiles\Zeal`
-* ArchivePath64Bit: `SourceDir\Zeal`
+* ArchivePath: `SourceDir\Zeal`
 * RegistryKeys: `Software\Zeal`
 * Launcher: $:Label$
 * Register: `false`
+* VersionCheckUrl: <https://zealdocs.org/download.html>
+* VersionCheckXPath: `//a[@role='button']/@href`
+* VersionCheckPattern: `zeal-(?<Version>[\d\.]+)-windows-x86.msi`
 
 ### SQLite Browser
 
@@ -2135,6 +2177,9 @@ complicated SQL commands.
 * ArchiveName64Bit: `DB.Browser.for.SQLite-$:Version$-win64.exe`
 * Exe: `DB Browser for SQLite.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://github.com/sqlitebrowser/sqlitebrowser/releases/>
+* VersionCheckXPath: `//div[@class='release-entry']/descendant::ul/li/a/@title`
+* VersionCheckPattern: `^v(?<Version>[\d\.]+)$`
 
 ### Windows Sysinternals Suite
 
