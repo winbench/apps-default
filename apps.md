@@ -2397,7 +2397,7 @@ across over 40 programming languages.
 * Website: <https://github.com/pallets/markupsafe>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/pallets/markupsafe/master/LICENSE>
-* Version: 1.0
+* Version: 1.1.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2616,7 +2616,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.14.5
+* Version: 1.14.6
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2738,6 +2738,9 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2984,6 +2987,9 @@ Performs cartographic transformations and geodetic computations.
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 ### PyProj for Python 3
 
@@ -3009,6 +3015,9 @@ Performs cartographic transformations and geodetic computations.
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 ### Basemap for Python 2
 
@@ -3036,6 +3045,9 @@ Performs cartographic transformations and geodetic computations.
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -3066,6 +3078,9 @@ Thanks a lot to Christoph Golke for his service.
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -3147,6 +3162,9 @@ Sift - grep on steroids. A fast and powerful alternative to grep.
 * Url: `https://sift-tool.org/downloads/sift/$:ArchiveName$`
 * ArchiveName32Bit: `sift_$:Version$_windows_386.zip`
 * ArchiveName64Bit: `sift_$:Version$_windows_amd64.zip`
+* VersionCheckUrl: <https://sift-tool.org/download>
+* VersionCheckXPath: `//td/a`
+* VersionCheckPattern: `sift_(?<Version>[\d\.]+)_windows_386\.zip`
 
 ### WinMerge
 
@@ -3165,14 +3183,18 @@ that is easy to understand and handle.
 * Docs:
     + Quick Tour: <http://tour.winmerge.org/>
     + Manual: <http://manual.winmerge.org/>
-* Version: 2.14.0
+* Version: 2.16.0
 * Url: `http://downloads.sourceforge.net/winmerge/$:ArchiveName$`
-* ArchiveName: `WinMerge-$:Version$-exe.7z`
-* ArchivePath: `WinMerge-$:Version$-exe`
+* ArchiveName32Bit: `winmerge-$:Version$-exe.zip`
+* ArchiveName64Bit: `winmerge-$:Version$-x64-exe.zip`
+* ArchivePath: `WinMerge`
 * Exe: `WinMergeU.exe`
 * RegistryKeys: `Software\Thingamahoochie`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/winmerge/files/stable/>
+* VersionCheckXPath: `//th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### DiffMerge
 
@@ -3198,6 +3220,9 @@ DiffMerge is an application to visually compare and merge files on Windows, OS X
 * ArchivePath64Bit: `DiffMerge_$:Release$_x64`
 * Exe: `sgdm.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <http://www.sourcegear.com/diffmerge/webhelp/chapter_release_notes.html>
+* VersionCheckXPath: `//dl[@class='toc']/dt/descendant::a`
+* VersionCheckPattern: `Release (?<Version>[\d\.]+)`
 
 ### Ant Renamer
 
@@ -3257,7 +3282,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.37.4
+* Version: 3.39.0
 * Url: `https://download.filezilla-project.org/client/$:ArchiveName$`
 * DownloadHeaders:
     + `User-Agent`: `Bench`
@@ -3267,6 +3292,9 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
 * Exe: `filezilla.exe`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://download.filezilla-project.org/client/>
+* VersionCheckXPath: `//td/a`
+* VersionCheckPattern: `FileZilla_(?<Version>[\d\.]+)_win32\.zip`
 
 ### WinSCP
 
@@ -3289,10 +3317,13 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.13.4
+* Version: 5.13.6
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/winscp/files/WinSCP/>
+* VersionCheckXPath: `//th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### SRWare Iron
 
@@ -3352,6 +3383,9 @@ The included DHCP server provides unlimited automatic or static IP address assig
 * Launcher: `$:Label$`
 * Exe32Bit: `tftpd32.exe`
 * Exe64Bit: `tftpd64.exe`
+* VersionCheckUrl: <http://www.tftpd64.com/tftpd32_download.html>
+* VersionCheckXPath: `//table/descendant::td/b`
+* VersionCheckPattern: `^v(?<Version>[\d\.]+)$`
 
 ### MySQL
 
@@ -4246,10 +4280,10 @@ The command line interface for the open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.1.1
+* Version: $Bench.HandBrake:Version$
 * Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `HandBrakeCLI-$:Version$-win-i686.zip`
 * ArchiveName64Bit: `HandBrakeCLI-$:Version$-win-x86_64.zip`
+* Only64Bit: `true`
 * Dir: `bench\handbrake`
 * Exe: `HandBrakeCLI.exe`
 
@@ -4264,12 +4298,15 @@ The open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.1.1
+* Version: 1.1.2
 * Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `HandBrake-$:Version$-i686-Win_GUI.exe`
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
+* Only64Bit: `true`
 * Exe: `HandBrake.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://download.handbrake.fr/releases/>
+* VersionCheckXPath: `//pre/a`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)/$`
 
 ### YouTubeDL
 
@@ -4453,11 +4490,14 @@ It's free and open source.
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
 * Version: 0.92.3
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `Inkscape-$:Version$.7z`
-* ArchiveName64Bit: `Inkscape-$:Version$-x64.7z`
+* ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
+* ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
 * ArchivePath: `inkscape`
 * Exe: `inkscape.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://inkscape.org/de/release/>
+* VersionCheckXPath: `//div[@id='sidecategory']/descendant::li/a/label`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### GIMP
 
@@ -4481,13 +4521,16 @@ GIMP provides you with sophisticated tools to get your job done.
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
 * MajorVersion: 2.10
-* Version: $:MajorVersion$.6
+* Version: $:MajorVersion$.8
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
 * Exe: `bin\gimp-$:MajorVersion$.exe`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/portableapps/files/GIMP%20Portable/>
+* VersionCheckXPath: `//th/a/span[@class='name']`
+* VersionCheckPattern: `GIMPPortable_(?<Version>[\d\.]+)\.paf\.exe`
 
 ### XnView
 
