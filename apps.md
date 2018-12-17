@@ -2298,7 +2298,7 @@ The setup script includes the installation of the Intel _Hardware Accelerated eX
     + Emulator: <https://developer.android.com/studio/run/emulator-commandline.html>
     + API Guides: <https://developer.android.com/guide/index.html>
     + Package Index: <https://developer.android.com/reference/packages.html>
-* Version: 3859397
+* Version: 4333796
 * BuildToolsVersion: 25.0.3
 * PlatformVersion: 25
 * Url: `https://dl.google.com/android/repository/$:ArchiveName$`
@@ -2318,6 +2318,9 @@ The setup script includes the installation of the Intel _Hardware Accelerated eX
     + `build-tools;$:BuildToolsVersion$`
     + `platforms;android-$:PlatformVersion$`
     + `system-images;android-$:PlatformVersion$;google_apis;x86`
+* VersionCheckUrl: <https://developer.android.com/studio/>
+* VersionCheckXPath: `//button[@data-modal-dialog-id='sdk_win_download']`
+* VersionCheckPattern: `sdk-tools-windows-(?<Version>\d+)\.zip`
 
 ### Android Studio
 
@@ -2339,8 +2342,8 @@ Otherwise it will download and set up an additional Android SDK in the Windows u
 * Website: <https://developer.android.com/studio/>
 * License: Proprietary
 * LicenseUrl: <https://developer.android.com/studio/terms.html>
-* Version: 2.3.2.0
-* Build: 162.3934792
+* Version: 3.2.1.0
+* Build: 181.5056338
 * Url: `https://dl.google.com/dl/android/studio/ide-zips/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `android-studio-ide-$:Build$-windows32.zip`
 * ArchiveName64Bit: `android-studio-ide-$:Build$-windows.zip`
@@ -2352,6 +2355,10 @@ Otherwise it will download and set up an additional Android SDK in the Windows u
     + `STUDIO_PROPERTIES`: `$HomeDir$\android-studio.properties`
     + `STUDIO_VM_OPTIONS`: `$HomeDir$\android-studio.vmoptions`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://developer.android.com/studio/>
+* VersionCheckXPath: `//button[@data-modal-dialog-id='studio_win32_bundle_download']`
+* VersionCheckPattern: `android-studio-ide-(?<Version>[\d\.]+)-windows32\.zip`
+* VersionCheckString: `$:Build$`
 
 ## Math and Science
 
@@ -2399,6 +2406,9 @@ across over 40 programming languages.
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2452,6 +2462,9 @@ across over 40 programming languages.
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 ### GeoHash for Python 3
 
@@ -2473,6 +2486,9 @@ across over 40 programming languages.
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 ### MySQL Client for Python 2
 
@@ -2494,6 +2510,9 @@ across over 40 programming languages.
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 ### MySQL Client for Python 3
 
@@ -2515,6 +2534,9 @@ across over 40 programming languages.
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 ### Psycopg 2
 
@@ -2603,6 +2625,9 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2647,6 +2672,9 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * Dir: `$Bench.Python3:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2677,6 +2705,9 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Dir: `$Bench.Python2:Dir$`
 * Register: false
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
