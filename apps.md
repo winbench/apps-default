@@ -2627,7 +2627,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.14\.\d+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2674,7 +2674,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.14\.\d+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
