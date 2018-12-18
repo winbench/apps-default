@@ -3756,6 +3756,29 @@ by alleviating database load.
 * ArchivePath32Bit: `memcached-x86`
 * Launcher: $:Label$
 
+### Redis
+
+Redis is a very popular open-source, networked, in-memory, key-value data store
+known for high performance, flexibility, a rich set of data structures,
+and a simple straightforward API.
+
+* ID: `Bench.Redis`
+* Tags:
+    + cli
+    + server
+    + cache
+    + in-memory
+* Website: <http://redis.io/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://github.com/MicrosoftArchive/redis/blob/3.0/license.txt>
+* Typ: `nuget-package`
+* PackageName: `Redis-64`
+* Path: `redis-64\tools`
+* Exe: `redis-64\tools\redis-server.exe`
+* Only64Bit: `true`
+* Version: latest
+* Launcher: $:Label$
+
 ## Monitoring
 
 ### Prometheus
