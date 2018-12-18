@@ -1,0 +1,2 @@
+@ECHO OFF
+START notepad "%MARIADB_DATA%\%COMPUTERNAME%.err"

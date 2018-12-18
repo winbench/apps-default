@@ -3495,6 +3495,59 @@ tools for server configuration, user administration, backup, and much more.
 * VersionCheckPattern: `MySQL Workbench (?<Version>[\d\.]+)`
 * VersionCheckString: `$:SubVersion$`
 
+### Maria DB
+
+MariaDB Server is one of the most popular database servers in the world. It’s made by the original developers of MySQL and guaranteed to stay open source. Notable users include Wikipedia, WordPress.com and Google.
+
+MariaDB turns data into structured information in a wide array of applications, ranging from banking to websites. It is an enhanced, drop-in replacement for MySQL. MariaDB is used because it is fast, scalable and robust, with a rich ecosystem of storage engines, plugins and many other tools make it very versatile for a wide variety of use cases.
+
+MariaDB is developed as open source software and as a relational database it provides an SQL interface for accessing data. The latest versions of MariaDB also include GIS and JSON features.
+
+The MySQL data is stored in `%USERPROFILE%\mariadb_data`.
+You can start the MySQL server by running `mariadb_start` in the _Bench_ shell.
+You can stop the MySQL server by running `mariadb_stop` in the _Bench_ shell.
+The initial password for _root_ is `bench`.
+
+**Warning:** _It is not advised to install a MariaDB server with a MySQL server
+side-by-side in the same Bench environment
+because the executables (e.g. `mysqld.exe`) are named the same._
+
+* ID: `Bench.MariaDB`
+* Tags:
+    + cli
+    + server
+    + database
+    + sql
+    + relational
+* Website: <https://www.mariadb.org/>
+* Docs:
+    + Learn: <https://mariadb.org/learn/>
+    + Useful Queries: <https://mariadb.com/kb/en/library/useful-mariadb-queries/>
+    + Documentation: <https://mariadb.com/kb/en/library/documentation/>
+* License: GPL-2.0
+* VersionMajor: 10
+* VersionMinor: 3
+* Revision: 11
+* Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
+* Url32Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/win32-packages/$:ArchiveName$?serve`
+* Url64Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/winx64-packages/$:ArchiveName$?serve`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `mariadb-$:Version$-win32`
+* ArchivePath64Bit: `mariadb-$:Version$-winx64`
+* Path: `bin`
+* Exe: `bin\mysqld.exe`
+* MariaDbServerOptionFile: `$HomeDir$\mariadb.cnf`
+* MariaDbDataDir: `$HomeDir$\mariadb_data`
+* Environment:
+    + `MARIADB_SERVER_OPTION_FILE`: `$:MariaDbServerOptionFile$`
+    + `MARIADB_DATA`: `$:MariaDbDataDir$`
+    + `TZ`: `UTC`
+* Launcher: MariaDB Server
+* LauncherExecutable: `bin\mariadb_server.cmd`
+* VersionCheckUrl: <https://downloads.mariadb.org/>
+* VersionCheckXPath: `//div[@class='buttons']/descendant::a`
+* VersionCheckPattern: `Download (?<Version>[\d\.]+) Stable`
+
 ### PostgreSQL
 
 PostgreSQL is a powerful, open source object-relational database system with
