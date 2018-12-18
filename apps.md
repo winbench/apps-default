@@ -149,10 +149,10 @@ It is also a general-purpose cryptography library.
     + Overview: <https://www.openssl.org/docs/man1.1.1/>
     + Commands: <https://www.openssl.org/docs/man1.1.1/man1/>
     + Windows Builds: <https://bintray.com/vszakats/generic/openssl>
-* MajorVersion: 1
-* MinorVersion: 1
+* VersionMajor: 1
+* VersionMinor: 1
 * Revision: 1a
-* Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
+* Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url: `https://bintray.com/vszakats/generic/download_file?file_path=$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `openssl-$:Version$-win32-mingw`
@@ -177,11 +177,11 @@ The GnuTLS Transport Layer Security Library.
 * LicenseUrl: <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
-* MajorVersion: 3
-* MinorVersion: 6
+* VersionMajor: 3
+* VersionMinor: 6
 * Revision: 5
-* Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
-* Release: `$:MajorVersion$_$:MinorVersion$_$:Revision$`
+* Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
+* Release: `$:VersionMajor$_$:VersionMinor$_$:Revision$`
 * Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
 * Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64.DLLs`
 * ArchiveName32Bit: `gnutls-$:Version$-w32-bin.zip`
@@ -448,7 +448,7 @@ The development kit is required for Java source code to get compiled.
 According to Oracle, Java is the world's #1 programming language.
 
 * ID: `Bench.JDK`
-* Label: OpenJDK $:MajorVersion$
+* Label: OpenJDK $:VersionMajor$
 * Tags:
     + cli
     + language
@@ -462,11 +462,11 @@ According to Oracle, Java is the world's #1 programming language.
 * LicenseUrl: <https://openjdk.java.net/legal/gplv2+ce.html>
 * Docs:
     + Downloads: <https://jdk.java.net/archive/>
-* MajorVersion: 11
-* Version: $:MajorVersion$.0.1
+* VersionMajor: 11
+* Version: $:VersionMajor$.0.1
 * Release: 13
 * Only64Bit: `true`
-* Url64Bit: `https://download.java.net/java/GA/jdk$:MajorVersion$/$:Release$/GPL/$:ArchiveName$`
+* Url64Bit: `https://download.java.net/java/GA/jdk$:VersionMajor$/$:Release$/GPL/$:ArchiveName$`
 * ArchiveName64Bit: `openjdk-$:Version$_windows-x64_bin.zip`
 * ArchivePath: `jdk-$:Version$`
 * Path: `bin`
@@ -474,7 +474,7 @@ According to Oracle, Java is the world's #1 programming language.
 * Environment:
     + `JAVA_HOME`: `$:Dir$`
     + `JAVA_CMD`: `$:Exe$`
-* VersionCheckUrl: `https://jdk.java.net/$:MajorVersion$/`
+* VersionCheckUrl: `https://jdk.java.net/$:VersionMajor$/`
 * VersionCheckXPath: `//div[@id='openjdk']/descendant::table/descendant::td/a/@href`
 * VersionCheckPattern: `jdk11/\d+/GPL/openjdk-(?<Version>[\d\.]+)_windows-x64_bin\.zip$`
 
@@ -1010,15 +1010,15 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Community: <https://notepad-plus-plus.org/community/>
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
-* MajorVersion: 7
-* Version: `$:MajorVersion$.6.1`
-* Url: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/$:Version$/$:ArchiveName$`
+* VersionMajor: 7
+* Version: `$:VersionMajor$.6.1`
+* Url: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
 * Exe: `notepad++.exe`
 * Launcher: $:Label$
 * ConfigurationDir: `$AppDataDir$\Notepad++`
-* VersionCheckUrl: `https://notepad-plus-plus.org/repository/$:MajorVersion$.x/`
+* VersionCheckUrl: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/`
 * VersionCheckXPath: `//table/descendant::tr/td/a`
 * VersionCheckPattern: `(?<Version>[\d\.]+)`
 
@@ -1220,9 +1220,9 @@ with extensions to support text editing.
     + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
     + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
     + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
-* MajorVersion: 26
-* Version: $:MajorVersion$.1
-* Url: `http://ftp.gnu.org/gnu/emacs/windows/emacs-$:MajorVersion$/$:ArchiveName$`
+* VersionMajor: 26
+* Version: $:VersionMajor$.1
+* Url: `http://ftp.gnu.org/gnu/emacs/windows/emacs-$:VersionMajor$/$:ArchiveName$`
 * ArchiveName32Bit: `emacs-$:Version$-i686.zip`
 * ArchiveName64Bit: `emacs-$:Version$-x86_64.zip`
 * Dir: `bench\gnu`
@@ -1913,9 +1913,9 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* MajorVersion: 3.13
-* Version: $:MajorVersion$.2
-* Url: `https://cmake.org/files/v$:MajorVersion$/$:ArchiveName$`
+* VersionMajor: 3.13
+* Version: $:VersionMajor$.2
+* Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
 * ArchivePath64Bit: `cmake-$:Version$-win64-x64`
@@ -4520,12 +4520,12 @@ GIMP provides you with sophisticated tools to get your job done.
 * Docs:
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
-* MajorVersion: 2.10
-* Version: $:MajorVersion$.8
+* VersionMajor: 2.10
+* Version: $:VersionMajor$.8
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
-* Exe: `bin\gimp-$:MajorVersion$.exe`
+* Exe: `bin\gimp-$:VersionMajor$.exe`
 * Register: `false`
 * Launcher: $:Label$
 * VersionCheckUrl: <https://sourceforge.net/projects/portableapps/files/GIMP%20Portable/>
