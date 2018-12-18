@@ -748,7 +748,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.11.3
+* Version: 1.11.4
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -2665,7 +2665,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.14.5
+* Version: 1.14.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3400,6 +3400,10 @@ You can start the MySQL server by running `mysql_start` in the _Bench_ shell.
 You can stop the MySQL server by running `mysql_stop` in the _Bench_ shell.
 The initial password for _root_ is `bench`.
 
+**Warning:** _It is not advised to install a MySQL server with a MariaDB server
+side-by-side in the same Bench environment
+because the executables (e.g. `mysqld.exe`) are named the same._
+
 * ID: `Bench.MySQL`
 * Tags:
     + cli
@@ -3579,8 +3583,8 @@ Use `postgresql_log.cmd` to open the servers log file.
 * License: PostgreSQL
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
-    + Documentation: <https://www.postgresql.org/docs/10.5/static/index.html>
-* Version: 10.5
+    + Documentation: <https://www.postgresql.org/docs/$:Version$/static/index.html>
+* Version: 11.1
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
 * ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
@@ -3595,6 +3599,9 @@ Use `postgresql_log.cmd` to open the servers log file.
 * Environment:
 	+ `PGDATA`: `$:PostgreSqlDataDir$`
 	+ `PG_LOG`: `$:PostgreSqlLogFile$`
+* VersionCheckUrl: <https://www.postgresql.org/>
+* VersionCheckXPath: `//div[@class='text']/ul/li`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)[\s·]+(?<Date>\d{4}-\d{2}-\d{2})[\s·]+Notes$`
 
 ### PostgreSQL Admin 4
 
@@ -3620,7 +3627,7 @@ The user interface is displayed via a web browser.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
-* Version: 3.2
+* Version: 3.6
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
 * ArchiveName: `pgadmin4-$:Version$-x86.exe`
@@ -3629,6 +3636,9 @@ The user interface is displayed via a web browser.
 * Path: `runtime`
 * Exe: `runtime\pgAdmin4.exe`
 * Launcher: `$:Label$`
+* VersionCheckUrl: <https://ftp.postgresql.org/pub/pgadmin/pgadmin4/>
+* VersionCheckXPath: `//table/descendant::td[@class='n']`
+* VersionCheckPattern: `^v(?<Version>[\d\.]+)/$`
 
 ### Fake Sendmail
 
@@ -3671,18 +3681,26 @@ This application needs the _Visual C++ 15 Redistributable_ [32 Bit Version](http
 * License: Apache-2.0
 * LicenseUrl: <http://www.apache.org/licenses/LICENSE-2.0>
 * Docs:
-    + Documentation: <http://httpd.apache.org/docs/2.4/en/>
-* Version: 2.4.37
-* Url: `https://home.apache.org/~steffenal/VC15/binaries/$:ArchiveName$`
-* ArchiveName32Bit: `httpd-$:Version$-win32-VC15.zip`
-* ArchiveName64Bit: `httpd-$:Version$-win64-VC15.zip`
-* ArchivePath: `Apache24`
+    + Documentation: `http://httpd.apache.org/docs/$:MainVersion$/en/`
+* VersionMajor: 2
+* VersionMinor: 4
+* Revision: 37
+* MainVersion: `$:VersionMajor$.$:VersionMinor$`
+* Version: `$:MainVersion$.$:Revision$`
+* VisualC: 15
+* Url: `https://home.apache.org/~steffenal/VC$:VisualC$/binaries/$:ArchiveName$`
+* ArchiveName32Bit: `httpd-$:Version$-win32-VC$:VisualC$.zip`
+* ArchiveName64Bit: `httpd-$:Version$-win64-VC$:VisualC$.zip`
+* ArchivePath: `Apache$:VersionMajor$$:VersionMinor$`
 * Path: `bin`
 * Exe: `bin\httpd.exe`
 * Launcher: Apache Web Server
 * HttpdDocumentRoot: `$HomeDir$\www`
 * HttpdListen: `127.0.0.1:80`
 * UserConfigFile: `$HomeDir$\httpd-bench.conf`
+* VersionCheckUrl: <https://www.apachelounge.com/download/>
+* VersionCheckXPath: `//pre/a`
+* VersionCheckPattern: `httpd-(?<Version>[\d\.]+)-win32-VC$:VisualC$\.zip`
 
 ### Tornado
 
@@ -3695,9 +3713,12 @@ Tornado is a Python web framework and asynchronous networking library, originall
     + http
     + python
 * Typ: `python-package`
-* Version: 5.1
+* Version: 5.1.1
 * Website: <http://www.tornadoweb.org/>
 * License: Apache-2.0
+* VersionCheckUrl: <http://www.tornadoweb.org/en/stable/>
+* VersionCheckXPath: `//div[@id='quick-links']/ul/li`
+* VersionCheckPattern: `^Current version: (?<Version>[\d\.]+)`
 
 ### RabbitMQ
 
@@ -3722,12 +3743,16 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.7.0
+* Version: 3.7.9
 * Url: `https://dl.bintray.com/rabbitmq/all/rabbitmq-server/$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
 * Path: `sbin`
 * Exe: `sbin\rabbitmq-server.bat`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://dl.bintray.com/rabbitmq/all/rabbitmq-server/>
+* VersionCheckXPath: `/html/body/pre/a`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)/$`
 
 The setup automatically activates the web management plugin.
 So after starting the server on the command line with `rabbitmq-server`,
@@ -3799,7 +3824,7 @@ Power your metrics and alerting with a leading open-source monitoring solution.
     + Documentation: <https://prometheus.io/docs/introduction/overview/>
     + Querying: <https://prometheus.io/docs/querying/basics/>
     + HTTP API: <https://prometheus.io/docs/querying/api/>
-* Version: 1.8.1
+* Version: 2.6.0
 * Url: `https://github.com/prometheus/prometheus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `prometheus-$:Version$.windows-386`
@@ -3830,7 +3855,7 @@ The Pushgateway then exposes these metrics to Prometheus.
 * Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/prometheus/pushgateway>
 * License: Apache-2.0
-* Version: 0.4.0
+* Version: 0.7.0
 * Url: `https://github.com/prometheus/pushgateway/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `pushgateway-$:Version$.windows-386`
@@ -3859,7 +3884,7 @@ Prometheus exporter for Windows machines using WMI
 * Website: <https://github.com/martinlindhe/wmi_exporter>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/martinlindhe/wmi_exporter/master/LICENSE>
-* Version: 0.2.7
+* Version: 0.5.0
 * Url: `https://github.com/martinlindhe/wmi_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `wmi_exporter-386.zip`
 * ArchiveName64Bit: `wmi_exporter-amd64.zip`
@@ -3887,7 +3912,7 @@ Prometheus exporter for arbitrary unstructured log data
 * Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/fstab/grok_exporter>
 * License: Apache-2.0
-* Version: 0.2.1
+* Version: 0.2.6
 * Only64Bit: `true`
 * Url: `https://github.com/fstab/grok_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -3900,6 +3925,7 @@ Prometheus exporter for arbitrary unstructured log data
 * JobName: `grok`
 * Port: 9144
 * ConfigFile: `$HomeDir$\grok_config.yml`
+* VersionCheckAllowPreRelease: `true`
 
 ### Prometheus MySQL Exporter
 
@@ -3914,7 +3940,7 @@ Prometheus exporter for MySQL Server
 * Dependencies: `Bench.Prometheus`, `Bench.MySQL`
 * Website: <https://github.com/prometheus/mysqld_exporter>
 * License: Apache-2.0
-* Version: 0.10.0
+* Version: 0.11.0
 * Url: `https://github.com/prometheus/mysqld_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `mysqld_exporter-$:Version$.windows-386`
@@ -3941,7 +3967,7 @@ Prometheus exporter for RabbitMQ
 * Website: <https://github.com/kbudde/rabbitmq_exporter>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/kbudde/rabbitmq_exporter/master/LICENSE>
-* Version: 0.25.1
+* Version: 0.29.0
 * Url: `https://github.com/kbudde/rabbitmq_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `rabbitmq_exporter-$:Version$.windows-386`
@@ -3968,7 +3994,7 @@ Prometheus exporter for Memcached Server
 * Dependencies: `Bench.Prometheus`, `Bench.Memcached`
 * Website: <https://github.com/prometheus/memcached_exporter>
 * License: Apache-2.0
-* Version: 0.3.0
+* Version: 0.5.0
 * Url: `https://github.com/prometheus/memcached_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `memcached_exporter-$:Version$.windows-386`
@@ -3999,16 +4025,19 @@ The open platform for beautiful analytics and monitoring
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
     + Getting Started: <http://docs.grafana.org/guides/getting_started/>
-* Version: 4.6.2
+* Version: 5.4.2
 * Only64Bit: `true`
-* Url: `https://s3-us-west-2.amazonaws.com/grafana-releases/release/$:ArchiveName$`
-* ArchiveName64Bit: `grafana-$:Version$.windows-x64.zip`
+* Url: `https://dl.grafana.com/oss/release/$:ArchiveName$`
+* ArchiveName64Bit: `grafana-$:Version$.windows-amd64.zip`
 * ArchivePath: `grafana-$:Version$`
 * Path: `bin`
 * Exe: `bin\grafana-server.exe`
 * DataDir: `$HomeDir$\grafana`
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Dir$`
+* VersionCheckUrl: <https://grafana.com/grafana/download?platform=windows>
+* VersionCheckXPath: `//h4`
+* VersionCheckPattern: `^Version (?<Version>[\d\.]+)`
 
 ## Writing
 
@@ -4054,6 +4083,9 @@ and related programs for Windows (all current variants).
     + `fancyvrb`
     + `fancyhdr`
     + `booktabs`
+* VersionCheckUrl: <https://miktex.org/download>
+* VersionCheckXPath: `//div[@id='portable']/descendant::td`
+* VersionCheckPattern: `^miktex-portable-(?<Version>[\d\.]+)\.exe$`
 
 **Note:** The packages installed by default (property `DefaultPackages`)
 are selected to suit the needs of the default LaTeX template of _Pandoc_.
@@ -4075,7 +4107,7 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 2.3
+* Version: 2.5
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -4131,6 +4163,9 @@ Premium LaTeX Editing for Windows.
 * ArchiveTyp: `inno`
 * RegistryKeys: `SOFTWARE\ToolsCenter`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/texniccenter/files/TeXnicCenter/>
+* VersionCheckXPath: `//table[@id='files_list']/descendant::th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+) Stable$`
 
 ### Scribus
 
@@ -4156,6 +4191,9 @@ one of the premier Open Source desktop applications.
 * ArchiveName: `scribus-$:Version$-windows.exe`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/scribus/files/scribus/>
+* VersionCheckXPath: `//table[@id='files_list']/descendant::th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ## Web
 
@@ -4224,7 +4262,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.42.2
+* Version: 0.52
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
@@ -4270,7 +4308,7 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.8-6
+* Version: 7.0.8-17
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://www.imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
@@ -4278,6 +4316,9 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-x64.zip`
 * Exe: `magick.exe`
 * IncludeCompatibilityTools: `false`
+* VersionCheckUrl: <https://www.imagemagick.org/script/download.php>
+* VersionCheckXPath: `//table/descendant::td`
+* VersionCheckPattern: `^ImageMagick-(?<Version>[\d\.]+-\d+)-portable-Q16-x86\.zip$`
 
 ### Graphics Magick
 
@@ -4301,13 +4342,16 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
     + APIs: <http://www.graphicsmagick.org/programming.html>
     + Supported Formats: <http://www.graphicsmagick.org/programming.html>
     + Color Reference: <http://www.graphicsmagick.org/color.html>
-* Version: 1.3.30
+* Version: 1.3.31
 * Url: `https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
 * ArchiveName64Bit: `GraphicsMagick-$:Version$-Q16-win64-dll.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\gm`
 * Exe: `gm.exe`
+* VersionCheckUrl: <https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/>
+* VersionCheckXPath: `//div[@id='files']/descendant::th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### FFmpeg
 
@@ -4362,6 +4406,9 @@ and, as an added bonus, SoX can play and record audio files on most platforms.
 * ArchivePath: `sox-$:Version$`
 * Path: `cmd`
 * Exe: `$:Path$\sox.cmd`
+* VersionCheckUrl: <https://sourceforge.net/projects/sox/files/sox/>
+* VersionCheckXPath: `//div[@id='files']/descendant::th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### HandBrake CLI
 
@@ -4438,13 +4485,16 @@ that plays most multimedia files, and various streaming protocols.
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
-* Version: 3.0.3
+* Version: 3.0.4
 * Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
 * Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
 * ArchiveName64Bit: `vlc-$:Version$-win64.7z`
 * ArchivePath: `vlc-$:Version$`
 * Launcher: $:Label$
+* VersionCheckUrl: <http://get.videolan.org/vlc/>
+* VersionCheckXPath: `/html/body/pre/a`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)/$`
 
 ### Graphviz
 
@@ -4482,6 +4532,9 @@ and in visual interfaces for other technical domains.
 * Exe: `bin\dot.exe`
 * Environment:
     + `GRAPHVIZ_DOT`: `$:Exe$`
+* VersionCheckUrl: <https://graphviz.gitlab.io/_pages/Download/Download_windows.html>
+* VersionCheckXPath: `//article/descendant::a`
+* VersionCheckPattern: `^graphviz-(?<Version>[\d\.]+)\.zip$`
 
 ### PlantUML
 
