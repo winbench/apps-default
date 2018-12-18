@@ -1,2 +1,2 @@
 @ECHO OFF
-mysqladmin -u root --password=bench shutdown
+"%~dp0mysqladmin.exe" -u root --password=bench shutdown

@@ -8,14 +8,13 @@ $optionResFile = App-SetupResource "Bench.MySQL" "mysqld.cnf"
 
 if (!(Test-Path $dataDir -PathType Container)) {
     $_ = mkdir $dataDir
-    $logFile = "$dataDir\$env:COMPUTERNAME.err"
-    if (Test-Path $logFile) {
-        del $logFile
-    }
     $initFile = App-SetupResource "Bench.MySQL" "init.sql"
-    & "$mysqlPath\mysqld.exe"  "--defaults-extra-file=$optionFile" "--log_syslog=0" `
-        "--basedir=$mysqlDir" "--datadir=$dataDir" `
-        --initialize --init-file $initFile
+    & "$mysqlPath\mysqld.exe" `
+        "--defaults-extra-file=$optionFile" `
+        "--basedir=$mysqlDir" `
+        "--datadir=$dataDir" `
+        "--initialize" `
+        "--init-file=$initFile"
 }
 
 if (!(Test-Path "$mysqlPath\mysql_start.cmd")) {

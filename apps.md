@@ -3410,16 +3410,20 @@ The initial password for _root_ is `bench`.
 * Website: <http://www.mysql.com/>
 * License: GPL-2.0
 * Docs:
-    + Documentation: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/`
-    + SQL Syntax: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/sql-syntax.html`
-    + Data Types: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/data-types.html`
-    + Functions: `http://dev.mysql.com/doc/refman/$:VersionMajor$/en/functions.html`
-* VersionMajor: 5.7
-* Version: $:VersionMajor$.22
-* Url: `http://dev.mysql.com/get/Downloads/MySQL-$:VersionMajor$/$:ArchiveName$`
-* ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `mysql-$:Version$-win32`
-* ArchivePath64Bit: `mysql-$:Version$-winx64`
+    + Documentation: `http://dev.mysql.com/doc/refman/$:MainVersion$/en/`
+    + SQL Syntax: `http://dev.mysql.com/doc/refman/$:MainVersion$/en/sql-syntax.html`
+    + Data Types: `http://dev.mysql.com/doc/refman/$:MainVersion$/en/data-types.html`
+    + Functions: `http://dev.mysql.com/doc/refman/$:MainVersion$/en/functions.html`
+* VersionMajor: 8
+* VersionMinor: 0
+* Revision: 13
+* Release: 0
+* MainVersion: `$:VersionMajor$.$:VersionMinor$`
+* SubVersion: `$:MainVersion$.$:Revision$`
+* Version: `$:SubVersion$.$:Release$`
+* Only64Bit: `true`
+* Url: `https://dev.mysql.com/get/Downloads/MySQLInstaller/$:ArchiveName$`
+* ArchiveName: `mysql-installer-community-$:Version$.msi`
 * Path: `bin`
 * Exe: `bin\mysqld.exe`
 * MySqlServerOptionFile: `$HomeDir$\mysqld.cnf`
@@ -3430,6 +3434,10 @@ The initial password for _root_ is `bench`.
     + `TZ`: `UTC`
 * Launcher: MySQL Server
 * LauncherExecutable: `bin\mysql_server.cmd`
+* VersionCheckUrl: <https://dev.mysql.com/downloads/mysql/>
+* VersionCheckXPath: `//h1`
+* VersionCheckPattern: `MySQL Community Server (?<Version>[\d\.]+)`
+* VersionCheckString: `$:SubVersion$`
 
 ### MySQL Utilities
 
@@ -3441,13 +3449,16 @@ The initial password for _root_ is `bench`.
 * Website: <https://dev.mysql.com/downloads/utilities/>
 * License: GPL-2.0
 * Docs:
-    + Documentation: `https://dev.mysql.com/doc/mysql-utilities/$:VersionMajor$/en/`
-* VersionMajor: 1.6
-* Version: $:VersionMajor$.5
+    + Documentation: `https://dev.mysql.com/doc/mysql-utilities/$:MainVersion$/en/`
+* VersionMajor: 1
+* VersionMinor: 6
+* Revision: 5
+* MainVersion: `$:VersionMajor$.$:VersionMinor$`
+* Version: `$:MainVersion$.$:Revision$`
 * Url: `https://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
 * ArchiveName32Bit: `mysql-utilities-$:Version$-win32.msi`
 * ArchiveName64Bit: `mysql-utilities-$:Version$-winx64.msi`
-* ArchivePath: `SourceDir\MySQL\MySQL Utilities $:VersionMajor$`
+* ArchivePath: `SourceDir\MySQL\MySQL Utilities $:MainVersion$`
 * SetupTestFile: `mysqlserverinfo.exe`
 
 ### MySQL Workbench
@@ -3455,9 +3466,6 @@ The initial password for _root_ is `bench`.
 MySQL Workbench is a unified visual tool for database architects, developers, and DBAs.
 MySQL Workbench provides data modeling, SQL development, and comprehensive administration
 tools for server configuration, user administration, backup, and much more.
-
-This application needs the x86 version of the [Visual C++ 12 Redistributable](https://www.microsoft.com/download/details.aspx?id=40784),
-and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/download/details.aspx?id=17113) installed.
 
 * ID: `Bench.MySQLWB`
 * Label: MySQL Workbench
@@ -3469,15 +3477,23 @@ and the [Microsoft.NET Framework 4.0 Client Profile](http://www.microsoft.com/do
 * License: GPL-2.0
 * Docs:
     + Documentation: <http://dev.mysql.com/doc/workbench/en/>
-* Version: 6.3.8
-* Url: `https://dev.mysql.com/get/Downloads/MySQLGUITools/$:ArchiveName$`
-* ArchiveName32Bit: `mysql-workbench-community-$:Version$-win32-noinstall.zip`
-* ArchiveName64Bit: `mysql-workbench-community-$:Version$-winx64-noinstall.zip`
-* ArchivePath32Bit: `MySQL Workbench $:Version$ CE (win32)`
-* ArchivePath64Bit: `MySQL Workbench $:Version$ CE (winx64)`
+* VersionMajor: 8
+* VersionMinor: 0
+* Revision: 13
+* Release: 0
+* MainVersion: `$:VersionMajor$.$:VersionMinor$`
+* SubVersion: `$:MainVersion$.$:Revision$`
+* Version: `$:SubVersion$.$:Release$`
+* Only64Bit: `true`
+* Url: `https://dev.mysql.com/get/Downloads/MySQLInstaller/$:ArchiveName$`
+* ArchiveName: `mysql-installer-community-$:Version$.msi`
 * Exe: `MySQLWorkbench.exe`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://dev.mysql.com/downloads/workbench/>
+* VersionCheckXPath: `//h1`
+* VersionCheckPattern: `MySQL Workbench (?<Version>[\d\.]+)`
+* VersionCheckString: `$:SubVersion$`
 
 ### PostgreSQL
 
