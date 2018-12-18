@@ -796,7 +796,9 @@ Erlang is a programming language used to build massively scalable soft real-time
 * ErtsDir: `erts-$:ErtsVersion$`
 * Path: `$:ErtsDir$\bin`
 * Exe: `$:ErtsDir$\bin\erl.exe`
-* Environment: `ERLANG_HOME=$:ErtsDir$`
+* Environment:
+     `ERLANG_HOME`: `$:ErtsDir$`
+     `ERL_EPMD_ADDRESS`: `127.0.0.1`
 * Launcher: $:Label$
 * LauncherExecutable: `$:ErtsDir$\bin\werl.exe`
 * VersionCheckUrl: <http://www.erlang.org/downloads>
