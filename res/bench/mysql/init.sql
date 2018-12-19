@@ -1,4 +1,4 @@
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'bench';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'bench';
 CREATE SCHEMA `bench` DEFAULT CHARACTER SET utf8mb4;
 CREATE TABLE `bench`.`demo` (
   `ID` INT NOT NULL,
