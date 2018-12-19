@@ -4167,6 +4167,29 @@ Premium LaTeX Editing for Windows.
 * VersionCheckXPath: `//table[@id='files_list']/descendant::th/a/span[@class='name']`
 * VersionCheckPattern: `^(?<Version>[\d\.]+) Stable$`
 
+### Ghostscript
+
+An interpreter for the PostScript language and for PDF.
+
+* ID: `Bench.Ghostscript`
+* Tags:
+    + cli
+    + pdf
+    + dtp
+* Website: <https://www.ghostscript.com/>
+* License: AGPL-3.0
+* VersionMajor: 9
+* VersionMinor: 26
+* CompactVersion: `gs$:VersionMajor$$:VersionMinor$`
+* Version: `$:VersionMajor$.$:VersionMinor$`
+* Url: `https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/$:CompactVersion$/$:ArchiveName$`
+* ArchiveName: `$:CompactVersion$w32.exe`
+* Path: `bin`
+* Exe: `bin\gswin32.exe`
+* VersionCheckString: $:CompactVersion$
+* VersionCheckIgnore: `gs925rc1`
+* Launcher: $:Label$
+
 ### Scribus
 
 Scribus is a page layout program, available for a lot of operating systems.
@@ -4174,6 +4197,7 @@ Since its humble beginning in the spring of 2001, Scribus has evolved into
 one of the premier Open Source desktop applications.
 
 * ID: `Bench.Scribus`
+* Dependencies: `Bench.Ghostscript`
 * Tags:
     + gui
     + graphics
