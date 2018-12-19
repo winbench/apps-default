@@ -4721,9 +4721,12 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 11.05
+* Version: 11.22
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
+* VersionCheckUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
+* VersionCheckXPath: `//blockquote/descendant::a`
+* VersionCheckPattern: `^exiftool-(?<Version>[\d\.]+?)\.zip$`
 
 ### LMMS
 
@@ -4769,6 +4772,9 @@ Powerful enough for professional musicians.
 * Register: `false`
 * RegistryKeys: `Software\sonic-pi.net`
 * Launcher: $:Label$
+* VersionCheckUrl: <http://sonic-pi.net/files/releases/>
+* VersionCheckXPath: `/html/body/pre/a`
+* VersionCheckPattern: `^v(?<Version>[\d\.]+)/$`
 
 ### CamStudio Screen Recorder
 
@@ -4800,6 +4806,10 @@ and tap on the coordinates.
 * Exe: `Recorder.exe`
 * Register: `false`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/camstudio/files/stable/>
+* VersionCheckXPath: `//div[@id='files']/descendant::th/a/span[@class='name']`
+* VersionCheckPattern: `^CamStudio_Setup_(?<Version>[\d\.\-_a-z]+?)\.exe$`
+* VersionCheckString: `$:Release$`
 
 ### Open Broadcaster Software
 
@@ -4818,9 +4828,10 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
-* Version: 21.1.2
+* Version: 22.0.2
 * Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `OBS-Studio-$:Version$-Full.zip`
+* ArchiveName32Bit: `OBS-Studio-$:Version$-Full-x86.zip`
+* ArchiveName64Bit: `OBS-Studio-$:Version$-Full-x64.zip`
 * Path32Bit: `bin\32Bit`
 * Path64Bit: `bin\64Bit`
 * Exe32Bit: `bin\32Bit\obs32.exe`
@@ -4847,6 +4858,9 @@ Tasks can be automated using projects, job queue and powerful scripting capabili
 * ArchiveName32Bit: `avidemux_$:Version$_win32.exe`
 * ArchiveName64Bit: `avidemux_$:Version$_win64.exe`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://sourceforge.net/projects/avidemux/files/avidemux/>
+* VersionCheckXPath: `//div[@id='files']/descendant::th/a/span[@class='name']`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### OpenShot
 
@@ -4858,7 +4872,7 @@ We designed OpenShot Video Editor to be an easy to use, quick to learn, and surp
     + video
 * Website: <https://www.openshot.org>
 * License: GPL-3.0
-* Version: 2.4.2
+* Version: 2.4.3
 * Only64Bit: true
 * Url: `https://github.com/OpenShot/openshot-qt/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `OpenShot-v$:Version$-x86_64.exe`
@@ -4910,12 +4924,16 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Manual: <https://www.blender.org/manual/>
     + Python API: <https://docs.blender.org/api/blender_python_api_2_79_release/>
 * Version: 2.79
-* VersionSuffix: `b`
+* VersionSuffix: b
 * Url: `http://download.blender.org/release/Blender$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `blender-$:Version$$:VersionSuffix$-windows32`
 * ArchivePath64Bit: `blender-$:Version$$:VersionSuffix$-windows64`
 * Launcher: $:Label$
+* VersionCheckUrl: <https://www.blender.org/download/>
+* VersionCheckXPath: `//div[@id='windows']/ul/li`
+* VersionCheckPattern: `v(?<Version>[\d\.]+[a-z]?)`
+* VersionCheckString: `$:Version$$:VersionSuffix$`
 
 ### FreeCAD
 
