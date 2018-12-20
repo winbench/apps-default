@@ -966,6 +966,23 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
 * Dir: `$Bench.DockerToolbox:Dir$`
 * Exe: `$:ResourceName$`
 
+### VirtualBox Installer
+
+* ID: `Bench.VirtualBoxInstaller`
+* Label: VirtualBox Installer
+* Version: 6.0.0
+* Release: 127566
+* Url: `http://download.virtualbox.org/virtualbox/$:Version$/$:ResourceName$`
+* ResourceName: `VirtualBox-$:Version$-$:Release$-Win.exe`
+* Dir: `bench\vbox-installer`
+* Register: `false`
+* Exe: `$:ResourceName$`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://www.virtualbox.org/wiki/Downloads>
+* VersionCheckXPath: `//div[@id='wikipage']/descendant::ul/li/a/@href`
+* VersionCheckPattern: `VirtualBox-(?<Version>[\d\.]+-\d+)-Win\.exe`
+* VersionCheckString: `$:Version$-$:Release$`
+
 ## Editors
 
 ### Notepad2
