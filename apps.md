@@ -3584,7 +3584,8 @@ Use `postgresql_log.cmd` to open the servers log file.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.postgresql.org/docs/$:Version$/static/index.html>
-* Version: 10.5
+* Version32Bit: 10.5
+* Version64Bit: 11.1
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
 * ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
