@@ -906,6 +906,26 @@ The ultimate automation scripting language for Windows.
 * Exe64Bit: `AutoHotkeyU64.exe`
 * Launcher: $:Label$
 
+### Vagrant
+
+* ID: `Bench.Vagrant`
+* Tags:
+    + cli
+    + virtualization
+    + provisioning
+* Website: <https://www.vagrantup.com/>
+* License: MIT
+* LicenseUrl: <https://github.com/hashicorp/vagrant/blob/master/LICENSE>
+* Version: 2.2.2
+* Url: `https://releases.hashicorp.com/vagrant/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `vagrant_$:Version$_i686.msi`
+* ArchiveName64Bit: `vagrant_$:Version$_x86_64.msi`
+* ArchivePath: `SourceDir\HashiCorp\Vagrant`
+* Path: `bin`
+* VersionCheckUrl: <https://www.vagrantup.com/downloads.html>
+* VersionCheckXPath: `//div[@class='downloads']/descendant::a[@data-os='windows']/@href`
+* VersionCheckPattern: `/vagrant_(?<Version>[\d\.]+)_i686\.msi$`
+
 ### Docker Toolbox
 
 Docker provides a way to run applications securely isolated in a container,
