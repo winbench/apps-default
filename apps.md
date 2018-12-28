@@ -922,6 +922,7 @@ The ultimate automation scripting language for Windows.
 * ArchiveName64Bit: `vagrant_$:Version$_x86_64.msi`
 * ArchivePath: `SourceDir\HashiCorp\Vagrant`
 * Path: `bin`
+* Exe: `bin\vagrant.exe`
 * VersionCheckUrl: <https://www.vagrantup.com/downloads.html>
 * VersionCheckXPath: `//div[@class='downloads']/descendant::a[@data-os='windows']/@href`
 * VersionCheckPattern: `/vagrant_(?<Version>[\d\.]+)_i686\.msi$`
