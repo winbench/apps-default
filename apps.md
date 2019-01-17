@@ -1968,6 +1968,24 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * VersionCheckXPath: `/html/body/table/descendant::td/a`
 * VersionCheckPattern: `cmake-(?<Version>[\d\.]+)-win32-x86\.zip`
 
+### Golang Dep
+
+Dependency management for Go
+
+* ID: `Bench.Go.Dep`
+* Tags:
+    - cli
+    - golang
+    - package manager
+* Website: <https://golang.github.io/dep/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://github.com/golang/dep/blob/master/LICENSE>
+* Version: 0.5.0
+* Url64Bit: `https://github.com/golang/dep/releases/download/v$:Version$/dep-windows-amd64.exe`
+* Url32Bit: `https://github.com/golang/dep/releases/download/v$:Version$/dep-windows-386.exe`
+* ResourceName: `dep.exe`
+* Dir: `bench\go-dep`
+
 ### JSLint
 
 JSLint is a JavaScript program that looks for problems in JavaScript programs.
