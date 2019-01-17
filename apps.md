@@ -3874,10 +3874,8 @@ Power your metrics and alerting with a leading open-source monitoring solution.
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Dir$`
 * LauncherArguments:
-    + `-config.file`
-    + `$HomeDir$\prometheus.yml`
-    + `-storage.local.path`
-    + `$HomeDir$\prometheus_data`
+    + `--config.file=$HomeDir$\prometheus.yml`
+    + `-storage.tsdb.path=$HomeDir$\prometheus2_data`
 
 ### Prometheus Push Gateway
 
