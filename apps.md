@@ -294,7 +294,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 5.6.38
+* Version: 5.6.39
 * Url: `https://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC11-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC11-x64.zip`
@@ -330,7 +330,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.2.12
+* Version: 7.3.0
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -360,9 +360,9 @@ The runtime environment is required for a compiled Java program to get executed.
 * LicenseUrl: <https://www.oracle.com/technetwork/java/javase/terms/license/index.html>
 * Docs:
     + Downloads: <https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
-* Version: 192
-* Release: b12
-* LinkUUID: 750e1c8617c5452694857ad95c3ee230
+* Version: 202
+* Release: b08
+* LinkUUID: 1961070e4c9b4e26a04e7f5a083f551e
 * Url: `https://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
 * DownloadCookies: `oraclelicense: accept-securebackup-cookie`
 * ArchiveName32Bit: `jre-8u$:Version$-windows-i586.tar.gz`
@@ -463,8 +463,8 @@ According to Oracle, Java is the world's #1 programming language.
 * Docs:
     + Downloads: <https://jdk.java.net/archive/>
 * VersionMajor: 11
-* Version: $:VersionMajor$.0.1
-* Release: 13
+* Version: $:VersionMajor$.0.2
+* Release: 7
 * Only64Bit: `true`
 * Url64Bit: `https://download.java.net/java/GA/jdk$:VersionMajor$/$:Release$/GPL/$:ArchiveName$`
 * ArchiveName64Bit: `openjdk-$:Version$_windows-x64_bin.zip`
@@ -589,7 +589,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 2.2.101
+* Version: 2.2.103
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -598,8 +598,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/25d4104d-1776-41cb-b96e-dff9e9bf1542/b878c013de90f0e6c91f6f3c98a2d592/$:ArchiveName$`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/f3962c7d-fdcf-4818-90cc-81ed7a0cef23/c649ab4926c382df9e2ea1351a5c337f/$:ArchiveName$`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/c332d70f-6582-4471-96af-4b0c17a616ad/5f3043d4bc506bf91cb89fa90462bb58/$:ArchiveName$`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/f2c86d9c-0e92-40a5-ae12-6b597db814ff/41e297c11b972e135a6afe20db27acd4/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-sdk-$:Version$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:Version$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -719,7 +719,7 @@ install the LLVM-Plugin for Eclipse CDT.
     + c++
     + objective c
     + objective c++
-* Version: 7.0.0
+* Version: 7.0.1
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -868,7 +868,7 @@ R is a free software for statistical computing and graphics.
     + science
     + plotting
 * Website: <https://www.r-project.org>
-* Version: 3.5.0
+* Version: 3.5.2
 * Url: `http://cran.uni-muenster.de/bin/windows/base/old/$:Version$/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
@@ -916,7 +916,7 @@ The ultimate automation scripting language for Windows.
 * Website: <https://www.vagrantup.com/>
 * License: MIT
 * LicenseUrl: <https://github.com/hashicorp/vagrant/blob/master/LICENSE>
-* Version: 2.2.2
+* Version: 2.2.3
 * Url: `https://releases.hashicorp.com/vagrant/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `vagrant_$:Version$_i686.msi`
 * ArchiveName64Bit: `vagrant_$:Version$_x86_64.msi`
@@ -959,7 +959,7 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
     + Machine CLI: <https://docs.docker.com/machine/reference/>
     + Docker File Reference: <https://docs.docker.com/engine/reference/builder/>
     + Compose File Reference: <https://docs.docker.com/compose/compose-file/>
-* Version: 18.09.0
+* Version: 18.09.1
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `DockerToolbox-$:Version$.exe`
@@ -994,8 +994,8 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
     + virtualization
     + setup
     + vbox
-* Version: 6.0.0
-* Release: 127566
+* Version: 6.0.2
+* Release: 128162
 * Url: `http://download.virtualbox.org/virtualbox/$:Version$/$:ResourceName$`
 * ResourceName: `VirtualBox-$:Version$-$:Release$-Win.exe`
 * Dir: `bench\vbox-installer`
@@ -1054,7 +1054,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * VersionMajor: 7
-* Version: `$:VersionMajor$.6.1`
+* Version: `$:VersionMajor$.6.2`
 * Url: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -1112,7 +1112,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.33.0
+* Version: 1.34.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -1447,16 +1447,16 @@ XML Editor, Mylyn, Maven and Gradle integration...
     + java
     + maven
     + ant
-* CodeName: 2018-09
-* Version: 4.9
+* CodeName: 2018-12
+* Version: 4.10
 * Release: R
 * Dependencies: `Bench.JDK`
-* Website: <http://www.eclipse.org/>
+* Website: <https://www.eclipse.org/>
 * License: EFSUA
-* LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
-* Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName32Bit: `eclipse-java-$:CodeName$-win32.zip`
-* ArchiveName64Bit: `eclipse-java-$:CodeName$-win32-x86_64.zip`
+* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
+* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
+* ArchiveName64Bit: `eclipse-java-$:CodeName$-$:Release$-win32-x86_64.zip`
+* Only64Bit: `true`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_java`
 * Exe: `eclipse.exe`
@@ -1464,7 +1464,7 @@ XML Editor, Mylyn, Maven and Gradle integration...
 * Launcher: $:Label$
 * VersionCheckUrl: <https://www.eclipse.org/downloads/packages/>
 * VersionCheckXPath: `//span[@class='windows']/a/@href`
-* VersionCheckPattern: `/technology/epp/downloads/release/(?<Version>[^/]+/[^/]+)/eclipse-java-.+?-win32\.zip$`
+* VersionCheckPattern: `/technology/epp/downloads/release/(?<Version>[^/]+/[^/]+)/eclipse-java-.+?-win32-x86_64\.zip$`
 * VersionCheckString: `$:CodeName$/$:Release$`
 
 ### Eclipse for PHP
@@ -1482,12 +1482,12 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 * CodeName: $Bench.EclipseJava:CodeName$
 * Release: $Bench.EclipseJava:Release$
 * Dependencies: `Bench.JDK`
-* Website: <http://www.eclipse.org/>
+* Website: <https://www.eclipse.org/>
 * License: EFSUA
-* LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
-* Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName32Bit: `eclipse-php-$:CodeName$-win32.zip`
-* ArchiveName64Bit: `eclipse-php-$:CodeName$-win32-x86_64.zip`
+* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
+* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
+* ArchiveName64Bit: `eclipse-php-$:CodeName$-$:Release$-win32-x86_64.zip`
+* Only64Bit: `true`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_php`
 * Exe: `eclipse.exe`
@@ -1509,12 +1509,12 @@ An IDE for C/C++ developers with Mylyn integration.
 * CodeName: $Bench.EclipseJava:CodeName$
 * Release: $Bench.EclipseJava:Release$
 * Dependencies: `Bench.JDK`
-* Website: <http://www.eclipse.org/>
+* Website: <https://www.eclipse.org/>
 * License: EFSUA
-* LicenseUrl: <http://www.eclipse.org/legal/epl/notice.php>
-* Url: `http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName32Bit: `eclipse-cpp-$:CodeName$-win32.zip`
-* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-win32-x86_64.zip`
+* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
+* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
+* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32-x86_64.zip`
+* Only64Bit: `true`
 * ArchivePath: `eclipse`
 * Dir: `bench\eclipse_cpp`
 * Exe: `eclipse.exe`
@@ -1542,7 +1542,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.3.1
+* Version: 2018.3.3
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -1568,7 +1568,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.3.1
+* Version: 2018.3.3
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
@@ -1900,7 +1900,7 @@ Gradle is writing to the `.gradle` folder in the Windows user profile directory 
 * License: Apache-2.0
 * Docs:
     + Documentation: <https://gradle.org/docs>
-* Version: 5.0
+* Version: 5.1.1
 * Url: `https://services.gradle.org/distributions/$:ArchiveName$`
 * ArchiveName: `gradle-$:Version$-bin.zip`
 * ArchivePath: `gradle-$:Version$`
@@ -1957,7 +1957,7 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
 * VersionMajor: 3.13
-* Version: $:VersionMajor$.2
+* Version: $:VersionMajor$.3
 * Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
@@ -2403,8 +2403,8 @@ Otherwise it will download and set up an additional Android SDK in the Windows u
 * Website: <https://developer.android.com/studio/>
 * License: Proprietary
 * LicenseUrl: <https://developer.android.com/studio/terms.html>
-* Version: 3.2.1.0
-* Build: 181.5056338
+* Version: 3.3.0.20
+* Build: 182.5199772
 * Url: `https://dl.google.com/dl/android/studio/ide-zips/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `android-studio-ide-$:Build$-windows32.zip`
 * ArchiveName64Bit: `android-studio-ide-$:Build$-windows.zip`
@@ -2677,7 +2677,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.14.6
+* Version: 1.16.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2688,7 +2688,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.14\.\d+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2724,7 +2724,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.14.6
+* Version: 1.16.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2735,7 +2735,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.14\.\d+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2757,7 +2757,7 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.1.0
+* Version: 1.2.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2790,7 +2790,7 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.1.0
+* Version: 1.2.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3039,7 +3039,7 @@ Performs cartographic transformations and geodetic computations.
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
-* Version: 1.9.5.1
+* Version: 1.9.6
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3067,7 +3067,7 @@ Performs cartographic transformations and geodetic computations.
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
-* Version: 1.9.5.1
+* Version: 1.9.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3378,7 +3378,7 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.13.6
+* Version: 5.13.7
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
@@ -3590,7 +3590,7 @@ because the executables (e.g. `mysqld.exe`) are named the same._
 * License: GPL-2.0
 * VersionMajor: 10
 * VersionMinor: 3
-* Revision: 11
+* Revision: 12
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url32Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/win32-packages/$:ArchiveName$?serve`
 * Url64Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/winx64-packages/$:ArchiveName$?serve`
@@ -3687,7 +3687,7 @@ The user interface is displayed via a web browser.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
-* Version: 3.6
+* Version: 4.1
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
 * ArchiveName: `pgadmin4-$:Version$-x86.exe`
@@ -3803,7 +3803,7 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.7.9
+* Version: 3.7.10
 * Url: `https://dl.bintray.com/rabbitmq/all/rabbitmq-server/$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
@@ -3884,7 +3884,7 @@ Power your metrics and alerting with a leading open-source monitoring solution.
     + Documentation: <https://prometheus.io/docs/introduction/overview/>
     + Querying: <https://prometheus.io/docs/querying/basics/>
     + HTTP API: <https://prometheus.io/docs/querying/api/>
-* Version: 2.6.0
+* Version: 2.6.1
 * Url: `https://github.com/prometheus/prometheus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `prometheus-$:Version$.windows-386`
@@ -4083,7 +4083,7 @@ The open platform for beautiful analytics and monitoring
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
     + Getting Started: <http://docs.grafana.org/guides/getting_started/>
-* Version: 5.4.2
+* Version: 5.4.3
 * Only64Bit: `true`
 * Url: `https://dl.grafana.com/oss/release/$:ArchiveName$`
 * ArchiveName64Bit: `grafana-$:Version$.windows-amd64.zip`
@@ -4117,7 +4117,7 @@ and related programs for Windows (all current variants).
 * Docs:
     + Manual: <http://docs.miktex.org/2.9/manual/>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: 2.9.6753
+* Version: 2.9.6942
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `miktex-portable-$:Version$.exe`
 * ArchivePath: `texmfs\install`
@@ -4344,7 +4344,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.52
+* Version: 0.53
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
@@ -4386,19 +4386,19 @@ or draw text, lines, polygons, ellipses and Bézier curves.
     + im
     + magick
     + graphics
-* Website: <https://www.imagemagick.org/>
+* Website: <https://imagemagick.org/>
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.8-17
+* Version: 7.0.8-24
 * License: GPL-3.0 compatible
-* LicenseUrl: <https://www.imagemagick.org/script/license.php>
+* LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `ImageMagick-$:Version$-portable-Q16-x86.zip`
 * ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-x64.zip`
 * Exe: `magick.exe`
 * IncludeCompatibilityTools: `false`
-* VersionCheckUrl: <https://www.imagemagick.org/script/download.php>
+* VersionCheckUrl: <https://imagemagick.org/script/download.php>
 * VersionCheckXPath: `//table/descendant::td`
 * VersionCheckPattern: `^ImageMagick-(?<Version>[\d\.]+-\d+)-portable-Q16-x86\.zip$`
 
@@ -4521,7 +4521,7 @@ The open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.1.2
+* Version: 1.2.0
 * Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Only64Bit: `true`
@@ -4567,7 +4567,7 @@ that plays most multimedia files, and various streaming protocols.
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
-* Version: 3.0.4
+* Version: 3.0.6
 * Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
 * Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
@@ -4717,7 +4717,7 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 0.92.3
+* Version: 0.92.4
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
@@ -4725,7 +4725,7 @@ It's free and open source.
 * Exe: `inkscape.exe`
 * Launcher: $:Label$
 * VersionCheckUrl: <https://inkscape.org/de/release/>
-* VersionCheckXPath: `//div[@id='sidecategory']/descendant::li/a/label`
+* VersionCheckXPath: `//div[@id='sidecategory']/descendant::li[contains(@class, 'active')]/a/label`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ### GIMP
@@ -4803,7 +4803,7 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 11.22
+* Version: 11.25
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 * VersionCheckUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
