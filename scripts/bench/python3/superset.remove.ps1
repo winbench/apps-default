@@ -1,7 +1,7 @@
 $pythonAppId = "Bench.Python3"
 $pythonDir = App-Dir $pythonAppId
 $packageDir = "$pythonDir\lib\site-packages\superset"
-$pip = "$pythonDir\Scripts\pip.exe"
+$pip = "$pythonDir\Scripts\pip3.exe"
 $supersetAppId = "${pythonAppId}.Superset"
 $supersetWrapper = App-Exe $supersetAppId
 

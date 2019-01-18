@@ -1,7 +1,7 @@
 param ($archive, $targetDir)
 
 $pythonDir = App-Dir "Bench.Python3"
-$pip = "$pythonDir\Scripts\pip.exe"
+$pip = "$pythonDir\Scripts\pip3.exe"
 
 if (!(Test-Path $pythonDir))
 {
