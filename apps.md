@@ -464,7 +464,7 @@ According to Oracle, Java is the world's #1 programming language.
     + Downloads: <https://jdk.java.net/archive/>
 * VersionMajor: 11
 * Version: $:VersionMajor$.0.2
-* Release: 7
+* Release: 9
 * Only64Bit: `true`
 * Url64Bit: `https://download.java.net/java/GA/jdk$:VersionMajor$/$:Release$/GPL/$:ArchiveName$`
 * ArchiveName64Bit: `openjdk-$:Version$_windows-x64_bin.zip`
