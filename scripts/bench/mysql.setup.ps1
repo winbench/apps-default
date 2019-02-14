@@ -6,17 +6,6 @@ $optionFile = Get-AppConfigValue "Bench.MySQL" "MySqlServerOptionFile"
 $defaultOptionFile = "$homeDir\mysqld.cnf"
 $optionResFile = App-SetupResource "Bench.MySQL" "mysqld.cnf"
 
-if (!(Test-Path $dataDir -PathType Container)) {
-    $_ = mkdir $dataDir
-    $initFile = App-SetupResource "Bench.MySQL" "init.sql"
-    & "$mysqlPath\mysqld.exe" `
-        "--defaults-extra-file=$optionFile" `
-        "--basedir=$mysqlDir" `
-        "--datadir=$dataDir" `
-        "--initialize" `
-        "--init-file=$initFile"
-}
-
 if (!(Test-Path "$mysqlPath\mysql_start.cmd")) {
     $cmdScript = App-SetupResource "Bench.MySQL" "mysql_start.cmd"
     cp $cmdScript $mysqlPath
@@ -48,4 +37,15 @@ if (!(Test-Path "${homeDir}\.my.cnf"))
 user=root
 password=bench
 "@ | Out-File "${homeDir}\.my.cnf" -Encoding Default
+}
+
+if (!(Test-Path $dataDir -PathType Container)) {
+    $_ = mkdir $dataDir
+    $initFile = App-SetupResource "Bench.MySQL" "init.sql"
+    & "$mysqlPath\mysqld.exe" `
+        "--defaults-extra-file=$optionFile" `
+        "--basedir=$mysqlDir" `
+        "--datadir=$dataDir" `
+        "--initialize" `
+        "--init-file=$initFile"
 }
