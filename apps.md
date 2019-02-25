@@ -1028,626 +1028,6 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
 * VersionCheckPattern: `VirtualBox-(?<Version>[\d\.]+-\d+)-Win\.exe`
 * VersionCheckString: `$:Version$-$:Release$`
 
-## Editors
-
-### Notepad2
-
-Notepad2 is a fast and light-weight Notepad-like text editor with syntax highlighting.
-This program can be run out of the box without installation, and does not touch your system's registry.
-
-* ID: `Bench.Notepad2`
-* Tags:
-    + gui
-    + editor
-    + text editor
-* Website: <http://www.flos-freeware.ch/notepad2.html>
-* License: BSD-3-Clause
-* LicenseUrl: `License.txt`
-* Docs:
-    + Readme: <http://www.flos-freeware.ch/doc/Notepad2.txt>
-    + FAQ: <http://www.flos-freeware.ch/doc/notepad2-FAQs.html>
-    + Encoding Tutorial: <http://www.flos-freeware.ch/doc/notepad2-Encoding.html>
-* Version: 4.2.25
-* Url: `http://www.flos-freeware.ch/zip/$:ArchiveName$`
-* ArchiveName32Bit: `notepad2_$:Version$_x86.zip`
-* ArchiveName64Bit: `notepad2_$:Version$_x64.zip`
-* Register: `false`
-* Launcher: $:Label$
-* VersionCheckUrl: <http://www.flos-freeware.ch/notepad2.html>
-* VersionCheckXPath: `//div[@id='contents']/p/em`
-* VersionCheckPattern: `^Current Release\: Version (?<Version>[\d\.]+)`
-
-### Notepad++
-
-Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
-
-* ID: `Bench.NotepadPlusPlus`
-* Tags:
-    + gui
-    + editor
-    + text editor
-* Website: <https://notepad-plus-plus.org>
-* License: GPL-3.0
-* LicenseUrl: <https://www.gnu.org/copyleft/gpl.html>
-* Docs:
-    + Features: <https://notepad-plus-plus.org/features/>
-    + Community: <https://notepad-plus-plus.org/community/>
-    + Wiki: <http://docs.notepad-plus-plus.org>
-* Label: Notepad++
-* VersionMajor: 7
-* Version: `$:VersionMajor$.6.3`
-* Url: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `npp.$:Version$.bin.7z`
-* ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
-* Exe: `notepad++.exe`
-* Launcher: $:Label$
-* ConfigurationDir: `$AppDataDir$\Notepad++`
-* VersionCheckUrl: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/`
-* VersionCheckXPath: `//table/descendant::tr/td/a`
-* VersionCheckPattern: `(?<Version>[\d\.]+)`
-
-### Markdown Edit
-
-Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on producing text documents that can be transformed into Web pages and documents. It places an emphasis on content and keyboard shortcuts. Don't let this dissuade you. Markdown Edit is a power-house of an editor. It does its job quietly and without fanfare.
-
-* ID: `Bench.MarkdownEdit`
-* Label: Markdown Edit
-* Tags:
-    + gui
-    + editor
-    + markdown
-* Website: <http://markdownedit.com/>
-* License: MIT
-* LicenseUrl: <https://raw.githubusercontent.com/mike-ward/Markdown-Edit/master/LICENSE.txt>
-* Docs:
-    + Documentation: <https://github.com/mike-ward/Markdown-Edit/wiki/01.-Home>
-    + Keyboard Shortcuts: <https://github.com/mike-ward/Markdown-Edit/wiki/05.-Keyboard-Shortcuts>
-* Version: 1.35
-* Url: `https://github.com/mike-ward/Markdown-Edit/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName: `MarkdownEdit.zip`
-* Exe: `mde.exe`
-* Register: `false`
-* Launcher: $:Label$
-
-### Atom
-
-A hackable text editor for the 21st Century.
-
-_Hint: Install the `env-from-shell` package to make sure the Bench environment
-is picked up from Atom._
-
-* ID: `Bench.Atom`
-* Tags:
-    + gui
-    + editor
-    + ide
-    + package manager
-    + coffeescript
-    + text editor
-    + folder editor
-* Website: <https://atom.io>
-* License: MIT
-* LicenseUrl: <https://github.com/atom/atom/blob/master/LICENSE.md>
-* Docs:
-    + Packages: <https://atom.io/packages>
-    + Themes: <https://atom.io/themes>
-    + Flight Manual: <http://flight-manual.atom.io/>
-    + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.34.0
-* Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
-* Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
-* ArchiveName32Bit: `atom-windows-$:Version$.zip`
-* ArchiveName64Bit: `atom-x64-windows-$:Version$.zip`
-* ArchivePath32Bit: `Atom`
-* ArchivePath64Bit: `Atom x64`
-* Environment:
-    + ATOM_HOME: `$HomeDir$\.atom`
-* Exe: `atom.exe`
-* Path: `resources\cli`
-* Launcher: $:Label$
-* DefaultPackages:
-    + `minimap`
-    + `script`
-    + `git-plus`
-    + `language-batchfile`
-    + `language-powershell`
-
-You can adapt the pre-installed Atom packages
-by putting something like this in your user app library in `config\apps.md`:
-
-```Markdown
-* ID: `Bench.Atom`
-* DefaultPackages:
-    + `git-plus`
-    + `language-powershell`
-```
-
-### Visual Studio Code
-
-A cross platform code editor from Microsoft.
-
-* ID: `Bench.VSCode`
-* Label: Visual Studio Code
-* Tags:
-    + gui
-    + editor
-    + ide
-    + package manager
-    + typescript
-    + text editor
-    + folder editor
-* Website: <https://code.visualstudio.com/>
-* License: MS-L
-* LicenseUrl: <https://code.visualstudio.com/License/>
-* Docs:
-    + Documentation: <https://code.visualstudio.com/Docs>
-* Version: latest
-* Url32Bit: <http://go.microsoft.com/fwlink/?LinkID=623231>
-* Url64Bit: <https://go.microsoft.com/fwlink/?linkid=850641>
-* ArchiveName32Bit: `VSCode-win32-ia32.zip`
-* ArchiveName64Bit: `VSCode-win32-x64.zip`
-* Dir: `bench\code`
-* Exe: `code.exe`
-* Launcher: $:Label$
-
-### Sublime Text 3
-
-Sublime Text is a sophisticated text editor for code, markup and prose.
-You'll love the slick user interface, extraordinary features and amazing performance.
-
-* ID: `Bench.SublimeText3`
-* Label: Sublime Text 3
-* Tags:
-    + gui
-    + editor
-    + ide
-    + python
-    + text editor
-    + folder editor
-* Website: <http://www.sublimetext.com>
-* License: Commercial
-* Docs:
-    + Documentation: <https://www.sublimetext.com/docs/3/>
-    + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
-    + Package Control: <https://packagecontrol.io/>
-* Release: 3176
-* Version: Build $:Release$
-* Url: `https://download.sublimetext.com/$:ArchiveName$`
-* ArchiveName32Bit: `Sublime Text $:Version$.zip`
-* ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
-* Exe: `sublime_text.exe`
-* Launcher: $:Label$
-* DataDir: `$AppDataDir$\Sublime Text 3`
-* VersionCheckUrl: <https://www.sublimetext.com/3>
-* VersionCheckXPath: `//article/h3`
-* VersionCheckPattern: `[\d\.]+ \((?<Version>Build \d+)\)`
-
-### Sublime Text 3 Package Control
-
-* ID: Bench.SublimeText3.PackageControl
-* Tags:
-    + package manager
-    + python
-* Dependencies: `Bench.SublimeText3`
-* Label: Sublime Text 3 Package Control
-* Website: <https://packagecontrol.io>
-* Url: <https://packagecontrol.io/Package%20Control.sublime-package>
-* ResourceName: `Package Control.sublime-package`
-* Dir: `$Bench.SublimeText3:DataDir$\Installed Packages`
-* Register: false
-* SetupTestFile: `$:Dir$\$:ResourceName$`
-* Packages:
-    + `SideBarEnhancements`
-    + `Console Exec`
-    + `AutoFileName`
-    + `BracketHighlighter`
-    + `TrailingSpaces`
-    + `INI`
-    + `AutoHotkey`
-    + `TOML`
-    + `LESS`
-    + `PowerShell`
-    + `MarkdownEditing`
-    + `Emmet`
-    + `Dockerfile Syntax Highlighting`
-    + `SublimeLinter`
-    + `SublimeLinter-pycodestyle`
-    + `SublimeLinter-jshint`
-    + `Git`
-    + `Gist`
-    + `Gulp`
-
-### Emacs
-
-An extensible, customizable, free text editor - and more.
-
-GNU Emacs at its core is an interpreter for Emacs Lisp, a dialect of the Lisp programming language
-with extensions to support text editing.
-
-* ID: `Bench.Emacs`
-* Tags:
-    + gui
-    + cli
-    + editor
-    + ide
-    + interpreter
-    + language
-    + lisp
-    + common lisp
-    + package manager
-    + text editor
-    + folder editor
-* Dependencies: `Bench.GnuTLS`
-* Website: <https://www.gnu.org/software/emacs/>
-* License: GPL-3.0
-* Docs:
-    + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
-    + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
-    + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
-* VersionMajor: 26
-* Version: $:VersionMajor$.1
-* Url: `http://ftp.gnu.org/gnu/emacs/windows/emacs-$:VersionMajor$/$:ArchiveName$`
-* ArchiveName32Bit: `emacs-$:Version$-i686.zip`
-* ArchiveName64Bit: `emacs-$:Version$-x86_64.zip`
-* Dir: `bench\gnu`
-* Path: `bin`
-* Exe: `bin\emacs.exe`
-* Launcher: $:Label$
-* LauncherExecutable: `$:Dir$\bin\runemacs.exe`
-* VersionCheckUrl: <https://ftp.gnu.org/gnu/emacs/>
-* VersionCheckXPath: `//td/a`
-* VersionCheckPattern: `emacs-(?<Version>[\d\.]+?)\.tar\.gz`
-
-### Spacemacs
-
-The best editor is neither Emacs nor Vim, it's Emacs and Vim!
-
-* ID: `Bench.Spacemacs`
-* Tags:
-    + gui
-    + cli
-    + editor
-    + ide
-    + emacs
-    + keybinding
-    + shortcut
-    + text editor
-    + folder editor
-* Typ: `meta`
-* Dependencies: `Bench.Git`, `Bench.Emacs`
-* Website: <http://spacemacs.org/>
-* License: GPL-3.0
-* Docs:
-    + Documentation: <http://spacemacs.org/doc/DOCUMENTATION.html>
-    + Configuration Layers: <http://spacemacs.org/doc/LAYERS.html>
-    + Layers: <http://spacemacs.org/layers/LAYERS.html>
-* SetupTestFile: `$HomeDir$\.emacs.d\spacemacs.mk`
-
-### Vim
-
-Vim is a highly configurable text editor built to enable efficient text editing.
-It is an improved version of the vi editor distributed with most UNIX systems.
-
-* ID: `Bench.VimRT`
-* Tags:
-    + vim
-    + runtime
-* Version: $Bench.Vim:Version$
-* License: $Bench.Vim:License$
-* LicenseUrl: $Bench.Vim:LicenseUrl$
-* Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
-* ArchiveName: `vim$Bench.Vim:Release$rt.zip`
-* ArchivePath: `vim\vim$Bench.Vim:Release$`
-* Dir: `$Bench.Vim:Dir$`
-* Register: `false`
-* SetupTestFile: `scripts.vim`
-
-* ID: `Bench.VimConsole`
-* Tags:
-    + cli
-    + editor
-    + ide
-    + vim
-* Dependencies: `Bench.VimRT`
-* Version: $Bench.Vim:Version$
-* License: $Bench.Vim:License$
-* LicenseUrl: $Bench.Vim:LicenseUrl$
-* Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
-* ArchiveName: `vim$Bench.Vim:Release$w32.zip`
-* ArchivePath: `vim\vim$Bench.Vim:Release$`
-* Dir: `$Bench.Vim:Dir$`
-* Exe: `vim.exe`
-
-* ID: `Bench.Vim`
-* Tags:
-    + gui
-    + editor
-    + ide
-    + text editor
-    + folder editor
-* Website: <http://www.vim.org>
-* License: GPL compatible
-* LicenseUrl: <http://vimdoc.sourceforge.net/htmldoc/uganda.html#license>
-* Docs:
-    + Overview: <http://www.vim.org/docs.php>
-    + Vimdoc: <http://vimdoc.sourceforge.net/>
-    + User Manual: <http://vimdoc.sourceforge.net/htmldoc/usr_toc.html>
-* Dependencies: `Bench.VimRT`, `Bench.VimConsole`
-* VersionMajor: 8
-* VersionMinor: 1
-* Version: $:VersionMajor$.$:VersionMinor$
-* Release: $:VersionMajor$$:VersionMinor$
-* Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
-* ArchiveName: `gvim$:Release$.zip`
-* ArchivePath: `vim\vim$:Release$`
-* Exe: `gvim.exe`
-* Launcher: $:Label$
-* VersionCheckUrl: <http://ftp.vim.org/pub/vim/pc/>
-* VersionCheckXPath: `//table[@class='readme']/descendant::pre`
-* VersionCheckPattern: `-- version (?<Version>[\d\.]+) --`
-
-### Spyder
-
-The Scientific PYthon Development EnviRonment
-
-* ID: `Bench.Python3.Spyder`
-* Label: Spyder 3
-* Tags:
-    + gui
-    + editor
-    + ide
-    + python
-* Website: <https://github.com/spyder-ide/spyder>
-* License: MIT
-* LicenseUrl: <https://raw.githubusercontent.com/spyder-ide/spyder/master/LICENSE>
-* Typ: `python3-package`
-* Exe: `$:Path$\spyder3.exe`
-* Dependencies:
-    + `Bench.Python3.IPython`
-    + `Bench.Python3.Jupyter`
-    + `Bench.Python.PyCodeStyle`
-    + `Bench.Python.Tornado`
-* Launcher: $:Label$
-* LauncherIcon: `$:Dir$\Lib\site-packages\spyder\doc\_static\favicon.ico`
-
-### LightTable
-
-The next generation code editor.
-
-* ID: `Bench.LightTable`
-* Tags:
-    + gui
-    + editor
-    + ide
-    + clojure
-* Website: <http://lighttable.com>
-* License: MIT
-* LicenseUrl: <https://github.com/LightTable/LightTable/blob/master/LICENSE.md>
-* Docs:
-    + Documentation: <http://docs.lighttable.com/>
-* Version: 0.8.1
-* Url: `https://github.com/LightTable/LightTable/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `lighttable-$:Version$-windows.zip`
-* ArchivePath: `lighttable-$:Version$-windows`
-* Dir: `bench\lt`
-* Exe: `LightTable.exe`
-* Launcher: $:Label$
-
-### Nightcode
-
-An IDE for Clojure.
-
-* ID: `Bench.Nightcode`
-* Tags:
-    + gui
-    + editor
-    + ide
-    + clojure
-* Dependencies: `Bench.JRE8`
-* Website: <https://sekao.net/nightcode/>
-* License: Public Domain
-* LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
-* Version: 2.7.0
-* Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
-* ResourceName: `Nightcode-$:Version$.jar`
-* Exe: `$:ResourceName$`
-* Launcher: $:Label$
-* LauncherExecutable: `$Bench.JRE8:Path$\java.exe`
-* LauncherArguments: `--module-path`, `$Bench.JFX:ModulePath$`, `--add-modules=javafx.controls`, `-jar`, `$:Exe$`
-* LauncherArguments: `-jar`, `$:Exe$`
-
-### Eclipse for Java
-
-The essential tools for any Java developer, including a Java IDE, a Git client,
-XML Editor, Mylyn, Maven and Gradle integration...
-
-* ID: `Bench.EclipseJava`
-* Label: Eclipse for Java
-* Tags:
-    + gui
-    + ide
-    + java
-    + maven
-    + ant
-* CodeName: 2018-12
-* Version: 4.10
-* Release: R
-* Dependencies: `Bench.JDK`
-* Website: <https://www.eclipse.org/>
-* License: EFSUA
-* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
-* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName64Bit: `eclipse-java-$:CodeName$-$:Release$-win32-x86_64.zip`
-* Only64Bit: `true`
-* ArchivePath: `eclipse`
-* Dir: `bench\eclipse_java`
-* Exe: `eclipse.exe`
-* Register: `false`
-* Launcher: $:Label$
-* VersionCheckUrl: <https://www.eclipse.org/downloads/packages/>
-* VersionCheckXPath: `//span[@class='windows']/a/@href`
-* VersionCheckPattern: `/technology/epp/downloads/release/(?<Version>[^/]+/[^/]+)/eclipse-java-.+?-win32-x86_64\.zip$`
-* VersionCheckString: `$:CodeName$/$:Release$`
-
-### Eclipse for PHP
-
-The essential tools for any PHP developer, including PHP language support,
-Git client, Mylyn and editors for JavaScript, HTML, CSS and...
-
-* ID: `Bench.EclipsePHP`
-* Label: Eclipse for PHP
-* Tags:
-    + gui
-    + ide
-    + php
-* Version: $Bench.EclipseJava:Version$
-* CodeName: $Bench.EclipseJava:CodeName$
-* Release: $Bench.EclipseJava:Release$
-* Dependencies: `Bench.JDK`
-* Website: <https://www.eclipse.org/>
-* License: EFSUA
-* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
-* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName64Bit: `eclipse-php-$:CodeName$-$:Release$-win32-x86_64.zip`
-* Only64Bit: `true`
-* ArchivePath: `eclipse`
-* Dir: `bench\eclipse_php`
-* Exe: `eclipse.exe`
-* Register: `false`
-* Launcher: $:Label$
-
-### Eclipse for C/C++
-
-An IDE for C/C++ developers with Mylyn integration.
-
-* ID: `Bench.EclipseCpp`
-* Label: Eclipse for C++
-* Tags:
-    + gui
-    + ide
-    + c
-    + c++
-* Version: $Bench.EclipseJava:Version$
-* CodeName: $Bench.EclipseJava:CodeName$
-* Release: $Bench.EclipseJava:Release$
-* Dependencies: `Bench.JDK`
-* Website: <https://www.eclipse.org/>
-* License: EFSUA
-* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
-* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
-* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32-x86_64.zip`
-* Only64Bit: `true`
-* ArchivePath: `eclipse`
-* Dir: `bench\eclipse_cpp`
-* Exe: `eclipse.exe`
-* Register: `false`
-* Launcher: $:Label$
-
-### JetBrains IntelliJ IDEA Community
-
-Capable and Ergonomic IDE for JVM.
-
-* ID: `Bench.IdeaIC`
-* Label: IntelliJ IDEA Community
-* Tags:
-    + gui
-    + ide
-    + java
-    + compiler
-    + language
-    + kotlin
-    + groovy
-    + scala
-    + maven
-    + gradle
-* Website: <https://www.jetbrains.com/idea/>
-* Docs:
-    + Documentation: <https://www.jetbrains.com/idea/documentation/>
-* License: Apache-2.0
-* Version: 2018.3.4
-* Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
-* ArchiveName: `ideaIC-$:Version$.win.zip`
-* Dir: `bench\idea_community`
-* Exe32Bit: `bin\idea.exe`
-* Exe64Bit: `bin\idea64.exe`
-* Launcher: $:Label$
-* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
-* VersionCheckJsonPath: `IIC/0/version`
-* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
-
-### JetBrains PyCharm Community
-
-Python IDE for Professional Developers.
-
-* ID: `Bench.PyCharmCE`
-* Label: PyCharm Community
-* Tags:
-    + gui
-    + ide
-    + python
-    + science
-* Website: <https://www.jetbrains.com/pycharm/>
-* Docs:
-    + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
-* License: Apache-2.0
-* Version: 2018.3.4
-* Url: `https://download.jetbrains.com/python/$:ArchiveName$`
-* ArchiveName: `pycharm-community-$:Version$.zip`
-* Dir: `bench\pycharm_community`
-* Exe32Bit: `bin\pycharm.exe`
-* Exe64Bit: `bin\pycharm64.exe`
-* Launcher: $:Label$
-* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
-* VersionCheckJsonPath: `PCP/0/version`
-* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
-
-### R Studio
-
-RStudio is an IDE for R.
-It includes a console, syntax-highlighting editor that supports
-direct code execution, as well as tools for plotting, history,
-debugging and workspace management.
-
-* ID: `Bench.RStudio`
-* Label: R Studio
-* Tags:
-    + gui
-    + ide
-    + r
-    + science
-    + statistics
-    + plotting
-* Dependencies: `Bench.R`
-* Website: <https://www.rstudio.com>
-* License: AGPL-3.0
-* Version: 1.1.463
-* Url: `https://download1.rstudio.org/$:ArchiveName$`
-* ArchiveName: `RStudio-$:Version$.zip`
-* Dir: `bench\r-studio`
-* Path: `bin`
-* Exe: `bin\rstudio.exe`
-* Launcher: $:Label$
-* VersionCheckUrl: <https://www.rstudio.com/products/rstudio/download/>
-* VersionCheckXPath: `//h4/strong`
-* VersionCheckPattern: `RStudio Desktop (?<Version>[\d\.]+)`
-
-### Resource Hacker™
-
-Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (\*.exe; \*.dll; \*.scr; \*.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (\*.rc), and edit resource files (\*.res) too.
-
-* ID: `Bench.ResourceHacker`
-* Label: Resource Hacker™
-* Tags:
-    + gui
-    + editor
-* Version: latest
-* Website: <http://angusj.com/resourcehacker/>
-* License: Freeware
-* Url: `http://angusj.com/resourcehacker/$:ArchiveName$`
-* ArchiveName: `resource_hacker.zip`
-* Dir: `bench\reshack`
-* Launcher: $:Label$
-
 ## Software Development Utilities
 
 ### Yarn
@@ -2210,6 +1590,14 @@ pycodestyle (formerly called pep8) - Python style guide checker
     + pycodestyle documentation: <http://pycodestyle.pycqa.org/>
     + PEP 8 Styleguide: <https://www.python.org/dev/peps/pep-0008/>
 * Exe: `Scripts\pycodestyle.exe`
+
+### PyQT 5
+
+* ID: `Bench.Python3.PyQT5`
+* Label: PyQT 5 for Python 3
+* Typ: `python3-package`
+* Package: `PyQT5`
+* Version: 5.11.3
 
 ### Zeal
 
@@ -2867,12 +2255,12 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/sympy/sympy/master/LICENSE>
 
-### pandas
+### Pandas
 
 pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
 * ID: `Bench.Python.Pandas`
-* Label: pandas
+* Label: Pandas
 * Tags:
     + data science
 * Typ: `python-package`
@@ -3225,6 +2613,626 @@ TensorFlow was originally developed by researchers and engineers working on the 
 * License: Apache-2.0
 * Version: latest
 * Only64Bit: `true`
+
+## Editors
+
+### Notepad2
+
+Notepad2 is a fast and light-weight Notepad-like text editor with syntax highlighting.
+This program can be run out of the box without installation, and does not touch your system's registry.
+
+* ID: `Bench.Notepad2`
+* Tags:
+    + gui
+    + editor
+    + text editor
+* Website: <http://www.flos-freeware.ch/notepad2.html>
+* License: BSD-3-Clause
+* LicenseUrl: `License.txt`
+* Docs:
+    + Readme: <http://www.flos-freeware.ch/doc/Notepad2.txt>
+    + FAQ: <http://www.flos-freeware.ch/doc/notepad2-FAQs.html>
+    + Encoding Tutorial: <http://www.flos-freeware.ch/doc/notepad2-Encoding.html>
+* Version: 4.2.25
+* Url: `http://www.flos-freeware.ch/zip/$:ArchiveName$`
+* ArchiveName32Bit: `notepad2_$:Version$_x86.zip`
+* ArchiveName64Bit: `notepad2_$:Version$_x64.zip`
+* Register: `false`
+* Launcher: $:Label$
+* VersionCheckUrl: <http://www.flos-freeware.ch/notepad2.html>
+* VersionCheckXPath: `//div[@id='contents']/p/em`
+* VersionCheckPattern: `^Current Release\: Version (?<Version>[\d\.]+)`
+
+### Notepad++
+
+Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
+
+* ID: `Bench.NotepadPlusPlus`
+* Tags:
+    + gui
+    + editor
+    + text editor
+* Website: <https://notepad-plus-plus.org>
+* License: GPL-3.0
+* LicenseUrl: <https://www.gnu.org/copyleft/gpl.html>
+* Docs:
+    + Features: <https://notepad-plus-plus.org/features/>
+    + Community: <https://notepad-plus-plus.org/community/>
+    + Wiki: <http://docs.notepad-plus-plus.org>
+* Label: Notepad++
+* VersionMajor: 7
+* Version: `$:VersionMajor$.6.3`
+* Url: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `npp.$:Version$.bin.7z`
+* ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
+* Exe: `notepad++.exe`
+* Launcher: $:Label$
+* ConfigurationDir: `$AppDataDir$\Notepad++`
+* VersionCheckUrl: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/`
+* VersionCheckXPath: `//table/descendant::tr/td/a`
+* VersionCheckPattern: `(?<Version>[\d\.]+)`
+
+### Markdown Edit
+
+Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on producing text documents that can be transformed into Web pages and documents. It places an emphasis on content and keyboard shortcuts. Don't let this dissuade you. Markdown Edit is a power-house of an editor. It does its job quietly and without fanfare.
+
+* ID: `Bench.MarkdownEdit`
+* Label: Markdown Edit
+* Tags:
+    + gui
+    + editor
+    + markdown
+* Website: <http://markdownedit.com/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/mike-ward/Markdown-Edit/master/LICENSE.txt>
+* Docs:
+    + Documentation: <https://github.com/mike-ward/Markdown-Edit/wiki/01.-Home>
+    + Keyboard Shortcuts: <https://github.com/mike-ward/Markdown-Edit/wiki/05.-Keyboard-Shortcuts>
+* Version: 1.35
+* Url: `https://github.com/mike-ward/Markdown-Edit/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `MarkdownEdit.zip`
+* Exe: `mde.exe`
+* Register: `false`
+* Launcher: $:Label$
+
+### Atom
+
+A hackable text editor for the 21st Century.
+
+_Hint: Install the `env-from-shell` package to make sure the Bench environment
+is picked up from Atom._
+
+* ID: `Bench.Atom`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + package manager
+    + coffeescript
+    + text editor
+    + folder editor
+* Website: <https://atom.io>
+* License: MIT
+* LicenseUrl: <https://github.com/atom/atom/blob/master/LICENSE.md>
+* Docs:
+    + Packages: <https://atom.io/packages>
+    + Themes: <https://atom.io/themes>
+    + Flight Manual: <http://flight-manual.atom.io/>
+    + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
+* Version: 1.34.0
+* Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
+* Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
+* ArchiveName32Bit: `atom-windows-$:Version$.zip`
+* ArchiveName64Bit: `atom-x64-windows-$:Version$.zip`
+* ArchivePath32Bit: `Atom`
+* ArchivePath64Bit: `Atom x64`
+* Environment:
+    + ATOM_HOME: `$HomeDir$\.atom`
+* Exe: `atom.exe`
+* Path: `resources\cli`
+* Launcher: $:Label$
+* DefaultPackages:
+    + `minimap`
+    + `script`
+    + `git-plus`
+    + `language-batchfile`
+    + `language-powershell`
+
+You can adapt the pre-installed Atom packages
+by putting something like this in your user app library in `config\apps.md`:
+
+```Markdown
+* ID: `Bench.Atom`
+* DefaultPackages:
+    + `git-plus`
+    + `language-powershell`
+```
+
+### Visual Studio Code
+
+A cross platform code editor from Microsoft.
+
+* ID: `Bench.VSCode`
+* Label: Visual Studio Code
+* Tags:
+    + gui
+    + editor
+    + ide
+    + package manager
+    + typescript
+    + text editor
+    + folder editor
+* Website: <https://code.visualstudio.com/>
+* License: MS-L
+* LicenseUrl: <https://code.visualstudio.com/License/>
+* Docs:
+    + Documentation: <https://code.visualstudio.com/Docs>
+* Version: latest
+* Url32Bit: <http://go.microsoft.com/fwlink/?LinkID=623231>
+* Url64Bit: <https://go.microsoft.com/fwlink/?linkid=850641>
+* ArchiveName32Bit: `VSCode-win32-ia32.zip`
+* ArchiveName64Bit: `VSCode-win32-x64.zip`
+* Dir: `bench\code`
+* Exe: `code.exe`
+* Launcher: $:Label$
+
+### Sublime Text 3
+
+Sublime Text is a sophisticated text editor for code, markup and prose.
+You'll love the slick user interface, extraordinary features and amazing performance.
+
+* ID: `Bench.SublimeText3`
+* Label: Sublime Text 3
+* Tags:
+    + gui
+    + editor
+    + ide
+    + python
+    + text editor
+    + folder editor
+* Website: <http://www.sublimetext.com>
+* License: Commercial
+* Docs:
+    + Documentation: <https://www.sublimetext.com/docs/3/>
+    + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
+    + Package Control: <https://packagecontrol.io/>
+* Release: 3176
+* Version: Build $:Release$
+* Url: `https://download.sublimetext.com/$:ArchiveName$`
+* ArchiveName32Bit: `Sublime Text $:Version$.zip`
+* ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
+* Exe: `sublime_text.exe`
+* Launcher: $:Label$
+* DataDir: `$AppDataDir$\Sublime Text 3`
+* VersionCheckUrl: <https://www.sublimetext.com/3>
+* VersionCheckXPath: `//article/h3`
+* VersionCheckPattern: `[\d\.]+ \((?<Version>Build \d+)\)`
+
+### Sublime Text 3 Package Control
+
+* ID: Bench.SublimeText3.PackageControl
+* Tags:
+    + package manager
+    + python
+* Dependencies: `Bench.SublimeText3`
+* Label: Sublime Text 3 Package Control
+* Website: <https://packagecontrol.io>
+* Url: <https://packagecontrol.io/Package%20Control.sublime-package>
+* ResourceName: `Package Control.sublime-package`
+* Dir: `$Bench.SublimeText3:DataDir$\Installed Packages`
+* Register: false
+* SetupTestFile: `$:Dir$\$:ResourceName$`
+* Packages:
+    + `SideBarEnhancements`
+    + `Console Exec`
+    + `AutoFileName`
+    + `BracketHighlighter`
+    + `TrailingSpaces`
+    + `INI`
+    + `AutoHotkey`
+    + `TOML`
+    + `LESS`
+    + `PowerShell`
+    + `MarkdownEditing`
+    + `Emmet`
+    + `Dockerfile Syntax Highlighting`
+    + `SublimeLinter`
+    + `SublimeLinter-pycodestyle`
+    + `SublimeLinter-jshint`
+    + `Git`
+    + `Gist`
+    + `Gulp`
+
+### Emacs
+
+An extensible, customizable, free text editor - and more.
+
+GNU Emacs at its core is an interpreter for Emacs Lisp, a dialect of the Lisp programming language
+with extensions to support text editing.
+
+* ID: `Bench.Emacs`
+* Tags:
+    + gui
+    + cli
+    + editor
+    + ide
+    + interpreter
+    + language
+    + lisp
+    + common lisp
+    + package manager
+    + text editor
+    + folder editor
+* Dependencies: `Bench.GnuTLS`
+* Website: <https://www.gnu.org/software/emacs/>
+* License: GPL-3.0
+* Docs:
+    + Manual: <https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html>
+    + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
+    + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
+* VersionMajor: 26
+* Version: $:VersionMajor$.1
+* Url: `http://ftp.gnu.org/gnu/emacs/windows/emacs-$:VersionMajor$/$:ArchiveName$`
+* ArchiveName32Bit: `emacs-$:Version$-i686.zip`
+* ArchiveName64Bit: `emacs-$:Version$-x86_64.zip`
+* Dir: `bench\gnu`
+* Path: `bin`
+* Exe: `bin\emacs.exe`
+* Launcher: $:Label$
+* LauncherExecutable: `$:Dir$\bin\runemacs.exe`
+* VersionCheckUrl: <https://ftp.gnu.org/gnu/emacs/>
+* VersionCheckXPath: `//td/a`
+* VersionCheckPattern: `emacs-(?<Version>[\d\.]+?)\.tar\.gz`
+
+### Spacemacs
+
+The best editor is neither Emacs nor Vim, it's Emacs and Vim!
+
+* ID: `Bench.Spacemacs`
+* Tags:
+    + gui
+    + cli
+    + editor
+    + ide
+    + emacs
+    + keybinding
+    + shortcut
+    + text editor
+    + folder editor
+* Typ: `meta`
+* Dependencies: `Bench.Git`, `Bench.Emacs`
+* Website: <http://spacemacs.org/>
+* License: GPL-3.0
+* Docs:
+    + Documentation: <http://spacemacs.org/doc/DOCUMENTATION.html>
+    + Configuration Layers: <http://spacemacs.org/doc/LAYERS.html>
+    + Layers: <http://spacemacs.org/layers/LAYERS.html>
+* SetupTestFile: `$HomeDir$\.emacs.d\spacemacs.mk`
+
+### Vim
+
+Vim is a highly configurable text editor built to enable efficient text editing.
+It is an improved version of the vi editor distributed with most UNIX systems.
+
+* ID: `Bench.VimRT`
+* Tags:
+    + vim
+    + runtime
+* Version: $Bench.Vim:Version$
+* License: $Bench.Vim:License$
+* LicenseUrl: $Bench.Vim:LicenseUrl$
+* Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
+* ArchiveName: `vim$Bench.Vim:Release$rt.zip`
+* ArchivePath: `vim\vim$Bench.Vim:Release$`
+* Dir: `$Bench.Vim:Dir$`
+* Register: `false`
+* SetupTestFile: `scripts.vim`
+
+* ID: `Bench.VimConsole`
+* Tags:
+    + cli
+    + editor
+    + ide
+    + vim
+* Dependencies: `Bench.VimRT`
+* Version: $Bench.Vim:Version$
+* License: $Bench.Vim:License$
+* LicenseUrl: $Bench.Vim:LicenseUrl$
+* Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
+* ArchiveName: `vim$Bench.Vim:Release$w32.zip`
+* ArchivePath: `vim\vim$Bench.Vim:Release$`
+* Dir: `$Bench.Vim:Dir$`
+* Exe: `vim.exe`
+
+* ID: `Bench.Vim`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + text editor
+    + folder editor
+* Website: <http://www.vim.org>
+* License: GPL compatible
+* LicenseUrl: <http://vimdoc.sourceforge.net/htmldoc/uganda.html#license>
+* Docs:
+    + Overview: <http://www.vim.org/docs.php>
+    + Vimdoc: <http://vimdoc.sourceforge.net/>
+    + User Manual: <http://vimdoc.sourceforge.net/htmldoc/usr_toc.html>
+* Dependencies: `Bench.VimRT`, `Bench.VimConsole`
+* VersionMajor: 8
+* VersionMinor: 1
+* Version: $:VersionMajor$.$:VersionMinor$
+* Release: $:VersionMajor$$:VersionMinor$
+* Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
+* ArchiveName: `gvim$:Release$.zip`
+* ArchivePath: `vim\vim$:Release$`
+* Exe: `gvim.exe`
+* Launcher: $:Label$
+* VersionCheckUrl: <http://ftp.vim.org/pub/vim/pc/>
+* VersionCheckXPath: `//table[@class='readme']/descendant::pre`
+* VersionCheckPattern: `-- version (?<Version>[\d\.]+) --`
+
+### Spyder
+
+The Scientific PYthon Development EnviRonment
+
+* ID: `Bench.Python3.Spyder`
+* Label: Spyder 3
+* Tags:
+    + gui
+    + editor
+    + ide
+    + python
+* Website: <https://github.com/spyder-ide/spyder>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/spyder-ide/spyder/master/LICENSE>
+* Typ: `python3-package`
+* Exe: `$:Path$\spyder3.exe`
+* Dependencies:
+    + `Bench.Python3.SciPy`
+    + `Bench.Python3.PyQT5`
+    + `Bench.Python.PyCodeStyle`
+    + `Bench.Python.Tornado`
+    + `Bench.Python3.SpyderNotebook`
+* Launcher: $:Label$
+
+### LightTable
+
+The next generation code editor.
+
+* ID: `Bench.LightTable`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + clojure
+* Website: <http://lighttable.com>
+* License: MIT
+* LicenseUrl: <https://github.com/LightTable/LightTable/blob/master/LICENSE.md>
+* Docs:
+    + Documentation: <http://docs.lighttable.com/>
+* Version: 0.8.1
+* Url: `https://github.com/LightTable/LightTable/releases/download/$:Version$/$:ArchiveName$`
+* ArchiveName: `lighttable-$:Version$-windows.zip`
+* ArchivePath: `lighttable-$:Version$-windows`
+* Dir: `bench\lt`
+* Exe: `LightTable.exe`
+* Launcher: $:Label$
+
+### Nightcode
+
+An IDE for Clojure.
+
+* ID: `Bench.Nightcode`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + clojure
+* Dependencies: `Bench.JRE8`
+* Website: <https://sekao.net/nightcode/>
+* License: Public Domain
+* LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
+* Version: 2.7.0
+* Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
+* ResourceName: `Nightcode-$:Version$.jar`
+* Exe: `$:ResourceName$`
+* Launcher: $:Label$
+* LauncherExecutable: `$Bench.JRE8:Path$\java.exe`
+* LauncherArguments: `--module-path`, `$Bench.JFX:ModulePath$`, `--add-modules=javafx.controls`, `-jar`, `$:Exe$`
+* LauncherArguments: `-jar`, `$:Exe$`
+
+### Eclipse for Java
+
+The essential tools for any Java developer, including a Java IDE, a Git client,
+XML Editor, Mylyn, Maven and Gradle integration...
+
+* ID: `Bench.EclipseJava`
+* Label: Eclipse for Java
+* Tags:
+    + gui
+    + ide
+    + java
+    + maven
+    + ant
+* CodeName: 2018-12
+* Version: 4.10
+* Release: R
+* Dependencies: `Bench.JDK`
+* Website: <https://www.eclipse.org/>
+* License: EFSUA
+* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
+* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
+* ArchiveName64Bit: `eclipse-java-$:CodeName$-$:Release$-win32-x86_64.zip`
+* Only64Bit: `true`
+* ArchivePath: `eclipse`
+* Dir: `bench\eclipse_java`
+* Exe: `eclipse.exe`
+* Register: `false`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://www.eclipse.org/downloads/packages/>
+* VersionCheckXPath: `//span[@class='windows']/a/@href`
+* VersionCheckPattern: `/technology/epp/downloads/release/(?<Version>[^/]+/[^/]+)/eclipse-java-.+?-win32-x86_64\.zip$`
+* VersionCheckString: `$:CodeName$/$:Release$`
+
+### Eclipse for PHP
+
+The essential tools for any PHP developer, including PHP language support,
+Git client, Mylyn and editors for JavaScript, HTML, CSS and...
+
+* ID: `Bench.EclipsePHP`
+* Label: Eclipse for PHP
+* Tags:
+    + gui
+    + ide
+    + php
+* Version: $Bench.EclipseJava:Version$
+* CodeName: $Bench.EclipseJava:CodeName$
+* Release: $Bench.EclipseJava:Release$
+* Dependencies: `Bench.JDK`
+* Website: <https://www.eclipse.org/>
+* License: EFSUA
+* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
+* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
+* ArchiveName64Bit: `eclipse-php-$:CodeName$-$:Release$-win32-x86_64.zip`
+* Only64Bit: `true`
+* ArchivePath: `eclipse`
+* Dir: `bench\eclipse_php`
+* Exe: `eclipse.exe`
+* Register: `false`
+* Launcher: $:Label$
+
+### Eclipse for C/C++
+
+An IDE for C/C++ developers with Mylyn integration.
+
+* ID: `Bench.EclipseCpp`
+* Label: Eclipse for C++
+* Tags:
+    + gui
+    + ide
+    + c
+    + c++
+* Version: $Bench.EclipseJava:Version$
+* CodeName: $Bench.EclipseJava:CodeName$
+* Release: $Bench.EclipseJava:Release$
+* Dependencies: `Bench.JDK`
+* Website: <https://www.eclipse.org/>
+* License: EFSUA
+* LicenseUrl: <https://www.eclipse.org/legal/epl/notice.php>
+* Url: `https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/$:CodeName$/$:Release$/$:ArchiveName$`
+* ArchiveName64Bit: `eclipse-cpp-$:CodeName$-$:Release$-win32-x86_64.zip`
+* Only64Bit: `true`
+* ArchivePath: `eclipse`
+* Dir: `bench\eclipse_cpp`
+* Exe: `eclipse.exe`
+* Register: `false`
+* Launcher: $:Label$
+
+### JetBrains IntelliJ IDEA Community
+
+Capable and Ergonomic IDE for JVM.
+
+* ID: `Bench.IdeaIC`
+* Label: IntelliJ IDEA Community
+* Tags:
+    + gui
+    + ide
+    + java
+    + compiler
+    + language
+    + kotlin
+    + groovy
+    + scala
+    + maven
+    + gradle
+* Website: <https://www.jetbrains.com/idea/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/idea/documentation/>
+* License: Apache-2.0
+* Version: 2018.3.4
+* Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
+* ArchiveName: `ideaIC-$:Version$.win.zip`
+* Dir: `bench\idea_community`
+* Exe32Bit: `bin\idea.exe`
+* Exe64Bit: `bin\idea64.exe`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
+* VersionCheckJsonPath: `IIC/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
+
+### JetBrains PyCharm Community
+
+Python IDE for Professional Developers.
+
+* ID: `Bench.PyCharmCE`
+* Label: PyCharm Community
+* Tags:
+    + gui
+    + ide
+    + python
+    + science
+* Website: <https://www.jetbrains.com/pycharm/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
+* License: Apache-2.0
+* Version: 2018.3.4
+* Url: `https://download.jetbrains.com/python/$:ArchiveName$`
+* ArchiveName: `pycharm-community-$:Version$.zip`
+* Dir: `bench\pycharm_community`
+* Exe32Bit: `bin\pycharm.exe`
+* Exe64Bit: `bin\pycharm64.exe`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
+* VersionCheckJsonPath: `PCP/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
+
+### R Studio
+
+RStudio is an IDE for R.
+It includes a console, syntax-highlighting editor that supports
+direct code execution, as well as tools for plotting, history,
+debugging and workspace management.
+
+* ID: `Bench.RStudio`
+* Label: R Studio
+* Tags:
+    + gui
+    + ide
+    + r
+    + science
+    + statistics
+    + plotting
+* Dependencies: `Bench.R`
+* Website: <https://www.rstudio.com>
+* License: AGPL-3.0
+* Version: 1.1.463
+* Url: `https://download1.rstudio.org/$:ArchiveName$`
+* ArchiveName: `RStudio-$:Version$.zip`
+* Dir: `bench\r-studio`
+* Path: `bin`
+* Exe: `bin\rstudio.exe`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://www.rstudio.com/products/rstudio/download/>
+* VersionCheckXPath: `//h4/strong`
+* VersionCheckPattern: `RStudio Desktop (?<Version>[\d\.]+)`
+
+### Resource Hacker™
+
+Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (\*.exe; \*.dll; \*.scr; \*.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (\*.rc), and edit resource files (\*.res) too.
+
+* ID: `Bench.ResourceHacker`
+* Label: Resource Hacker™
+* Tags:
+    + gui
+    + editor
+* Version: latest
+* Website: <http://angusj.com/resourcehacker/>
+* License: Freeware
+* Url: `http://angusj.com/resourcehacker/$:ArchiveName$`
+* ArchiveName: `resource_hacker.zip`
+* Dir: `bench\reshack`
+* Launcher: $:Label$
 
 ## Filesystem
 
