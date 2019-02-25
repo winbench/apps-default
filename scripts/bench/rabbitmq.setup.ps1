@@ -1,10 +1,12 @@
-Start-Process rabbitmq-server
+$rabbitMqPath = App-Path Bench.RabbitMQ
+
+Start-Process "$rabbitMqPath\rabbitmq-server.bat"
 
 echo "Waiting 10s for the broker to boot ..."
 [Threading.Thread]::Sleep(10000)
 
 echo "Activating Web UI ..."
-rabbitmq-plugins enable rabbitmq_management
+& "$rabbitMqPath\rabbitmq-plugins.bat" enable rabbitmq_management
 
 echo "Killing the broker ..."
-rabbitmqctl stop
+& "$rabbitMqPath\rabbitmqctl.bat" stop
