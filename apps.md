@@ -478,6 +478,26 @@ According to Oracle, Java is the world's #1 programming language.
 * VersionCheckXPath: `//div[@id='openjdk']/descendant::table/descendant::td/a/@href`
 * VersionCheckPattern: `jdk11/\d+/GPL/openjdk-(?<Version>[\d\.]+)_windows-x64_bin\.zip$`
 
+### Open JFX
+
+* ID: `Bench.JFX`
+* Dependencies:
+    + `Bench.JDK`
+* Label: OpenJFX SDK $Bench.JDK:VersionMajor$
+* Website: <https://openjfx.io/>
+* Docs:
+    + API: `https://openjfx.io/javadoc/$Bench.JDK:VersionMajor$/`
+* Version: $Bench.JDK:Version$
+* Url: `https://download2.gluonhq.com/openjfx/$:Version$/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName64Bit: `openjfx-$:Version$_windows-x64_bin-sdk.zip`
+* ArchivePath: `javafx-sdk-$:Version$`
+* ModulePath: `$:Dir$\lib`
+* SetupTestFile: `$:ModulePath$\javafx.base.jar`
+* Environment:
+    + `PATH_TO_FX`: `$:ModulePath$`
+* Register: `false`
+
 ### Leiningen
 
 Leiningen is the easiest way to use Clojure.
