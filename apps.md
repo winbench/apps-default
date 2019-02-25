@@ -4264,9 +4264,11 @@ An interpreter for the PostScript language and for PDF.
 * CompactVersion: `gs$:VersionMajor$$:VersionMinor$`
 * Version: `$:VersionMajor$.$:VersionMinor$`
 * Url: `https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/$:CompactVersion$/$:ArchiveName$`
-* ArchiveName: `$:CompactVersion$w32.exe`
+* ArchiveName32Bit: `$:CompactVersion$aw32.exe`
+* ArchiveName64Bit: `$:CompactVersion$aw64.exe`
 * Path: `bin`
-* Exe: `bin\gswin32.exe`
+* Exe32Bit: `bin\gswin32.exe`
+* Exe64Bit: `bin\gswin64.exe`
 * VersionCheckString: $:CompactVersion$
 * VersionCheckIgnore: `gs925rc1`
 * Launcher: $:Label$
