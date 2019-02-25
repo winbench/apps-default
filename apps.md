@@ -2996,6 +2996,42 @@ The Scientific PYthon Development EnviRonment
     + `Bench.Python3.SpyderNotebook`
 * Launcher: $:Label$
 
+### Spyder Notebook
+
+A Jupyter Notebook Plugin for Spyder
+
+* ID: `Bench.Python3.SpyderNotebook`
+* Label: Spyder 3 Notebook
+* PackageName: `spyder-notebook`
+* Tags:
+    + gui
+    + editor
+    + ide
+    + python
+* Website: <https://github.com/spyder-ide/spyder-notebook>
+* License: MIT
+* LicenseUrl: <https://github.com/spyder-ide/spyder-notebook/blob/master/LICENSE>
+* Typ: `python3-package`
+* Register: `false`
+* SetupTestFile: `$:Dir$\Lib\site-packages\spyder_notebook\notebookplugin.py`
+
+### Spyder Unittest
+
+Support for running test for famous unittest frameworks in Spyder.
+
+* ID: `Bench.Python3.SpyderUnittest`
+* Label: Spyder 3 Unittest
+* PackageName: `spyder-unittest`
+* Tags:
+    + gui
+    + unittest
+* Website: <https://github.com/spyder-ide/spyder-unittest>
+* License: MIT
+* LicenseUrl: <https://github.com/spyder-ide/spyder-unittest/blob/master/LICENSE.txt>
+* Typ: `python3-package`
+* Register: `false`
+* SetupTestFile: `$:Dir$\Lib\site-packages\spyder_unittest\unittestplugin.py`
+
 ### LightTable
 
 The next generation code editor.
