@@ -70,6 +70,7 @@
 * Dependencies:
     + `Bench.Python2`
     + `Bench.Pipenv`
+    + `Bench.Twine`
     + `Bench.Python2.IPython`
     + `Bench.Python.PEP8`
 
@@ -81,6 +82,7 @@
 * Dependencies:
     + `Bench.Python3`
     + `Bench.Pipenv`
+    + `Bench.Twine`
     + `Bench.Python3.IPython`
     + `Bench.Python.PyCodeStyle`
 
@@ -1499,6 +1501,20 @@ Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, c
 * Website: <https://pipenv.org>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/pypa/pipenv/master/LICENSE>
+
+### Twine
+
+Twine is a utility for publishing Python packages on PyPI.
+
+It provides build system independent uploads of source and binary distribution artifacts for both new and existing projects.
+
+* ID: `Bench.Twine`
+* Tags:
+    + cli
+    + python
+* Typ: `python-package`
+* Website: <http://twine.readthedocs.io/>
+* License: Apache-2.0
 
 ### PyReadline
 
