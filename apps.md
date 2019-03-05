@@ -2574,6 +2574,142 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
+### Shapely for Python 2
+
+Manipulation and analysis of geometric objects in the Cartesian plane.
+
+* ID: `Bench.Python2.Shapely`
+* Label: Shapely (Python 2)
+* Tags:
+    + geometry
+* PackageName: `Shapely`
+* Dependencies:
+    + `Bench.Python2`
+    + `Bench.Python2.NumPy`
+* Website: <https://github.com/Toblerity/Shapely>
+* License: BSD-3
+* LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
+* Version: 1.6.4.post1
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Shapely for Python 3
+
+Manipulation and analysis of geometric objects in the Cartesian plane.
+
+* ID: `Bench.Python3.Shapely`
+* Label: Shapely (Python 3)
+* Tags:
+    + geometry
+* PackageName: `Shapely`
+* Dependencies:
+    + `Bench.Python3`
+    + `Bench.Python3.NumPy`
+* Website: <https://github.com/Toblerity/Shapely>
+* License: BSD-3
+* LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
+* Version: 1.6.4.post1
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Cartopy for Python 2
+
+A cartographic python library with matplotlib support.
+
+* ID: `Bench.Python2.Cartopy`
+* Label: Cartopy (Python 2)
+* Tags:
+    + geometry
+* PackageName: `Cartopy`
+* Dependencies:
+    + `Bench.Python2`
+    + `Bench.Python2.NumPy`
+    + `Bench.Python2.Shapely`
+    + `Bench.Python.PyShp`
+* Website: <https://github.com/SciTools/cartopy/>
+* Docs:
+    + Documentation: <https://scitools.org.uk/cartopy/docs/latest/>
+* License: LGPL-3.0
+* LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
+* Version: 0.17.0
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python2:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Cartopy for Python 3
+
+A cartographic python library with matplotlib support.
+
+* ID: `Bench.Python3.Cartopy`
+* Label: Cartopy (Python 3)
+* Tags:
+    + geometry
+* PackageName: `Cartopy`
+* Dependencies:
+    + `Bench.Python3`
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.Shapely`
+    + `Bench.Python.PyShp`
+* Website: <https://github.com/SciTools/cartopy/>
+* Docs:
+    + Documentation: <https://scitools.org.uk/cartopy/docs/latest/>
+* License: LGPL-3.0
+* LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
+* Version: 0.17.0
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ArchiveTyp: custom
+* Dir: `$Bench.Python3:Dir$`
+* Register: false
+* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
 ### scikit-learn
 
 Machine Learning in Python
