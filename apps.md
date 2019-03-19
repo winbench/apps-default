@@ -249,6 +249,34 @@ PuTTY is a free (MIT-licensed) Win32 Telnet and SSH client.
 
 ## Version Control
 
+### Sublime Merge
+
+The Git client from the makers of Sublime Text.
+A snappy UI, three-way merge tool, side-by-side diffs, syntax highlighting, and more.
+
+* ID: `Bench.SublimeMerge`
+* Label: Sublime Merge
+* Tags:
+    + gui
+    + python
+    + git
+    + version control
+    + folder editor
+* Website: <http://www.sublimemerge.com>
+* License: Commercial
+* Docs:
+    + News: <https://www.sublimetext.com/blog/>
+* Version: 1107
+* Url: `https://download.sublimetext.com/$:ArchiveName$`
+* Only64Bit: true
+* ArchiveName64Bit: `sublime_merge_build_$:Version$_x64.zip`
+* Exe: `sublime_merge.exe`
+* Launcher: $:Label$
+* DataDir: `$AppDataDir$\Sublime Merge`
+* VersionCheckUrl: <https://www.sublimemerge.com/>
+* VersionCheckXPath: `//div[contains(@class, 'current_version')]/i`
+* VersionCheckPattern: `\(Build (?<Version>\d+)\)`
+
 ### GitKraken
 
 The downright luxurious Git client, for Windows, Mac & Linux.
