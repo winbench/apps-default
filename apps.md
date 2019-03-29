@@ -153,7 +153,7 @@ It is also a general-purpose cryptography library.
     + Windows Builds: <https://bintray.com/vszakats/generic/openssl>
 * VersionMajor: 1
 * VersionMinor: 1
-* Revision: 1a
+* Revision: 1b
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url: `https://bintray.com/vszakats/generic/download_file?file_path=$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -181,7 +181,7 @@ The GnuTLS Transport Layer Security Library.
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
 * VersionMajor: 3
 * VersionMinor: 6
-* Revision: 6
+* Revision: 7
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Release: `$:VersionMajor$_$:VersionMinor$_$:Revision$`
 * Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
@@ -360,7 +360,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.3.1
+* Version: 7.3.2
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -639,7 +639,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 2.2.104
+* Version: 2.2.105
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -649,8 +649,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
     + Downloads: <https://dotnet.microsoft.com/download>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/e7a3e196-1b15-45d4-8a4a-2f940cf8c3be/975a1ec833505505adf5b867990d441a/$:ArchiveName$`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/pr/59e18010-8e57-4073-add2-d2b5cfbc5e58/8fa6831c7be0800889324640e29476f4/$:ArchiveName$`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/5fda1224-7b3b-4aac-9516-47e2e38f78cb/ac7ad8eab35268b234c386b53f354161/$:ArchiveName$`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/6952677d-f0de-46ed-80ca-209e997ca909/d578118f63c0be3fd9533376adaf314e/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-sdk-$:Version$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:Version$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -770,7 +770,7 @@ install the LLVM-Plugin for Eclipse CDT.
     + c++
     + objective c
     + objective c++
-* Version: 7.0.1
+* Version: 8.0.0
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -799,7 +799,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.11.5
+* Version: 1.12.1
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -838,8 +838,8 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
 * VersionMajor: 21
-* VersionMinor: 2
-* ErtsVersion: 10.2
+* VersionMinor: 3
+* ErtsVersion: 10.3
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName32Bit: `otp_win32_$:Version$.exe`
@@ -919,7 +919,7 @@ R is a free software for statistical computing and graphics.
     + science
     + plotting
 * Website: <https://www.r-project.org>
-* Version: 3.5.2
+* Version: 3.5.3
 * Url: `http://cran.uni-muenster.de/bin/windows/base/old/$:Version$/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
@@ -967,7 +967,7 @@ The ultimate automation scripting language for Windows.
 * Website: <https://www.vagrantup.com/>
 * License: MIT
 * LicenseUrl: <https://github.com/hashicorp/vagrant/blob/master/LICENSE>
-* Version: 2.2.3
+* Version: 2.2.4
 * Url: `https://releases.hashicorp.com/vagrant/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `vagrant_$:Version$_i686.msi`
 * ArchiveName64Bit: `vagrant_$:Version$_x86_64.msi`
@@ -1010,7 +1010,7 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
     + Machine CLI: <https://docs.docker.com/machine/reference/>
     + Docker File Reference: <https://docs.docker.com/engine/reference/builder/>
     + Compose File Reference: <https://docs.docker.com/compose/compose-file/>
-* Version: 18.09.2
+* Version: 18.09.3
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/docker/toolbox/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `DockerToolbox-$:Version$.exe`
@@ -1080,7 +1080,7 @@ The tool is designed to enable both technical and non-technical analysts to mani
 * Version: latest
 * Url: `https://gchq.github.io/CyberChef/$:ResourceName$`
 * ResourceName: `cyberchef.htm`
-* Exe: `cyberchef.cmd`
+* Exe: `cyberchef.htm`
 * Register: false
 * Launcher: $:Label$
 * LauncherIcon: `$:Dir$\cyberchef.ico`
@@ -1357,7 +1357,7 @@ Gradle is writing to the `.gradle` folder in the Windows user profile directory 
 * License: Apache-2.0
 * Docs:
     + Documentation: <https://gradle.org/docs>
-* Version: 5.2.1
+* Version: 5.3.1
 * Url: `https://services.gradle.org/distributions/$:ArchiveName$`
 * ArchiveName: `gradle-$:Version$-bin.zip`
 * ArchivePath: `gradle-$:Version$`
@@ -1413,8 +1413,8 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* VersionMajor: 3.13
-* Version: $:VersionMajor$.4
+* VersionMajor: 3.14
+* Version: $:VersionMajor$.0
 * Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
@@ -1437,7 +1437,7 @@ Dependency management for Go
 * Website: <https://golang.github.io/dep/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://github.com/golang/dep/blob/master/LICENSE>
-* Version: 0.5.0
+* Version: 0.5.1
 * Url64Bit: `https://github.com/golang/dep/releases/download/v$:Version$/dep-windows-amd64.exe`
 * Url32Bit: `https://github.com/golang/dep/releases/download/v$:Version$/dep-windows-386.exe`
 * ResourceName: `dep.exe`
@@ -1569,17 +1569,6 @@ It provides build system independent uploads of source and binary distribution a
 * Website: <http://twine.readthedocs.io/>
 * License: Apache-2.0
 
-### PyReadline
-
-Required for colors in IPython.
-
-* ID: `Bench.Python.PyReadline`
-* Label: PyReadline
-* PackageName: `pyreadline`
-* Typ: `python-package`
-* Website: <https://pypi.python.org/pypi/pyreadline>
-* License: BSD-3-Clause
-
 ### IPython for Python 2
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
@@ -1594,7 +1583,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
     + python
 * Typ: `python2-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.Python.PyReadline`
+* ~Dependencies: `Bench.Python.PyReadline`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
@@ -1617,7 +1606,7 @@ IPython provides a rich architecture for computing with a powerful interactive s
     + python
 * Typ: `python3-package`
 * PackageName: `ipython`
-* Dependencies: `Bench.Python.PyReadline`
+* ~Dependencies: `Bench.Python.PyReadline`
 * Website: <https://ipython.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
@@ -1901,52 +1890,54 @@ Otherwise it will download and set up an additional Android SDK in the Windows u
 * VersionCheckPattern: `android-studio-ide-(?<Version>[\d\.]+)-windows32\.zip`
 * VersionCheckString: `$:Build$`
 
-## Math and Science
+## Python Dependencies
 
-### jupyter for Python 2
+### Pyrsistent for Python 2
 
-Open source, interactive data science and scientific computing
-across over 40 programming languages.
+* ID: `Bench.Python2.Pyrsistent`
+* Label: PyRsistent (Python 2)
+* Typ: `python2-wheel`
+* PackageName: `pyrsistent`
+* Version: 0.14.11
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 
-* ID: `Bench.Python2.Jupyter`
-* Label: jupyter (Python 2)
-* Tags:
-    + gui
-    + notebook
-    + science
-    + plotting
-* Typ: `python2-package`
-* Dependencies:
-    + `Bench.Python2.IPython`
-    + `Bench.Python.Tornado`
-* Website: <https://jupyter.org>
-* License: BSD-3-Clause
-* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
-* Docs:
-    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
-* Exe: `Scripts\jupyter.exe`
-* SetupTestFile: $:Exe$
-* Launcher: jupyter Notebook
-* LauncherArguments: `notebook`, `%*`
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Pyrsistent for Python 3
+
+* ID: `Bench.Python3.Pyrsistent`
+* Label: PyRsistent (Python 3)
+* Typ: `python3-wheel`
+* PackageName: `pyrsistent`
+* Version: 0.14.11
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
 
 ### MarkupSafe for Python 3
 
 * ID: `Bench.Python3.MarkupSafe`
 * Label: MarkupSafe (Python 3)
+* Typ: `python3-wheel`
 * PackageName: `MarkupSafe`
-* Dependencies: `Bench.Python3`
 * Website: <https://github.com/pallets/markupsafe>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/pallets/markupsafe/master/LICENSE>
 * Version: 1.1.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -1955,13 +1946,85 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
-### jupyter for Python 3
+### Tornado
+
+Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
+
+* ID: `Bench.Python.Tornado`
+* Label: Tornado
+* Tags:
+    + server
+    + http
+    + python
+* Typ: `python-package`
+* Version: 6.0.2
+* Website: <http://www.tornadoweb.org/>
+* License: Apache-2.0
+* VersionCheckUrl: <http://www.tornadoweb.org/en/stable/>
+* VersionCheckXPath: `//div[@id='quick-links']/ul/li`
+* VersionCheckPattern: `^Current version: (?<Version>[\d\.]+)`
+
+## Math and Science
+
+### Jupyter for Python 2
+
+Open source, interactive data science and scientific computing
+across over 40 programming languages.
+
+* ID: `Bench.Python2.Jupyter`
+* Label: Jupyter (Python 2)
+* Tags:
+    + gui
+    + notebook
+    + science
+    + plotting
+* Typ: `python2-package`
+* Dependencies:
+    + `Bench.Python2.IPython`
+    + `Bench.Python2.Pyrsistent`
+    + `Bench.Python.Tornado`
+* Website: <https://jupyter.org>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
+* Docs:
+    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
+* Exe: `Scripts\jupyter.exe`
+* SetupTestFile: $:Exe$
+* Launcher: Jupyter Notebook
+* LauncherWorkingDir: `$ProjectRootDir$`
+* LauncherArguments: `notebook`, `%*`
+
+### Jupyter Lab for Python 2
+
+JupyterLab is the next-generation web-based user interface for Project Jupyter.
+
+* ID: `Bench.Python2.JupyterLab`
+* Label: Jupyter Lab (Python 2)
+* Tags:
+    + gui
+    + notebook
+    + science
+    + plotting
+* Typ: `python2-package`
+* Dependencies:
+    + `Bench.Python2.Jupyter`
+* Website: <https://jupyterlab.readthedocs.io/en/stable/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://github.com/jupyterlab/jupyterlab/raw/master/LICENSE>
+* Docs:
+    + Getting Started: <https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html>
+* Launcher: Jupyter Lab
+* LauncherWorkingDir: `$ProjectRootDir$`
+* LauncherExecutable: `$:Path$\jupyter.exe`
+* LauncherArguments: `lab`, `%*`
+
+### Jupyter for Python 3
 
 Open source, interactive data science and scientific computing
 across over 40 programming languages.
 
 * ID: `Bench.Python3.Jupyter`
-* Label: jupyter (Python 3)
+* Label: Jupyter (Python 3)
 * Tags:
     + gui
     + notebook
@@ -1972,6 +2035,7 @@ across over 40 programming languages.
 * Dependencies:
     + `Bench.Python3.IPython`
     + `Bench.Python3.MarkupSafe`
+    + `Bench.Python3.Pyrsistent`
     + `Bench.Python.Tornado`
 * Website: <https://jupyter.org>
 * License: BSD-3-Clause
@@ -1980,8 +2044,33 @@ across over 40 programming languages.
     + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
 * Exe: `Scripts\jupyter.exe`
 * SetupTestFile: $:Exe$
-* Launcher: jupyter Notebook
+* Launcher: Jupyter Notebook
+* LauncherWorkingDir: `$ProjectRootDir$`
 * LauncherArguments: `notebook`, `%*`
+
+### Jupyter Lab for Python 3
+
+JupyterLab is the next-generation web-based user interface for Project Jupyter.
+
+* ID: `Bench.Python3.JupyterLab`
+* Label: Jupyter Lab (Python 3)
+* Tags:
+    + gui
+    + notebook
+    + science
+    + plotting
+* Typ: `python3-package`
+* Dependencies:
+    + `Bench.Python3.Jupyter`
+* Website: <https://jupyterlab.readthedocs.io/en/stable/>
+* License: BSD-3-Clause
+* LicenseUrl: <https://github.com/jupyterlab/jupyterlab/raw/master/LICENSE>
+* Docs:
+    + Getting Started: <https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html>
+* Launcher: Jupyter Lab
+* LauncherWorkingDir: `$ProjectRootDir$`
+* LauncherExecutable: `$:Path$\jupyter.exe`
+* LauncherArguments: `lab`, `%*`
 
 ### GeoHash for Python 2
 
@@ -1989,19 +2078,16 @@ across over 40 programming languages.
 * Label: GeoHash (Python 2)
 * Tags:
     + geography
+* Typ: `python2-wheel`
 * PackageName: `python_geohash`
-* Dependencies: `Bench.Python2`
 * Website: <https://github.com/hkwi/python-geohash>
 * License: Apache-2.0
 * LicenseUrl: <https://github.com/hkwi/python-geohash/raw/master/README>
 * Version: 0.8.5
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2013,19 +2099,16 @@ across over 40 programming languages.
 * Label: GeoHash (Python 3)
 * Tags:
     + geography
+* Typ: `python3-wheel`
 * PackageName: `python_geohash`
-* Dependencies: `Bench.Python3`
 * Website: <https://github.com/hkwi/python-geohash>
 * License: Apache-2.0
 * LicenseUrl: <https://github.com/hkwi/python-geohash/raw/master/README>
 * Version: 0.8.5
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2038,18 +2121,15 @@ across over 40 programming languages.
 * Tags:
     + database
     + sql
+* Typ: `python2-wheel`
 * PackageName: `mysqlclient`
-* Dependencies: `Bench.Python2`
 * Website: <https://github.com/PyMySQL/mysqlclient-python>
 * License: GPL-2
 * Version: 1.4.2
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2062,18 +2142,15 @@ across over 40 programming languages.
 * Tags:
     + database
     + sql
+* Typ: `python3-wheel`
 * PackageName: `mysqlclient`
-* Dependencies: `Bench.Python3`
 * Website: <https://github.com/PyMySQL/mysqlclient-python>
 * License: GPL-2
 * Version: 1.4.2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2148,8 +2225,8 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + linear algebra
     + fft
     + random
+* Typ: `python2-wheel`
 * PackageName: `numpy`
-* Dependencies: `Bench.Python2`
 * Website: <http://www.numpy.org/>
 * Docs:
     + Manual: <https://docs.scipy.org/doc/numpy/>
@@ -2157,15 +2234,11 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.1
+* Version: 1.16.2
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2195,8 +2268,8 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + linear algebra
     + fft
     + random
+* Typ: `python3-wheel`
 * PackageName: `numpy`
-* Dependencies: `Bench.Python3`
 * Website: <http://www.numpy.org/>
 * Docs:
     + Manual: <https://docs.scipy.org/doc/numpy/>
@@ -2204,15 +2277,11 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.1
+* Version: 1.16.2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2230,6 +2299,7 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Label: SciPy library (Python 2)
 * Tags:
     + science
+* Typ: `python2-wheel`
 * PackageName: `scipy`
 * Dependencies: `Bench.Python2.NumPy`
 * Website: <https://www.scipy.org/scipylib/>
@@ -2239,13 +2309,9 @@ It provides many user-friendly and efficient numerical routines such as routines
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
 * Version: 1.2.1
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2263,6 +2329,7 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Label: SciPy library (Python 3)
 * Tags:
     + science
+* Typ: `python3-wheel`
 * PackageName: `scipy`
 * Dependencies: `Bench.Python3.NumPy`
 * Website: <https://www.scipy.org/scipylib/>
@@ -2272,13 +2339,9 @@ It provides many user-friendly and efficient numerical routines such as routines
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
 * Version: 1.2.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\version.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2514,20 +2577,15 @@ Performs cartographic transformations and geodetic computations.
     + math
     + cartographic
     + geodetic
-* Dependencies:
-    + `Bench.Python2`
+* Typ: `python2-wheel`
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
 * Version: 1.9.6
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2542,20 +2600,15 @@ Performs cartographic transformations and geodetic computations.
     + math
     + cartographic
     + geodetic
-* Dependencies:
-    + `Bench.Python3`
+* Typ: `python3-wheel`
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
 * Version: 1.9.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2568,8 +2621,8 @@ Performs cartographic transformations and geodetic computations.
     + plotting
     + geography
     + maps
+* Typ: `python2-wheel`
 * Dependencies:
-    + `Bench.Python2`
     + `Bench.Python2.NumPy`
     + `Bench.Python2.PyProj`
     + `Bench.Python.Matplotlib`
@@ -2579,12 +2632,9 @@ Performs cartographic transformations and geodetic computations.
 * License: GPL-2.0
 * Version: 1.2.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2601,8 +2651,8 @@ Thanks a lot to Christoph Golke for his service.
 * Tags:
     + plotting
     + geography
+* Typ: `python3-wheel`
 * Dependencies:
-    + `Bench.Python3`
     + `Bench.Python3.NumPy`
     + `Bench.Python3.PyProj`
     + `Bench.Python.Matplotlib`
@@ -2612,12 +2662,9 @@ Thanks a lot to Christoph Golke for his service.
 * License: GPL-2.0
 * Version: 1.2.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2635,22 +2682,17 @@ Manipulation and analysis of geometric objects in the Cartesian plane.
 * Label: Shapely (Python 2)
 * Tags:
     + geometry
+* Typ: `python2-wheel`
 * PackageName: `Shapely`
-* Dependencies:
-    + `Bench.Python2`
-    + `Bench.Python2.NumPy`
+* Dependencies: `Bench.Python2.NumPy`
 * Website: <https://github.com/Toblerity/Shapely>
 * License: BSD-3
 * LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
 * Version: 1.6.4.post1
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2667,22 +2709,17 @@ Manipulation and analysis of geometric objects in the Cartesian plane.
 * Label: Shapely (Python 3)
 * Tags:
     + geometry
+* Typ: `python3-wheel`
 * PackageName: `Shapely`
-* Dependencies:
-    + `Bench.Python3`
-    + `Bench.Python3.NumPy`
+* Dependencies: `Bench.Python3.NumPy`
 * Website: <https://github.com/Toblerity/Shapely>
 * License: BSD-3
 * LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
 * Version: 1.6.4.post1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2699,9 +2736,9 @@ A cartographic python library with matplotlib support.
 * Label: Cartopy (Python 2)
 * Tags:
     + geometry
+* Typ: `python2-wheel`
 * PackageName: `Cartopy`
 * Dependencies:
-    + `Bench.Python2`
     + `Bench.Python2.NumPy`
     + `Bench.Python2.Shapely`
     + `Bench.Python.PyShp`
@@ -2712,13 +2749,9 @@ A cartographic python library with matplotlib support.
 * LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
 * Version: 0.17.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python2:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2735,9 +2768,9 @@ A cartographic python library with matplotlib support.
 * Label: Cartopy (Python 3)
 * Tags:
     + geometry
+* Typ: `python3-wheel`
 * PackageName: `Cartopy`
 * Dependencies:
-    + `Bench.Python3`
     + `Bench.Python3.NumPy`
     + `Bench.Python3.Shapely`
     + `Bench.Python.PyShp`
@@ -2748,13 +2781,9 @@ A cartographic python library with matplotlib support.
 * LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
 * Version: 0.17.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ArchiveName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* ArchiveTyp: custom
-* Dir: `$Bench.Python3:Dir$`
-* Register: false
-* SetupTestFile: `$:Dir$\lib\site-packages\$:PackageName$\__init__.py`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2866,7 +2895,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * VersionMajor: 7
-* Version: `$:VersionMajor$.6.3`
+* Version: `$:VersionMajor$.6.4`
 * Url: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -2924,7 +2953,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.34.0
+* Version: 1.35.1
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -3296,8 +3325,8 @@ XML Editor, Mylyn, Maven and Gradle integration...
     + java
     + maven
     + ant
-* CodeName: 2018-12
-* Version: 4.10
+* CodeName: 2019-03
+* Version: 4.11
 * Release: R
 * Dependencies: `Bench.JDK`
 * Website: <https://www.eclipse.org/>
@@ -3391,7 +3420,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2018.3.4
+* Version: 2019.1
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -3400,7 +3429,7 @@ Capable and Ergonomic IDE for JVM.
 * Launcher: $:Label$
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
 * VersionCheckJsonPath: `IIC/0/version`
-* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
 ### JetBrains PyCharm Community
 
@@ -3417,7 +3446,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2018.3.4
+* Version: 2018.3.5
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.zip`
 * Dir: `bench\pycharm_community`
@@ -3426,7 +3455,7 @@ Python IDE for Professional Developers.
 * Launcher: $:Label$
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
 * VersionCheckJsonPath: `PCP/0/version`
-* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+))`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
 ### R Studio
 
@@ -3615,7 +3644,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.40.0
+* Version: 3.41.2
 * Url: `https://download.filezilla-project.org/client/$:ArchiveName$`
 * DownloadHeaders:
     + `User-Agent`: `Bench`
@@ -3650,7 +3679,7 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.13.7
+* Version: 5.15
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
@@ -3708,8 +3737,8 @@ The included DHCP server provides unlimited automatic or static IP address assig
 * Label: Tftpd
 * License: EUPL-1.1
 * LicenseUrl: <http://www.tftpd64.com/tftpd32_license.html>
-* Version: 4.62
-* Release: 462
+* Version: 4.64
+* Release: 464
 * Url: <https://bitbucket.org/phjounin/tftpd64/downloads/$:ArchiveName$>
 * ArchiveName32Bit: `tftpd32.$:Release$.zip`
 * ArchiveName64Bit: `tftpd64.$:Release$.zip`
@@ -3959,7 +3988,7 @@ The user interface is displayed via a web browser.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
-* Version: 4.2
+* Version: 4.3
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
 * ArchiveName: `pgadmin4-$:Version$-x86.exe`
@@ -4034,24 +4063,6 @@ This application needs the _Visual C++ 15 Redistributable_ [32 Bit Version](http
 * VersionCheckXPath: `//pre/a`
 * VersionCheckPattern: `httpd-(?<Version>[\d\.]+)-win32-VC$:VisualC$\.zip`
 
-### Tornado
-
-Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-
-* ID: `Bench.Python.Tornado`
-* Label: Tornado
-* Tags:
-    + server
-    + http
-    + python
-* Typ: `python-package`
-* Version: 5.1.1
-* Website: <http://www.tornadoweb.org/>
-* License: Apache-2.0
-* VersionCheckUrl: <http://www.tornadoweb.org/en/stable/>
-* VersionCheckXPath: `//div[@id='quick-links']/ul/li`
-* VersionCheckPattern: `^Current version: (?<Version>[\d\.]+)`
-
 ### RabbitMQ
 
 RabbitMQ is ...  
@@ -4075,7 +4086,7 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.7.12
+* Version: 3.7.14
 * Url: `https://dl.bintray.com/rabbitmq/all/rabbitmq-server/$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
@@ -4156,7 +4167,7 @@ Power your metrics and alerting with a leading open-source monitoring solution.
     + Documentation: <https://prometheus.io/docs/introduction/overview/>
     + Querying: <https://prometheus.io/docs/querying/basics/>
     + HTTP API: <https://prometheus.io/docs/querying/api/>
-* Version: 2.7.1
+* Version: 2.8.1
 * Url: `https://github.com/prometheus/prometheus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `prometheus-$:Version$.windows-386`
@@ -4214,10 +4225,11 @@ Prometheus exporter for Windows machines using WMI
 * Website: <https://github.com/martinlindhe/wmi_exporter>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/martinlindhe/wmi_exporter/master/LICENSE>
-* Version: 0.6.0
+* Version: 0.7.0
 * Url: `https://github.com/martinlindhe/wmi_exporter/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `wmi_exporter-386.zip`
-* ArchiveName64Bit: `wmi_exporter-amd64.zip`
+* ArchiveName32Bit: `wmi_exporter-$:Version$-386.msi`
+* ArchiveName64Bit: `wmi_exporter-$:Version$-amd64.msi`
+* ArchivePath: `SourceDir\wmi_exporter`
 * Dir: `bench\prometheus_wmi`
 * Exe: `wmi_exporter.exe`
 * Launcher: $:Label$
@@ -4355,7 +4367,7 @@ The open platform for beautiful analytics and monitoring
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
     + Getting Started: <http://docs.grafana.org/guides/getting_started/>
-* Version: 5.4.3
+* Version: 6.0.2
 * Only64Bit: `true`
 * Url: `https://dl.grafana.com/oss/release/$:ArchiveName$`
 * ArchiveName64Bit: `grafana-$:Version$.windows-amd64.zip`
@@ -4437,7 +4449,7 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 2.6
+* Version: 2.7.1
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -4542,7 +4554,7 @@ one of the premier Open Source desktop applications.
     + Wiki: <https://wiki.scribus.net/canvas/Scribus>
     + Manual: <https://wiki.scribus.net/canvas/Help:TOC>
     + HowTo: <https://wiki.scribus.net/canvas/Category:HOWTO>
-* Version: 1.4.7
+* Version: 1.4.8
 * Url: `https://sourceforge.net/projects/scribus/files/scribus/$:Version$/$:ArchiveName$`
 * ArchiveName: `scribus-$:Version$-windows.exe`
 * Register: `false`
@@ -4664,7 +4676,7 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.8-34
+* Version: 7.0.8-35
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
@@ -5077,7 +5089,7 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 11.28
+* Version: 11.33
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 * VersionCheckUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
@@ -5184,7 +5196,7 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
-* Version: 22.0.2
+* Version: 23.0.2
 * Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `OBS-Studio-$:Version$-Full-x86.zip`
 * ArchiveName64Bit: `OBS-Studio-$:Version$-Full-x64.zip`
@@ -5228,7 +5240,7 @@ We designed OpenShot Video Editor to be an easy to use, quick to learn, and surp
     + video
 * Website: <https://www.openshot.org>
 * License: GPL-3.0
-* Version: 2.4.3
+* Version: 2.4.4
 * Only64Bit: true
 * Url: `https://github.com/OpenShot/openshot-qt/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `OpenShot-v$:Version$-x86_64.exe`
