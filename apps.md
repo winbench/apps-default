@@ -2436,6 +2436,50 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 * License: BSD-3-Clause
 * LicenseUrl: <http://pandas.pydata.org/pandas-docs/stable/overview.html#license>
 
+### Patsy
+
+Describing statistical models in Python
+
+* ID: `Bench.Python.Patsy`
+* Typ: `python-package`
+* Website: <https://github.com/pydata/patsy/>
+* Docs:
+    + Documentation: <https://patsy.readthedocs.io/>
+
+### StatsModels for Python 2
+
+Statistical modeling and econometrics in Python
+
+* ID: `Bench.Python2.StatsModels`
+* Label: StatsModels (Python 2)
+* Typ: `python2-package`
+* Dependencies:
+    + `Bench.Python2.NumPy`
+    + `Bench.Python2.SciPyLib`
+    + `Bench.Python.Pandas`
+    + `Bench.Python.Patsy`
+* Website: <https://www.statsmodels.org>
+* Docs:
+    + Examples: <https://www.statsmodels.org/stable/examples/index.html>
+    + Source Code: <https://github.com/statsmodels/statsmodels/>
+
+### StatsModels for Python 3
+
+Statistical modeling and econometrics in Python
+
+* ID: `Bench.Python3.StatsModels`
+* Label: StatsModels (Python 3)
+* Typ: `python3-package`
+* Dependencies:
+    + `Bench.Python3.NumPy`
+    + `Bench.Python3.SciPyLib`
+    + `Bench.Python.Pandas`
+    + `Bench.Python.Patsy`
+* Website: <https://www.statsmodels.org>
+* Docs:
+    + Examples: <https://www.statsmodels.org/stable/examples/index.html>
+    + Source Code: <https://github.com/statsmodels/statsmodels/>
+
 ### Embulk
 
 Embulk is a open-source bulk data loader that helps data transfer
