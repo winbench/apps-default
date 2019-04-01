@@ -1711,6 +1711,39 @@ complicated SQL commands.
 * VersionCheckXPath: `//div[@class='release-entry']/descendant::ul/li/a/@title`
 * VersionCheckPattern: `^v(?<Version>[\d\.]+)$`
 
+### SQLite Studio
+
+SQLIte Studio is a SQLite database manager with the following features:
+
+- Intuitive Interface
+- Powerful, yet light and fast
+- All SQLite 3 and SQLite 2 features wrapped within a simple GUI
+- Exporting to various formats (SQL statements, CSV, HTML, XML, PDF, JSON)
+- Importing data from various formats (CSV, custom text files with regular expressions)
+- Numerous small additions, like formatting code, history of queries ind editor, on-the-fly syntax checking, and more
+- Unicode support
+- Configurable colors, fonts and shortcuts
+
+* ID: `Bench.SQLiteStudio`
+* Label: SQLite Studio
+* Tags:
+    + gui
+    + sql
+    + sqlite
+* Website: <https://sqlitestudio.pl>
+* Docs:
+    + Source Code: <https://github.com/pawelsalawa/sqlitestudio>
+    + Wiki: <https://github.com/pawelsalawa/sqlitestudio/wiki>
+* License: GPL-3.0
+* Version: 3.2.1
+* Url: `https://sqlitestudio.pl/files/sqlitestudio3/complete/win32/$:ArchiveName$`
+* ArchiveName: `SQLiteStudio-$:Version$.zip`
+* ArchivePath: `SQLiteStudio`
+* Launcher: $:Label$
+* VersionCheckUrl: <https://sqlitestudio.pl/index.rvt?act=download>
+* VersionCheckXPath: `//td[@class='mainTdInternal']/descendant::b`
+* VersionCheckPattern: `stable release \((?<Version>[\d\.]+)\)`
+
 ### Windows Sysinternals Suite
 
 A collection of tools by Mark Russinovich, to inspect and investigate
