@@ -1990,7 +1990,7 @@ Tornado is a Python web framework and asynchronous networking library, originall
     + http
     + python
 * Typ: `python-package`
-* Version: 6.0.2
+* Version: `>=5.1,<6`
 * Website: <http://www.tornadoweb.org/>
 * License: Apache-2.0
 * VersionCheckUrl: <http://www.tornadoweb.org/en/stable/>
