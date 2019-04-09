@@ -3523,7 +3523,8 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2019.1.1
+* Version64Bit: 2019.1.1
+* Version32Bit: 2018.3.5
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.exe`
 * Dir: `bench\pycharm_community`
