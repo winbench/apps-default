@@ -1979,6 +1979,50 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
+### LLVM Lite for Python 2
+
+A lightweight LLVM python binding for writing JIT compilers
+
+* ID: `Bench.Python2.LLVMlite`
+* Label: LLVM Lite (Python 2)
+* Typ: `python2-wheel`
+* Website: <http://llvmlite.pydata.org/en/latest/>
+* License: BSD-2-Clause
+* Version: 0.28.0
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### LLVM Lite for Python 3
+
+A lightweight LLVM python binding for writing JIT compilers
+
+* ID: `Bench.Python3.LLVMlite`
+* Label: LLVM Lite (Python 3)
+* Typ: `python3-wheel`
+* Website: <http://llvmlite.pydata.org/en/latest/>
+* License: BSD-2-Clause
+* Version: 0.28.0
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
 ### Tornado
 
 Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
@@ -2479,6 +2523,84 @@ Statistical modeling and econometrics in Python
 * Docs:
     + Examples: <https://www.statsmodels.org/stable/examples/index.html>
     + Source Code: <https://github.com/statsmodels/statsmodels/>
+
+### Numba for Python 2
+
+Numba is an open source JIT compiler
+that translates a subset of Python and NumPy code into fast machine code.
+
+* ID: `Bench.Python2.Numba`
+* Dependencies:
+    + `Bench.Python2.LLVMlite`
+    + `Bench.Python2.NumPy`
+* Label: Numba (Python 2)
+* Typ: `python2-wheel`
+* Website: <http://llvmlite.pydata.org/en/latest/>
+* License: BSD-2-Clause
+* Version: 0.43.1
+* CPythonVersion: `$Bench.Python2:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### Numba for Python 3
+
+Numba is an open source JIT compiler
+that translates a subset of Python and NumPy code into fast machine code.
+
+* ID: `Bench.Python3.Numba`
+* Dependencies:
+    + `Bench.Python3.LLVMlite`
+    + `Bench.Python3.NumPy`
+* Label: Numba (Python 3)
+* Typ: `python3-wheel`
+* Website: <http://llvmlite.pydata.org/en/latest/>
+* License: BSD-2-Clause
+* Version: 0.43.1
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
+
+### fastparquet for Python 3
+
+fastparquet is a python implementation of the [parquet format](https://github.com/apache/parquet-format),
+aiming integrate into python-based big data work-flows.
+
+* ID: `Bench.Python3.FastParquet`
+* Dependencies:
+    + `Bench.Python3.Numba`
+    + `Bench.Python.Pandas`
+* Label: fastparquet
+* Typ: `python3-wheel`
+* Website: <https://github.com/dask/fastparquet>
+* License: Apache-2.0
+* Version: 0.3.0
+* CPythonVersion: `$Bench.Python3:CPythonVersion$`
+* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
+* VersionCheckXPath: `//ul/li/a`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+
+The pre-comiled version of this package comes from
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
+Thanks a lot to Christoph Golke for his service.
 
 ### Embulk
 
