@@ -3071,6 +3071,26 @@ Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on produc
 * Register: `false`
 * Launcher: $:Label$
 
+### Boostnote
+
+An open source markdown editor for Mac, Windows and Linux app.  
+The intuitive and stylish note taking tool for developers.
+
+**Warning:** Boostnote creates a directory `Boostnote` in the systems user
+home directory as default storage location for notes and snippets.
+
+* ID: `Bench.Boostnote`
+* Dependencies: `Bench.NuGet`
+* Website: <https://boostnote.io/>
+* License: GPL-3.0
+* Docs:
+    + Blog: <https://medium.com/boostnote>
+    + Source Code: <https://github.com/BoostIO/Boostnote>
+* Version: 0.11.15
+* Url: `https://github.com/BoostIO/boost-releases/releases/download/v$:Version$/BoostnoteSetup.exe`
+* ArchiveName: `BoostnoteSetup_v$:Version$.exe`
+* Launcher: $:Label$
+
 ### Atom
 
 A hackable text editor for the 21st Century.
