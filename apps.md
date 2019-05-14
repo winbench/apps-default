@@ -400,40 +400,6 @@ The runtime environment is required for a compiled Java program to get executed.
 * Exe: `bin\java.exe`
 * Environment:
     + `JAVA_CMD`: `$:Exe$`
-### Java Development Kit 8
-
-According to Oracle, Java is the world's #1 programming language.
-
-The development kit is required for Java source code to get compiled.
-
-* ID: `Bench.JDK8`
-* Label: Java Development Kit 8
-* Tags:
-    + cli
-    + language
-    + runtime
-    + compiler
-    + sdk
-    + jvm
-* Website: <https://www.oracle.com/java/>
-* License: OBCL
-* LicenseUrl: <http://www.oracle.com/technetwork/java/javase/terms/license/index.html>
-* Docs:
-    + Downloads: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
-    + Documentation: <http://docs.oracle.com/javase/8/docs/>
-    + Java SE 8 API: <http://docs.oracle.com/javase/8/docs/api/index.html>
-* Version: $Bench.JRE8:Version$
-* Release: $Bench.JRE8:Release$
-* LinkUUID: $Bench.JRE8:LinkUUID$
-* Url: `http://download.oracle.com/otn-pub/java/jdk/8u$:Version$-$:Release$/$:LinkUUID$/$:ArchiveName$`
-* DownloadCookies: `oraclelicense: accept-securebackup-cookie`
-* ArchiveName32Bit: `jdk-8u$:Version$-windows-i586.exe`
-* ArchiveName64Bit: `jdk-8u$:Version$-windows-x64.exe`
-* Path: `bin`
-* Exe: `bin\javac.exe`
-* Environment:
-    + `JAVA_HOME`: `$:Dir$`
-    + `JAVA_CMD`: `$:Dir$\jre\bin\java.exe`
 
 ### JRE 8 Midi Soundbank
 
@@ -449,22 +415,6 @@ The development kit is required for Java source code to get compiled.
 * Url: <http://www.oracle.com/technetwork/java/soundbank-deluxe-150042.zip>
 * ArchiveName: `java-midi-soundbank-deluxe.zip`
 * Dir: `$Bench.JRE8:Dir$\lib\audio`
-* SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
-
-### JDK 8 Midi Soundbank
-
-* ID: `Bench.JDK8.MidiSoundbank`
-* Label: JDK 8 Midi Soundbank
-* Tags:
-    + java
-    + resource
-    + music
-    + sound
-* Dependencies: `Bench.JDK8`
-* Website: `$Bench.JRE8.MidiSoundbank:Website$`
-* Url: `$Bench.JRE8.MidiSoundbank:Url$`
-* ArchiveName: `$Bench.JRE8.MidiSoundbank:ArchiveName$`
-* Dir: `$Bench.JDK8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
 
 ### Open JDK
