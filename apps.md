@@ -114,8 +114,11 @@
     + `Bench.Python3`
     + `Bench.Python3.SciPy`
     + `Bench.Python3.SciKitLearn`
+    + `Bench.Python3.FastParquet`
     + `Bench.Python3.Spyder`
     + `Bench.TensorFlow`
+    + `Bench.Python.Matplotlib`
+    + `Bench.Python.Seaborn`
     + `Bench.SublimeText3`
     + `Bench.R`
     + `Bench.RStudio`
@@ -2387,6 +2390,25 @@ Matplotlib can be used in Python scripts, the Python and IPython shell, the jupy
     + Plotting Commands Summary: <http://matplotlib.org/api/pyplot_summary.html>
 * License: BSD compatible
 * LicenseUrl: <http://matplotlib.org/users/license.html>
+
+### Seaborn
+
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+
+* ID: `Bench.Python.Seaborn`
+* Tags:
+    + plotting
+* Typ: `python-package`
+* Dependencies:
+    + `Bench.Python.Pandas`
+    + `Bench.Python.Matplotlib`
+* Website: <https://seaborn.pydata.org/>
+* Docs:
+    + Gallery: <https://seaborn.pydata.org/examples/index.html>
+    + Tutorial: <https://seaborn.pydata.org/tutorial.html>
+    + API: <https://seaborn.pydata.org/api.html>
+    + Repository: <https://github.com/mwaskom/seaborn>
+* License: BSD-3-Clause
 
 ### SymPy
 
