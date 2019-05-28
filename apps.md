@@ -1925,6 +1925,19 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
+### xlrd
+
+Extract data from Excel spreadsheets (.xls and .xlsx, versions 2.0 onwards) on any platform.
+Pure Python (2.7, 3.4+). Strong support for Excel dates.
+Unicode-aware.
+
+* ID: `Bench.Python.Xlrd`
+* Typ: `python-package`
+* Website: <http://www.python-excel.org/>
+* Docs:
+    + Repository: <https://github.com/python-excel/xlrd>
+* License: BSD-3-Clause
+
 ### LLVM Lite for Python 2
 
 A lightweight LLVM python binding for writing JIT compilers
@@ -2438,6 +2451,8 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 * Tags:
     + data science
 * Typ: `python-package`
+* Dependencies:
+    + `Bench.Python.Xlrd`
 * Website: <http://pandas.pydata.org/>
 * Docs:
     + Documentation: <http://pandas.pydata.org/pandas-docs/stable/>
