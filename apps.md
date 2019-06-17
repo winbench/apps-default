@@ -1938,6 +1938,18 @@ Unicode-aware.
     + Repository: <https://github.com/python-excel/xlrd>
 * License: BSD-3-Clause
 
+### openpyxl
+
+openpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files.
+
+* ID: `Bench.Python.OpenPyXl`
+* Label: openpyxl
+* Typ: `python-package`
+* Dependencies:
+    + `Bench.Python.Pillow`
+* Website: <https://openpyxl.readthedocs.io>
+* License: MIT
+
 ### LLVM Lite for Python 2
 
 A lightweight LLVM python binding for writing JIT compilers
@@ -2453,6 +2465,7 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 * Typ: `python-package`
 * Dependencies:
     + `Bench.Python.Xlrd`
+    + `Bench.Python.OpenPyXl`
 * Website: <http://pandas.pydata.org/>
 * Docs:
     + Documentation: <http://pandas.pydata.org/pandas-docs/stable/>
