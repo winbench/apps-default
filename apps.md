@@ -2629,6 +2629,8 @@ in their warehouse more effectively.
     + data science
     + database
     + sql
+* Dependencies:
+    + `Bench.Python.Psycopg2`
 * Typ: `python-package`
 * Website: <https://www.getdbt.com/>
 * Docs:
