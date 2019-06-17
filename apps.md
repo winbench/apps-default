@@ -156,7 +156,7 @@ It is also a general-purpose cryptography library.
     + Windows Builds: <https://bintray.com/vszakats/generic/openssl>
 * VersionMajor: 1
 * VersionMinor: 1
-* Revision: 1b
+* Revision: 1c
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url: `https://bintray.com/vszakats/generic/download_file?file_path=$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -184,7 +184,7 @@ The GnuTLS Transport Layer Security Library.
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
 * VersionMajor: 3
 * VersionMinor: 6
-* Revision: 7
+* Revision: 8
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Release: `$:VersionMajor$_$:VersionMinor$_$:Revision$`
 * Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
@@ -219,7 +219,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * Docs:
     + Manual: <https://gnupg.org/documentation/manuals/gnupg-2.0/>
     + Commands: <https://gnupg.org/documentation/manuals/gnupg-2.0/Operational-GPG-Commands.html>
-* Version: 2.2.12
+* Version: 2.2.16
 * Url: `https://sourceforge.net/projects/portableapps/files/GPG Plugin Portable/$:ArchiveName$`
 * ArchiveName: `GPG_Plugin_Portable_$:Version$.paf.exe`
 * Dir: `bench\gpg`
@@ -269,7 +269,7 @@ A snappy UI, three-way merge tool, side-by-side diffs, syntax highlighting, and 
 * License: Commercial
 * Docs:
     + News: <https://www.sublimetext.com/blog/>
-* Version: 1107
+* Version: 1116
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * Only64Bit: true
 * ArchiveName64Bit: `sublime_merge_build_$:Version$_x64.zip`
@@ -363,7 +363,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.3.4
+* Version: 7.3.5
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -454,7 +454,7 @@ According to Oracle, Java is the world's #1 programming language.
     + `JAVA_CMD`: `$:Exe$`
 * VersionCheckUrl: `https://jdk.java.net/$:VersionMajor$/`
 * VersionCheckXPath: `//div[@id='openjdk']/descendant::table/descendant::td/a/@href`
-* VersionCheckPattern: `jdk11/\d+/GPL/openjdk-(?<Version>[\d\.]+)_windows-x64_bin\.zip$`
+* VersionCheckPattern: `jdk$:VersionMajor$/\d+/GPL/openjdk-(?<Version>[\d\.]+)_windows-x64_bin\.zip$`
 
 ### Open JFX
 
@@ -587,7 +587,7 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 2.2.203
+* Version: 2.2.300
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -597,8 +597,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
     + Downloads: <https://dotnet.microsoft.com/download>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/de8424eb-a64f-4bd4-a570-b5e11da1b87d/4dde533d98487b24fef479d6423dee1e/$:ArchiveName$`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/da267530-fa49-4ef4-abc2-243347949539/e9d68742316223b407c1087a0e07cb2f/d578118f63c0be3fd9533376adaf314e/$:ArchiveName$`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/4d8d4bfe-00d8-4347-9786-7027117694bb/86385dc7a0d79d5d14c45bee3038a1c4/$:ArchiveName$`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/a1665b8f-aa73-486c-bd3d-61fe88b9f594/9873392939c4c6d069f9c4a0ea8ddf5b/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-sdk-$:Version$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:Version$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -745,7 +745,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.12.5
+* Version: 1.12.6
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -783,9 +783,9 @@ Erlang is a programming language used to build massively scalable soft real-time
 * License: Apache-2.0
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
-* VersionMajor: 21
-* VersionMinor: 3
-* ErtsVersion: 10.3
+* VersionMajor: 22
+* VersionMinor: 0
+* ErtsVersion: 10.4
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName32Bit: `otp_win32_$:Version$.exe`
@@ -991,8 +991,8 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
     + virtualization
     + setup
     + vbox
-* Version: 6.0.6
-* Release: 130049
+* Version: 6.0.8
+* Release: 130520
 * Url: `http://download.virtualbox.org/virtualbox/$:Version$/$:ResourceName$`
 * ResourceName: `VirtualBox-$:Version$-$:Release$-Win.exe`
 * Dir: `bench\vbox-installer`
@@ -1360,7 +1360,7 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
 * VersionMajor: 3.14
-* Version: $:VersionMajor$.3
+* Version: $:VersionMajor$.5
 * Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
