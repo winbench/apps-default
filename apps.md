@@ -2066,6 +2066,9 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * LauncherWorkingDir: `$ProjectRootDir$`
 * LauncherExecutable: `$:Path$\jupyter.exe`
 * LauncherArguments: `lab`, `%*`
+* Extensions:
+    + `jupyterlab-python-file`
+    + `@mastersign/jupyterlab_sublime`
 
 ### Jupyter for Python 3
 
@@ -2111,6 +2114,7 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
     + plotting
 * Typ: `python3-package`
 * Dependencies:
+    + `Bench.Node`
     + `Bench.Python3.Jupyter`
 * Website: <https://jupyterlab.readthedocs.io/en/stable/>
 * License: BSD-3-Clause
@@ -2121,6 +2125,9 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * LauncherWorkingDir: `$ProjectRootDir$`
 * LauncherExecutable: `$:Path$\jupyter.exe`
 * LauncherArguments: `lab`, `%*`
+* Extensions:
+    + `jupyterlab-python-file`
+    + `@mastersign/jupyterlab_sublime`
 
 ### GeoHash for Python 2
 
