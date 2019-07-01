@@ -2067,6 +2067,7 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * LauncherExecutable: `$:Path$\jupyter.exe`
 * LauncherArguments: `lab`, `%*`
 * Extensions:
+    + `@jupyterlab/celltags`
     + `jupyterlab-python-file`
     + `@mastersign/jupyterlab_sublime`
 
@@ -2126,6 +2127,7 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * LauncherExecutable: `$:Path$\jupyter.exe`
 * LauncherArguments: `lab`, `%*`
 * Extensions:
+    + `@jupyterlab/celltags`
     + `jupyterlab-python-file`
     + `@mastersign/jupyterlab_sublime`
 
