@@ -2041,6 +2041,7 @@ across over 40 programming languages.
 * Launcher: Jupyter Notebook
 * LauncherWorkingDir: `$ProjectRootDir$`
 * LauncherArguments: `notebook`, `%*`
+* KeyBindings: `sublime`
 
 ### Jupyter Lab for Python 2
 
@@ -2095,6 +2096,7 @@ across over 40 programming languages.
 * Launcher: Jupyter Notebook
 * LauncherWorkingDir: `$ProjectRootDir$`
 * LauncherArguments: `notebook`, `%*`
+* KeyBindings: `sublime`
 
 ### Jupyter Lab for Python 3
 
