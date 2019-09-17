@@ -156,7 +156,7 @@ It is also a general-purpose cryptography library.
     + Windows Builds: <https://bintray.com/vszakats/generic/openssl>
 * VersionMajor: 1
 * VersionMinor: 1
-* Revision: 1c
+* Revision: 1d
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url: `https://bintray.com/vszakats/generic/download_file?file_path=$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -363,7 +363,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.3.7
+* Version: 7.3.8
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -588,8 +588,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 2.2.6
-* SdkVersion: 2.2.401
+* Version: 2.2.7
+* SdkVersion: 2.2.402
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -599,8 +599,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
     + Downloads: <https://dotnet.microsoft.com/download>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/4de548ef-9b51-4b1f-ae3a-60ebd6a6f2b5/01fce24fe286e7475fdbecc60f1daee5/$:ArchiveName$`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/6cbe64c2-ea50-4352-a798-5719725aed8f/409e45b78997be6b95a3b9759220d404/$:ArchiveName$`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/8ac3e8b7-9918-4e0c-b1be-5aa3e6afd00f/0be99c6ab9362b3c47050cdd50cba846/$:ArchiveName$`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/2bfd2064-2ccc-46c0-95e6-04b3d76e3be9/9f7e5b4cdaf8ddbc579e6b181c289de1/$:ArchiveName$`
 * ArchiveName32Bit: `dotnet-sdk-$:SdkVersion$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:SdkVersion$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -747,7 +747,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.12.7
+* Version: 1.13
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -993,8 +993,8 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
     + virtualization
     + setup
     + vbox
-* Version: 6.0.10
-* Release: 132072
+* Version: 6.0.12
+* Release: 133076
 * Url: `http://download.virtualbox.org/virtualbox/$:Version$/$:ResourceName$`
 * ResourceName: `VirtualBox-$:Version$-$:Release$-Win.exe`
 * Dir: `bench\vbox-installer`
@@ -1278,7 +1278,7 @@ reporting and documentation from a central piece of information.
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: 3.6.1
+* Version: 3.6.2
 * Url: `http://www.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
@@ -1305,7 +1305,7 @@ Gradle is writing to the `.gradle` folder in the Windows user profile directory 
 * License: Apache-2.0
 * Docs:
     + Documentation: <https://gradle.org/docs>
-* Version: 5.5.1
+* Version: 5.6.2
 * Url: `https://services.gradle.org/distributions/$:ArchiveName$`
 * ArchiveName: `gradle-$:Version$-bin.zip`
 * ArchivePath: `gradle-$:Version$`
@@ -1362,7 +1362,7 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
 * VersionMajor: 3.15
-* Version: $:VersionMajor$.2
+* Version: $:VersionMajor$.3
 * Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
@@ -2198,7 +2198,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.4
+* Version: 1.16.5
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2241,7 +2241,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.4
+* Version: 1.16.5
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3083,7 +3083,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.39.1
+* Version: 1.40.1
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -3235,7 +3235,7 @@ with extensions to support text editing.
     + Emacs Lisp: <https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html>
     + Other Manuals: <https://www.gnu.org/software/emacs/manual/index.html>
 * VersionMajor: 26
-* Version: $:VersionMajor$.2
+* Version: $:VersionMajor$.3
 * Url: `http://ftp.gnu.org/gnu/emacs/windows/emacs-$:VersionMajor$/$:ArchiveName$`
 * ArchiveName32Bit: `emacs-$:Version$-i686.zip`
 * ArchiveName64Bit: `emacs-$:Version$-x86_64.zip`
@@ -3550,7 +3550,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2019.2
+* Version: 2019.2.2
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -3576,7 +3576,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version64Bit: 2019.2
+* Version64Bit: 2019.2.2
 * Version32Bit: 2018.3.5
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.exe`
@@ -3778,7 +3778,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.44.1
+* Version: 3.44.2
 * Url: `https://download.filezilla-project.org/client/$:ArchiveName$`
 * DownloadHeaders:
     + `User-Agent`: `Bench`
@@ -3813,7 +3813,7 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.15.3
+* Version: 5.15.4
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
@@ -4025,7 +4025,7 @@ because the executables (e.g. `mysqld.exe`) are named the same._
 * License: GPL-2.0
 * VersionMajor: 10
 * VersionMinor: 4
-* Revision: 7
+* Revision: 8
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url32Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/win32-packages/$:ArchiveName$?serve`
 * Url64Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/winx64-packages/$:ArchiveName$?serve`
@@ -4123,7 +4123,7 @@ The user interface is displayed via a web browser.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
-* Version: 4.11
+* Version: 4.12
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
 * ArchiveName: `pgadmin4-$:Version$-x86.exe`
@@ -4180,7 +4180,7 @@ This application needs the _Visual C++ 2015-2019 Redistributable_ [32 Bit Versio
     + Documentation: `http://httpd.apache.org/docs/$:MainVersion$/en/`
 * VersionMajor: 2
 * VersionMinor: 4
-* Revision: 39
+* Revision: 41
 * MainVersion: `$:VersionMajor$.$:VersionMinor$`
 * Version: `$:MainVersion$.$:Revision$`
 * VSVersion: 16
@@ -4221,7 +4221,7 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.7.17
+* Version: 3.7.18
 * Url: `https://dl.bintray.com/rabbitmq/all/rabbitmq-server/$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
@@ -4302,7 +4302,7 @@ Power your metrics and alerting with a leading open-source monitoring solution.
     + Documentation: <https://prometheus.io/docs/introduction/overview/>
     + Querying: <https://prometheus.io/docs/querying/basics/>
     + HTTP API: <https://prometheus.io/docs/querying/api/>
-* Version: 2.11.1
+* Version: 2.12.0
 * Url: `https://github.com/prometheus/prometheus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `prometheus-$:Version$.windows-386`
@@ -4339,9 +4339,10 @@ The Pushgateway then exposes these metrics to Prometheus.
 * Dir: `bench\pushgateway`
 * Exe: `pushgateway.exe`
 * Launcher: $:Label$
-* LauncherArguments: `--web.listen-address`, `127.0.0.1:$:Port$`
+* LauncherArguments: `--web.listen-address`, `$:HostIP$:$:Port$`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `pushgateway`
+* HostIP: localhost
 * Port: 9091
 
 ### Prometheus WMI Exporter
@@ -4360,7 +4361,7 @@ Prometheus exporter for Windows machines using WMI
 * Website: <https://github.com/martinlindhe/wmi_exporter>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/martinlindhe/wmi_exporter/master/LICENSE>
-* Version: 0.8.1
+* Version: 0.8.3
 * Url: `https://github.com/martinlindhe/wmi_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `wmi_exporter-$:Version$-386.msi`
 * ArchiveName64Bit: `wmi_exporter-$:Version$-amd64.msi`
@@ -4368,10 +4369,12 @@ Prometheus exporter for Windows machines using WMI
 * Dir: `bench\prometheus_wmi`
 * Exe: `wmi_exporter.exe`
 * Launcher: $:Label$
-* LauncherArguments: `-telemetry.addr`, `:$:Port$`
+* LauncherArguments: `--collectors.enabled`, `$:Collectors$`, `--telemetry.addr`, `$:HostIP$:$:Port$`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `wmi`
+* HostIP: localhost
 * Port: 9182
+* Collectors: `cs,logical_disk,net,os,system,cpu`
 
 ### Prometheus Grok Exporter
 
@@ -4400,7 +4403,6 @@ Prometheus exporter for arbitrary unstructured log data
 * LauncherArguments: `-config`, `$:ConfigFile$`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `grok`
-* Port: 9144
 * ConfigFile: `$HomeDir$\grok_config.yml`
 * VersionCheckAllowPreRelease: `true`
 
@@ -4425,10 +4427,11 @@ Prometheus exporter for MySQL Server
 * Dir: `bench\prometheus_mysqld`
 * Exe: `mysqld_exporter.exe`
 * Launcher: $:Label$
-* LauncherArguments: `--web.listen-address=127.0.0.1:$:Port$`, `--config.my-cnf=$Home$\.my.cnf`
+* LauncherArguments: `--web.listen-address=$:HostIP$:$:Port$`, `--config.my-cnf=$Home$\.my.cnf`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `mysql`
 * Port: 9104
+* HostIP: localhost
 
 ### Prometheus RabbitMQ Exporter
 
@@ -4471,7 +4474,7 @@ Prometheus exporter for Memcached Server
 * Dependencies: `Bench.Prometheus`, `Bench.Memcached`
 * Website: <https://github.com/prometheus/memcached_exporter>
 * License: Apache-2.0
-* Version: 0.5.0
+* Version: 0.6.0
 * Url: `https://github.com/prometheus/memcached_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `memcached_exporter-$:Version$.windows-386`
@@ -4480,7 +4483,7 @@ Prometheus exporter for Memcached Server
 * Exe: `memcached_exporter.exe`
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Dir$`
-* LauncherArguments: `-memcached.address`, `$:MemcachedAddress$`, `-web.listen-address`, `127.0.0.1:$:Port$`
+* LauncherArguments: `--memcached.address`, `$:MemcachedAddress$`, `--web.listen-address`, `127.0.0.1:$:Port$`
 * JobName: `memcached`
 * Port: 9150
 * MemcachedAddress: `localhost:11211`
@@ -4502,7 +4505,7 @@ The open platform for beautiful analytics and monitoring
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
     + Getting Started: <http://docs.grafana.org/guides/getting_started/>
-* Version: 6.3.2
+* Version: 6.3.5
 * Only64Bit: `true`
 * Url: `https://dl.grafana.com/oss/release/$:ArchiveName$`
 * ArchiveName64Bit: `grafana-$:Version$.windows-amd64.zip`
@@ -4765,7 +4768,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.56.3
+* Version: 0.58.2
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
@@ -4811,7 +4814,7 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.8-60
+* Version: 7.0.8-64
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
@@ -4988,7 +4991,7 @@ that plays most multimedia files, and various streaming protocols.
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
-* Version: 3.0.7.1
+* Version: 3.0.8
 * Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
 * Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
@@ -5224,7 +5227,7 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 11.61
+* Version: 11.65
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 * VersionCheckUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
