@@ -1023,13 +1023,13 @@ The tool is designed to enable both technical and non-technical analysts to mani
 * License: Apache-2.0
 * Website: <https://github.com/gchq/CyberChef>
 * Docs:
-    + Local: `$:Dir$\$:ResourceName$`
-    + Online: <https://gchq.github.io/CyberChef>
-* Version: latest
-* Url: `https://gchq.github.io/CyberChef/$:ResourceName$`
-* ResourceName: `cyberchef.htm`
-* Exe: `cyberchef.htm`
-* Register: false
+    + Local: `$:Dir$\$:Exe$`
+    + Online: <https://gchq.github.io/CyberChef/>
+* Version: 9.7.1
+* Url: `https://github.com/gchq/CyberChef/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `CyberChef_v$:Version$.zip`
+* Exe: `CyberChef_v$:Version$.html`
+* Register: true
 * Launcher: $:Label$
 * LauncherIcon: `$:Dir$\cyberchef.ico`
 
