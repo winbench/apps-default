@@ -269,7 +269,7 @@ A snappy UI, three-way merge tool, side-by-side diffs, syntax highlighting, and 
 * License: Commercial
 * Docs:
     + News: <https://www.sublimetext.com/blog/>
-* Version: 1116
+* Version: 1119
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * Only64Bit: true
 * ArchiveName64Bit: `sublime_merge_build_$:Version$_x64.zip`
@@ -3160,7 +3160,7 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
     + Package Control: <https://packagecontrol.io/>
-* Release: 3207
+* Release: 3211
 * Version: Build $:Release$
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * ArchiveName32Bit: `Sublime Text $:Version$.zip`
