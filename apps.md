@@ -33,6 +33,7 @@
 * Label: Java Development
 * Typ: `group`
 * Dependencies:
+    + `Bench.JDK8`
     + `Bench.JDK`
     + `Bench.Maven`
     + `Bench.EclipseJava`
@@ -419,6 +420,66 @@ The runtime environment is required for a compiled Java program to get executed.
 * ArchiveName: `java-midi-soundbank-deluxe.zip`
 * Dir: `$Bench.JRE8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
+
+### Open JDK 8
+
+According to Oracle, Java is the world's #1 programming language.
+
+A significant number of Java libraries are not compatible with the JDK 9 and greater.
+Therefore, the JDK 8 is made available as an alternative.
+Open JDK 8 is also the last JDK to support 32 Bit Windows as a developer machine.
+
+* ID: `Bench.JDK8`
+* Label: OpenJDK 8
+* Tags:
+    + cli
+    + language
+    + runtime
+    + compiler
+    + sdk
+    + jvm
+    + jre
+* Website: <https://jdk.java.net/>
+* License: GPL-2
+* LicenseUrl: <https://openjdk.java.net/legal/gplv2+ce.html>
+* Docs:
+    + Build Project: <https://github.com/ojdkbuild/ojdkbuild>
+    + Downloads: <https://github.com/ojdkbuild/ojdkbuild/releases>
+* Version: 1.8.0.222
+* Release: 2.b10
+* Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$:Version$-$:Release$/$:ArchiveName$`
+* Url32Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$:Version$-$:Release$-x86/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath64Bit: `java-1.8.0-openjdk-$:Version$-$:Release$.ojdkbuild.windows.x86_64`
+* ArchivePath32Bit: `java-1.8.0-openjdk-$:Version$-$:Release$.ojdkbuild.windows.x86`
+* Path: `bin`
+* Exe: `bin\java.exe`
+* Environment:
+    + `JAVA_HOME`: `$:Dir$`
+    + `JAVA_CMD`: `$:Exe$`
+
+### Open JFX 8
+
+* ID: `Bench.JFX8`
+* Dependencies:
+    + `Bench.JDK8`
+* Label: OpenJFX SDK 8
+* Website: <https://openjfx.io/>
+* Docs:
+    + API: `https://docs.oracle.com/javase/8/javafx/api/toc.htm`
+* Version: 8.0.202
+* Release: 2.b09
+* Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$Bench.JDK8:Version$-$Bench.JDK8:Release$/$:ArchiveName$`
+* Url32Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$Bench.JDK8:Version$-$Bench.JDK8:Release$-x86/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath64Bit: `openjfx-$:Version$-$:Release$.ojdkbuild.windows.x86_64`
+* ArchivePath32Bit: `openjfx-$:Version$-$:Release$.ojdkbuild.windows.x86`
+* Dir: `$Bench.JDK8:Dir$`
+* ModulePath: `$:Dir$\lib`
+* SetupTestFile: `$:ModulePath$\ant-javafx.jar`
+* Environment:
+    + `PATH_TO_FX`: `$:ModulePath$`
+* Register: `false`
 
 ### Open JDK
 
