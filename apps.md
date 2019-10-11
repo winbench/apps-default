@@ -439,10 +439,10 @@ According to Oracle, Java is the world's #1 programming language.
 * LicenseUrl: <https://openjdk.java.net/legal/gplv2+ce.html>
 * Docs:
     + Downloads: <https://jdk.java.net/archive/>
-* VersionMajor: 12
-* Version: $:VersionMajor$.0.2
-* Release: 10
-* DownloadUUID: `e482c34c86bd4bf8b56c0b35558996b9`
+* VersionMajor: 13
+* Version: $:VersionMajor$
+* Release: 33
+* DownloadUUID: `5b8a42f3905b406298b72d750b6919f6`
 * Only64Bit: `true`
 * Url64Bit: `https://download.java.net/java/GA/jdk$:Version$/$:DownloadUUID$/$:Release$/GPL/$:ArchiveName$`
 * ArchiveName64Bit: `openjdk-$:Version$_windows-x64_bin.zip`
