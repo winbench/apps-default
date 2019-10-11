@@ -425,6 +425,8 @@ The runtime environment is required for a compiled Java program to get executed.
 
 According to Oracle, Java is the world's #1 programming language.
 
+The Java development kit is required for compiling Java sources into an executable program.
+
 A significant number of Java libraries are not compatible with the JDK 9 and greater.
 Therefore, the JDK 8 is made available as an alternative.
 Open JDK 8 is also the last JDK to support 32 Bit Windows as a developer machine.
