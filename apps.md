@@ -421,6 +421,38 @@ The runtime environment is required for a compiled Java program to get executed.
 * Dir: `$Bench.JRE8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
 
+### Open JRE  8
+
+According to Oracle, Java is the world's #1 programming language.
+
+The runtime environment is required for a compiled Java program to get executed.
+
+* ID: `Bench.OpenJRE8`
+* Label: OpenJRE 8
+* Tags:
+    + language
+    + runtime
+    + cli
+    + jvm
+* Website: <https://www.oracle.com/java/>
+* License: GPL-2
+* LicenseUrl: <https://openjdk.java.net/legal/gplv2+ce.html>
+* Docs:
+    + Build Project: <https://github.com/ojdkbuild/ojdkbuild>
+    + Downloads: <https://github.com/ojdkbuild/ojdkbuild/releases>
+* Version: `$Bench.JDK8:Version$`
+* Release: `$Bench.JDK8:Release$`
+* Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$:Version$-$:Release$/$:ArchiveName$`
+* Url32Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$:Version$-$:Release$-x86/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath64Bit: `java-1.8.0-openjdk-jre-$:Version$-$:Release$.ojdkbuild.windows.x86_64`
+* ArchivePath32Bit: `java-1.8.0-openjdk-jre-$:Version$-$:Release$.ojdkbuild.windows.x86`
+* Path: `bin`
+* Exe: `bin\java.exe`
+* Environment:
+    + `JAVA_HOME`: `$:Dir$`
+    + `JAVA_CMD`: `$:Exe$`
+
 ### Open JDK 8
 
 According to Oracle, Java is the world's #1 programming language.
