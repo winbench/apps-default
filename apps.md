@@ -1468,6 +1468,29 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * VersionCheckXPath: `/html/body/table/descendant::td/a`
 * VersionCheckPattern: `cmake-(?<Version>[\d\.]+)-win32-x86\.zip`
 
+### Protocol Buffers
+
+Protocol Buffers - Google's data interchange format.
+
+* ID: `Bench.Protobuf`
+* Tags:
+    + cli
+    + compiler
+    + data exchange
+* Website: <https://developers.google.com/protocol-buffers/>
+* Docs:
+    + Overview: <https://developers.google.com/protocol-buffers/docs/overview>
+    + Reference: <https://developers.google.com/protocol-buffers/docs/reference/overview>
+    + Repository: <https://github.com/protocolbuffers/protobuf>
+* License: BSD-3-Clause
+* LicenseUrl: <https://raw.githubusercontent.com/protocolbuffers/protobuf/master/LICENSE>
+* Version: 3.10.0
+* Url: `https://github.com/protocolbuffers/protobuf/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName64Bit: `protoc-$:Version$-win64.zip`
+* ArchiveName32Bit: `protoc-$:Version$-win32.zip`
+* Path: `bin`
+* Exe: `bin\protoc.exe`
+
 ### Golang Dep
 
 Dependency management for Go
