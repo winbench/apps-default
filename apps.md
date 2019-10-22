@@ -1491,6 +1491,13 @@ Protocol Buffers - Google's data interchange format.
 * Path: `bin`
 * Exe: `bin\protoc.exe`
 
+### Python Protocol Buffers
+
+* ID: `Bench.Python3.Protobuf`
+* Label: Python Protobuf
+* Typ: `python-package`
+* SetupTestFile: `$:Dir$\Lib\site-packages\google\protobuf\__init__.py`
+
 ### Golang Dep
 
 Dependency management for Go
