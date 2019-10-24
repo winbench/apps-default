@@ -1817,6 +1817,27 @@ SQLIte Studio is a SQLite database manager with the following features:
 * VersionCheckXPath: `//td[@class='mainTdInternal']/descendant::b`
 * VersionCheckPattern: `stable release \((?<Version>[\d\.]+)\)`
 
+### Postman
+
+Create and save REST, SOAP, and GraphQL queries directly from Postman.
+
+* ID: `Bench.Postman`
+* Tags:
+    + gui
+    + http
+    + rest
+    + debugging
+* Website: <https://getpostman.com>
+* Docs:
+    + Learning Center: <https://learning.getpostman.com/>
+* Version: latest
+* Url32Bit: `https://dl.pstmn.io/download/latest/win32`
+* Url64Bit: `https://dl.pstmn.io/download/latest/win64`
+* ArchiveName64Bit: `Postman-win64-Setup.exe`
+* ArchiveName32Bit: `Postman-win32-Setup.exe`
+* Register: `false`
+* Launcher: `$:Label$`
+
 ### Windows Sysinternals Suite
 
 A collection of tools by Mark Russinovich, to inspect and investigate
