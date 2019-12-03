@@ -4421,6 +4421,27 @@ and a simple straightforward API.
 * Version: latest
 * Launcher: $:Label$
 
+### LDAP Admin
+
+* ID: `Bench.LdapAdmin`
+* Label: LDAP Admin
+* Tags:
+    + gui
+    + ldap
+    + samba
+    + active directory
+* License: GPL-3.0
+* Website: <http://www.ldapadmin.org>
+* Version: 1.8.3
+* Url: `https://sourceforge.net/projects/ldapadmin/files/ldapadmin/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `LdapAdminExe-w32-$:Version$.zip`
+* ArchiveName64Bit: `LdapAdminExe-w64-$:Version$.zip`
+* RegistryKeys: `SOFTWARE\LdapAdmin`
+* Launcher: $:Label$
+* VersionCheckUrl: <http://www.ldapadmin.org/download/ldapadmin.html>
+* VersionCheckXPath: `//table/descendant::tr/td[@class='big']`
+* VersionCheckPattern: `^\s*LdapAdmin (?<Version>[\d\.]+)\s*$`
+
 ## Monitoring
 
 ### Prometheus
