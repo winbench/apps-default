@@ -185,7 +185,7 @@ The GnuTLS Transport Layer Security Library.
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
 * VersionMajor: 3
 * VersionMinor: 6
-* Revision: 9
+* Revision: 11
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Release: `$:VersionMajor$_$:VersionMinor$_$:Revision$`
 * Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
@@ -220,7 +220,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * Docs:
     + Manual: <https://gnupg.org/documentation/manuals/gnupg-2.0/>
     + Commands: <https://gnupg.org/documentation/manuals/gnupg-2.0/Operational-GPG-Commands.html>
-* Version: 2.2.17
+* Version: 2.2.19
 * Url: `https://sourceforge.net/projects/portableapps/files/GPG Plugin Portable/$:ArchiveName$`
 * ArchiveName: `GPG_Plugin_Portable_$:Version$.paf.exe`
 * Dir: `bench\gpg`
@@ -364,7 +364,7 @@ installed.
 * LicenseUrl: <http://www.php.net/license/3_01.txt>
 * Docs:
     + PHP Manual: <http://php.net/manual/en/>
-* Version: 7.3.8
+* Version: 7.3.12
 * Url: `http://windows.php.net/downloads/releases/archives/$:ArchiveName$`
 * ArchiveName32Bit: `php-$:Version$-Win32-VC15-x86.zip`
 * ArchiveName64Bit: `php-$:Version$-Win32-VC15-x64.zip`
@@ -421,7 +421,7 @@ The runtime environment is required for a compiled Java program to get executed.
 * Dir: `$Bench.JRE8:Dir$\lib\audio`
 * SetupTestFile: `$:Dir$\soundbank-deluxe.gm`
 
-### Open JRE  8
+### Open JRE 8
 
 According to Oracle, Java is the world's #1 programming language.
 
@@ -479,8 +479,8 @@ Open JDK 8 is also the last JDK to support 32 Bit Windows as a developer machine
 * Docs:
     + Build Project: <https://github.com/ojdkbuild/ojdkbuild>
     + Downloads: <https://github.com/ojdkbuild/ojdkbuild/releases>
-* Version: 1.8.0.222
-* Release: 2.b10
+* Version: 1.8.0.232
+* Release: 2.b09
 * Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$:Version$-$:Release$/$:ArchiveName$`
 * Url32Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$:Version$-$:Release$-x86/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -502,7 +502,7 @@ Open JDK 8 is also the last JDK to support 32 Bit Windows as a developer machine
 * Docs:
     + API: `https://docs.oracle.com/javase/8/javafx/api/toc.htm`
 * Version: 8.0.202
-* Release: 2.b09
+* Release: 2.b10
 * Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$Bench.JDK8:Version$-$Bench.JDK8:Release$/$:ArchiveName$`
 * Url32Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-$Bench.JDK8:Version$-$Bench.JDK8:Release$-x86/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
@@ -535,13 +535,12 @@ According to Oracle, Java is the world's #1 programming language.
 * Docs:
     + Downloads: <https://jdk.java.net/archive/>
 * VersionMajor: 13
-* Version: $:VersionMajor$
-* Release: 33
-* DownloadUUID: `5b8a42f3905b406298b72d750b6919f6`
+* Version: $:VersionMajor$.0.1.9
+* Release: 2
 * Only64Bit: `true`
-* Url64Bit: `https://download.java.net/java/GA/jdk$:Version$/$:DownloadUUID$/$:Release$/GPL/$:ArchiveName$`
-* ArchiveName64Bit: `openjdk-$:Version$_windows-x64_bin.zip`
-* ArchivePath: `jdk-$:Version$`
+* Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-13-openjdk-$:Version$-$:Release$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath64Bit: `java-13-openjdk-$:Version$-$:Release$.windows.ojdkbuild.x86_64`
 * Path: `bin`
 * Exe: `bin\java.exe`
 * Environment:
@@ -560,7 +559,7 @@ According to Oracle, Java is the world's #1 programming language.
 * Website: <https://openjfx.io/>
 * Docs:
     + API: `https://openjfx.io/javadoc/$Bench.JDK:VersionMajor$/`
-* Version: $Bench.JDK:Version$
+* Version: 13.0.1
 * Url: `https://download2.gluonhq.com/openjfx/$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName64Bit: `openjfx-$:Version$_windows-x64_bin-sdk.zip`
@@ -683,8 +682,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 2.2.7
-* SdkVersion: 2.2.402
+* Version: 3.1.0
+* SdkVersion: 3.1.100
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -694,8 +693,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
     + Downloads: <https://dotnet.microsoft.com/download>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/8ac3e8b7-9918-4e0c-b1be-5aa3e6afd00f/0be99c6ab9362b3c47050cdd50cba846/$:ArchiveName$`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/2bfd2064-2ccc-46c0-95e6-04b3d76e3be9/9f7e5b4cdaf8ddbc579e6b181c289de1/$:ArchiveName$`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/28a2c4ff-6154-473b-bd51-c62c76171551/ea47eab2219f323596c039b3b679c3d6/dotnet-sdk-3.1.100-win-x64.zip`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/8961027c-fc5b-40d8-9f67-b08c55510ef4/99c6723fb3916369d4bb425fa70d691e/dotnet-sdk-3.1.100-win-x86.zip`
 * ArchiveName32Bit: `dotnet-sdk-$:SdkVersion$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:SdkVersion$-win-x64.zip`
 * Exe: `dotnet.exe`
@@ -842,7 +841,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.13
+* Version: 1.13.5
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -881,8 +880,8 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Docs:
     + Documentation: `$:Dir$\doc\index.html`
 * VersionMajor: 22
-* VersionMinor: 0
-* ErtsVersion: 10.4
+* VersionMinor: 2
+* ErtsVersion: 10.6
 * Version: $:VersionMajor$.$:VersionMinor$
 * Url: `http://erlang.org/download/$:ArchiveName$`
 * ArchiveName32Bit: `otp_win32_$:Version$.exe`
@@ -962,7 +961,7 @@ R is a free software for statistical computing and graphics.
     + science
     + plotting
 * Website: <https://www.r-project.org>
-* Version: 3.6.1
+* Version: 3.6.2
 * Url: `http://cran.uni-muenster.de/bin/windows/base/old/$:Version$/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
@@ -993,7 +992,7 @@ The ultimate automation scripting language for Windows.
 * LicenseUrl: license.txt
 * Docs:
     + Documentation: <https://autohotkey.com/docs/AutoHotkey.htm>
-* Version: 1.1.30.03
+* Version: 1.1.32.00
 * Url: `https://github.com/Lexikos/AutoHotkey_L/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `AutoHotkey_$:Version$_setup.exe`
 * Exe32Bit: `AutoHotkeyU32.exe`
@@ -1010,7 +1009,7 @@ The ultimate automation scripting language for Windows.
 * Website: <https://www.vagrantup.com/>
 * License: MIT
 * LicenseUrl: <https://github.com/hashicorp/vagrant/blob/master/LICENSE>
-* Version: 2.2.5
+* Version: 2.2.6
 * Url: `https://releases.hashicorp.com/vagrant/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `vagrant_$:Version$_i686.msi`
 * ArchiveName64Bit: `vagrant_$:Version$_x86_64.msi`
@@ -1088,8 +1087,8 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
     + virtualization
     + setup
     + vbox
-* Version: 6.0.12
-* Release: 133076
+* Version: 6.1.0
+* Release: 135406
 * Url: `http://download.virtualbox.org/virtualbox/$:Version$/$:ResourceName$`
 * ResourceName: `VirtualBox-$:Version$-$:Release$-Win.exe`
 * Dir: `bench\vbox-installer`
@@ -1120,7 +1119,7 @@ The tool is designed to enable both technical and non-technical analysts to mani
 * Docs:
     + Local: `$:Dir$\$:Exe$`
     + Online: <https://gchq.github.io/CyberChef/>
-* Version: 9.7.1
+* Version: 9.12.0
 * Url: `https://github.com/gchq/CyberChef/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `CyberChef_v$:Version$.zip`
 * Exe: `CyberChef_v$:Version$.html`
@@ -1373,7 +1372,7 @@ reporting and documentation from a central piece of information.
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: 3.6.2
+* Version: 3.6.3
 * Url: `http://www.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
@@ -1400,7 +1399,7 @@ Gradle is writing to the `.gradle` folder in the Windows user profile directory 
 * License: Apache-2.0
 * Docs:
     + Documentation: <https://gradle.org/docs>
-* Version: 5.6.2
+* Version: 6.0.1
 * Url: `https://services.gradle.org/distributions/$:ArchiveName$`
 * ArchiveName: `gradle-$:Version$-bin.zip`
 * ArchivePath: `gradle-$:Version$`
@@ -1456,8 +1455,8 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* VersionMajor: 3.15
-* Version: $:VersionMajor$.3
+* VersionMajor: 3.16
+* Version: $:VersionMajor$.2
 * Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `cmake-$:Version$-win32-x86`
@@ -1484,7 +1483,7 @@ Protocol Buffers - Google's data interchange format.
     + Repository: <https://github.com/protocolbuffers/protobuf>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/protocolbuffers/protobuf/master/LICENSE>
-* Version: 3.10.0
+* Version: 3.11.2
 * Url: `https://github.com/protocolbuffers/protobuf/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName64Bit: `protoc-$:Version$-win64.zip`
 * ArchiveName32Bit: `protoc-$:Version$-win32.zip`
@@ -1802,13 +1801,10 @@ SQLIte Studio is a SQLite database manager with the following features:
     + Wiki: <https://github.com/pawelsalawa/sqlitestudio/wiki>
 * License: GPL-3.0
 * Version: 3.2.1
-* Url: `https://sqlitestudio.pl/files/sqlitestudio3/complete/win32/$:ArchiveName$`
+* Url: `https://github.com/pawelsalawa/sqlitestudio/releases/download/3.2.1/$:ArchiveName$`
 * ArchiveName: `SQLiteStudio-$:Version$.zip`
 * ArchivePath: `SQLiteStudio`
 * Launcher: $:Label$
-* VersionCheckUrl: <https://sqlitestudio.pl/index.rvt?act=download>
-* VersionCheckXPath: `//td[@class='mainTdInternal']/descendant::b`
-* VersionCheckPattern: `stable release \((?<Version>[\d\.]+)\)`
 
 ### Postman
 
@@ -1921,7 +1917,7 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 * Label: PyRsistent (Python 2)
 * Typ: `python2-wheel`
 * PackageName: `pyrsistent`
-* Version: 0.14.11
+* Version: 0.15.6
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
@@ -1937,7 +1933,7 @@ Thanks a lot to Christoph Golke for his service.
 * Label: PyRsistent (Python 3)
 * Typ: `python3-wheel`
 * PackageName: `pyrsistent`
-* Version: 0.14.11
+* Version: 0.15.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
@@ -2003,7 +1999,7 @@ A lightweight LLVM python binding for writing JIT compilers
 * Typ: `python2-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.29.0
+* Version: 0.30.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2025,7 +2021,7 @@ A lightweight LLVM python binding for writing JIT compilers
 * Typ: `python3-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.29.0
+* Version: 0.30.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2228,7 +2224,7 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * PackageName: `mysqlclient`
 * Website: <https://github.com/PyMySQL/mysqlclient-python>
 * License: GPL-2
-* Version: 1.4.4
+* Version: 1.4.6
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2249,7 +2245,7 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * PackageName: `mysqlclient`
 * Website: <https://github.com/PyMySQL/mysqlclient-python>
 * License: GPL-2
-* Version: 1.4.4
+* Version: 1.4.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2380,7 +2376,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.5
+* Version: 1.16.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2440,7 +2436,7 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.2.2
+* Version: 1.4.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2585,7 +2581,7 @@ that translates a subset of Python and NumPy code into fast machine code.
 * Typ: `python2-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.45.1
+* Version: 0.46.0
 * CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2611,7 +2607,7 @@ that translates a subset of Python and NumPy code into fast machine code.
 * Typ: `python3-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.45.1
+* Version: 0.46.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -2964,7 +2960,7 @@ Manipulation and analysis of geometric objects in the Cartesian plane.
 * Website: <https://github.com/Toblerity/Shapely>
 * License: BSD-3
 * LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
-* Version: 1.6.4.post1
+* Version: 1.6.4.post2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
@@ -3193,7 +3189,7 @@ home directory as default storage location for notes and snippets.
 * Docs:
     + Blog: <https://medium.com/boostnote>
     + Source Code: <https://github.com/BoostIO/Boostnote>
-* Version: 0.12.1
+* Version: 0.14.0
 * Url: `https://github.com/BoostIO/boost-releases/releases/download/v$:Version$/BoostnoteSetup.exe`
 * ArchiveName: `BoostnoteSetup_v$:Version$.exe`
 * Launcher: $:Label$
@@ -3222,7 +3218,7 @@ is picked up from Atom._
     + Themes: <https://atom.io/themes>
     + Flight Manual: <http://flight-manual.atom.io/>
     + API Reference: `https://atom.io/docs/api/v$:Version$/AtomEnvironment`
-* Version: 1.40.1
+* Version: 1.42.0
 * Url32Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-windows.zip`
 * Url64Bit: `https://github.com/atom/atom/releases/download/v$:Version$/atom-x64-windows.zip`
 * ArchiveName32Bit: `atom-windows-$:Version$.zip`
@@ -3463,7 +3459,7 @@ It is an improved version of the vi editor distributed with most UNIX systems.
     + User Manual: <http://vimdoc.sourceforge.net/htmldoc/usr_toc.html>
 * Dependencies: `Bench.VimRT`, `Bench.VimConsole`
 * VersionMajor: 8
-* VersionMinor: 1
+* VersionMinor: 2
 * Version: $:VersionMajor$.$:VersionMinor$
 * Release: $:VersionMajor$$:VersionMinor$
 * Url: `http://ftp.vim.org/pub/vim/pc/$:ArchiveName$`
@@ -3568,16 +3564,14 @@ An IDE for Clojure.
     + editor
     + ide
     + clojure
-* Dependencies: `Bench.JRE8`
 * Website: <https://sekao.net/nightcode/>
 * License: Public Domain
 * LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
-* Version: 2.7.0
-* Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ResourceName$`
-* ResourceName: `Nightcode-$:Version$.jar`
-* Exe: `$:ResourceName$`
+* Version: 2.8.3
+* Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ArchiveName$`
+* ArchiveName: `Nightcode-$:Version$.zip`
+* ArchivePath: `Nightcode-$:Version$`
 * Launcher: $:Label$
-* LauncherExecutable: `$Bench.JRE8:Path$\java.exe`
 * LauncherArguments: `--module-path`, `$Bench.JFX:ModulePath$`, `--add-modules=javafx.controls`, `-jar`, `$:Exe$`
 * LauncherArguments: `-jar`, `$:Exe$`
 
@@ -3594,8 +3588,8 @@ XML Editor, Mylyn, Maven and Gradle integration...
     + java
     + maven
     + ant
-* CodeName: 2019-06
-* Version: 4.12
+* CodeName: 2019-12
+* Version: 4.14
 * Release: R
 * Dependencies: `Bench.JDK`
 * Website: <https://www.eclipse.org/>
@@ -3689,7 +3683,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2019.2.2
+* Version: 2019.3.1
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
@@ -3715,7 +3709,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version64Bit: 2019.2.2
+* Version64Bit: 2019.3.1
 * Version32Bit: 2018.3.5
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.exe`
@@ -3747,8 +3741,8 @@ debugging and workspace management.
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
 * Version32Bit: 1.1.463
-* Version64Bit: 1.2.1335
-* Url64Bit: `http://download1.rstudio.org/RStudio-$:Version$.exe`
+* Version64Bit: 1.2.5033
+* Url32Bit: `http://download1.rstudio.org/RStudio-$:Version$.exe`
 * Url64Bit: `https://download1.rstudio.org/desktop/windows/RStudio-$:Version$.zip`
 * ArchiveName32Bit: `RStudio-$:Version$.zip`
 * ArchiveName64Bit: `RStudio-x64-$:Version$.zip`
@@ -3917,7 +3911,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
     + Documentation: <https://wiki.filezilla-project.org/Documentation>
     + Usage: <https://wiki.filezilla-project.org/Using>
     + Tutorial: <https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)>
-* Version: 3.44.2
+* Version: 3.46.3
 * Url: `https://download.filezilla-project.org/client/$:ArchiveName$`
 * DownloadHeaders:
     + `User-Agent`: `Bench`
@@ -3952,7 +3946,7 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
     + Introduction: <https://winscp.net/eng/docs/introduction>
     + Documentation: <https://winscp.net/eng/docs/start>
     + Command Line: <https://winscp.net/eng/docs/commandline>
-* Version: 5.15.4
+* Version: 5.15.9
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
 * Launcher: $:Label$
@@ -4053,7 +4047,7 @@ because the executables (e.g. `mysqld.exe`) are named the same._
     + Functions: `http://dev.mysql.com/doc/refman/$:MainVersion$/en/functions.html`
 * VersionMajor: 8
 * VersionMinor: 0
-* Revision: 17
+* Revision: 18
 * Release: 0
 * MainVersion: `$:VersionMajor$.$:VersionMinor$`
 * SubVersion: `$:MainVersion$.$:Revision$`
@@ -4116,7 +4110,7 @@ tools for server configuration, user administration, backup, and much more.
     + Documentation: <http://dev.mysql.com/doc/workbench/en/>
 * VersionMajor: 8
 * VersionMinor: 0
-* Revision: 17
+* Revision: 18
 * Release: 0
 * MainVersion: `$:VersionMajor$.$:VersionMinor$`
 * SubVersion: `$:MainVersion$.$:Revision$`
@@ -4164,7 +4158,7 @@ because the executables (e.g. `mysqld.exe`) are named the same._
 * License: GPL-2.0
 * VersionMajor: 10
 * VersionMinor: 4
-* Revision: 8
+* Revision: 11
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Url32Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/win32-packages/$:ArchiveName$?serve`
 * Url64Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/winx64-packages/$:ArchiveName$?serve`
@@ -4219,7 +4213,7 @@ Use `postgresql_log.cmd` to open the servers log file.
     + Online Docs: <https://www.postgresql.org/docs/$:Version$/static/index.html>
     + Offline Docs: `file:///$:Dir$\doc\postgresql\html\index.html`
 * Version32Bit: 10.5
-* Version64Bit: 11.5
+* Version64Bit: 12.1
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
 * ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
@@ -4262,7 +4256,7 @@ The user interface is displayed via a web browser.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
-* Version: 4.12
+* Version: 4.16
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
 * ArchiveName: `pgadmin4-$:Version$-x86.exe`
@@ -4360,7 +4354,7 @@ Open source and commercially supported
     + Documentation: <http://www.rabbitmq.com/documentation.html>
     + Web Interface: <http://localhost:15672/>
 * Dependencies: `Bench.Erlang`
-* Version: 3.7.18
+* Version: 3.8.2
 * Url: `https://dl.bintray.com/rabbitmq/all/rabbitmq-server/$:Version$/$:ArchiveName$`
 * ArchiveName: `rabbitmq-server-windows-$:Version$.zip`
 * ArchivePath: `rabbitmq_server-$:Version$`
@@ -4462,7 +4456,7 @@ Power your metrics and alerting with a leading open-source monitoring solution.
     + Documentation: <https://prometheus.io/docs/introduction/overview/>
     + Querying: <https://prometheus.io/docs/querying/basics/>
     + HTTP API: <https://prometheus.io/docs/querying/api/>
-* Version: 2.12.0
+* Version: 2.15.1
 * Url: `https://github.com/prometheus/prometheus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `prometheus-$:Version$.windows-386`
@@ -4491,7 +4485,7 @@ The Pushgateway then exposes these metrics to Prometheus.
 * Dependencies: `Bench.Prometheus`
 * Website: <https://github.com/prometheus/pushgateway>
 * License: Apache-2.0
-* Version: 0.9.1
+* Version: 1.0.1
 * Url: `https://github.com/prometheus/pushgateway/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `pushgateway-$:Version$.windows-386`
@@ -4521,7 +4515,7 @@ Prometheus exporter for Windows machines using WMI
 * Website: <https://github.com/martinlindhe/wmi_exporter>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/martinlindhe/wmi_exporter/master/LICENSE>
-* Version: 0.8.3
+* Version: 0.9.0
 * Url: `https://github.com/martinlindhe/wmi_exporter/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `wmi_exporter-$:Version$-386.msi`
 * ArchiveName64Bit: `wmi_exporter-$:Version$-amd64.msi`
@@ -4665,7 +4659,7 @@ The open platform for beautiful analytics and monitoring
     + Web Interface: <http://localhost:3000/>
     + Configuration: <http://docs.grafana.org/installation/configuration/>
     + Getting Started: <http://docs.grafana.org/guides/getting_started/>
-* Version: 6.3.5
+* Version: 6.5.2
 * Only64Bit: `true`
 * Url: `https://dl.grafana.com/oss/release/$:ArchiveName$`
 * ArchiveName64Bit: `grafana-$:Version$.windows-amd64.zip`
@@ -4676,8 +4670,8 @@ The open platform for beautiful analytics and monitoring
 * Launcher: $:Label$
 * LauncherWorkingDir: `$:Dir$`
 * VersionCheckUrl: <https://grafana.com/grafana/download?platform=windows>
-* VersionCheckXPath: `//h4`
-* VersionCheckPattern: `^Version (?<Version>[\d\.]+)`
+* VersionCheckXPath: `//div[@class='download-info-table']/descendant::select/option`
+* VersionCheckPattern: `^(?<Version>[\d\.]+)$`
 
 ## Writing
 
@@ -4747,12 +4741,11 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 2.7.3
+* Version: 2.9.1.1
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `pandoc-$:Release$-windows-i386`
-* ArchivePath64Bit: `pandoc-$:Release$-windows-x86_64`
+* ArchiveName32Bit: `pandoc-$:Release$-windows-i386.zip`
+* ArchiveName64Bit: `pandoc-$:Release$-windows-x86_64.zip`
 * Exe: `pandoc.exe`
 
 ### JabRef
@@ -4819,7 +4812,7 @@ An interpreter for the PostScript language and for PDF.
 * Website: <https://www.ghostscript.com/>
 * License: AGPL-3.0
 * VersionMajor: 9
-* VersionMinor: 27
+* VersionMinor: 50
 * CompactVersion: `gs$:VersionMajor$$:VersionMinor$`
 * Version: `$:VersionMajor$.$:VersionMinor$`
 * Url: `https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/$:CompactVersion$/$:ArchiveName$`
@@ -4928,7 +4921,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.58.2
+* Version: 0.62.2
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
@@ -4974,7 +4967,7 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.8-64
+* Version: 7.0.9-64
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
@@ -5008,7 +5001,7 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
     + APIs: <http://www.graphicsmagick.org/programming.html>
     + Supported Formats: <http://www.graphicsmagick.org/programming.html>
     + Color Reference: <http://www.graphicsmagick.org/color.html>
-* Version: 1.3.33
+* Version: 1.3.34
 * Url: `https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
 * ArchiveName64Bit: `GraphicsMagick-$:Version$-Q16-win64-dll.exe`
@@ -5105,7 +5098,7 @@ The open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.2.2
+* Version: 1.3.1
 * Url: `https://download.handbrake.fr/releases/$:Version$/$:ArchiveName$`
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Only64Bit: `true`
@@ -5334,7 +5327,7 @@ GIMP provides you with sophisticated tools to get your job done.
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
 * VersionMajor: 2.10
-* Version: $:VersionMajor$.8
+* Version: $:VersionMajor$.14
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
@@ -5387,7 +5380,7 @@ Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 * LicenseUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/#license>
 * Docs:
     + Documentation: <http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool_pod.html>
-* Version: 11.65
+* Version: 11.81
 * Url: `http://www.sno.phy.queensu.ca/~phil/exiftool/$:ArchiveName$`
 * ArchiveName: `exiftool-$:Version$.zip`
 * VersionCheckUrl: <http://www.sno.phy.queensu.ca/~phil/exiftool/>
@@ -5407,7 +5400,7 @@ Open source digital audio workstation with VST support.
     + vst
 * Website: <https://lmms.io/>
 * License: GPL-2.0
-* Version: 1.2.0
+* Version: 1.2.1
 * Url: `https://github.com/LMMS/lmms/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `lmms-$:Version$-win32.exe`
 * ArchiveName64Bit: `lmms-$:Version$-win64.exe`
@@ -5494,7 +5487,7 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
-* Version: 23.2.1
+* Version: 24.0.3
 * Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `OBS-Studio-$:Version$-Full-x86.zip`
 * ArchiveName64Bit: `OBS-Studio-$:Version$-Full-x64.zip`
@@ -5589,9 +5582,9 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Features: <https://www.blender.org/features/>
     + Tutorials: <https://www.blender.org/support/tutorials/>
     + Manual: <https://www.blender.org/manual/>
-    + Python API: <https://docs.blender.org/api/blender_python_api_2_79_release/>
-* Version: 2.80
-* VersionSuffix:
+    + Python API: <https://docs.blender.org/api/$:Version$$:VersionSuffix$/>
+* Version: 2.81
+* VersionSuffix: a
 * Url: `http://download.blender.org/release/Blender$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `blender-$:Version$$:VersionSuffix$-windows32`
@@ -5613,9 +5606,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 * Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
 * MajorVersion: 0
 * MinorVersion: 18
-* Revision: 3
-* Release: 16131
-* Commit: 3129ae4
+* Revision: 4
+* Commit: 980bf90
 * Website: <http://www.freecadweb.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://raw.githubusercontent.com/FreeCAD/FreeCAD/master/COPYING>
@@ -5626,8 +5618,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Power User: <http://www.freecadweb.org/wiki/index.php?title=Power_users_hub>
     + Development: <http://www.freecadweb.org/wiki/index.php?title=Developer_hub>
 * Url: `https://github.com/FreeCAD/FreeCAD/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName64Bit: `FreeCAD-$:MajorVersion$.$:MinorVersion$.$:Release$.$:Commit$-WIN-x64-portable.7z`
+* ArchiveName64Bit: `FreeCAD-$:Version$.$:Commit$-WIN-x64-portable.7z`
 * Only64Bit: `true`
-* ArchivePath: `FreeCAD`
+* ArchivePath: `conda-$:Version$`
 * Exe: `bin\freecad.exe`
 * Launcher: $:Label$
