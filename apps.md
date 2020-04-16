@@ -3160,15 +3160,12 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
 * Label: Notepad++
 * VersionMajor: 7
 * Version: `$:VersionMajor$.7.1`
-* Url: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/$:Version$/$:ArchiveName$`
+* Url: `https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
 * Exe: `notepad++.exe`
 * Launcher: $:Label$
 * ConfigurationDir: `$AppDataDir$\Notepad++`
-* VersionCheckUrl: `https://notepad-plus-plus.org/repository/$:VersionMajor$.x/`
-* VersionCheckXPath: `//pre/a`
-* VersionCheckPattern: `(?<Version>$:VersionMajor$\.[\d\.]+)`
 
 ### Markdown Edit
 
