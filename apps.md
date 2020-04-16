@@ -1759,6 +1759,7 @@ complicated SQL commands.
 * Label: DB Browser for SQLite
 * Tags:
     + gui
+    + database
     + sql
     + sqlite
 * Website: <http://sqlitebrowser.org/>
@@ -1793,6 +1794,7 @@ SQLIte Studio is a SQLite database manager with the following features:
 * Label: SQLite Studio
 * Tags:
     + gui
+    + database
     + sql
     + sqlite
 * Website: <https://sqlitestudio.pl>
