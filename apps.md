@@ -1808,6 +1808,23 @@ SQLIte Studio is a SQLite database manager with the following features:
 * ArchivePath: `SQLiteStudio`
 * Launcher: $:Label$
 
+### DBeaver
+
+* ID: `Bench.DBeaver`
+* Label: DBeaver
+* Tags:
+    + gui
+    + database
+    + sql
+* Website: <https://dbeaver.io/>
+* License: Apache-2
+* Version: latest
+* Only64Bit: true
+* Url: `https://dbeaver.io/files/$:ArchiveName$`
+* ArchiveName64Bit: `dbeaver-ce-latest-win32.win32.x86_64.zip`
+* ArchivePath: `dbeaver`
+* Launcher: $:Label$
+
 ### Postman
 
 Create and save REST, SOAP, and GraphQL queries directly from Postman.
