@@ -1282,6 +1282,22 @@ Micro-generator framework that makes it easy for an entire team to create files 
 * Version: latest
 * Exe: `plop.cmd`
 
+### Docsify
+
+A magical documentation site generator.
+
+* ID: `Bench.Docsify`
+* Tags:
+    + cli
+    + html
+    + markdown
+    + documentation
+* Typ: `node-package`
+* Website: <https://docsify.js.org/>
+* License: MIT
+* LicenseUrl: <https://github.com/docsifyjs/docsify/blob/develop/LICENSE>
+* Version: latest
+
 ### Angular CLI
 
 HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
