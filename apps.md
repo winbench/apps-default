@@ -1287,6 +1287,7 @@ Micro-generator framework that makes it easy for an entire team to create files 
 A magical documentation site generator.
 
 * ID: `Bench.Docsify`
+* PackageName: `docsify-cli`
 * Tags:
     + cli
     + html
