@@ -701,6 +701,8 @@ The build tools and compilers for platform independent .NET Core applications.
 * VersionCheckUrl: <https://dotnet.microsoft.com/download/dotnet-core>
 * VersionCheckXPath: `//table/descendant::tr/td`
 * VersionCheckPattern: `^(?<Version>\d+\.[\d\.]+)$`
+* Tools:
+    + `dotnet-ef`
 
 The package manager for [MinGW](http://www.mingw.org/).
 
