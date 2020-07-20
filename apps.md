@@ -682,8 +682,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 3.1.5
-* SdkVersion: 3.1.301
+* Version: 3.1.6
+* SdkVersion: 3.1.302
 * Website: <https://www.microsoft.com/net/core>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/coreclr/master/LICENSE.TXT>
@@ -693,8 +693,8 @@ The build tools and compilers for platform independent .NET Core applications.
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/dotnet/core/api/index>
     + Downloads: <https://dotnet.microsoft.com/download>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/cb535978-7eb4-4bcb-8e85-98c3d42eae3f/1acdc320ba87e1d840242ee4b930b026/dotnet-sdk-3.1.301-win-x64.zip`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/26af3d3c-a6d9-43f7-8e31-63e6fdd122a9/63722096d4aca389101c3c8ca74c9334/dotnet-sdk-3.1.301-win-x86.zip`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/dafb4b49-9990-49aa-b8fe-9002c1a3578a/42acda06cb3d22d886b91aac37fda667/dotnet-sdk-3.1.302-win-x64.zip`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/97604f3e-88bb-457a-b1e5-039db0f4de87/aef2a8679512549d42691f3eb86cf7c1/dotnet-sdk-3.1.302-win-x86.zip`
 * ArchiveName32Bit: `dotnet-sdk-$:SdkVersion$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:SdkVersion$-win-x64.zip`
 * Exe: `dotnet.exe`
