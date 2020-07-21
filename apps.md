@@ -1062,6 +1062,24 @@ For usage with VmWare Workstation activate the app _Docker Machine VmWare Workst
 * Dir: `bench\docker`
 * Exe: `docker.exe`
 
+### Docker Machine
+
+If you use the official Docker Desktop for Windows,
+you may still want to use Docker Machine.
+
+* ID: `Bench.DockerMachine`
+* Label: Docker Machine
+* Tags:
+    + docker
+    + virtualization
+* Website: <https://docs.docker.com/machine/>
+* License: Apache-2.0
+* Version: 0.16.2
+* Only64Bit: `true`
+* Url64Bit: `https://github.com/docker/machine/releases/download/v$:Version$/docker-machine-Windows-x86_64.exe`
+* ResourceName: `docker-machine.exe`
+* Exe: `$:ResourceName$`
+
 ### Docker Machine VmWare Workstation Driver
 
 This plugin for Docker Machine creates Docker hosts locally on a VMware Workstation.
@@ -1072,14 +1090,14 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
     + docker
     + virtualization
     + vmware
-* Dependencies: `Bench.DockerToolbox`
+* Dependencies: `Bench.DockerMachine`
 * Website: <https://github.com/pecigonzalo/docker-machine-vmwareworkstation>
 * License: Apache-2.0
 * Version: 1.1.0
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/download/v$:Version$/$:ResourceName$`
 * ResourceName: `docker-machine-driver-vmwareworkstation.exe`
-* Dir: `$Bench.DockerToolbox:Dir$`
+* Dir: `$Bench.DockerMachine:Dir$`
 * Exe: `$:ResourceName$`
 
 ### VirtualBox Installer
