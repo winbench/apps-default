@@ -4980,6 +4980,25 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
 
+### wk&lt;html&gt;topdf
+
+Convert HTML to PDF (or image) using Webkit (QtWebKit)
+
+* ID: `Bench.WkHtmlToPdf`
+* Tags:
+    + cli
+    + web
+    + html
+    + pdf
+* Website: <https://wkhtmltopdf.org>
+* License: LGPL-3.0
+* Version: 0.12.6-1
+* Url: <https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/$:ArchiveName$>
+* ArchiveName32Bit: `wkhtmltox-$:Version$.mxe-cross-win32.7z`
+* ArchiveName64Bit: `wkhtmltox-$:Version$.mxe-cross-win64.7z`
+* ArchivePath: `wkhtmltox`
+* Path: `bin`
+
 ## Desktop
 
 ### MultiMonitorTool
