@@ -4998,6 +4998,7 @@ Convert HTML to PDF (or image) using Webkit (QtWebKit)
 * ArchiveName64Bit: `wkhtmltox-$:Version$.mxe-cross-win64.7z`
 * ArchivePath: `wkhtmltox`
 * Path: `bin`
+* Exe: `bin\wkhtmltopdf.exe`
 
 ## Desktop
 
