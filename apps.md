@@ -4924,7 +4924,7 @@ There are also many 3rd party tools that allow you to compile your files and wat
     + cli
     + css
     + transpiler
-* Website: `lesscss.org`
+* Website: <http://lesscss.org>
 * License: Apache-2.0
 * Docs:
     + Language Features: <http://lesscss.org/features/>
