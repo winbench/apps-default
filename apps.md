@@ -4910,6 +4910,30 @@ one of the premier Open Source desktop applications.
 
 ## Web
 
+### Tor Browser
+
+Browse Privately. Explore Freely.
+Defend yourself against tracking and surveillance. Circumvent censorship.
+
+* ID: `Bench.TorBrowser`
+* Tags:
+    + gui
+    + web
+    + browser
+    + tor
+* Website: <https://torproject.org>
+* Docs: <https://www.torproject.org/docs/documentation.html.en>
+* Language: en-US
+* Version: 9.5.4
+* Url: `https://dist.torproject.org/torbrowser/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `tor-browser-win32-$:Version$_$:Language$.mar`
+* ArchiveName64Bit: `tor-browser-win64-$:Version$_$:Language$.mar`
+
+* TODO: implements `torbrowser.extract.ps1`
+
+<https://wiki.mozilla.org/Software_Update:MAR>  
+<https://hg.mozilla.org/build/tools/file/b77b517eab66/buildfarm/utils/mar.py>
+
 ### Less
 
 Less is a CSS pre-processor, meaning that it extends the CSS language,
