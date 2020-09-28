@@ -1283,7 +1283,7 @@ to help you stay productive.
     + Tutorial: <http://yeoman.io/codelab/index.html>
     + Generators: <http://yeoman.io/generators/>
     + Creating a Generator: <http://yeoman.io/authoring/>
-* Version: `>=2.0.0 <3.0.0`
+* Version: latest
 * Exe: `yo.cmd`
 
 ### Plop
