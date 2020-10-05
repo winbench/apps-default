@@ -5108,12 +5108,12 @@ No matter if they were designed by some standards committee, the community or a 
     + ffprobe Tool: <http://ffmpeg.org/ffprobe.html>
     + ffserver Tool: <http://ffmpeg.org/ffserver.html>
     + Wiki: <https://trac.ffmpeg.org/wiki>
-* Version: latest
-* Url32Bit: `http://ffmpeg.zeranoe.com/builds/win32/shared/$:ArchiveName$`
-* Url64Bit: `http://ffmpeg.zeranoe.com/builds/win64/shared/$:ArchiveName$`
-* ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `ffmpeg-$:Version$-win32-shared`
-* ArchivePath64Bit: `ffmpeg-$:Version$-win64-shared`
+* Version: 4.3.1
+* Date: 2020-10-01
+* Only64Bit: `true`
+* Url64Bit: `http://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.7z`
+* ArchivePath: `ffmpeg-$:Version$-$:Date$-full_build`
 * Path: `bin`
 * Exe: `bin\ffmpeg.exe`
 
