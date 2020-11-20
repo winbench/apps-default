@@ -704,6 +704,44 @@ The build tools and compilers for platform independent .NET Core applications.
 * Tools:
     + `dotnet-ef`
 
+### .NET SDK
+
+The build tools and compilers for platform independent .NET applications.
+
+* ID: `Bench.DotNetCore`
+* Label: .NET SDK
+* Tags:
+    + cli
+    + language
+    + compiler
+    + clr
+    + csharp
+    + c#
+    + vb.net
+    + visual basic
+    + project automation
+* Version: 5.0.0
+* SdkVersion: 5.0.100
+* Website: <https://dotnet.microsoft.com/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/dotnet/core/master/LICENSE.TXT>
+* Docs:
+    + Docs: <https://docs.microsoft.com/dotnet/>
+    + Getting Started: <https://docs.microsoft.com/dotnet/articles/core/index>
+    + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
+    + API Reference: <https://docs.microsoft.com/de-de/dotnet/api/>
+    + Downloads: <https://dotnet.microsoft.com/download>
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/7b78bdaa-d0ac-41c4-9fdc-5820d7dc79b6/cea499dd314ba6394ccea51a2a2dcda9/dotnet-sdk-5.0.100-win-x64.zip`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/46d55dd1-1630-472c-a951-edb8b0ab23e6/70d97e9619f0d086a99eeef0a465084d/dotnet-sdk-5.0.100-win-x86.zip`
+* ArchiveName32Bit: `dotnet-sdk-$:SdkVersion$-win-x86.zip`
+* ArchiveName64Bit: `dotnet-sdk-$:SdkVersion$-win-x64.zip`
+* Exe: `dotnet.exe`
+* VersionCheckUrl: <https://dotnet.microsoft.com/download/dotnet/>
+* VersionCheckXPath: `//table/descendant::tr/td`
+* VersionCheckPattern: `^(?<Version>\d+\.[\d\.]+)$`
+* Tools:
+    + `dotnet-ef`
+
 ### MinGW Get
 
 The package manager for [MinGW](http://www.mingw.org/).
