@@ -720,8 +720,8 @@ The build tools and compilers for platform independent .NET applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 5.0.0
-* SdkVersion: 5.0.100
+* Version: 5.0.1
+* SdkVersion: 5.0.101
 * Website: <https://dotnet.microsoft.com/>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/core/master/LICENSE.TXT>
@@ -731,8 +731,8 @@ The build tools and compilers for platform independent .NET applications.
     + Welcome: <https://docs.microsoft.com/dotnet/articles/welcome>
     + API Reference: <https://docs.microsoft.com/de-de/dotnet/api/>
     + Downloads: <https://dotnet.microsoft.com/download>
-* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/7b78bdaa-d0ac-41c4-9fdc-5820d7dc79b6/cea499dd314ba6394ccea51a2a2dcda9/dotnet-sdk-5.0.100-win-x64.zip`
-* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/46d55dd1-1630-472c-a951-edb8b0ab23e6/70d97e9619f0d086a99eeef0a465084d/dotnet-sdk-5.0.100-win-x86.zip`
+* Url64Bit: `https://download.visualstudio.microsoft.com/download/pr/d96f04db-f33a-4c0a-bcaf-4fe94559b974/5ad3c8ea7232b361cc1acd89ae4c876c/dotnet-sdk-5.0.101-win-x64.zip`
+* Url32Bit: `https://download.visualstudio.microsoft.com/download/pr/91018cd2-d4e4-45da-920d-1a40970ed5bf/68efbc308fa59cc2c3ce41fe539d6179/dotnet-sdk-5.0.101-win-x86.zip`
 * ArchiveName32Bit: `dotnet-sdk-$:SdkVersion$-win-x86.zip`
 * ArchiveName64Bit: `dotnet-sdk-$:SdkVersion$-win-x64.zip`
 * Exe: `dotnet.exe`
