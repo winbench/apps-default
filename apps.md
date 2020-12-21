@@ -5602,10 +5602,11 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
-* Version: 26.1
+* Major: 26.1
+* Version: `$:Major$.0`
 * Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `OBS-Studio-$:Version$-Full-x86.zip`
-* ArchiveName64Bit: `OBS-Studio-$:Version$-Full-x64.zip`
+* ArchiveName32Bit: `OBS-Studio-$:Major$-Full-x86.zip`
+* ArchiveName64Bit: `OBS-Studio-$:Major$-Full-x64.zip`
 * Path32Bit: `bin\32Bit`
 * Path64Bit: `bin\64Bit`
 * Exe32Bit: `bin\32Bit\obs32.exe`
