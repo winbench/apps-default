@@ -4305,8 +4305,8 @@ Use `postgresql_log.cmd` to open the servers log file.
 * Docs:
     + Online Docs: <https://www.postgresql.org/docs/$:Version$/static/index.html>
     + Offline Docs: `file:///$:Dir$\doc\postgresql\html\index.html`
-* Version32Bit: 10.13
-* Version64Bit: 12.4
+* Version32Bit: 10.15
+* Version64Bit: 12.5
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
 * ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
@@ -4349,7 +4349,7 @@ The user interface is displayed via a web browser.
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
     + Documentation: <https://www.pgadmin.org/docs/pgadmin4/3.x/>
-* Version: 4.26
+* Version: 4.29
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
 * ArchiveName: `pgadmin4-$:Version$-x86.exe`
