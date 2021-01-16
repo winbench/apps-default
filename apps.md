@@ -3987,6 +3987,22 @@ Cdrtools is a set of command line programs that allows to record CD/DVD/BluRay m
 * ArchiveName: `CDR-Tools.exe`
 * Exe: `mkisofs.exe`
 
+### Rufus
+
+Create bootable USB drives the easy way.
+
+* ID: `Bench.Rufus`
+* Tags:
+    + usb
+    + filesystem
+    + image
+    + boot
+* License: GPL-3.0
+* Version: 3.13
+* Url: `https://github.com/pbatard/rufus/releases/download/v$:Version$/rufus-$:Version$p.exe`
+* ResourceName: `rufus.exe`
+* Launcher: $:Label$
+
 ## Network
 
 ### FileZilla
