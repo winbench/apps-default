@@ -708,7 +708,7 @@ The build tools and compilers for platform independent .NET Core applications.
 
 The build tools and compilers for platform independent .NET applications.
 
-* ID: `Bench.DotNetCore`
+* ID: `Bench.DotNetSdk`
 * Label: .NET SDK
 * Tags:
     + cli
