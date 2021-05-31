@@ -1,4 +1,4 @@
-$sublimeTextDataDir = Get-AppConfigValue "Bench.SublimeText3" "DataDir"
+$sublimeTextDataDir = Get-AppConfigValue "Bench.SublimeText" "DataDir"
 $userPackagesDir = "$sublimeTextDataDir\Packages\User"
 
 $packageControlSettings = "$userPackagesDir\Package Control.sublime-settings"
@@ -33,7 +33,7 @@ if (!(Test-Path $packageControlSettings))
         "    ["
     )
 
-    $packages = Get-AppConfigListValue "Bench.SublimeText3.PackageControl" "Packages"
+    $packages = Get-AppConfigListValue "Bench.SublimeText.PackageControl" "Packages"
     foreach ($p in $packages)
     {
         $lines += "        `"$p`","
@@ -49,7 +49,7 @@ if (!(Test-Path $packageControlSettings))
     $lines | writeUtf8File $packageControlSettings
 }
 
-$resDir = App-SetupResource "Bench.SublimeText3.PackageControl" "."
+$resDir = App-SetupResource "Bench.SublimeText.PackageControl" "."
 gci "$resDir\*.sublime-*" `
     | ? { !(Test-Path "$userPackageDir\$([IO.Path]::GetFileName($_))") } `
     | % { Write-Host "- install customization $([IO.Path]::GetFileName($_))"; $_ } `

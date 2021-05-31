@@ -120,7 +120,7 @@
     + `Bench.TensorFlow`
     + `Bench.Python.Matplotlib`
     + `Bench.Python.Seaborn`
-    + `Bench.SublimeText3`
+    + `Bench.SublimeText`
     + `Bench.R`
     + `Bench.RStudio`
     + `Bench.Python.Dbt`
@@ -3367,13 +3367,13 @@ A cross platform code editor from Microsoft.
 * Exe: `code.exe`
 * Launcher: $:Label$
 
-### Sublime Text 3
+### Sublime Text
 
 Sublime Text is a sophisticated text editor for code, markup and prose.
 You'll love the slick user interface, extraordinary features and amazing performance.
 
-* ID: `Bench.SublimeText3`
-* Label: Sublime Text 3
+* ID: `Bench.SublimeText`
+* Label: Sublime Text
 * Tags:
     + gui
     + editor
@@ -3387,30 +3387,30 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
     + Package Control: <https://packagecontrol.io/>
-* Release: 3211
+* Release: 4107
 * Version: Build $:Release$
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
-* ArchiveName32Bit: `Sublime Text $:Version$.zip`
-* ArchiveName64Bit: `Sublime Text $:Version$ x64.zip`
+* ArchiveName32Bit: `sublime_text_build_$:Release$.zip`
+* ArchiveName64Bit: `sublime_text_build_$:Release$_x64.zip`
 * Exe: `sublime_text.exe`
 * Launcher: $:Label$
-* DataDir: `$AppDataDir$\Sublime Text 3`
-* VersionCheckUrl: <https://www.sublimetext.com/3>
+* DataDir: `$AppDataDir$\Sublime Text`
+* VersionCheckUrl: <https://www.sublimetext.com/download>
 * VersionCheckXPath: `//article/h3`
 * VersionCheckPattern: `[\d\.]+ \((?<Version>Build \d+)\)`
 
-### Sublime Text 3 Package Control
+### Sublime Text Package Control
 
-* ID: Bench.SublimeText3.PackageControl
+* ID: Bench.SublimeText.PackageControl
 * Tags:
     + package manager
     + python
-* Dependencies: `Bench.SublimeText3`
-* Label: Sublime Text 3 Package Control
+* Dependencies: `Bench.SublimeText`
+* Label: Sublime Text Package Control
 * Website: <https://packagecontrol.io>
 * Url: <https://packagecontrol.io/Package%20Control.sublime-package>
 * ResourceName: `Package Control.sublime-package`
-* Dir: `$Bench.SublimeText3:DataDir$\Installed Packages`
+* Dir: `$Bench.SublimeText:DataDir$\Installed Packages`
 * Register: false
 * SetupTestFile: `$:Dir$\$:ResourceName$`
 * Packages:
