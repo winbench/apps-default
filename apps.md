@@ -5747,9 +5747,9 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + python
 * Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
 * MajorVersion: 0
-* MinorVersion: 18
-* Revision: 4
-* Commit: 980bf90
+* MinorVersion: 19
+* Revision: 2
+* Commit: 7b5e18a
 * Website: <http://www.freecadweb.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://raw.githubusercontent.com/FreeCAD/FreeCAD/master/COPYING>
@@ -5760,8 +5760,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Power User: <http://www.freecadweb.org/wiki/index.php?title=Power_users_hub>
     + Development: <http://www.freecadweb.org/wiki/index.php?title=Developer_hub>
 * Url: `https://github.com/FreeCAD/FreeCAD/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName64Bit: `FreeCAD-$:Version$.$:Commit$-WIN-x64-portable.7z`
+* ArchiveName64Bit: `$:ArchivePath$.7z`
 * Only64Bit: `true`
-* ArchivePath: `conda-$:Version$`
+* ArchivePath: `FreeCAD-$:Version$.$:Commit$-WIN-x64-portable1`
 * Exe: `bin\freecad.exe`
 * Launcher: $:Label$
