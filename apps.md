@@ -2454,8 +2454,6 @@ in their warehouse more effectively.
     + data science
     + database
     + sql
-* Dependencies:
-    + `Bench.Python.Psycopg2`
 * Typ: `python-package`
 * Website: <https://www.getdbt.com/>
 * Docs:
@@ -2483,7 +2481,6 @@ Apache Superset (incubating) is a modern, enterprise-ready business intelligence
     + `Bench.Python3.MySqlClient`
     + `Bench.Python3.MarkupSafe`
     + `Bench.Python.Pandas`
-    + `Bench.Python.Psycopg2`
 * Website: <https://superset.incubator.apache.org/>
 * License: Apache-2.0
 * Exe: `$:Path$\superset.cmd`
