@@ -5234,13 +5234,14 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Tutorials: <https://www.blender.org/support/tutorials/>
     + Manual: <https://www.blender.org/manual/>
     + Python API: <https://docs.blender.org/api/$:Version$/>
-* MajorVersion: 2.90
+* MajorVersion: 2.93
 * MinorVersion: 1
 * Version: $:MajorVersion$.$:MinorVersion$
+* Only64Bit: true
 * Url: `http://download.blender.org/release/Blender$:MajorVersion$/$:ArchiveName$`
+* https://www.blender.org/download/Blender2.93/blender-2.93.1-windows-x64.zip/
 * ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `blender-$:Version$-windows32`
-* ArchivePath64Bit: `blender-$:Version$-windows64`
+* ArchivePath64Bit: `blender-$:Version$-windows-x64`
 * Launcher: $:Label$
 * VersionCheckUrl: <https://www.blender.org/download/>
 * VersionCheckXPath: `//div[@id='windows']/a/@href`
