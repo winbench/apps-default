@@ -63,18 +63,6 @@
     + `Bench.EclipsePHP`
     + `Bench.Composer`
 
-### Python 2 Development
-
-* ID: `Bench.Group.Python2Development`
-* Label: Python 2 Development
-* Typ: `group`
-* Dependencies:
-    + `Bench.Python2`
-    + `Bench.Pipenv`
-    + `Bench.Twine`
-    + `Bench.Python2.IPython`
-    + `Bench.Python.PEP8`
-
 ### Python 3 Development
 
 * ID: `Bench.Group.Python3Development`
@@ -1711,29 +1699,6 @@ It provides build system independent uploads of source and binary distribution a
 * Website: <http://twine.readthedocs.io/>
 * License: Apache-2.0
 
-### IPython for Python 2
-
-IPython provides a rich architecture for computing with a powerful interactive shell.
-
-* ID: `Bench.Python2.IPython`
-* Label: IPython (Python 2)
-* Tags:
-    + cli
-    + repl
-    + interactive
-    + shell
-    + python
-* Typ: `python2-package`
-* PackageName: `ipython`
-* ~Dependencies: `Bench.Python.PyReadline`
-* Website: <https://ipython.org/>
-* License: BSD-3-Clause
-* LicenseUrl: <http://ipython.readthedocs.io/en/stable/about/license_and_copyright.html>
-* Docs:
-    + Documentation: <http://ipython.readthedocs.io/en/stable/>
-* Exe: `Scripts\ipython2.exe`
-* Launcher: IPython 2
-
 ### IPython for Python 3
 
 IPython provides a rich architecture for computing with a powerful interactive shell.
@@ -2007,22 +1972,6 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 
 ## Python Dependencies
 
-### Pyrsistent for Python 2
-
-* ID: `Bench.Python2.Pyrsistent`
-* Label: PyRsistent (Python 2)
-* Typ: `python2-wheel`
-* PackageName: `pyrsistent`
-* Version: 0.15.6
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
-
 ### Pyrsistent for Python 3
 
 * ID: `Bench.Python3.Pyrsistent`
@@ -2086,28 +2035,6 @@ openpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files.
 * Website: <https://openpyxl.readthedocs.io>
 * License: MIT
 
-### LLVM Lite for Python 2
-
-A lightweight LLVM python binding for writing JIT compilers
-
-* ID: `Bench.Python2.LLVMlite`
-* Label: LLVM Lite (Python 2)
-* Typ: `python2-wheel`
-* Website: <http://llvmlite.pydata.org/en/latest/>
-* License: BSD-2-Clause
-* Version: 0.31.0
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
-
 ### LLVM Lite for Python 3
 
 A lightweight LLVM python binding for writing JIT compilers
@@ -2130,81 +2057,7 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
-### Tornado
-
-Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
-
-* ID: `Bench.Python.Tornado`
-* Label: Tornado
-* Tags:
-    + server
-    + http
-    + python
-* Typ: `python-package`
-* Website: <http://www.tornadoweb.org/>
-* License: Apache-2.0
-* VersionCheckUrl: <http://www.tornadoweb.org/en/stable/>
-* VersionCheckXPath: `//div[@id='quick-links']/ul/li`
-* VersionCheckPattern: `^Current version: (?<Version>[\d\.]+)`
-
 ## Math and Science
-
-### Jupyter for Python 2
-
-Open source, interactive data science and scientific computing
-across over 40 programming languages.
-
-* ID: `Bench.Python2.Jupyter`
-* Label: Jupyter (Python 2)
-* Tags:
-    + gui
-    + notebook
-    + science
-    + plotting
-* Typ: `python2-package`
-* Dependencies:
-    + `Bench.Python2.IPython`
-    + `Bench.Python2.Pyrsistent`
-    + `Bench.Python.Tornado`
-* Website: <https://jupyter.org>
-* License: BSD-3-Clause
-* LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
-* Docs:
-    + Running the Notebook: <https://jupyter.readthedocs.io/en/latest/running.html>
-* Exe: `Scripts\jupyter.exe`
-* SetupTestFile: $:Exe$
-* Launcher: Jupyter Notebook
-* LauncherWorkingDir: `$ProjectRootDir$`
-* LauncherArguments: `notebook`, `%*`
-* KeyBindings: `sublime`
-
-### Jupyter Lab for Python 2
-
-JupyterLab is the next-generation web-based user interface for Project Jupyter.
-
-* ID: `Bench.Python2.JupyterLab`
-* Label: Jupyter Lab (Python 2)
-* Tags:
-    + gui
-    + notebook
-    + science
-    + plotting
-* Typ: `python2-package`
-* Dependencies:
-    + `Bench.Python2.Jupyter`
-* Website: <https://jupyterlab.readthedocs.io/en/stable/>
-* License: BSD-3-Clause
-* LicenseUrl: <https://github.com/jupyterlab/jupyterlab/raw/master/LICENSE>
-* Docs:
-    + Getting Started: <https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html>
-* Launcher: Jupyter Lab
-* LauncherWorkingDir: `$ProjectRootDir$`
-* LauncherExecutable: `$:Path$\jupyter.exe`
-* LauncherArguments: `lab`, `%*`
-* Extensions:
-    + `@jupyterlab/celltags`
-    + `jupyterlab-python-file`
-    + `@mastersign/jupyterlab_sublime`
 
 ### Jupyter for Python 3
 
@@ -2266,27 +2119,6 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
     + `jupyterlab-python-file`
     + `@mastersign/jupyterlab_sublime`
 
-### GeoHash for Python 2
-
-* ID: `Bench.Python2.GeoHash`
-* Label: GeoHash (Python 2)
-* Tags:
-    + geography
-* Typ: `python2-wheel`
-* PackageName: `python_geohash`
-* Website: <https://github.com/hkwi/python-geohash>
-* License: Apache-2.0
-* LicenseUrl: <https://github.com/hkwi/python-geohash/raw/master/README>
-* Version: 0.8.5
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
 ### GeoHash for Python 3
 
 * ID: `Bench.Python3.GeoHash`
@@ -2304,27 +2136,6 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-### MySQL Client for Python 2
-
-* ID: `Bench.Python2.MySqlClient`
-* Label: mysqlclient (Python 2)
-* Tags:
-    + database
-    + sql
-* Typ: `python2-wheel`
-* PackageName: `mysqlclient`
-* Website: <https://github.com/PyMySQL/mysqlclient-python>
-* License: GPL-2
-* Version: 1.4.6
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2350,34 +2161,6 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
 
-### Psycopg 2
-
-* ID: `Bench.Python.Psycopg2`
-* Typ: `python-package`
-* Tags:
-    + database
-    + sql
-
-### SciPy for Python 2
-
-SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
-
-* ID: `Bench.Python2.SciPy`
-* Label: SciPy (Python 2)
-* Tags:
-    + science
-* Typ: meta
-* Dependencies:
-    + `Bench.Python2`
-    + `Bench.Python2.NumPy`
-    + `Bench.Python2.SciPyLib`
-    + `Bench.Python2.IPython`
-    + `Bench.Python2.Jupyter`
-    + `Bench.Python.Matplotlib`
-    + `Bench.Python.SymPy`
-    + `Bench.Python.Pandas`
-* Website: <https://www.scipy.org/>
-
 ### SciPy for Python 3
 
 SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
@@ -2397,49 +2180,6 @@ SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source sof
     + `Bench.Python.SymPy`
     + `Bench.Python.Pandas`
 * Website: <https://www.scipy.org/>
-
-### NumPy + MKL for Python 2
-
-NumPy is the fundamental package for scientific computing with Python.
-
-It contains among other things:
-
-- a powerful N-dimensional array object
-- sophisticated (broadcasting) functions
-- tools for integrating C/C++ and Fortran code
-- useful linear algebra, Fourier transform, and random number capabilities
-
-Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases.
-
-* ID: `Bench.Python2.NumPy`
-* Label: NumPy (Python 2)
-* Tags:
-    + math
-    + numeric
-    + linear algebra
-    + fft
-    + random
-* Typ: `python2-wheel`
-* PackageName: `numpy`
-* Website: <http://www.numpy.org/>
-* Docs:
-    + Manual: <https://docs.scipy.org/doc/numpy/>
-    + User Guide: <https://docs.scipy.org/doc/numpy/user/>
-    + Reference: <https://docs.scipy.org/doc/numpy/reference/>
-* License: BSD-3-Clause
-* LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.6
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
 
 ### NumPy + MKL for Python 3
 
@@ -2476,36 +2216,6 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ResourceName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
-
-### SciPy library for Python 2
-
-The SciPy library is one of the core packages that make up the SciPy stack.
-It provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization.
-
-* ID: `Bench.Python2.SciPyLib`
-* Label: SciPy library (Python 2)
-* Tags:
-    + science
-* Typ: `python2-wheel`
-* PackageName: `scipy`
-* Dependencies: `Bench.Python2.NumPy`
-* Website: <https://www.scipy.org/scipylib/>
-* Docs:
-    + Reference: <https://docs.scipy.org/doc/scipy/reference/>
-* License: BSD-3-Clause
-* LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.2.3
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
@@ -2629,23 +2339,6 @@ Describing statistical models in Python
 * Docs:
     + Documentation: <https://patsy.readthedocs.io/>
 
-### StatsModels for Python 2
-
-Statistical modeling and econometrics in Python
-
-* ID: `Bench.Python2.StatsModels`
-* Label: StatsModels (Python 2)
-* Typ: `python2-package`
-* Dependencies:
-    + `Bench.Python2.NumPy`
-    + `Bench.Python2.SciPyLib`
-    + `Bench.Python.Pandas`
-    + `Bench.Python.Patsy`
-* Website: <https://www.statsmodels.org>
-* Docs:
-    + Examples: <https://www.statsmodels.org/stable/examples/index.html>
-    + Source Code: <https://github.com/statsmodels/statsmodels/>
-
 ### StatsModels for Python 3
 
 Statistical modeling and econometrics in Python
@@ -2662,32 +2355,6 @@ Statistical modeling and econometrics in Python
 * Docs:
     + Examples: <https://www.statsmodels.org/stable/examples/index.html>
     + Source Code: <https://github.com/statsmodels/statsmodels/>
-
-### Numba for Python 2
-
-Numba is an open source JIT compiler
-that translates a subset of Python and NumPy code into fast machine code.
-
-* ID: `Bench.Python2.Numba`
-* Dependencies:
-    + `Bench.Python2.LLVMlite`
-    + `Bench.Python2.NumPy`
-* Label: Numba (Python 2)
-* Typ: `python2-wheel`
-* Website: <http://llvmlite.pydata.org/en/latest/>
-* License: BSD-2-Clause
-* Version: 0.47.0
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
 
 ### Numba for Python 3
 
@@ -2796,46 +2463,6 @@ in their warehouse more effectively.
     + Documentation: <https://docs.getdbt.com/reference>
 * License: Apache-2.0
 
-### Apache Superset for Python 2
-
-Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application.
-
-* ID: `Bench.Python2.Superset`
-* Label: Superset (Python 2)
-* Tags:
-    + data science
-    + analysis
-    + database
-    + visualization
-    + web-app
-    + business intelligence
-    + sql
-* Typ: `python2-package`
-* Dependencies:
-    + `Bench.Python2.GeoHash`
-    + `Bench.Python2.NumPy`
-    + `Bench.Python2.MySqlClient`
-    + `Bench.Python.Pandas`
-    + `Bench.Python.Tornado`
-    + `Bench.Python.Psycopg2`
-* Website: <https://superset.incubator.apache.org/>
-* License: Apache-2.0
-* Exe: `$:Path$\superset.cmd`
-* Launcher: $:Label$
-* LauncherExecutable: `$Bench.Python2:Exe$`
-* LauncherArguments: `-c`, `from superset import app; app.run(port=$:Port$)`
-* LauncherWorkingDir: `$HomeDir$\.superset`
-* LoadExamples: `true`
-* AdminUser: `admin`
-* AdminPassword: `bench`
-* Port: 8088
-* DefaultRowLimit: 10000
-* MapBoxApiKey: `provide your API key here`
-
-You can override the following app properties in your user app library
-to customize the setup:
-`LoadExamples`, `AdminUser`, `AdminPassword`, `Port`, `DefaultRowLimit`, `MapBoxApiKey`
-
 ### Apache Superset for Python 3
 
 Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application.
@@ -2907,29 +2534,6 @@ The Python Shapefile Library (pyshp) reads and writes ESRI Shapefiles in pure Py
 * LicenseUrl: <https://raw.githubusercontent.com/GeospatialPython/pyshp/master/LICENSE.TXT>
 * SetupTestFile: `$:Dir$\lib\site-packages\shapefile.py`
 
-### PyProj for Python 2
-
-Performs cartographic transformations and geodetic computations.
-
-* ID: `Bench.Python2.PyProj`
-* Label: PyProj (Python 2)
-* Tags:
-    + math
-    + cartographic
-    + geodetic
-* Typ: `python2-wheel`
-* Website: <https://jswhit.github.io/pyproj/>
-* License: BSD-3-Clause
-* LicenseUrl: <https://jswhit.github.io/pyproj/>
-* Version: 1.9.6
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
 ### PyProj for Python 3
 
 Performs cartographic transformations and geodetic computations.
@@ -2952,37 +2556,6 @@ Performs cartographic transformations and geodetic computations.
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-### Basemap for Python 2
-
-* ID: `Bench.Python2.Basemap`
-* Label: Basemap (Python 2)
-* Tags:
-    + plotting
-    + geography
-    + maps
-* Typ: `python2-wheel`
-* Dependencies:
-    + `Bench.Python2.NumPy`
-    + `Bench.Python2.PyProj`
-    + `Bench.Python.Matplotlib`
-    + `Bench.Python.Pillow`
-    + `Bench.Python.PyShp`
-* Website: <https://github.com/matplotlib/basemap>
-* License: GPL-2.0
-* Version: 1.2.1
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
 
 ### Basemap for Python 3
 
@@ -3014,33 +2587,6 @@ The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
 Thanks a lot to Christoph Golke for his service.
 
-### Shapely for Python 2
-
-Manipulation and analysis of geometric objects in the Cartesian plane.
-
-* ID: `Bench.Python2.Shapely`
-* Label: Shapely (Python 2)
-* Tags:
-    + geometry
-* Typ: `python2-wheel`
-* PackageName: `Shapely`
-* Dependencies: `Bench.Python2.NumPy`
-* Website: <https://github.com/Toblerity/Shapely>
-* License: BSD-3
-* LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
-* Version: 1.6.4.post2
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
-
 ### Shapely for Python 3
 
 Manipulation and analysis of geometric objects in the Cartesian plane.
@@ -3057,38 +2603,6 @@ Manipulation and analysis of geometric objects in the Cartesian plane.
 * LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
 * Version: 1.7.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
-
-The pre-comiled version of this package comes from
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
-Thanks a lot to Christoph Golke for his service.
-
-### Cartopy for Python 2
-
-A cartographic python library with matplotlib support.
-
-* ID: `Bench.Python2.Cartopy`
-* Label: Cartopy (Python 2)
-* Tags:
-    + geometry
-* Typ: `python2-wheel`
-* PackageName: `Cartopy`
-* Dependencies:
-    + `Bench.Python2.NumPy`
-    + `Bench.Python2.Shapely`
-    + `Bench.Python.PyShp`
-* Website: <https://github.com/SciTools/cartopy/>
-* Docs:
-    + Documentation: <https://scitools.org.uk/cartopy/docs/latest/>
-* License: LGPL-3.0
-* LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
-* Version: 0.17.0
-* CPythonVersion: `$Bench.Python2:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
