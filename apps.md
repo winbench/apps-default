@@ -25,7 +25,7 @@
     + `Bench.JSLint`
     + `Bench.JSBeautify`
     + `Bench.Tern`
-    + `Bench.Atom`
+    + `Bench.VSCode`
 
 ### Java Development
 
@@ -842,7 +842,7 @@ install the LLVM-Plugin for Eclipse CDT.
     + c++
     + objective c
     + objective c++
-* Version: 10.0.0
+* Version: 12.0.0
 * Website: <http://clang.llvm.org/>
 * License: UoI-NCSA
 * LicenseUrl: <https://opensource.org/licenses/UoI-NCSA.php>
@@ -871,7 +871,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.15.2
+* Version: 1.16.5
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -991,7 +991,7 @@ R is a free software for statistical computing and graphics.
     + science
     + plotting
 * Website: <https://www.r-project.org>
-* Version: 4.0.2
+* Version: 4.1.0
 * Url: `http://cran.uni-muenster.de/bin/windows/base/old/$:Version$/$:ArchiveName$`
 * ArchiveName: `R-$:Version$-win.exe`
 * ArchiveTyp: `inno`
@@ -1520,12 +1520,12 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* VersionMajor: 3.18
-* Version: $:VersionMajor$.3
+* VersionMajor: 3.20
+* Version: $:VersionMajor$.5
 * Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `cmake-$:Version$-win32-x86`
-* ArchivePath64Bit: `cmake-$:Version$-win64-x64`
+* ArchivePath32Bit: `cmake-$:Version$-windows-x86`
+* ArchivePath64Bit: `cmake-$:Version$-windows-x86_64`
 * Path: `bin`
 * Exe: `bin\cmake.exe`
 * VersionCheckUrl: <https://cmake.org/files/LatestRelease/>
@@ -1762,7 +1762,7 @@ pycodestyle (formerly called pep8) - Python style guide checker
 * Label: PyQT 5 for Python 3
 * Typ: `python3-package`
 * Package: `PyQT5`
-* Version: 5.11.3
+* Version: 5.15.4
 
 ### Zeal
 
@@ -1978,11 +1978,11 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 * Label: PyRsistent (Python 3)
 * Typ: `python3-wheel`
 * PackageName: `pyrsistent`
-* Version: 0.15.6
+* Version: 0.17.3
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
+* Url: `https://down1.mastersign.de/bench/$:ResourceName$`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -1997,14 +1997,14 @@ Thanks a lot to Christoph Golke for his service.
 * Website: <https://github.com/pallets/markupsafe>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/pallets/markupsafe/master/LICENSE>
-* Version: 1.1.1
+* Version: 2.0.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2044,14 +2044,14 @@ A lightweight LLVM python binding for writing JIT compilers
 * Typ: `python3-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.34.0
+* Version: 0.36.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2077,7 +2077,6 @@ across over 40 programming languages.
     + `Bench.Python3.IPython`
     + `Bench.Python3.MarkupSafe`
     + `Bench.Python3.Pyrsistent`
-    + `Bench.Python.Tornado`
 * Website: <https://jupyter.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
@@ -2133,12 +2132,12 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * Version: 0.8.5
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\geohash.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 ### MySQL Client for Python 3
 
@@ -2154,12 +2153,12 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * Version: 1.4.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 ### SciPy for Python 3
 
@@ -2211,14 +2210,14 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.16.6
+* Version: 1.21.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>1\.[\.\d]+)\+mkl‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2241,14 +2240,14 @@ It provides many user-friendly and efficient numerical routines such as routines
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.5.2
+* Version: 1.7.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2369,14 +2368,14 @@ that translates a subset of Python and NumPy code into fast machine code.
 * Typ: `python3-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.51.2
+* Version: 0.53.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2395,14 +2394,14 @@ aiming integrate into python-based big data work-flows.
 * Typ: `python3-wheel`
 * Website: <https://github.com/dask/fastparquet>
 * License: Apache-2.0
-* Version: 0.4.1
+* Version: 0.6.3
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2484,7 +2483,6 @@ Apache Superset (incubating) is a modern, enterprise-ready business intelligence
     + `Bench.Python3.MySqlClient`
     + `Bench.Python3.MarkupSafe`
     + `Bench.Python.Pandas`
-    + `Bench.Python.Tornado`
     + `Bench.Python.Psycopg2`
 * Website: <https://superset.incubator.apache.org/>
 * License: Apache-2.0
@@ -2551,11 +2549,11 @@ Performs cartographic transformations and geodetic computations.
 * Version: 1.9.6
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 ### Basemap for Python 3
 
@@ -2576,12 +2574,12 @@ Performs cartographic transformations and geodetic computations.
 * Version: 1.2.2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * SetupTestFile: `$:Dir$\lib\site-packages\mpl_toolkits\basemap\__init__.py`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2604,11 +2602,11 @@ Manipulation and analysis of geometric objects in the Cartesian plane.
 * Version: 1.7.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2633,14 +2631,14 @@ A cartographic python library with matplotlib support.
     + Documentation: <https://scitools.org.uk/cartopy/docs/latest/>
 * License: LGPL-3.0
 * LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
-* Version: 0.18.0
+* Version: 0.19.0.post1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$m-win_amd64.whl`
+* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m‑win32.whl`
+* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)\‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
 The pre-comiled version of this package comes from
 <http://www.lfd.uci.edu/~gohlke/pythonlibs/>.
@@ -2749,7 +2747,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * VersionMajor: 7
-* Version: `$:VersionMajor$.8.9`
+* Version: `$:VersionMajor$.9.5`
 * Url: `https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.bin.7z`
 * ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
@@ -3082,7 +3080,7 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 The Scientific PYthon Development EnviRonment
 
 * ID: `Bench.Python3.Spyder`
-* Label: Spyder 3
+* Label: Spyder
 * Tags:
     + gui
     + editor
@@ -3092,12 +3090,11 @@ The Scientific PYthon Development EnviRonment
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/spyder-ide/spyder/master/LICENSE>
 * Typ: `python3-package`
-* Exe: `$:Path$\spyder3.exe`
+* Exe: `$:Path$\spyder.exe`
 * Dependencies:
     + `Bench.Python3.SciPy`
     + `Bench.Python3.PyQT5`
     + `Bench.Python.PyCodeStyle`
-    + `Bench.Python.Tornado`
     + `Bench.Python3.SpyderNotebook`
 * Launcher: $:Label$
 
@@ -3106,7 +3103,7 @@ The Scientific PYthon Development EnviRonment
 A Jupyter Notebook Plugin for Spyder
 
 * ID: `Bench.Python3.SpyderNotebook`
-* Label: Spyder 3 Notebook
+* Label: Spyder Notebook
 * PackageName: `spyder-notebook`
 * Tags:
     + gui
@@ -3125,7 +3122,7 @@ A Jupyter Notebook Plugin for Spyder
 Support for running test for famous unittest frameworks in Spyder.
 
 * ID: `Bench.Python3.SpyderUnittest`
-* Label: Spyder 3 Unittest
+* Label: Spyder Unittest
 * PackageName: `spyder-unittest`
 * Tags:
     + gui
@@ -3347,7 +3344,7 @@ debugging and workspace management.
 * Website: <https://www.rstudio.com>
 * License: AGPL-3.0
 * Version32Bit: 1.1.463
-* Version64Bit: 1.3.1093
+* Version64Bit: 1.4.1717
 * Url32Bit: `http://download1.rstudio.org/RStudio-$:Version$.exe`
 * Url64Bit: `https://download1.rstudio.org/desktop/windows/RStudio-$:Version$.zip`
 * ArchiveName32Bit: `RStudio-$:Version$.zip`
@@ -3511,7 +3508,7 @@ Create bootable USB drives the easy way.
     + image
     + boot
 * License: GPL-3.0
-* Version: 3.13
+* Version: 3.14
 * Url: `https://github.com/pbatard/rufus/releases/download/v$:Version$/rufus-$:Version$p.exe`
 * ResourceName: `rufus.exe`
 * Launcher: $:Label$
@@ -4611,7 +4608,7 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.0.10-30
+* Version: 7.1.0-2
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
@@ -4645,7 +4642,7 @@ like DPX, GIF, JPEG, JPEG-2000, PNG, PDF, PNM, and TIFF.
     + APIs: <http://www.graphicsmagick.org/programming.html>
     + Supported Formats: <http://www.graphicsmagick.org/programming.html>
     + Color Reference: <http://www.graphicsmagick.org/color.html>
-* Version: 1.3.35
+* Version: 1.3.36
 * Url: `https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `GraphicsMagick-$:Version$-Q16-win32-dll.exe`
 * ArchiveName64Bit: `GraphicsMagick-$:Version$-Q16-win64-dll.exe`
@@ -4677,12 +4674,11 @@ No matter if they were designed by some standards committee, the community or a 
     + ffprobe Tool: <http://ffmpeg.org/ffprobe.html>
     + ffserver Tool: <http://ffmpeg.org/ffserver.html>
     + Wiki: <https://trac.ffmpeg.org/wiki>
-* Version: 4.3.1
-* Date: 2020-10-01
+* Version: 4.4
 * Only64Bit: `true`
 * Url64Bit: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.7z`
-* ArchivePath: `ffmpeg-$:Version$-$:Date$-full_build`
+* ArchivePath: `ffmpeg-$:Version$-full_build`
 * Path: `bin`
 * Exe: `bin\ffmpeg.exe`
 
@@ -4938,7 +4934,7 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 1.0.1
+* Version: 1.1
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
