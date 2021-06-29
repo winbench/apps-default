@@ -2546,7 +2546,7 @@ Performs cartographic transformations and geodetic computations.
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
-* Version: 1.9.6
+* Version: 3.1.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2746,11 +2746,11 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Community: <https://notepad-plus-plus.org/community/>
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
-* VersionMajor: 7
-* Version: `$:VersionMajor$.9.5`
+* VersionMajor: 8
+* Version: `$:VersionMajor$.1`
 * Url: `https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `npp.$:Version$.bin.7z`
-* ArchiveName64Bit: `npp.$:Version$.bin.x64.7z`
+* ArchiveName32Bit: `npp.$:Version$.portable.7z`
+* ArchiveName64Bit: `npp.$:Version$.portable.x64.7z`
 * Exe: `notepad++.exe`
 * Launcher: $:Label$
 * ConfigurationDir: `$AppDataDir$\Notepad++`
