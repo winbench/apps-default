@@ -2896,7 +2896,7 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
     + Package Control: <https://packagecontrol.io/>
-* Release: 4107
+* Release: 4113
 * Version: Build $:Release$
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * ArchiveName32Bit: `sublime_text_build_$:Release$.zip`
