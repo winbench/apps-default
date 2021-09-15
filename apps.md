@@ -45,9 +45,8 @@
 * Typ: `group`
 * Dependencies:
     + `Bench.Group.JavaDevelopment`
+    + `Bench.ClojureTools`
     + `Bench.Leiningen`
-    + `Bench.BootClj`
-    + `Bench.Inlein`
     + `Bench.Nightcode`
 
 ### PHP Development
@@ -559,6 +558,36 @@ According to Oracle, Java is the world's #1 programming language.
     + `PATH_TO_FX`: `$:ModulePath$`
 * Register: `false`
 
+### Clojure Tools
+
+Command line tools that can be used to start a Clojure repl,
+use Clojure and Java libraries, and start Clojure programs.
+
+**Hint:** The `clj`/`clojure` CLI is implemented as _PowerShell_ module,
+and is therefore, only available in _Windows PowerShell_ or _PowerShell_.
+
+* ID: `Bench.ClojureTools`
+* Tags:
+    + cli
+    + clojure
+    + project automation
+* Dependencies: `Bench.JDK`
+* Website: <https://clojure.org>
+* License: EPL-1.0
+* LicenseUrl: <https://github.com/clojure/tools.deps.alpha/raw/master/LICENSE>
+* Docs:
+    + Deps and CLI Guide: <https://clojure.org/guides/deps_and_cli>
+    + Clojure Documentation: <http://clojure-doc.org/>
+    + Clojure Reference: <http://clojure.org/reference/documentation>
+    + Clojure API: <http://clojure.github.io/clojure/>
+* Version: 1.10.3.967
+* Url: `https://download.clojure.org/install/$:ArchiveName$`
+* ArchiveName: `clojure-tools-$:Version$.zip`
+* ArchivePath: `ClojureTools`
+* Dir: `$HomeDir$\Documents\WindowsPowerShell\Modules\ClojureTools`
+* SetupTestFile: `$:Dir$\ClojureTools.psm1`
+* Register: `false`
+
 ### Leiningen
 
 Leiningen is the easiest way to use Clojure.
@@ -580,9 +609,6 @@ it gets out of your way and lets you focus on your code.
     + Tutorial: <https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md>
     + Sample project.clj: <https://github.com/technomancy/leiningen/blob/stable/sample.project.clj>
     + FAQ: <https://github.com/technomancy/leiningen/blob/stable/doc/FAQ.md>
-    + Clojure Documentation: <http://clojure-doc.org/>
-    + Clojure Reference: <http://clojure.org/reference/documentation>
-    + Clojure API: <http://clojure.github.io/clojure/>
 * Version: latest
 * Url: <https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.bat>
 * ResourceName: `lein.bat`
@@ -591,48 +617,6 @@ it gets out of your way and lets you focus on your code.
 * Environment:
     + `LEIN_JAR`: `$:Dir$\leiningen.jar`
 
-### Inlein
-
-Run Clojure scripts with dependencies, but without classpath pains.
-
-_Warning: This program is leaking into the Windows user home folder under `C:\Users\<currentuser>\.inlein`_.
-
-* ID: `Bench.Inlein`
-* Tags:
-    + cli
-    + clojure
-    + scripting
-* Website: <http://inlein.org>
-* License: EPL-1.0
-* LicenseUrl: <https://raw.githubusercontent.com/hyPiRion/inlein/master/LICENSE>
-* Docs:
-    + Getting Started: <https://github.com/hyPiRion/inlein/wiki/Getting-Started>
-* Dependencies: `Bench.Leiningen`
-* Version: 0.2.0
-* Url: `https://github.com/hyPiRion/inlein/releases/download/$:Version$/inlein`
-* ResourceName: `inlein.bat`
-* Exe: `$:ResourceName$`
-* Dir: `bench\lein`
-
-### Boot Clojure
-
-Build tooling for Clojure.
-
-* ID: `Bench.BootClj`
-* Label: Boot Clojure
-* Tags:
-    + clojure
-    + scripting
-    + project automation
-    + cli
-* Dependencies: `Bench.JDK`, `Bench.Maven`
-* Website: <http://boot-clj.com>
-* Docs:
-    + Wiki: <https://github.com/boot-clj/boot/wiki>
-* Version: latest
-* Url: <https://github.com/boot-clj/boot-bin/releases/download/latest/boot.exe>
-* ResourceName: `boot.exe`
-* Exe: `boot.exe`
 
 ### ScriptCS
 
