@@ -1851,6 +1851,25 @@ SQLIte Studio is a SQLite database manager with the following features:
 * ArchivePath: `dbeaver`
 * Launcher: $:Label$
 
+### Schema Crawler
+
+* ID: `Bench.SchemaCrawler`
+* Dependencies:
+    + `Bench.OpenJRE8`
+* Label: Schema Crawler
+* Tags:
+    + cli
+    + database
+    + schema
+    + diagram
+* Website: <https://www.schemacrawler.com/>
+* License: GPL-3
+* Version: 16.15.7
+* Url: `https://github.com/schemacrawler/SchemaCrawler/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `schemacrawler-$:Version$-distribution.zip`
+* ArchivePath: `schemacrawler-$:Version$-distribution\_schemacrawler`
+* Exe: `schemacrawler.cmd`
+
 ### Postman
 
 Create and save REST, SOAP, and GraphQL queries directly from Postman.
