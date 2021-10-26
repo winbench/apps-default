@@ -2899,17 +2899,16 @@ You'll love the slick user interface, extraordinary features and amazing perform
     + Documentation: <https://www.sublimetext.com/docs/3/>
     + Unofficial Documentation: <http://docs.sublimetext.info/en/latest/index.html>
     + Package Control: <https://packagecontrol.io/>
-* Release: 4113
-* Version: Build $:Release$
+* Version: 4121
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
-* ArchiveName32Bit: `sublime_text_build_$:Release$.zip`
-* ArchiveName64Bit: `sublime_text_build_$:Release$_x64.zip`
+* ArchiveName32Bit: `sublime_text_build_$:Version$.zip`
+* ArchiveName64Bit: `sublime_text_build_$:Version$_x64.zip`
 * Exe: `sublime_text.exe`
 * Launcher: $:Label$
 * DataDir: `$AppDataDir$\Sublime Text`
 * VersionCheckUrl: <https://www.sublimetext.com/download>
 * VersionCheckXPath: `//article/h3`
-* VersionCheckPattern: `[\d\.]+ \((?<Version>Build \d+)\)`
+* VersionCheckPattern: `[\d\.]+ \(Build (?<Version>\d+)\)`
 
 ### Sublime Text Package Control
 
