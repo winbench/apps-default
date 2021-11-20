@@ -3512,6 +3512,26 @@ Create bootable USB drives the easy way.
 * ResourceName: `rufus.exe`
 * Launcher: $:Label$
 
+### Ventoy
+
+Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files.
+With ventoy, you don't need to format the disk over and over, you just need to copy the ISO/WIM/IMG/VHD(x)/EFI files to the USB drive and boot them directly.
+You can copy many files at a time and ventoy will give you a boot menu to select them.
+
+* ID: `Bench.Ventoy`
+* Tags:
+    + gui
+    + boot
+* License: GPL-3.0
+* Version: 1.0.61
+* Url: `https://github.com/ventoy/Ventoy/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `ventoy-$:Version$-windows.zip`
+* ArchivePath: `ventoy-$:Version$`
+* Register: `false`
+* Exe: `Ventoy2Disk.exe`
+* Launcher: `$:Label$`
+* LauncherWorkingDir: `$:Dir$`
+
 ## Network
 
 ### FileZilla
