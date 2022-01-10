@@ -3626,6 +3626,26 @@ A simple yet powerful command-line HTTP and API testing client for the API era.
 * PackageName: `httpie`
 * Version: latest
 
+## xh
+
+`xh` is a friendly and fast tool for sending HTTP requests.
+It reimplements as much as possible of [HTTPie's](https://httpie.io/) excellent design,
+with a focus on improved performance.
+
+* ID: `Bench.xh`
+* Tags:
+    + cli
+    + network
+    + http
+* License: MIT
+* LicenseUrl: <https://github.com/ducaale/xh/blob/master/LICENSE>
+* Website: <https://github.com/ducaale/xh>
+* Version: 0.14.1
+* Url: `https://github.com/ducaale/xh/releases/download/v$:Version$/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath64Bit: `xh-v$:Version$-x86_64-pc-windows-msvc`
+
 ## Services
 
 ### Tftpd
