@@ -3612,6 +3612,20 @@ A free portable derivative of Chromium, optimized for privacy.
 * Exe: `chrome.exe`
 * Launcher: $:Label$
 
+## httpie
+
+A simple yet powerful command-line HTTP and API testing client for the API era.
+
+* ID: `Bench.Python3.Httpie`
+* Label: httpie
+* Tags:
+    + cli
+    + network
+    + http
+* Typ: python3-package
+* PackageName: `httpie`
+* Version: latest
+
 ## Services
 
 ### Tftpd
