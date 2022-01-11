@@ -4896,6 +4896,7 @@ PlantUML allows to define UML diagrams with text files in a simple and intuitive
 * ID: `Bench.PlantUML`
 * Tags:
     + cli
+    + gui
     + graphics
     + uml
     + diagram
@@ -4915,6 +4916,15 @@ PlantUML allows to define UML diagrams with text files in a simple and intuitive
 * Launcher: $:Label$
 * LauncherExecutable: `plantuml-gui.bat`
 * LauncherIcon: `logo.ico`
+
+* ID: `Bench.PlantUML.Pdf`
+* Label: PlantUML PDF-Support
+* Dependencies: `Bench.PlantUML`
+* Url: `http://beta.plantuml.net/$:ArchiveName$`
+* ArchiveName: `batikAndFop.zip`
+* Dir: `$Bench.PlantUML:Dir$`
+* SetupTestFile: `$:Dir$/fop.jar`
+* Register: `false`
 
 ### Gephi
 
