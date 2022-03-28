@@ -1152,7 +1152,7 @@ The tool is designed to enable both technical and non-technical analysts to mani
 * Docs:
     + Local: `$:Dir$\$:Exe$`
     + Online: <https://gchq.github.io/CyberChef/>
-* Version: 9.21.0
+* Version: 9.33.0
 * Url: `https://github.com/gchq/CyberChef/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `CyberChef_v$:Version$.zip`
 * Exe: `CyberChef_v$:Version$.html`
