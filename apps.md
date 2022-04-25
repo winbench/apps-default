@@ -257,7 +257,7 @@ A snappy UI, three-way merge tool, side-by-side diffs, syntax highlighting, and 
 * License: Commercial
 * Docs:
     + News: <https://www.sublimetext.com/blog/>
-* Version: 2068
+* Version: 2071
 * Url: `https://download.sublimetext.com/$:ArchiveName$`
 * Only64Bit: true
 * ArchiveName64Bit: `sublime_merge_build_$:Version$_x64.zip`
