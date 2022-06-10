@@ -344,6 +344,24 @@ Prebuilt Windows Toolchain for MinGW64
 * Exe: `bin\gcc.exe`
 * Path: `bin`
 * Register: `true`
+* 
+### SysGCC for Ubuntu
+
+Prebuilt Windows Toolchain for Ubuntu
+
+* ID: `Bench.SysGCC.Ubuntu`
+* Label: SysGCC Ubuntu
+* Tags:
+    + language
+    + cli
+* Version: 9.3.0
+* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `SysGCC_Ubuntu_$:Version$.7z`
+* Dir: `sysgcc_ubuntu`
+* Exe: `bin\gcc.exe`
+* Path: `bin`
+* Register: `false`
 
 ### SysGCC for Raspberry PI
 
