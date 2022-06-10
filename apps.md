@@ -323,8 +323,8 @@ Prebuilt Windows Toolchain for MinGW32
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `SysGCC_MinGW32_$:Version$.7z`
 * Dir: `sysgcc32`
-* Exe: `bin\gcc.exe`
-* Path: `bin`
+* Exe: `bench\bin\gcc.exe`
+* Path: `bench\bin`
 * Register: `true`
 
 ### SysGCC for MinGW64
@@ -341,8 +341,8 @@ Prebuilt Windows Toolchain for MinGW64
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_MinGW64_$:Version$.7z`
 * Dir: `sysgcc64`
-* Exe: `bin\gcc.exe`
-* Path: `bin`
+* Exe: `bench\bin\gcc.exe`
+* Path: `bench\bin`
 * Register: `true`
 * 
 ### SysGCC for Ubuntu
@@ -359,8 +359,8 @@ Prebuilt Windows Toolchain for Ubuntu
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_Ubuntu_$:Version$.7z`
 * Dir: `sysgcc_ubuntu`
-* Exe: `bin\x86_64-linux-gnu-gcc.exe`
-* Path: `bin`
+* Exe: `bench\bin\x86_64-linux-gnu-gcc.exe`
+* Path: `bench\bin`
 * Register: `false`
 
 ### SysGCC for Raspberry PI
@@ -377,8 +377,8 @@ Prebuilt Windows Toolchain for Raspberry PI
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_Raspberry_$:Version$.7z`
 * Dir: `sysgcc_rpi`
-* Exe: `bin\arm-linux-gnueabihf-gcc.exe`
-* Path: `bin`
+* Exe: `bench\bin\arm-linux-gnueabihf-gcc.exe`
+* Path: `bench\bin`
 * Register: `false`
 
 ### Rust
