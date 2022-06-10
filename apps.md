@@ -359,7 +359,7 @@ Prebuilt Windows Toolchain for Ubuntu
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_Ubuntu_$:Version$.7z`
 * Dir: `sysgcc_ubuntu`
-* Exe: `bin\gcc.exe`
+* Exe: `bin\x86_64-linux-gnu-gcc.exe`
 * Path: `bin`
 * Register: `false`
 
@@ -377,7 +377,7 @@ Prebuilt Windows Toolchain for Raspberry PI
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_Raspberry_$:Version$.7z`
 * Dir: `sysgcc_rpi`
-* Exe: `bin\gcc.exe`
+* Exe: `bin\arm-linux-gnueabihf-gcc.exe`
 * Path: `bin`
 * Register: `false`
 
