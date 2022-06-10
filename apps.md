@@ -362,6 +362,18 @@ Prebuilt Windows Toolchain for Raspberry PI
 * Exe: `bin\gcc.exe`
 * Path: `bin`
 * Register: `false`
+
+### Rust
+
+* ID: `Bench.Rust`
+* Tags:
+    + language
+    + cli
+* Url: `https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-gnu/rustup-init.exe`
+* ResourceName: `rustup-init.exe`
+* Path: `$HomeDir$\.cargo\bin`
+* Exe: `$HomeDir$\.cargo\bin\cargo.exe`
+
 ### PHP 5
 
 PHP is a popular general-purpose scripting language that is especially suited to web development.
