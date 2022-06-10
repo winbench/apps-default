@@ -291,6 +291,24 @@ The downright luxurious Git client, for Windows, Mac & Linux.
 
 ## Languages and Platforms
 
+### Perl
+
+Perl is a highly capable, feature-rich programming language with over 30 years of development.
+
+* ID: `Bench.Perl`
+* Tags:
+    + language
+    + cli
+* Website: <https://www.perl.org/>
+* Docs:
+    + Lern Perl: <https://www.perl.org/learn.html>
+    + Documentation: <https://perldoc.perl.org/>
+* Version: 5.32.1.1
+* Url: `https://strawberryperl.com/download/$:Version$/$:ArchiveName$`
+* ArchiveName32Bit: `strawberry-perl-$:Version$-32bit-portable.zip`
+* ArchiveName64Bit: `strawberry-perl-$:Version$-64bit-portable.zip`
+* Path: `perl\bin`
+* Exe: `perl\bin\perl.exe`
 ### PHP 5
 
 PHP is a popular general-purpose scripting language that is especially suited to web development.
