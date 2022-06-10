@@ -309,6 +309,59 @@ Perl is a highly capable, feature-rich programming language with over 30 years o
 * ArchiveName64Bit: `strawberry-perl-$:Version$-64bit-portable.zip`
 * Path: `perl\bin`
 * Exe: `perl\bin\perl.exe`
+
+### SysGCC for MinGW32
+
+Prebuilt Windows Toolchain for MinGW32
+
+* ID: `Bench.SysGCC.MinGW32`
+* Label: SysGCC MinGW32
+* Tags:
+    + language
+    + cli
+* Version: 9.1.0
+* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
+* ArchiveName: `SysGCC_MinGW32_$:Version$.7z`
+* Dir: `sysgcc32`
+* Exe: `bin\gcc.exe`
+* Path: `bin`
+* Register: `true`
+
+### SysGCC for MinGW64
+
+Prebuilt Windows Toolchain for MinGW64
+
+* ID: `Bench.SysGCC.MinGW64`
+* Label: SysGCC MinGW64
+* Tags:
+    + language
+    + cli
+* Version: 9.1.0
+* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `SysGCC_MinGW64_$:Version$.7z`
+* Dir: `sysgcc64`
+* Exe: `bin\gcc.exe`
+* Path: `bin`
+* Register: `true`
+
+### SysGCC for Raspberry PI
+
+Prebuilt Windows Toolchain for Raspberry PI
+
+* ID: `Bench.SysGCC.Raspberry`
+* Label: SysGCC Raspberry
+* Tags:
+    + language
+    + cli
+* Version: 10.2.1
+* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `SysGCC_Raspberry_$:Version$.7z`
+* Dir: `sysgcc_rpi`
+* Exe: `bin\gcc.exe`
+* Path: `bin`
+* Register: `false`
 ### PHP 5
 
 PHP is a popular general-purpose scripting language that is especially suited to web development.
