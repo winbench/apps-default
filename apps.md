@@ -1848,7 +1848,7 @@ pycodestyle (formerly called pep8) - Python style guide checker
 * Label: PyQT 5 for Python 3
 * Typ: `python3-package`
 * Package: `PyQT5`
-* Version: 5.15.4
+* Version: 5.15.5
 
 ### Zeal
 
