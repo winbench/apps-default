@@ -5014,10 +5014,11 @@ It's free and open source.
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
 * Version: 1.2.1
+* Tag: 2022-07-14_9c6d41e410
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
+* Only64Bit: `true`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
-* ArchivePath: `inkscape`
+* ArchivePath: `inkscape-$:Version$_$:Tag$-x64`
 * Path: `bin`
 * Exe: `bin\inkscape.exe`
 * Launcher: $:Label$
