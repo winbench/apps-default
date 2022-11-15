@@ -104,7 +104,6 @@
     + `Bench.Python3.SciKitLearn`
     + `Bench.Python3.FastParquet`
     + `Bench.Python3.Spyder`
-    + `Bench.TensorFlow`
     + `Bench.Python.Matplotlib`
     + `Bench.Python.Seaborn`
     + `Bench.SublimeText`
@@ -2083,7 +2082,7 @@ Ionic is the beautiful, free and open source mobile SDK for developing native an
 * Label: PyRsistent (Python 3)
 * Typ: `python3-wheel`
 * PackageName: `pyrsistent`
-* Version: 0.17.3
+* Version: 0.18.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
@@ -2102,10 +2101,10 @@ Thanks a lot to Christoph Golke for his service.
 * Website: <https://github.com/pallets/markupsafe>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/pallets/markupsafe/master/LICENSE>
-* Version: 2.0.1
+* Version: 2.1.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* Only64Bit: `true`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2149,7 +2148,7 @@ A lightweight LLVM python binding for writing JIT compilers
 * Typ: `python3-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.36.0
+* Version: 0.38.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2244,27 +2243,6 @@ JupyterLab is the next-generation web-based user interface for Project Jupyter.
 * VersionCheckXPath: `//ul/li/a`
 * VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
 
-### MySQL Client for Python 3
-
-* ID: `Bench.Python3.MySqlClient`
-* Label: mysqlclient (Python 3)
-* Tags:
-    + database
-    + sql
-* Typ: `python3-wheel`
-* PackageName: `mysqlclient`
-* Website: <https://github.com/PyMySQL/mysqlclient-python>
-* License: GPL-2
-* Version: 1.4.6
-* CPythonVersion: `$Bench.Python3:CPythonVersion$`
-* Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
-* ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
-* SetupTestFile: `$:Dir$\lib\site-packages\MySQLdb\__init__.py`
-* VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
-* VersionCheckXPath: `//ul/li/a`
-* VersionCheckPattern: `$:PackageName$‑(?<Version>[\d\.]+)‑cp$:CPythonVersion$‑cp$:CPythonVersion$m?‑win32.whl`
-
 ### SciPy for Python 3
 
 SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
@@ -2315,7 +2293,7 @@ Besides its obvious scientific uses, NumPy can also be used as an efficient mult
     + Reference: <https://docs.scipy.org/doc/numpy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <http://www.numpy.org/license.html>
-* Version: 1.21.0
+* Version: 1.22.4
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$+mkl-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2338,17 +2316,17 @@ It provides many user-friendly and efficient numerical routines such as routines
 * Tags:
     + science
 * Typ: `python3-wheel`
-* PackageName: `scipy`
+* PackageName: `SciPy`
 * Dependencies: `Bench.Python3.NumPy`
 * Website: <https://www.scipy.org/scipylib/>
 * Docs:
     + Reference: <https://docs.scipy.org/doc/scipy/reference/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scipy/scipy/master/LICENSE.txt>
-* Version: 1.7.0
+* Version: 1.8.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
-* ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
+* Only64Bit: `true`
 * ResourceName64Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win_amd64.whl`
 * VersionCheckUrl: <https://www.lfd.uci.edu/~gohlke/pythonlibs/>
 * VersionCheckXPath: `//ul/li/a`
@@ -2473,7 +2451,7 @@ that translates a subset of Python and NumPy code into fast machine code.
 * Typ: `python3-wheel`
 * Website: <http://llvmlite.pydata.org/en/latest/>
 * License: BSD-2-Clause
-* Version: 0.53.1
+* Version: 0.55.2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2499,7 +2477,7 @@ aiming integrate into python-based big data work-flows.
 * Typ: `python3-wheel`
 * Website: <https://github.com/dask/fastparquet>
 * License: Apache-2.0
-* Version: 0.6.3
+* Version: 0.8.0
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2565,45 +2543,6 @@ in their warehouse more effectively.
     + Documentation: <https://docs.getdbt.com/reference>
 * License: Apache-2.0
 
-### Apache Superset for Python 3
-
-Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application.
-
-* ID: `Bench.Python3.Superset`
-* Label: Superset (Python 3)
-* Tags:
-    + data science
-    + analysis
-    + database
-    + visualization
-    + web-app
-    + business intelligence
-    + sql
-* Typ: `python3-package`
-* Dependencies:
-    + `Bench.Python3.GeoHash`
-    + `Bench.Python3.NumPy`
-    + `Bench.Python3.MySqlClient`
-    + `Bench.Python3.MarkupSafe`
-    + `Bench.Python.Pandas`
-* Website: <https://superset.incubator.apache.org/>
-* License: Apache-2.0
-* Exe: `$:Path$\superset.cmd`
-* Launcher: $:Label$
-* LauncherExecutable: `$Bench.Python3:Exe$`
-* LauncherArguments: `-c`, `from superset import app; app.run(port=$:Port$)`
-* LauncherWorkingDir: `$HomeDir$\.superset`
-* LoadExamples: `true`
-* AdminUser: `admin`
-* AdminPassword: `bench`
-* Port: 8088
-* DefaultRowLimit: 10000
-* MapBoxApiKey: `provide your API key here`
-
-You can override the following app properties in your user app library
-to customize the setup:
-`LoadExamples`, `AdminUser`, `AdminPassword`, `Port`, `DefaultRowLimit`, `MapBoxApiKey`
-
 ### Pillow
 
 Pillow is the friendly PIL fork by Alex Clark and Contributors.
@@ -2648,7 +2587,7 @@ Performs cartographic transformations and geodetic computations.
 * Website: <https://jswhit.github.io/pyproj/>
 * License: BSD-3-Clause
 * LicenseUrl: <https://jswhit.github.io/pyproj/>
-* Version: 3.1.0
+* Version: 3.3.1
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2673,7 +2612,7 @@ Performs cartographic transformations and geodetic computations.
     + `Bench.Python.PyShp`
 * Website: <https://github.com/matplotlib/basemap>
 * License: GPL-2.0
-* Version: 1.2.2
+* Version: 1.3.3
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2701,7 +2640,7 @@ Manipulation and analysis of geometric objects in the Cartesian plane.
 * Website: <https://github.com/Toblerity/Shapely>
 * License: BSD-3
 * LicenseUrl: <https://github.com/Toblerity/Shapely/blob/master/LICENSE.txt>
-* Version: 1.7.1
+* Version: 1.8.2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2733,7 +2672,7 @@ A cartographic python library with matplotlib support.
     + Documentation: <https://scitools.org.uk/cartopy/docs/latest/>
 * License: LGPL-3.0
 * LicenseUrl: <https://github.com/SciTools/cartopy/blob/master/LICENSE>
-* Version: 0.19.0.post1
+* Version: 0.20.2
 * CPythonVersion: `$Bench.Python3:CPythonVersion$`
 * Url: `http://down1.mastersign.de/bench/$:ResourceName$`
 * ResourceName32Bit: `$:PackageName$-$:Version$-cp$:CPythonVersion$-cp$:CPythonVersion$-win32.whl`
@@ -2776,31 +2715,6 @@ Machine Learning in Python
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/scikit-learn/scikit-learn/master/COPYING>
 * SetupTestFile: `$:Dir$\lib\site-packages\sklearn\__init__.py`
-
-### TensorFlow
-
-TensorFlow™ is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
-
-TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well.
-
-* ID: `Bench.TensorFlow`
-* Label: TensorFlow
-* Tags:
-    + machine learning
-    + deep learning
-* Typ: `python3-package`
-* Dependencies:
-    + `Bench.Python3.NumPy`
-    + `Bench.Python3.SciPyLib`
-    + `Bench.Python.Pandas`
-* Website: <https://www.tensorflow.org>
-* Docs:
-    + Documentation: <https://www.tensorflow.org/community/documentation>
-    + API: <https://www.tensorflow.org/api_docs/>
-    + API for Python: <https://www.tensorflow.org/api_docs/python/>
-* License: Apache-2.0
-* Version: latest
-* Only64Bit: `true`
 
 ## Editors
 
@@ -4518,7 +4432,7 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * Docs:
     + User's Guide: <http://pandoc.org/README.html>
     + FAQ: <http://pandoc.org/faqs.html>
-* Version: 2.10.1
+* Version: 2.19.2
 * Release: $:Version$
 * Url: `https://github.com/jgm/pandoc/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `pandoc-$:Release$-windows-i386.zip`
@@ -4697,7 +4611,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.75.1
+* Version: 0.105.0
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
 * ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
@@ -4763,11 +4677,11 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.1.0-2
+* Version: 7.1.0-52
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `ImageMagick-$:Version$-portable-Q16-x86.zip`
+* Only64Bit: `true`
 * ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-x64.zip`
 * Exe: `magick.exe`
 * IncludeCompatibilityTools: `false`
@@ -4829,7 +4743,7 @@ No matter if they were designed by some standards committee, the community or a 
     + ffprobe Tool: <http://ffmpeg.org/ffprobe.html>
     + ffserver Tool: <http://ffmpeg.org/ffserver.html>
     + Wiki: <https://trac.ffmpeg.org/wiki>
-* Version: 4.4
+* Version: 5.0.1
 * Only64Bit: `true`
 * Url64Bit: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.7z`
@@ -5099,7 +5013,7 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 1.1
+* Version: 1.2.1
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
@@ -5133,7 +5047,7 @@ GIMP provides you with sophisticated tools to get your job done.
     + Manual: <http://docs.gimp.org/2.8/en/>
     + Tutorials: <http://www.gimp.org/tutorials/>
 * VersionMajor: 2.10
-* Version: $:VersionMajor$.20-1
+* Version: $:VersionMajor$.32
 * Url: `https://sourceforge.net/projects/portableapps/files/GIMP Portable/$:ArchiveName$`
 * ArchiveName: `GIMPPortable_$:Version$.paf.exe`
 * ArchivePath: `App/gimp`
@@ -5294,8 +5208,8 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
-* Major: 26.1
-* Version: `$:Major$.0`
+* Major: 28.1
+* Version: `$:Major$.2`
 * Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `OBS-Studio-$:Major$-Full-x86.zip`
 * ArchiveName64Bit: `OBS-Studio-$:Major$-Full-x64.zip`
