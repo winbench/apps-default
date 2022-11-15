@@ -5207,9 +5207,9 @@ Free and open source software for video recording and live streaming.
 * Docs:
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
-* LicenseUrl: <https://github.com/jp9000/obs-studio/blob/master/COPYING>
+* LicenseUrl: <https://github.com/obsproject/obs-studio/blob/master/COPYING>
 * Version: 28.1.2
-* Url: `https://github.com/jp9000/obs-studio/releases/download/$:Version$/$:ArchiveName$`
+* Url: `https://github.com/obsproject/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName64Bit: `OBS-Studio-$:Version$-Full-x64.zip`
 * Path32Bit: `bin\32Bit`
