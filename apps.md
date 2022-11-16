@@ -4613,8 +4613,8 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Theme Showcase: <http://themes.gohugo.io/>
 * Version: 0.105.0
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName32Bit: `hugo_$:Version$_windows-32bit.zip`
-* ArchiveName64Bit: `hugo_$:Version$_windows-64bit.zip`
+* Only64Bit: `true`
+* ArchiveName64Bit: `hugo_$:Version$_windows-amd64.zip`
 
 ### wk&lt;html&gt;topdf
 
