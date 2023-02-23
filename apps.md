@@ -3149,6 +3149,25 @@ Support for running test for famous unittest frameworks in Spyder.
 * Register: `false`
 * SetupTestFile: `$:Dir$\Lib\site-packages\spyder_unittest\unittestplugin.py`
 
+### Thonny
+
+Python IDE for beginners
+
+* ID: `Bench.Python3.Thonny`
+* Label: Thonny
+* PackageName: `thonny`
+* Tags:
+    + gui
+    + ide
+    + python
+* Website: <https://thonny.org/>
+* License: MIT
+* LicenseUrl: <https://github.com/thonny/thonny/blob/master/LICENSE.txt>
+* Typ: `python3-package`
+* Exe: `$:Path$\thonny.exe`
+* Launcher: $:Label$
+* LauncherIcon: `$:Dir$\Lib\site-packages\thonny\res\thonny.ico`
+
 ### LightTable
 
 The next generation code editor.
