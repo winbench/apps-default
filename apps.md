@@ -44,10 +44,11 @@
 * Label: Clojure Development
 * Typ: `group`
 * Dependencies:
-    + `Bench.Group.JavaDevelopment`
+    + `Bench.JDK8`
+    + `Bench.JDK`
+    + `Bench.Maven`
     + `Bench.ClojureTools`
     + `Bench.Leiningen`
-    + `Bench.Nightcode`
 
 ### PHP Development
 
