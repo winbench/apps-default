@@ -681,7 +681,7 @@ and is therefore, only available in _Windows PowerShell_ or _PowerShell_.
     + Clojure Documentation: <http://clojure-doc.org/>
     + Clojure Reference: <http://clojure.org/reference/documentation>
     + Clojure API: <http://clojure.github.io/clojure/>
-* Version: 1.10.3.967
+* Version: 1.11.1.1257
 * Url: `https://download.clojure.org/install/$:ArchiveName$`
 * ArchiveName: `clojure-tools-$:Version$.zip`
 * ArchivePath: `ClojureTools`
