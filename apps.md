@@ -3226,8 +3226,8 @@ XML Editor, Mylyn, Maven and Gradle integration...
     + java
     + maven
     + ant
-* CodeName: 2020-09
-* Version: 4.17
+* CodeName: 2023-03
+* Version: $:CodeName$
 * Release: R
 * Dependencies: `Bench.JDK`
 * Website: <https://www.eclipse.org/>
