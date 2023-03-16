@@ -622,13 +622,13 @@ According to Oracle, Java is the world's #1 programming language.
 * LicenseUrl: <https://openjdk.java.net/legal/gplv2+ce.html>
 * Docs:
     + Downloads: <https://jdk.java.net/archive/>
-* VersionMajor: 14
-* Version: $:VersionMajor$.0.2.12
+* VersionMajor: 17
+* Version: $:VersionMajor$.0.3.0.6
 * Release: 1
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/ojdkbuild/ojdkbuild/releases/download/java-$:VersionMajor$-openjdk-$:Version$-$:Release$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath64Bit: `java-$:VersionMajor$-openjdk-$:Version$-$:Release$.windows.ojdkbuild.x86_64`
+* ArchivePath64Bit: `java-$:VersionMajor$-openjdk-$:Version$-$:Release$.win.x86_64`
 * Path: `bin`
 * Exe: `bin\java.exe`
 * Environment:
@@ -647,7 +647,7 @@ According to Oracle, Java is the world's #1 programming language.
 * Website: <https://openjfx.io/>
 * Docs:
     + API: `https://openjfx.io/javadoc/$Bench.JDK:VersionMajor$/`
-* Version: 14.0.2.1
+* Version: 17.0.6
 * Url: `https://download2.gluonhq.com/openjfx/$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName64Bit: `openjfx-$:Version$_windows-x64_bin-sdk.zip`
