@@ -171,14 +171,13 @@ The GnuTLS Transport Layer Security Library.
 * Docs:
     + Manual: <http://www.gnutls.org/manual/gnutls.html>
 * VersionMajor: 3
-* VersionMinor: 6
-* Revision: 12
+* VersionMinor: 7
+* Revision: 9
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
 * Release: `$:VersionMajor$_$:VersionMinor$_$:Revision$`
-* Url32Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW32.DLLs`
-* Url64Bit: `https://gitlab.com/gnutls/gnutls/builds/artifacts/gnutls_$:Release$/download?job=MinGW64.DLLs`
-* ArchiveName32Bit: `gnutls-$:Version$-w32-bin.zip`
-* ArchiveName64Bit: `gnutls-$:Version$-w64-bin.zip`
+* Url: `https://www.gnupg.org/ftp/gcrypt/gnutls/v$:VersionMajor$.$:VersionMinor$/$:ArchiveName$`
+* ArchiveName32Bit: `gnutls-$:Version$-w32.zip`
+* ArchiveName64Bit: `gnutls-$:Version$-w64.zip`
 * ArchivePath32Bit: `win32-build`
 * ArchivePath64Bit: `win64-build`
 * Dir: `bench\gnu`
@@ -3407,6 +3406,30 @@ Resource Hacker™ has been designed to be the complete resource editing tool: c
 * Url: `http://angusj.com/resourcehacker/$:ArchiveName$`
 * ArchiveName: `resource_hacker.zip`
 * Dir: `bench\reshack`
+* Launcher: $:Label$
+
+## Arduino IDE
+
+* ID: `Bench.ArduinoIDE`
+* Label: Arduino IDE
+* Tags:
+    + gui
+    + editor
+    + ide
+    + arduino
+    + microcontroller
+* Version: 2.0.3
+* Website: <https://www.arduino.cc/en/software>
+* License: AGPL-3.0
+* Docs:
+    + Documentation: <https://docs.arduino.cc/software/ide-v2>
+    + Language Reference: <https://www.arduino.cc/reference/en/>
+    + Libraries: <https://www.arduino.cc/reference/en/libraries/>
+* Url: `https://github.com/arduino/arduino-ide/releases/download/$:Version$/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `arduino-ide_$:Version$_Windows_64bit.zip`
+* Exe: `Arduino IDE.exe`
+* Register: `false`
 * Launcher: $:Label$
 
 ## Filesystem
