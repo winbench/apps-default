@@ -235,7 +235,7 @@ PuTTY is a free (MIT-licensed) Win32 Telnet and SSH client.
 * ArchiveName32Bit: `putty_w32.zip`
 * ArchiveName64Bit: `putty_w64.zip`
 * RegistryKeys: `Software\SimonTatham`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ## Version Control
 
@@ -261,7 +261,7 @@ A snappy UI, three-way merge tool, side-by-side diffs, syntax highlighting, and 
 * Only64Bit: true
 * ArchiveName64Bit: `sublime_merge_build_$:Version$_x64.zip`
 * Exe: `sublime_merge.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * DataDir: `$AppDataDir$\Sublime Merge`
 * VersionCheckUrl: <https://www.sublimemerge.com/>
 * VersionCheckXPath: `//div[contains(@class, 'download')]/div/span[contains(@class, 'win')]@href`
@@ -286,7 +286,7 @@ The downright luxurious Git client, for Windows, Mac & Linux.
 * ArchiveName64Bit: `GitKrakenSetup_w64.exe`
 * ArchiveTyp: `custom`
 * ArchivePath: `lib\net45`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ## Languages and Platforms
 
@@ -736,7 +736,7 @@ Write .Net apps with a text editor, NuGet, and the power of Roslyn!
 * Docs:
     + Wiki: <https://github.com/scriptcs/scriptcs/wiki>
 * Exe: `$:Path$\scriptcs.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### .NET Core SDK
 
@@ -1007,7 +1007,7 @@ Erlang is a programming language used to build massively scalable soft real-time
 * Environment:
      `ERLANG_HOME`: `$:ErtsDir$`
      `ERL_EPMD_ADDRESS`: `127.0.0.1`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherExecutable: `$:ErtsDir$\bin\werl.exe`
 * VersionCheckUrl: <http://www.erlang.org/downloads>
 * VersionCheckXPath: `//li`
@@ -1112,7 +1112,7 @@ The ultimate automation scripting language for Windows.
 * ArchiveName: `AutoHotkey_$:Version$_setup.exe`
 * Exe32Bit: `AutoHotkeyU32.exe`
 * Exe64Bit: `AutoHotkeyU64.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Vagrant
 
@@ -1227,7 +1227,7 @@ This plugin for Docker Machine creates Docker hosts locally on a VMware Workstat
 * Dir: `bench\vbox-installer`
 * Register: `false`
 * Exe: `$:ResourceName$`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://www.virtualbox.org/wiki/Downloads>
 * VersionCheckXPath: `//div[@id='wikipage']/descendant::ul/li/a/@href`
 * VersionCheckPattern: `VirtualBox-(?<Version>[\d\.]+-\d+)-Win\.exe`
@@ -1257,7 +1257,7 @@ The tool is designed to enable both technical and non-technical analysts to mani
 * ArchiveName: `CyberChef_v$:Version$.zip`
 * Exe: `CyberChef_v$:Version$.html`
 * Register: true
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherIcon: `$:Dir$\cyberchef.ico`
 
 ### Yarn
@@ -1481,7 +1481,7 @@ DOM handling, CSS selector, JSON, Canvas, and SVG.
 * ArchivePath: `phantomjs-$:Version$-windows`
 * Path: `bin`
 * Exe: `$:Path$\phantomjs.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Django
 
@@ -1867,7 +1867,7 @@ An offline documentation browser inspired by [Dash](https://kapeli.com/dash/).
 * ArchiveName64Bit: `zeal-$:Version$-windows-x64.msi`
 * ArchivePath: `SourceDir\Zeal`
 * RegistryKeys: `Software\Zeal`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * Register: `false`
 * VersionCheckUrl: <https://zealdocs.org/download.html>
 * VersionCheckXPath: `//a[@role='button']/@href`
@@ -1899,7 +1899,7 @@ complicated SQL commands.
 * ArchiveName64Bit: `DB.Browser.for.SQLite-$:Version$-win64.zip`
 * ArchivePath: `DB Browser for SQLite`
 * Exe: `DB Browser for SQLite.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://github.com/sqlitebrowser/sqlitebrowser/releases/>
 * VersionCheckXPath: `//div[@class='release-entry']/descendant::ul/li/a/@title`
 * VersionCheckPattern: `^v(?<Version>[\d\.]+)$`
@@ -1933,7 +1933,7 @@ SQLIte Studio is a SQLite database manager with the following features:
 * Url: `https://github.com/pawelsalawa/sqlitestudio/releases/download/3.2.1/$:ArchiveName$`
 * ArchiveName: `SQLiteStudio-$:Version$.zip`
 * ArchivePath: `SQLiteStudio`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### DBeaver
 
@@ -1950,7 +1950,7 @@ SQLIte Studio is a SQLite database manager with the following features:
 * Url: `https://dbeaver.io/files/$:ArchiveName$`
 * ArchiveName64Bit: `dbeaver-ce-latest-win32.win32.x86_64.zip`
 * ArchivePath: `dbeaver`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Schema Crawler
 
@@ -2740,7 +2740,7 @@ This program can be run out of the box without installation, and does not touch 
 * ArchiveName32Bit: `notepad2_$:Version$_x86.zip`
 * ArchiveName64Bit: `notepad2_$:Version$_x64.zip`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <http://www.flos-freeware.ch/notepad2.html>
 * VersionCheckXPath: `//div[@id='contents']/p/em`
 * VersionCheckPattern: `^Current Release\: Version (?<Version>[\d\.]+)`
@@ -2768,7 +2768,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
 * ArchiveName32Bit: `npp.$:Version$.portable.7z`
 * ArchiveName64Bit: `npp.$:Version$.portable.x64.7z`
 * Exe: `notepad++.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * ConfigurationDir: `$AppDataDir$\Notepad++`
 
 ### Markdown Edit
@@ -2792,7 +2792,7 @@ Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on produc
 * ArchiveName: `MarkdownEdit.zip`
 * Exe: `mde.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Boostnote
 
@@ -2812,7 +2812,7 @@ home directory as default storage location for notes and snippets.
 * Version: 0.16.1
 * Url: `https://github.com/BoostIO/boost-releases/releases/download/v$:Version$/BoostnoteSetup.exe`
 * ArchiveName: `BoostnoteSetup_v$:Version$.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Atom
 
@@ -2849,7 +2849,7 @@ is picked up from Atom._
     + ATOM_HOME: `$HomeDir$\.atom`
 * Exe: `atom.exe`
 * Path: `resources\cli`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * DefaultPackages:
     + `minimap`
     + `script`
@@ -2894,7 +2894,7 @@ A cross platform code editor from Microsoft.
 * Dir: `bench\code`
 * Exe: `bin\code.cmd`
 * Path: `bin`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherExecutable: `$:Dir$\Code.exe`
 * Extensions:
     + `mrmlnc.vscode-json5`
@@ -2924,7 +2924,7 @@ You'll love the slick user interface, extraordinary features and amazing perform
 * ArchiveName32Bit: `sublime_text_build_$:Version$.zip`
 * ArchiveName64Bit: `sublime_text_build_$:Version$_x64.zip`
 * Exe: `sublime_text.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * DataDir: `$AppDataDir$\Sublime Text`
 * VersionCheckUrl: <https://www.sublimetext.com/download>
 * VersionCheckXPath: `//article/h3`
@@ -3000,7 +3000,7 @@ with extensions to support text editing.
 * Dir: `bench\gnu`
 * Path: `bin`
 * Exe: `bin\emacs.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherExecutable: `$:Dir$\bin\runemacs.exe`
 * VersionCheckUrl: <https://ftp.gnu.org/gnu/emacs/>
 * VersionCheckXPath: `//td/a`
@@ -3089,7 +3089,7 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * ArchiveName: `gvim$:Release$.zip`
 * ArchivePath: `vim\vim$:Release$`
 * Exe: `gvim.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <http://ftp.vim.org/pub/vim/pc/>
 * VersionCheckXPath: `//table[@class='readme']/descendant::pre`
 * VersionCheckPattern: `-- version (?<Version>[\d\.]+) --`
@@ -3115,7 +3115,7 @@ The Scientific PYthon Development EnviRonment
     + `Bench.Python3.PyQT5`
     + `Bench.Python.PyCodeStyle`
     + `Bench.Python3.SpyderNotebook`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Spyder Notebook
 
@@ -3169,7 +3169,7 @@ Python IDE for beginners
 * LicenseUrl: <https://github.com/thonny/thonny/blob/master/LICENSE.txt>
 * Typ: `python3-package`
 * Exe: `$:Path$\thonny.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherIcon: `$:Dir$\Lib\site-packages\thonny\res\thonny.ico`
 
 ### LightTable
@@ -3193,7 +3193,7 @@ The next generation code editor.
 * ArchivePath: `lighttable-$:Version$-windows`
 * Dir: `bench\lt`
 * Exe: `LightTable.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Nightcode
 
@@ -3212,7 +3212,7 @@ An IDE for Clojure.
 * Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `Nightcode-$:Version$.zip`
 * ArchivePath: `Nightcode-$:Version$`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherArguments: `--module-path`, `$Bench.JFX:ModulePath$`, `--add-modules=javafx.controls`, `-jar`, `$:Exe$`
 * LauncherArguments: `-jar`, `$:Exe$`
 
@@ -3243,7 +3243,7 @@ XML Editor, Mylyn, Maven and Gradle integration...
 * Dir: `bench\eclipse_java`
 * Exe: `eclipse.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://www.eclipse.org/downloads/packages/>
 * VersionCheckXPath: `//span[@class='windows']/a/@href`
 * VersionCheckPattern: `/technology/epp/downloads/release/(?<Version>[^/]+/[^/]+)/eclipse-java-.+?-win32-x86_64\.zip$`
@@ -3274,7 +3274,7 @@ Git client, Mylyn and editors for JavaScript, HTML, CSS and...
 * Dir: `bench\eclipse_php`
 * Exe: `eclipse.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Eclipse for C/C++
 
@@ -3301,7 +3301,7 @@ An IDE for C/C++ developers with Mylyn integration.
 * Dir: `bench\eclipse_cpp`
 * Exe: `eclipse.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### JetBrains IntelliJ IDEA Community
 
@@ -3330,7 +3330,7 @@ Capable and Ergonomic IDE for JVM.
 * Dir: `bench\idea_community`
 * Exe32Bit: `bin\idea.exe`
 * Exe64Bit: `bin\idea64.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
 * VersionCheckJsonPath: `IIC/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
@@ -3357,7 +3357,7 @@ Python IDE for Professional Developers.
 * Dir: `bench\pycharm_community`
 * Exe32Bit: `bin\pycharm.exe`
 * Exe64Bit: `bin\pycharm64.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
 * VersionCheckJsonPath: `PCP/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
@@ -3390,7 +3390,7 @@ debugging and workspace management.
 * Dir: `bench\r-studio`
 * Path: `bin`
 * Exe: `bin\rstudio.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://www.rstudio.com/products/rstudio/download/>
 * VersionCheckXPath: `//h4/strong`
 * VersionCheckPattern: `RStudio Desktop (?<Version>[\d\.]+)`
@@ -3410,7 +3410,7 @@ Resource Hacker™ has been designed to be the complete resource editing tool: c
 * Url: `http://angusj.com/resourcehacker/$:ArchiveName$`
 * ArchiveName: `resource_hacker.zip`
 * Dir: `bench\reshack`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ## Arduino IDE
 
@@ -3434,7 +3434,7 @@ Resource Hacker™ has been designed to be the complete resource editing tool: c
 * ArchiveName: `arduino-ide_$:Version$_Windows_64bit.zip`
 * Exe: `Arduino IDE.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ## Filesystem
 
@@ -3485,7 +3485,7 @@ that is easy to understand and handle.
 * Exe: `WinMergeU.exe`
 * RegistryKeys: `Software\Thingamahoochie`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/winmerge/files/stable/>
 * VersionCheckXPath: `//th/a/span[@class='name']`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)$`
@@ -3513,7 +3513,7 @@ DiffMerge is an application to visually compare and merge files on Windows, OS X
 * ArchivePath32Bit: `DiffMerge_$:Release$_x86`
 * ArchivePath64Bit: `DiffMerge_$:Release$_x64`
 * Exe: `sgdm.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <http://www.sourcegear.com/diffmerge/webhelp/chapter_release_notes.html>
 * VersionCheckXPath: `//dl[@class='toc']/dt/descendant::a`
 * VersionCheckPattern: `Release (?<Version>[\d\.]+)`
@@ -3537,7 +3537,7 @@ by using specified settings.
 * ArchiveName: `antrenamer2.zip`
 * Dir: `bench\renamer`
 * Exe: `Renamer.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### CDR Tools
 
@@ -3573,7 +3573,7 @@ Create bootable USB drives the easy way.
 * Version: 3.14
 * Url: `https://github.com/pbatard/rufus/releases/download/v$:Version$/rufus-$:Version$p.exe`
 * ResourceName: `rufus.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Ventoy
 
@@ -3621,7 +3621,7 @@ FileZilla Client is a free, open source FTP client. It supports FTP, SFTP, and F
 * ArchivePath: `FileZilla-$:Version$`
 * Exe: `filezilla.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://download.filezilla-project.org/client/>
 * VersionCheckXPath: `//td/a`
 * VersionCheckPattern: `FileZilla_(?<Version>[\d\.]+)_win32\.zip`
@@ -3650,7 +3650,7 @@ Beyond this, WinSCP offers scripting and basic file manager functionality.
 * Version: 5.17.7
 * Url: `https://sourceforge.net/projects/winscp/files/WinSCP/$:Version$/$:ArchiveName$`
 * ArchiveName: `WinSCP-$:Version$-Portable.zip`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/winscp/files/WinSCP/>
 * VersionCheckXPath: `//th/a/span[@class='name']`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)$`
@@ -3672,7 +3672,7 @@ A free portable derivative of Chromium, optimized for privacy.
 * ArchivePath: `IronPortable\Iron`
 * ArchiveName: `IronPortable.zip`
 * Exe: `chrome.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ## httpie
 
@@ -3854,7 +3854,7 @@ tools for server configuration, user administration, backup, and much more.
 * ArchiveName: `mysql-workbench-community-$:Version$-winx64.msi`
 * Exe: `MySQLWorkbench.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://dev.mysql.com/downloads/workbench/>
 * VersionCheckXPath: `//h1`
 * VersionCheckPattern: `MySQL Workbench (?<Version>[\d\.]+)`
@@ -4096,7 +4096,7 @@ Open source and commercially supported
 * ArchivePath: `rabbitmq_server-$:Version$`
 * Path: `sbin`
 * Exe: `sbin\rabbitmq-server.bat`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://dl.bintray.com/rabbitmq/all/rabbitmq-server/>
 * VersionCheckXPath: `/html/body/pre/a`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)/$`
@@ -4127,7 +4127,7 @@ by alleviating database load.
 * ArchivePath32Bit: `memcached-$:Version$-win32-mingw`
 * Path: `bin`
 * Exe: `bin\memcached.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Redis
 
@@ -4150,7 +4150,7 @@ and a simple straightforward API.
 * Exe: `redis-64\tools\redis-server.exe`
 * Only64Bit: `true`
 * Version: latest
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### LDAP Admin
 
@@ -4168,7 +4168,7 @@ and a simple straightforward API.
 * ArchiveName32Bit: `LdapAdminExe-w32-$:Version$.zip`
 * ArchiveName64Bit: `LdapAdminExe-w64-$:Version$.zip`
 * RegistryKeys: `SOFTWARE\LdapAdmin`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <http://www.ldapadmin.org/download/ldapadmin.html>
 * VersionCheckXPath: `//table/descendant::tr/td[@class='big']`
 * VersionCheckPattern: `^\s*LdapAdmin (?<Version>[\d\.]+)\s*$`
@@ -4198,7 +4198,7 @@ Power your metrics and alerting with a leading open-source monitoring solution.
 * ArchiveName: `$:ArchivePath$.tar.gz`
 * ArchivePath32Bit: `prometheus-$:Version$.windows-386`
 * ArchivePath64Bit: `prometheus-$:Version$.windows-amd64`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherWorkingDir: `$:Dir$`
 * LauncherArguments:
     + `--config.file=$HomeDir$\prometheus.yml`
@@ -4229,7 +4229,7 @@ The Pushgateway then exposes these metrics to Prometheus.
 * ArchivePath64Bit: `pushgateway-$:Version$.windows-amd64`
 * Dir: `bench\pushgateway`
 * Exe: `pushgateway.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherArguments: `--web.listen-address`, `$:HostIP$:$:Port$`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `pushgateway`
@@ -4259,7 +4259,7 @@ Prometheus exporter for Windows machines using WMI
 * ArchivePath: `SourceDir\windows_exporter`
 * Dir: `bench\prometheus_windows`
 * Exe: `windows_exporter.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherArguments: `--collectors.enabled`, `$:Collectors$`, `--telemetry.addr`, `$:HostIP$:$:Port$`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `windows`
@@ -4290,7 +4290,7 @@ Prometheus exporter for arbitrary unstructured log data
 * ArchivePath64Bit: `grok_exporter-$:Version$.windows-amd64`
 * Dir: `bench\prometheus_grok`
 * Exe: `grok_exporter.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherArguments: `-config`, `$:ConfigFile$`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `grok`
@@ -4317,7 +4317,7 @@ Prometheus exporter for MySQL Server
 * ArchivePath64Bit: `mysqld_exporter-$:Version$.windows-amd64`
 * Dir: `bench\prometheus_mysqld`
 * Exe: `mysqld_exporter.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherArguments: `--web.listen-address=$:HostIP$:$:Port$`, `--config.my-cnf=$Home$\.my.cnf`
 * LauncherWorkingDir: `$:Dir$`
 * JobName: `mysql`
@@ -4345,7 +4345,7 @@ Prometheus exporter for RabbitMQ
 * ArchivePath64Bit: `rabbitmq_exporter-$:Version$.windows-amd64`
 * Dir: `bench\prometheus_rabbitmq`
 * Exe: `rabbitmq_exporter.cmd`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherWorkingDir: `$:Dir$`
 * Port: 9672
 * JobName: `rabbitmq`
@@ -4372,7 +4372,7 @@ Prometheus exporter for Memcached Server
 * ArchivePath64Bit: `memcached_exporter-$:Version$.windows-amd64`
 * Dir: `bench\prometheus_memcached`
 * Exe: `memcached_exporter.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherWorkingDir: `$:Dir$`
 * LauncherArguments: `--memcached.address`, `$:MemcachedAddress$`, `--web.listen-address`, `127.0.0.1:$:Port$`
 * JobName: `memcached`
@@ -4404,7 +4404,7 @@ The open platform for beautiful analytics and monitoring
 * Path: `bin`
 * Exe: `bin\grafana-server.exe`
 * DataDir: `$HomeDir$\grafana`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherWorkingDir: `$:Dir$`
 * VersionCheckUrl: <https://grafana.com/grafana/download?platform=windows>
 * VersionCheckXPath: `//div[@class='download-info-table']/descendant::select/option`
@@ -4508,7 +4508,7 @@ The native file format used by JabRef is BibTeX, the standard LaTeX bibliography
 * Url: `https://github.com/JabRef/jabref/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `JabRef-$:Version$-portable_windows.zip`
 * ArchivePath: `JabRef`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherIcon: `JabRef.ico`
 
 ### TeXnicCenter
@@ -4531,7 +4531,7 @@ Premium LaTeX Editing for Windows.
 * ArchiveName: `TXCSetup_$:Version$Stable_Win32.exe`
 * ArchiveTyp: `inno`
 * RegistryKeys: `SOFTWARE\ToolsCenter`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/texniccenter/files/TeXnicCenter/>
 * VersionCheckXPath: `//table[@id='files_list']/descendant::th/a/span[@class='name']`
 * VersionCheckPattern: `^(?<Version>[\d\.]+) Stable$`
@@ -4559,7 +4559,7 @@ An interpreter for the PostScript language and for PDF.
 * Exe64Bit: `bin\gswin64.exe`
 * VersionCheckString: $:CompactVersion$
 * VersionCheckIgnore: `gs925rc1`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Scribus
 
@@ -4585,7 +4585,7 @@ one of the premier Open Source desktop applications.
 * Url: `https://sourceforge.net/projects/scribus/files/scribus/$:Version$/$:ArchiveName$`
 * ArchiveName: `scribus-$:Version$-windows.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/scribus/files/scribus/>
 * VersionCheckXPath: `//table[@id='files_list']/descendant::th/a/span[@class='name']`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)$`
@@ -4700,7 +4700,7 @@ Enable/disable/configure multiple monitors on Windows.
 * Url: `http://www.nirsoft.net/utils/$:ArchiveName$`
 * ArchiveName32Bit: `multimonitortool.zip`
 * ArchiveName64Bit: `multimonitortool-x64.zip`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ## Multimedia
 
@@ -4858,7 +4858,7 @@ The open source video transcoder.
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Only64Bit: `true`
 * Exe: `HandBrake.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * ~~VersionCheckUrl: <https://download.handbrake.fr/releases/>~~
 * ~~VersionCheckXPath: `//pre/a`~~
 * ~~VersionCheckPattern: `^(?<Version>[\d\.]+)/$`~~
@@ -4905,7 +4905,7 @@ that plays most multimedia files, and various streaming protocols.
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
 * ArchiveName64Bit: `vlc-$:Version$-win64.7z`
 * ArchivePath: `vlc-$:Version$`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <http://get.videolan.org/vlc/>
 * VersionCheckXPath: `/html/body/pre/a`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)/$`
@@ -4974,7 +4974,7 @@ PlantUML allows to define UML diagrams with text files in a simple and intuitive
 * Url: `https://sourceforge.net/projects/plantuml/files/$:ResourceName$`
 * ResourceName: `plantuml.jar`
 * Exe: `plantuml.bat`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherExecutable: `plantuml-gui.bat`
 * LauncherIcon: `logo.ico`
 
@@ -5012,7 +5012,7 @@ Gephi is open-source and free.
 * Register: `false`
 * Exe32Bit: `bin\gephi.exe`
 * Exe64Bit: `bin\gephi64.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherArguments: `--jdkhome`, `$Bench.JDK:Dir$`
 
 ### Dia
@@ -5036,7 +5036,7 @@ Dia is a program to draw structured diagrams.
 * ArchiveName: `dia-setup-$:Release$-unsigned.exe`
 * Path: `bin`
 * Exe: `bin\dia.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherExecutable: `bin\diaw.exe`
 * LauncherArguments: `--integrated`, `%*`
 
@@ -5067,7 +5067,7 @@ It's free and open source.
 * ArchivePath: `inkscape-$:Version$_$:Tag$-x64`
 * Path: `bin`
 * Exe: `bin\inkscape.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://inkscape.org/de/release/>
 * VersionCheckXPath: `//div[@id='sidecategory']/descendant::li[contains(@class, 'active')]/a/label`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)$`
@@ -5100,7 +5100,7 @@ GIMP provides you with sophisticated tools to get your job done.
 * ArchivePath: `App/gimp`
 * Exe: `bin\gimp-$:VersionMajor$.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/portableapps/files/GIMP%20Portable/>
 * VersionCheckXPath: `//th/a/span[@class='name']`
 * VersionCheckPattern: `GIMPPortable_(?<Version>[\d\.]+)\.paf\.exe`
@@ -5124,7 +5124,7 @@ Support of more than 500 image formats.
 * ArchiveName: `XnView-win.zip`
 * ArchivePath: `XnView`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### ExifTool
 
@@ -5172,7 +5172,7 @@ Open source digital audio workstation with VST support.
 * ArchiveName32Bit: `lmms-$:Version$-win32.exe`
 * ArchiveName64Bit: `lmms-$:Version$-win64.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### SonicPI
 
@@ -5198,7 +5198,7 @@ Powerful enough for professional musicians.
 * Exe: `app\gui\qt\build\release\sonic-pi.exe`
 * Register: `false`
 * RegistryKeys: `Software\sonic-pi.net`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <http://sonic-pi.net/files/releases/>
 * VersionCheckXPath: `/html/body/pre/a`
 * VersionCheckPattern: `^v(?<Version>[\d\.]+)/$`
@@ -5232,7 +5232,7 @@ and tap on the coordinates.
 * ArchiveTyp: `inno`
 * Exe: `Recorder.exe`
 * Register: `false`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/camstudio/files/stable/>
 * VersionCheckXPath: `//div[@id='files']/descendant::th/a/span[@class='name']`
 * VersionCheckPattern: `^CamStudio_Setup_(?<Version>[\d\.\-_a-z]+?)\.exe$`
@@ -5263,7 +5263,7 @@ Free and open source software for video recording and live streaming.
 * Path64Bit: `bin\64Bit`
 * Exe32Bit: `bin\32Bit\obs32.exe`
 * Exe64Bit: `bin\64Bit\obs64.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherWorkingDir: `$:Path$`
 
 ### Avidemux
@@ -5284,7 +5284,7 @@ Tasks can be automated using projects, job queue and powerful scripting capabili
 * Url: `https://sourceforge.net/projects/avidemux/files/avidemux/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `avidemux_$:Version$_win32.exe`
 * ArchiveName64Bit: `avidemux_$:Version$_win64.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://sourceforge.net/projects/avidemux/files/avidemux/>
 * VersionCheckXPath: `//div[@id='files']/descendant::th/a/span[@class='name']`
 * VersionCheckPattern: `^(?<Version>[\d\.]+)$`
@@ -5313,7 +5313,7 @@ We designed OpenShot Video Editor to be an easy to use, quick to learn, and surp
 * ArchiveTyp: `inno`
 * Register: false
 * Exe: `launch-win.bat`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * LauncherIcon: `openshot-qt.exe`
 * LauncherWorkingDir: `$:Path$`
 
@@ -5338,7 +5338,7 @@ cleaning, healing, inspecting, rendering and converting this kind of meshes.
 * Url: `https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-$:Version$/$:ArchiveName$`
 * ArchiveName: `MeshLab$:Version$-windows.zip`
 * Exe: `meshlab.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 
 ### Blender
 
@@ -5367,7 +5367,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 * https://www.blender.org/download/Blender2.93/blender-2.93.1-windows-x64.zip/
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath64Bit: `blender-$:Version$-windows-x64`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
 * VersionCheckUrl: <https://www.blender.org/download/>
 * VersionCheckXPath: `//div[@id='windows']/a/@href`
 * VersionCheckPattern: `blender-(?<Version>\d[\d\.]+[a-z]?)-windows(?:32|64).msi`
@@ -5400,4 +5400,4 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 * Only64Bit: `true`
 * ArchivePath: `FreeCAD-$:Version$.$:Commit$-WIN-x64-portable1`
 * Exe: `bin\freecad.exe`
-* Launcher: $:Label$
+* Launcher: `$:Label$`
