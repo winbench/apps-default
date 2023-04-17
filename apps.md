@@ -2887,13 +2887,17 @@ A cross platform code editor from Microsoft.
 * Docs:
     + Documentation: <https://code.visualstudio.com/Docs>
 * Version: latest
-* Url32Bit: <http://go.microsoft.com/fwlink/?LinkID=623231>
+* Url32Bit: <https://go.microsoft.com/fwlink/?LinkID=623231>
 * Url64Bit: <https://go.microsoft.com/fwlink/?linkid=850641>
 * ArchiveName32Bit: `VSCode-win32-ia32.zip`
 * ArchiveName64Bit: `VSCode-win32-x64.zip`
 * Dir: `bench\code`
-* Exe: `code.exe`
+* Exe: `bin\code.cmd`
+* Path: `bin`
 * Launcher: $:Label$
+* LauncherExecutable: `$:Dir$\Code.exe`
+* Extensions:
+    + `mrmlnc.vscode-json5`
 
 ### Sublime Text
 
