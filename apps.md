@@ -5402,7 +5402,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 * Exe: `bin\freecad.exe`
 * Launcher: `$:Label$`
 
-### Prusa Slicer
+### PrusaSlicer
 
 * ID: `Bench.PrusaSlicer`
 * Tags:
