@@ -3,6 +3,8 @@ $propertiesFile = "$ideaDir\bin\idea.properties"
 $homeDir = Get-ConfigValue "HomeDir"
 $ideaConfigPath = "$homeDir\.IdeaIC\config"
 $ideaSystemPath = "$homeDir\.IdeaIC\system"
+$ideaPlugInsPath = "$homeDir\.IdeaIC\plugins"
+$ideaLogPath = "$homeDir\.IdeaIC\log"
 
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 
@@ -29,5 +31,7 @@ function SetConfigProperty($text, $name, $value)
 
 $propertiesContent = SetConfigProperty $propertiesContent "idea.config.path" $ideaConfigPath.Replace("\", "/")
 $propertiesContent = SetConfigProperty $propertiesContent "idea.system.path" $ideaSystemPath.Replace("\", "/")
+$propertiesContent = SetConfigProperty $propertiesContent "idea.plugins.path" $ideaPlugInsPath.Replace("\", "/")
+$propertiesContent = SetConfigProperty $propertiesContent "idea.log.path" $ideaLogPath.Replace("\", "/")
 
 [IO.File]::WriteAllText($propertiesFile, $propertiesContent, $utf8)
