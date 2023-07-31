@@ -4853,7 +4853,7 @@ The open source video transcoder.
     + compression
 * Website: <https://handbrake.fr>
 * License: GPL-2.0
-* Version: 1.3.3
+* Version: 1.6.1
 * Url: `https://github.com/HandBrake/HandBrake/releases/download/$:Version$/$:ArchiveName$`
 * ArchiveName64Bit: `HandBrake-$:Version$-x86_64-Win_GUI.exe`
 * Only64Bit: `true`
@@ -5059,12 +5059,13 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 1.2.1
-* Tag: 2022-07-14_9c6d41e410
+* Version: 1.3
+* Tag: 2023-07-21_0e150ed6c4
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* Only64Bit: `true`
+* ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
-* ArchivePath: `inkscape-$:Version$_$:Tag$-x64`
+* ArchivePath32Bit: `inkscape-$:Version$_$:Tag$-x86`
+* ArchivePath64Bit: `inkscape-$:Version$_$:Tag$-x64`
 * Path: `bin`
 * Exe: `bin\inkscape.exe`
 * Launcher: `$:Label$`
@@ -5255,13 +5256,11 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/obsproject/obs-studio/blob/master/COPYING>
-* Version: 28.1.2
+* Version: 29.1.3
 * Url: `https://github.com/obsproject/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
-* ArchiveName64Bit: `OBS-Studio-$:Version$-Full-x64.zip`
-* Path32Bit: `bin\32Bit`
+* ArchiveName64Bit: `obs-Studio-$:Version$.zip`
 * Path64Bit: `bin\64Bit`
-* Exe32Bit: `bin\32Bit\obs32.exe`
 * Exe64Bit: `bin\64Bit\obs64.exe`
 * Launcher: `$:Label$`
 * LauncherWorkingDir: `$:Path$`
@@ -5306,7 +5305,7 @@ We designed OpenShot Video Editor to be an easy to use, quick to learn, and surp
     + video
 * Website: <https://www.openshot.org>
 * License: GPL-3.0
-* Version: 2.5.1
+* Version: 3.1.1
 * Only64Bit: true
 * Url: `https://github.com/OpenShot/openshot-qt/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `OpenShot-v$:Version$-x86_64.exe`
@@ -5331,7 +5330,7 @@ cleaning, healing, inspecting, rendering and converting this kind of meshes.
 * Tags:
     + gui
     + 3d
-* Version: 2020.09
+* Version: 2022.02
 * Website: <http://meshlab.sourceforge.net/>
 * License: GPL-3.0
 * LicenseUrl: <https://raw.githubusercontent.com/cnr-isti-vclab/meshlab/master/LICENSE.txt>
@@ -5359,7 +5358,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Tutorials: <https://www.blender.org/support/tutorials/>
     + Manual: <https://www.blender.org/manual/>
     + Python API: <https://docs.blender.org/api/$:Version$/>
-* MajorVersion: 2.93
+* MajorVersion: 3.6
 * MinorVersion: 1
 * Version: $:MajorVersion$.$:MinorVersion$
 * Only64Bit: true
@@ -5383,9 +5382,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + python
 * Version: `$:MajorVersion$.$:MinorVersion$.$:Revision$`
 * MajorVersion: 0
-* MinorVersion: 19
+* MinorVersion: 20
 * Revision: 2
-* Commit: 7b5e18a
 * Website: <http://www.freecadweb.org/>
 * License: GPL-2.0
 * LicenseUrl: <https://raw.githubusercontent.com/FreeCAD/FreeCAD/master/COPYING>
@@ -5396,9 +5394,9 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + Power User: <http://www.freecadweb.org/wiki/index.php?title=Power_users_hub>
     + Development: <http://www.freecadweb.org/wiki/index.php?title=Developer_hub>
 * Url: `https://github.com/FreeCAD/FreeCAD/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName64Bit: `$:ArchivePath$.7z`
+* ArchiveName64Bit: `FreeCAD-$:Version$-WIN-x64-portable-3.zip`
 * Only64Bit: `true`
-* ArchivePath: `FreeCAD-$:Version$.$:Commit$-WIN-x64-portable1`
+* ArchivePath: `FreeCAD-portable`
 * Exe: `bin\freecad.exe`
 * Launcher: `$:Label$`
 
