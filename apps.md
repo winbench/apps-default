@@ -5334,7 +5334,7 @@ cleaning, healing, inspecting, rendering and converting this kind of meshes.
 * Website: <http://meshlab.sourceforge.net/>
 * License: GPL-3.0
 * LicenseUrl: <https://raw.githubusercontent.com/cnr-isti-vclab/meshlab/master/LICENSE.txt>
-* Url: `https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-$:Version$/$:ArchiveName$`
+* Url: `https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-$:Version$/$:ArchiveName$`
 * ArchiveName: `MeshLab$:Version$-windows.zip`
 * Exe: `meshlab.exe`
 * Launcher: `$:Label$`
