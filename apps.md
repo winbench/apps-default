@@ -2763,7 +2763,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
     + Wiki: <http://docs.notepad-plus-plus.org>
 * Label: Notepad++
 * VersionMajor: 8
-* Version: `$:VersionMajor$.1`
+* Version: `$:VersionMajor$.5.6`
 * Url: `https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `npp.$:Version$.portable.7z`
 * ArchiveName64Bit: `npp.$:Version$.portable.x64.7z`
