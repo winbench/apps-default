@@ -2,7 +2,7 @@ $appID = "Bench.Vagrant"
 $appDir = App-Dir $appID
 $appVersion = App-Version $appID
 
-$vagrantScriptFile = Resolve-Path "$appDir\embedded\gems\$appVersion\gems\vagrant-$appVersion\bin\vagrant"
+$vagrantScriptFile = Resolve-Path "$appDir\embedded\gems\gems\vagrant-$appVersion\bin\vagrant"
 
 $utf8 = New-Object System.Text.UTF8Encoding (,$false)
 $vagrantScript = [System.IO.File]::ReadAllText($vagrantScriptFile, $utf8)
