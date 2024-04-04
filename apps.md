@@ -718,6 +718,28 @@ it gets out of your way and lets you focus on your code.
 * Environment:
     + `LEIN_JAR`: `$:Dir$\leiningen.jar`
 
+### Bun
+
+* ID: `Bench.Bun`
+* Tags:
+    + cli
+    + language
+    + runtime
+    + interpreter
+    + compiler
+    + bundler
+    + JavaScript
+    + TypeScript
+* Website: <https://bun.sh>
+* License: MIT
+* LicenseUrl: <https://bun.sh/docs/project/licensing>
+* Docs:
+    + Documentation: <https://bun.sh/docs>
+* Version: 1.1.0
+* Only64Bit: `true`
+* Url64Bit: `https://github.com/oven-sh/bun/releases/download/bun-v$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath: `bun-windows-x64`
 
 ### ScriptCS
 
