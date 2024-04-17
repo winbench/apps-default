@@ -3738,19 +3738,20 @@ Use `postgresql_log.cmd` to open the servers log file.
 * Docs:
     + Online Docs: <https://www.postgresql.org/docs/$:Version$/static/index.html>
     + Offline Docs: `file:///$:Dir$\doc\postgresql\html\index.html`
-* Version32Bit: 10.15
-* Version64Bit: 16.2
+* VersionMajor: 16
+* VersionMinor: 2
+* Version: $:VersionMajor$.$:VersionMinor$
+* Only64Bit: true
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
-* ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
-* ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
+* ArchiveName: `postgresql-$:Version$-1-windows-x64-binaries.zip`
 * ArchivePath: `pgsql`
 * Dir: `bench\postgres`
 * Path: `bin`
 * Exe: `bin\postgres.exe`
 * Launcher: `PostgreSQL Server`
 * LauncherExecutable: `bin\postgresql_server.cmd`
-* PostgreSqlDataDir: `$HomeDir$\pg_data`
-* PostgreSqlLogFile: `$HomeDir$\pg.log`
+* PostgreSqlDataDir: `$HomeDir$\pg_data_$:VersionMajor$`
+* PostgreSqlLogFile: `$HomeDir$\pg_$:VersionMajor$.log`
 * Environment:
 	+ `PGDATA`: `$:PostgreSqlDataDir$`
 	+ `PG_LOG`: `$:PostgreSqlLogFile$`
