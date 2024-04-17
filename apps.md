@@ -3739,7 +3739,7 @@ Use `postgresql_log.cmd` to open the servers log file.
     + Online Docs: <https://www.postgresql.org/docs/$:Version$/static/index.html>
     + Offline Docs: `file:///$:Dir$\doc\postgresql\html\index.html`
 * Version32Bit: 10.15
-* Version64Bit: 12.5
+* Version64Bit: 16.2
 * Url: `http://get.enterprisedb.com/postgresql/$:ArchiveName$`
 * ArchiveName32Bit: `postgresql-$:Version$-1-windows-binaries.zip`
 * ArchiveName64Bit: `postgresql-$:Version$-1-windows-x64-binaries.zip`
