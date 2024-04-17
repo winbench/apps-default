@@ -2142,6 +2142,7 @@ across over 40 programming languages.
 * Typ: `python3-package`
 * Dependencies:
     + `Bench.Python3.IPython`
+    + `Bench.Python3.JupyterLab`
 * Website: <https://jupyter.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://raw.githubusercontent.com/jupyter/jupyter/master/LICENSE>
@@ -2165,7 +2166,6 @@ across over 40 programming languages.
     + plotting
 * Typ: `meta`
 * Dependencies:
-    + `Bench.Node`
     + `Bench.Python3.Jupyter`
 * Website: <https://jupyterlab.readthedocs.io/en/stable/>
 * License: BSD-3-Clause
@@ -2176,7 +2176,7 @@ across over 40 programming languages.
 * LauncherWorkingDir: `$ProjectRootDir$`
 * LauncherExecutable: `$Bench.Python3.Jupyter:Path$\jupyter.exe`
 * LauncherArguments: `lab`, `%*`
-* SetupTestFile: 
+* SetupTestFile: `$Bench.Python3.Jupyter:SetupTestFile$`
 
 ### SciPy for Python 3
 
