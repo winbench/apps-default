@@ -3112,15 +3112,16 @@ Capable and Ergonomic IDE for JVM.
     + scala
     + maven
     + gradle
+    + jetbrains
 * Website: <https://www.jetbrains.com/idea/>
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2023.3.4
+* Version: 2024.1.4
+* Only64Bit: `true`
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
 * Dir: `bench\idea_community`
-* Exe32Bit: `bin\idea.exe`
 * Exe64Bit: `bin\idea64.exe`
 * Launcher: `$:Label$`
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
@@ -3138,16 +3139,17 @@ Python IDE for Professional Developers.
     + ide
     + python
     + science
+    + jetbrains
 * Website: <https://www.jetbrains.com/pycharm/>
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version64Bit: 2023.3.4
-* Version32Bit: 2018.3.7
+* Version: 2024.1.4
+* Only64Bit: `true`
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
-* ArchiveName: `pycharm-community-$:Version$.exe`
+* ArchiveName: `pycharm-community-$:Version$.win.zip`
 * Dir: `bench\pycharm_community`
-* Exe32Bit: `bin\pycharm.exe`
+* Exe324Bit: `bin\pycharm.exe`
 * Exe64Bit: `bin\pycharm64.exe`
 * Launcher: `$:Label$`
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
