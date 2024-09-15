@@ -4694,7 +4694,7 @@ that plays most multimedia files, and various streaming protocols.
 * Docs:
     + Features: <http://www.videolan.org/vlc/features.html>
     + Skins: <http://www.videolan.org/vlc/skins.html>
-* Version: 3.0.16
+* Version: 3.0.21
 * Url32Bit: `http://get.videolan.org/vlc/$:Version$/win32/$:ArchiveName32Bit$`
 * Url64Bit: `http://get.videolan.org/vlc/$:Version$/win64/$:ArchiveName64Bit$`
 * ArchiveName32Bit: `vlc-$:Version$-win32.7z`
