@@ -5201,8 +5201,8 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + gui
     + 3d
     + 3d-print
-* Version: 2.8.0
-* Timestamp: 202406270929
+* Version: 2.8.1
+* Timestamp: 202409181359
 * Website: <https://www.prusa3d.com/prusaslicer/>
 * License: AGPL-3.0
 * LicenseUrl: <https://raw.githubusercontent.com/prusa3d/PrusaSlicer/master/LICENSE>
