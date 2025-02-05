@@ -3156,6 +3156,31 @@ Python IDE for Professional Developers.
 * VersionCheckJsonPath: `PCP/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
+### JetBrains Rider
+
+The world's most loved .NET and game dev IDE
+
+* ID: `Bench.Rider`
+* Label: Rider
+* Tags:
+    + gui
+    + ide
+    + csharp
+    + jetbrains
+* Website: <https://www.jetbrains.com/rider/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/rider/documentation/>
+* Version: 2024.3.4
+* Only64Bit: `true`
+* Url: `https://download.jetbrains.com/rider/$:ArchiveName$`
+* ArchiveName: `JetBrains.Rider-$:Version$.win.zip`
+* Dir: `bench\rider`
+* Exe: `bin\rider64.exe`
+* Launcher: `$:Label$`
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=RD&latest=true&type=release>
+* VersionCheckJsonPath: `RD/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
+
 ### R Studio
 
 RStudio is an IDE for R.
