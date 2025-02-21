@@ -3357,6 +3357,27 @@ DiffMerge is an application to visually compare and merge files on Windows, OS X
 * VersionCheckXPath: `//dl[@class='toc']/dt/descendant::a`
 * VersionCheckPattern: `Release (?<Version>[\d\.]+)`
 
+### Difftastic
+
+Difftastic is a structural diff tool that understands syntax.
+
+* ID: `Bench.Difftastic`
+* Tags:
+    + cli
+    + diff
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/Wilfred/difftastic/refs/heads/master/LICENSE>
+* Website: <https://difftastic.wilfred.me.uk/>
+* Docs:
+    + Manual: <https://difftastic.wilfred.me.uk/introduction.html>
+    + Language Support: <https://difftastic.wilfred.me.uk/languages_supported.html>
+* Only64Bit: `true`
+* Version: 0.63.0
+* Url: `https://github.com/Wilfred/difftastic/releases/download/$:Version$/$:ArchiveName$`
+* ArchiveName: `difft-x86_64-pc-windows-msvc.zip`
+* Exe: `difft.exe`
+* Register: true
+
 ### Ant Renamer
 
 Ant Renamer is a free program that makes easier the renaming of lots of files and folders
