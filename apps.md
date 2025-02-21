@@ -2015,6 +2015,26 @@ Create and save REST, SOAP, and GraphQL queries directly from Postman.
 * Register: `false`
 * Launcher: `$:Label$`
 
+### Bruno
+
+* ID: `Bench.Bruno`
+* Tags:
+    + gui
+    + http
+    + rest
+    + debugging
+* Website: <https://www.usebruno.com/>
+* License: MIT
+* LicenseUrl: <https://raw.githubusercontent.com/usebruno/bruno/refs/heads/main/license.md>
+* Docs:
+    + Documentation: <https://docs.usebruno.com/>
+* Version: 1.39.1
+* Only64Bit: `true`
+* Url: `https://github.com/usebruno/bruno/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `bruno_$:Version$_x64_win.zip`
+* ArchivePath: `win-unpacked`
+* Launcher: `$:Label$`
+
 ### Windows Sysinternals Suite
 
 A collection of tools by Mark Russinovich, to inspect and investigate
