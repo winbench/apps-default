@@ -4518,7 +4518,7 @@ and much more. Hugo’s speed fosters creativity and makes building a website fu
     + Templates: <https://gohugo.io/templates/overview/>
     + Taxonomies: <https://gohugo.io/taxonomies/overview/>
     + Theme Showcase: <http://themes.gohugo.io/>
-* Version: 0.105.0
+* Version: 0.145.0
 * Url: `https://github.com/gohugoio/hugo/releases/download/v$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName64Bit: `hugo_$:Version$_windows-amd64.zip`
