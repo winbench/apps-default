@@ -3137,7 +3137,7 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2024.3.2.2
+* Version: 2024.3.5
 * Only64Bit: `true`
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
 * ArchiveName: `ideaIC-$:Version$.win.zip`
@@ -3164,7 +3164,7 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2024.3.2
+* Version: 2024.3.5
 * Only64Bit: `true`
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
 * ArchiveName: `pycharm-community-$:Version$.win.zip`
@@ -3190,7 +3190,7 @@ The world's most loved .NET and game dev IDE
 * Website: <https://www.jetbrains.com/rider/>
 * Docs:
     + Documentation: <https://www.jetbrains.com/rider/documentation/>
-* Version: 2024.3.4
+* Version: 2024.3.6
 * Only64Bit: `true`
 * Url: `https://download.jetbrains.com/rider/$:ArchiveName$`
 * ArchiveName: `JetBrains.Rider-$:Version$.win.zip`
