@@ -5267,7 +5267,7 @@ Blender is the open source, cross platform suite of tools for 3D creation.
     + gui
     + 3d
     + 3d-print
-* Version: 2.9.0
+* Version: 2.9.1
 * Website: <https://www.prusa3d.com/prusaslicer/>
 * License: AGPL-3.0
 * LicenseUrl: <https://raw.githubusercontent.com/prusa3d/PrusaSlicer/master/LICENSE>
@@ -5277,6 +5277,6 @@ Blender is the open source, cross platform suite of tools for 3D creation.
 * Url: `https://github.com/prusa3d/PrusaSlicer/releases/download/version_$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchivePath: `PrusaSlicer-$:Version$`
-* ArchiveName: `$:ArchivePath$+win64.zip`
+* ArchiveName: `$:ArchivePath$-win64.zip`
 * Exe: `prusa-slicer.exe`
 * Launcher: `$:Label$`
