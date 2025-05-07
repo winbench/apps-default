@@ -4920,13 +4920,12 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 1.3
-* Tag: 2023-07-21_0e150ed6c4
+* Version: 1.4
+* Tag: 2024-10-11_86a8ad7
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName32Bit: `inkscape-$:Version$-x86.7z`
+* Only64Bit: `true`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
-* ArchivePath32Bit: `inkscape-$:Version$_$:Tag$-x86`
-* ArchivePath64Bit: `inkscape-$:Version$_$:Tag$-x64`
+* ArchivePath64Bit: `inkscape`
 * Path: `bin`
 * Exe: `bin\inkscape.exe`
 * Launcher: `$:Label$`
