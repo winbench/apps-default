@@ -3562,7 +3562,7 @@ with a focus on improved performance.
 * License: MIT
 * LicenseUrl: <https://github.com/ducaale/xh/blob/master/LICENSE>
 * Website: <https://github.com/ducaale/xh>
-* Version: 0.14.1
+* Version: 0.24.1
 * Url: `https://github.com/ducaale/xh/releases/download/v$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName: `$:ArchivePath$.zip`
