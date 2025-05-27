@@ -5114,10 +5114,10 @@ Free and open source software for video recording and live streaming.
     + Help: <https://obsproject.com/help>
 * License: GPL-2.0
 * LicenseUrl: <https://github.com/obsproject/obs-studio/blob/master/COPYING>
-* Version: 29.1.3
+* Version: 31.0.3
 * Url: `https://github.com/obsproject/obs-studio/releases/download/$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
-* ArchiveName64Bit: `obs-Studio-$:Version$.zip`
+* ArchiveName64Bit: `OBS-Studio-$:Version$-Windows.zip`
 * Path64Bit: `bin\64Bit`
 * Exe64Bit: `bin\64Bit\obs64.exe`
 * Launcher: `$:Label$`
