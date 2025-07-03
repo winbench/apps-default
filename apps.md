@@ -4918,8 +4918,7 @@ It's free and open source.
     + FAQ: <https://inkscape.org/en/learn/faq/>
     + Command Line Reference: <https://inkscape.org/en/doc/inkscape-man.html>
     + Keyboard Shortcuts: <https://inkscape.org/en/doc/keys091.html>
-* Version: 1.4
-* Tag: 2024-10-11_86a8ad7
+* Version: 1.4.2
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName64Bit: `inkscape-$:Version$-x64.7z`
