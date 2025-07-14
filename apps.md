@@ -199,6 +199,7 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * Tags:
     + pgp
     + cryptography
+    + signature
     + email
     + cli
 * Website: <https://gnupg.org>
@@ -215,6 +216,25 @@ GnuPG, also known as GPG, is a command line tool with features for easy integrat
 * VersionCheckUrl: <https://sourceforge.net/projects/portableapps/files/GPG%20Plugin%20Portable/>
 * VersionCheckXPath: `/html/body/descendant::div[@id='files']/table/descendant::tr/th/a`
 * VersionCheckPattern: `GPG_Plugin_Portable_(?<Version>[\d\.]+)\.paf\.exe`
+
+### Minisign
+
+Minisign is a dead simple tool to sign files and verify signatures.
+It is portable, lightweight, and uses the highly secure Ed25519 public-key signature system.
+
+* ID: `Bench.Minisign`
+* Tags:
+    + cli
+    + cryptography
+    + signature
+* Website: <https://jedisct1.github.io/minisign/>
+* License: ISC
+* LicenseUrl: <https://github.com/jedisct1/minisign/blob/master/LICENSE>
+* Version: 0.12
+* Url: `https://github.com/jedisct1/minisign/releases/download/$:Version$/$:ArchiveName$`
+* ArchiveName: `minisign-$:Version$-win64.zip`
+* ArchivePath: `minisign-win64\x86_64`
+* Only64Bit: `true`
 
 ### Putty
 
