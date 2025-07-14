@@ -967,6 +967,23 @@ install the LLVM-Plugin for Eclipse CDT.
 * VersionCheckXPath: `//ul/li/a/@href`
 * VersionCheckPattern: `/LLVM-(?<Version>[\d\.]+)-win32\.exe`
 
+### Zig
+
+Zig is a general-purpose programming language and toolchain
+for maintaining robust, optimal and reusable software.
+
+* ID: `Bench.Zig`
+* Tags:
+    + cli
+    + language
+    + compiler
+    + zig
+* Version: 0.14.1
+* Url: `https://ziglang.org/download/$:Version$/$:ArchiveName$`
+* ArchiveName: `$:ArchivePath$.zip`
+* ArchivePath32Bit: `zig-x86-windows-$:Version$`
+* ArchivePath64Bit: `zig-x86_64-windows-$:Version$`
+
 ### Go
 
 Go is an open source programming language that makes it easy
