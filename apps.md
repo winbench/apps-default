@@ -978,6 +978,14 @@ for maintaining robust, optimal and reusable software.
     + language
     + compiler
     + zig
+* Website: <https://ziglang.org>
+* License: MIT
+* LicenseUrl: <https://github.com/ziglang/zig/blob/master/LICENSE>
+* Docs:
+    + Language Reference: `https://ziglang.org/documentation/$:Version$/`
+    + Standard Library: `https://ziglang.org/documentation/$:Version$/std/`
+    + Overview: <https://ziglang.org/learn/overview/>
+    + Source Code: <https://github.com/ziglang/zig>
 * Version: 0.14.1
 * Url: `https://ziglang.org/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
