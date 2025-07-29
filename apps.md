@@ -4332,17 +4332,21 @@ and related programs for Windows (all current variants).
 * Website: <http://miktex.org/portable>
 * License: Mixed OS License
 * Docs:
-    + Manual: <http://docs.miktex.org/2.9/manual/>
+    + Manual: <http://docs.miktex.org/manual/>
+    + CLI Tools: <https://docs.miktex.org/manual/programs.html>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: 2.9.6942
-* Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
-* ArchiveName: `miktex-portable-$:Version$.exe`
-* ArchivePath: `texmfs\install`
-* Path: `miktex\bin`
-* Exe: `miktex\bin\latex.exe`
-* Launcher: `MiKTeX Tray Icon`
-* LauncherExecutable: `miktex\bin\miktex-taskbar-icon.exe`
-* DefaultPackages:
+* Version: latest
+* Only64Bit: `true`
+* Url: `https://miktex.org/download/win/$:ArchiveName$`
+* ArchiveName: `miktexsetup-x64.zip`
+* Path: `$:Dir$\texmfs\install\miktex\bin\x64`
+* Exe: `$:Path$\miktex.exe`
+* Launcher: `MiKTeX Console`
+* LauncherExecutable: `$:Path$\miktex-console.exe`
+* LauncherArguments: `--mkmaps`
+* PackageRepository: `$:Dir$\local-repo`
+* PackageSet: `basic`
+* Packages:
     + `koma-script`
     + `upquote`
     + `mathspec`
@@ -4358,11 +4362,13 @@ and related programs for Windows (all current variants).
     + `fancyvrb`
     + `fancyhdr`
     + `booktabs`
-* VersionCheckUrl: <https://miktex.org/download>
-* VersionCheckXPath: `//div[@id='portable']/descendant::td`
-* VersionCheckPattern: `^miktex-portable-(?<Version>[\d\.]+)\.exe$`
 
-**Note:** The packages installed by default (property `DefaultPackages`)
+**Note:** The user [TEXMF](https://miktex.org/kb/texmf-roots) root
+is located in `$HomeDir$\texmf`.
+The user TEXMF root is a [TDS-comliant](https://miktex.org/kb/tds) directory.
+The user can put custom styles and other additions there.
+
+**Note:** The packages installed by default (property `Packages`)
 are selected to suit the needs of the default LaTeX template of _Pandoc_.
 
 ### Pandoc
