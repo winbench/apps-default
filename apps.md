@@ -4396,6 +4396,76 @@ Pandoc is a library and command-line tool for converting from one markup format 
 * ArchivePath: `pandoc-$:Release$`
 * Exe: `pandoc.exe`
 
+### Pandoc Filters
+
+A python module for writing pandoc filters
+
+* ID: `Bench.Python3.PandocFilters`
+* Label: Python Pandoc Filters
+* Tags:
+    + writing
+    + pandoc-filter
+* Website: <https://github.com/jgm/pandocfilters>
+* License: BSD-3
+* Typ: python3-package
+* PackageName: `pandocfilters`
+* Register: `false`
+* SetupTestFile: `$Bench.Python3:Dir$\Lib\site-packages\pandocfilters.py`
+
+### Pandoc Include
+
+Pandoc filter to allow including files and headers in a document.
+
+* ID: `Bench.Python3.PandocInclude`
+* Label: Pandoc Include
+* Tags:
+    + writing
+    + pandoc-filter
+* Website: <https://github.com/DCsunset/pandoc-include>
+* License: MIT
+* LicenseUrl: <https://github.com/DCsunset/pandoc-include/blob/master/LICENSE>
+* Typ: python3-package
+* PackageName: `pandoc-include`
+* Exe: `$:Path$\pandoc-include.exe`
+
+### Pandoc Crossref
+
+* ID: `Bench.PandocCrossref`
+* Label: Pandoc Crossref
+* Tags:
+    + writing
+    + pandoc-filter
+* Website: <https://lierdakil.github.io/pandoc-crossref/>
+* License: GPL-2.0
+* Version: 0.3.20
+* Only64Bit: `true`
+* Url: `https://github.com/lierdakil/pandoc-crossref/releases/download/v$:Version$/$:ArchiveName$`
+* ArchiveName: `pandoc-crossref-Windows-X64.7z`
+* Exe: `pandoc-crossref.exe`
+
+### Pygments
+
+Pygments is a syntax highlighting package written in Python.
+
+* ID: `Bench.Python3.Pygments`
+* Website: <https://pygments.org/>
+* Tags:
+    + cli
+    + writing
+* Typ: `python3-package`
+
+### LaTeX Minted
+
+Python library for LaTeX minted package.
+
+* ID: `Bench.Python3.LaTeXMinted`
+* Website: <https://github.com/gpoore/minted/tree/main/python/>
+* Tags:
+    + writing
+* Typ: `python3-package`
+* Dependencies:
+    + `Bench.Python3.Pygments`
+
 ### JabRef
 
 JabRef is an open source bibliography reference manager.
