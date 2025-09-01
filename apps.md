@@ -338,6 +338,7 @@ Prebuilt Windows Toolchain for MinGW32
 * Tags:
     + language
     + cli
+    + compiler
 * Version: 9.1.0
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `SysGCC_MinGW32_$:Version$.7z`
@@ -355,6 +356,7 @@ Prebuilt Windows Toolchain for MinGW64
 * Tags:
     + language
     + cli
+    + compiler
 * Version: 9.1.0
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
@@ -373,6 +375,7 @@ Prebuilt Windows Toolchain for Ubuntu
 * Tags:
     + language
     + cli
+    + compiler
 * Version: 9.3.0
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
@@ -391,6 +394,7 @@ Prebuilt Windows Toolchain for Raspberry PI
 * Tags:
     + language
     + cli
+    + compiler
 * Version: 10.2.1
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
@@ -399,17 +403,6 @@ Prebuilt Windows Toolchain for Raspberry PI
 * Exe: `bin\arm-linux-gnueabihf-gcc.exe`
 * Path: `bin`
 * Register: `false`
-
-### Rust
-
-* ID: `Bench.Rust`
-* Tags:
-    + language
-    + cli
-* Url: `https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-gnu/rustup-init.exe`
-* ResourceName: `rustup-init.exe`
-* Path: `$HomeDir$\.cargo\bin`
-* Exe: `$HomeDir$\.cargo\bin\cargo.exe`
 
 ### PHP 5
 
@@ -987,6 +980,20 @@ install the LLVM-Plugin for Eclipse CDT.
 * VersionCheckXPath: `//ul/li/a/@href`
 * VersionCheckPattern: `/LLVM-(?<Version>[\d\.]+)-win32\.exe`
 
+### Rust
+
+A language empowering everyone to build reliable and efficient software.
+
+* ID: `Bench.Rust`
+* Tags:
+    + language
+    + cli
+    + compiler
+* Url: `https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-gnu/rustup-init.exe`
+* ResourceName: `rustup-init.exe`
+* Path: `$HomeDir$\.cargo\bin`
+* Exe: `$HomeDir$\.cargo\bin\cargo.exe`
+
 ### Zig
 
 Zig is a general-purpose programming language and toolchain
@@ -997,7 +1004,6 @@ for maintaining robust, optimal and reusable software.
     + cli
     + language
     + compiler
-    + zig
 * Website: <https://ziglang.org>
 * License: MIT
 * LicenseUrl: <https://github.com/ziglang/zig/blob/master/LICENSE>
