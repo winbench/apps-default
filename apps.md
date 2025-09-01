@@ -4335,10 +4335,11 @@ and related programs for Windows (all current variants).
     + Manual: <http://docs.miktex.org/manual/>
     + CLI Tools: <https://docs.miktex.org/manual/programs.html>
     + LaTeX Guides: <https://latex-project.org/guides/>
-* Version: latest
+* Version: 5.5.0
+* Release: 1763023
 * Only64Bit: `true`
-* Url: `https://miktex.org/download/win/$:ArchiveName$`
-* ArchiveName: `miktexsetup-x64.zip`
+* Url: `https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/$:ArchiveName$`
+* ArchiveName: `miktexsetup-$:Version$+$:Release$-x64.zip`
 * Path: `$:Dir$\texmfs\install\miktex\bin\x64`
 * Exe: `$:Path$\miktex.exe`
 * Launcher: `MiKTeX Console`
