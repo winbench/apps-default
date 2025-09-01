@@ -748,7 +748,7 @@ it gets out of your way and lets you focus on your code.
 * LicenseUrl: <https://bun.sh/docs/project/licensing>
 * Docs:
     + Documentation: <https://bun.sh/docs>
-* Version: 1.1.0
+* Version: 1.2.21
 * Only64Bit: `true`
 * Url64Bit: `https://github.com/oven-sh/bun/releases/download/bun-v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
