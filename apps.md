@@ -1012,7 +1012,7 @@ for maintaining robust, optimal and reusable software.
     + Standard Library: `https://ziglang.org/documentation/$:Version$/std/`
     + Overview: <https://ziglang.org/learn/overview/>
     + Source Code: <https://github.com/ziglang/zig>
-* Version: 0.14.1
+* Version: 0.15.1
 * Url: `https://ziglang.org/download/$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `zig-x86-windows-$:Version$`
