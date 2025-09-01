@@ -1013,10 +1013,14 @@ for maintaining robust, optimal and reusable software.
     + Overview: <https://ziglang.org/learn/overview/>
     + Source Code: <https://github.com/ziglang/zig>
 * Version: 0.15.1
-* Url: `https://ziglang.org/download/$:Version$/$:ArchiveName$`
+* Url: `https://zig.linus.dev/zig/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
 * ArchivePath32Bit: `zig-x86-windows-$:Version$`
 * ArchivePath64Bit: `zig-x86_64-windows-$:Version$`
+
+Downloads are provided by community mirrors.
+The currently available mirrors are listed in
+<https://ziglang.org/download/community-mirrors.txt>.
 
 ### Go
 
