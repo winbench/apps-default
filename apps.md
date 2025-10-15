@@ -748,10 +748,10 @@ it gets out of your way and lets you focus on your code.
 * LicenseUrl: <https://bun.sh/docs/project/licensing>
 * Docs:
     + Documentation: <https://bun.sh/docs>
-* Version: 1.2.21
+* Version: 1.3.0
 * Only64Bit: `true`
-* Url64Bit: `https://github.com/oven-sh/bun/releases/download/bun-v$:Version$/$:ArchiveName$`
-* ArchiveName: `$:ArchivePath$.zip`
+* Url64Bit: `https://github.com/oven-sh/bun/releases/download/bun-v$:Version$/bun-windows-x64.zip`
+* ArchiveName: `bun-$:Version$.zip`
 * ArchivePath: `bun-windows-x64`
 
 ### ScriptCS
