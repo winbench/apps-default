@@ -4714,12 +4714,12 @@ or draw text, lines, polygons, ellipses and Bézier curves.
 * Docs:
     + Lokale Website: `$:Dir$\www\index.html`
     + Command Line: `$:Dir$\www\command-line-processing.html`
-* Version: 7.1.0-52
+* Version: 7.1.2-8
 * License: GPL-3.0 compatible
 * LicenseUrl: <https://imagemagick.org/script/license.php>
 * Url: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
-* ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-x64.zip`
+* ArchiveName64Bit: `ImageMagick-$:Version$-portable-Q16-HDRI-x64.7z`
 * Exe: `magick.exe`
 * IncludeCompatibilityTools: `false`
 * VersionCheckUrl: <https://imagemagick.org/script/download.php>
