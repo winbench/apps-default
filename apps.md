@@ -4780,7 +4780,7 @@ No matter if they were designed by some standards committee, the community or a 
     + ffprobe Tool: <http://ffmpeg.org/ffprobe.html>
     + ffserver Tool: <http://ffmpeg.org/ffserver.html>
     + Wiki: <https://trac.ffmpeg.org/wiki>
-* Version: 5.0.1
+* Version: 8.0
 * Only64Bit: `true`
 * Url64Bit: `http://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.7z`
