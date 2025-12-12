@@ -3289,6 +3289,25 @@ debugging and workspace management.
 * VersionCheckXPath: `//h4/strong`
 * VersionCheckPattern: `RStudio Desktop (?<Version>[\d\.]+)`
 
+### HxD
+
+HxD is a carefully designed and fast hex editor which, additionally to raw disk editing and modifying of main memory (RAM), handles files of any size.
+
+* ID: `Bench.HxD`
+* Label: HxD
+* Tags:
+    + gui
+    + editor
+    + hex
+* Website: <https://mh-nexus.de/en/hxd/>
+* License: Freeware
+* LicenseUrl: <https://mh-nexus.de/en/hxd/license.php>
+* Version: 2.5.0
+* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `HxD_v$:Version$.7z`
+* Launcher: `$:Label$`
+
 ### Resource Hacker™
 
 Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (\*.exe; \*.dll; \*.scr; \*.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (\*.rc), and edit resource files (\*.res) too.
