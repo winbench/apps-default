@@ -1034,7 +1034,7 @@ to build simple, reliable, and efficient software.
     + compiler
     + golang
     + sdk
-* Version: 1.24.5
+* Version: 1.26.1
 * Website: <https://golang.org>
 * License: BSD-3-Clause
 * LicenseUrl: <https://golang.org/LICENSE>
@@ -1044,7 +1044,7 @@ to build simple, reliable, and efficient software.
     + Language Specification: <https://golang.org/ref/spec>
     + Command-Line: <https://golang.org/doc/cmd>
     + Packages: <https://golang.org/pkg/>
-* Url: `https://storage.googleapis.com/golang/$:ArchiveName$`
+* Url: `https://go.dev/dl/$:ArchiveName$`
 * ArchiveName32Bit: `go$:Version$.windows-386.zip`
 * ArchiveName64Bit: `go$:Version$.windows-amd64.zip`
 * ArchivePath: `go`
