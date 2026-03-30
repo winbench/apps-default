@@ -3254,6 +3254,32 @@ The world's most loved .NET and game dev IDE
 * VersionCheckJsonPath: `RD/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
+### JetBrains CLion
+
+A cross-platform IDE for C and C++
+designed for smooth workflows and productive development.
+
+* ID: `Bench.CLion`
+* Label: CLion
+* Tags:
+    + gui
+    + ide
+    + c++
+    + jetbrains
+* Website: <https://www.jetbrains.com/clion/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/clion/documentation/>
+* Version: 2026.1
+* Only64Bit: `true`
+* Url: `https://download.jetbrains.com/cpp/$:ArchiveName$`
+* ArchiveName: `CLion-$:Version$.win.zip`
+* Dir: `bench\clion`
+* Exe: `bin\clion64.exe`
+* Launcher: `$:Label$`
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=CL&latest=true&type=release>
+* VersionCheckJsonPath: `CL/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
+
 ### R Studio
 
 RStudio is an IDE for R.
