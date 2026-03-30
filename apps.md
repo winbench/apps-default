@@ -3243,7 +3243,7 @@ The world's most loved .NET and game dev IDE
 * Website: <https://www.jetbrains.com/rider/>
 * Docs:
     + Documentation: <https://www.jetbrains.com/rider/documentation/>
-* Version: 2024.3.6
+* Version: 2025.3.4
 * Only64Bit: `true`
 * Url: `https://download.jetbrains.com/rider/$:ArchiveName$`
 * ArchiveName: `JetBrains.Rider-$:Version$.win.zip`
