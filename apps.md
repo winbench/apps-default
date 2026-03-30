@@ -339,7 +339,7 @@ Prebuilt Windows Toolchain for MinGW32
     + language
     + cli
     + compiler
-* Version: 9.1.0
+* Version: 15.2.0
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * ArchiveName: `SysGCC_MinGW32_$:Version$.7z`
 * Dir: `bench\sysgcc32`
@@ -357,7 +357,7 @@ Prebuilt Windows Toolchain for MinGW64
     + language
     + cli
     + compiler
-* Version: 9.1.0
+* Version: 15.2.0
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_MinGW64_$:Version$.7z`
@@ -365,25 +365,6 @@ Prebuilt Windows Toolchain for MinGW64
 * Exe: `bin\gcc.exe`
 * Path: `bin`
 * Register: `true`
-* 
-### SysGCC for Ubuntu
-
-Prebuilt Windows Toolchain for Ubuntu
-
-* ID: `Bench.SysGCC.Ubuntu`
-* Label: SysGCC Ubuntu
-* Tags:
-    + language
-    + cli
-    + compiler
-* Version: 9.3.0
-* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
-* Only64Bit: `true`
-* ArchiveName: `SysGCC_Ubuntu_$:Version$.7z`
-* Dir: `bench\sysgcc_ubuntu`
-* Exe: `bin\x86_64-linux-gnu-gcc.exe`
-* Path: `bin`
-* Register: `false`
 
 ### SysGCC for Raspberry PI
 
@@ -395,12 +376,31 @@ Prebuilt Windows Toolchain for Raspberry PI
     + language
     + cli
     + compiler
-* Version: 10.2.1
+* Version: 14.2.0
 * Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName: `SysGCC_Raspberry_$:Version$.7z`
 * Dir: `bench\sysgcc_rpi`
 * Exe: `bin\arm-linux-gnueabihf-gcc.exe`
+* Path: `bin`
+* Register: `false`
+
+### SysGCC for Raspberry PI 64Bit
+
+Prebuilt Windows Toolchain for Raspberry PI 64Bit
+
+* ID: `Bench.SysGCC.Raspberry64`
+* Label: SysGCC Raspberry 64
+* Tags:
+    + language
+    + cli
+    + compiler
+* Version: 14.2.0
+* Url: `https://down1.mastersign.de/bench/$:ArchiveName$`
+* Only64Bit: `true`
+* ArchiveName: `SysGCC_Raspberry64_$:Version$.7z`
+* Dir: `bench\sysgcc_rpi64`
+* Exe: `bin\aarch64-linux-gnu-gcc.exe`
 * Path: `bin`
 * Register: `false`
 
