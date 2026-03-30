@@ -1600,7 +1600,7 @@ reporting and documentation from a central piece of information.
 * Docs:
     + Reference: `https://maven.apache.org/ref/$:Version$/`
     + API Docs: `https://maven.apache.org/ref/$:Version$/apidocs/index.html`
-* Version: 3.9.9
+* Version: 3.9.14
 * Url: `http://www.apache.org/dist/maven/maven-3/$:Version$/binaries/$:ArchiveName$`
 * ArchiveName: `apache-maven-$:Version$-bin.zip`
 * ArchivePath: `apache-maven-$:Version$`
