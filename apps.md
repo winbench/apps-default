@@ -635,9 +635,9 @@ According to Oracle, Java is the world's #1 programming language.
 * Docs:
     + Downloads: <https://jdk.java.net/archive/>
     + Microsoft Downloads: <https://learn.microsoft.com/en-us/java/openjdk/download>
-* VersionMajor: 21
-* Version: $:VersionMajor$.0.4
-* Release: 7
+* VersionMajor: 25
+* Version: $:VersionMajor$.0.2
+* Release: 10
 * Only64Bit: `true`
 * Url64Bit: `https://aka.ms/download-jdk/$:ArchiveName$`
 * ArchiveName: `microsoft-jdk-$:Version$-windows-x64.zip`
@@ -660,7 +660,7 @@ According to Oracle, Java is the world's #1 programming language.
 * Website: <https://openjfx.io/>
 * Docs:
     + API: `https://openjfx.io/javadoc/$Bench.JDK:VersionMajor$/`
-* Version: 21.0.4
+* Version: 25.0.2
 * Url: `https://download2.gluonhq.com/openjfx/$:Version$/$:ArchiveName$`
 * Only64Bit: `true`
 * ArchiveName64Bit: `openjfx-$:Version$_windows-x64_bin-sdk.zip`
