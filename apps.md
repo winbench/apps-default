@@ -1682,18 +1682,17 @@ Setup your project with a `CMakeLists.txt` file and run `cmake -G "MinGW Makefil
     + c++
 * Website: <https://cmake.org/>
 * License: BSD-3-Clause
-* LicenseUrl: <https://gitlab.kitware.com/cmake/cmake/raw/master/Copyright.txt>
-* VersionMajor: 3.20
-* Version: $:VersionMajor$.5
-* Url: `https://cmake.org/files/v$:VersionMajor$/$:ArchiveName$`
+* LicenseUrl: <https://raw.githubusercontent.com/Kitware/CMake/refs/heads/master/LICENSE.rst>
+* Version: 4.3.1
+* Url: `https://github.com/Kitware/CMake/releases/download/v$:Version$/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `cmake-$:Version$-windows-x86`
+* ArchivePath32Bit: `cmake-$:Version$-windows-i386`
 * ArchivePath64Bit: `cmake-$:Version$-windows-x86_64`
 * Path: `bin`
 * Exe: `bin\cmake.exe`
 * VersionCheckUrl: <https://cmake.org/files/LatestRelease/>
 * VersionCheckXPath: `/html/body/table/descendant::td/a`
-* VersionCheckPattern: `cmake-(?<Version>[\d\.]+)-win32-x86\.zip`
+* VersionCheckPattern: `cmake-(?<Version>[\d\.]+)-windows-x86_64\.zip`
 
 ### Protocol Buffers
 
