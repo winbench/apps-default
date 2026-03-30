@@ -4106,6 +4106,25 @@ and a simple straightforward API.
 * VersionCheckXPath: `//table/descendant::tr/td[@class='big']`
 * VersionCheckPattern: `^\s*LdapAdmin (?<Version>[\d\.]+)\s*$`
 
+### Node-RED
+
+* ID: `Bench.NodeRED`
+* Typ: `node-package`
+* PackageName: `node-red`
+* Label: Node-RED
+* Tags:
+    + server
+    + middleware
+    + iot
+* License: Apache-2.0
+* Website: <https://nodered.org/>
+* Docs:
+    + Documentation: <https://nodered.org/docs/>
+* Version: latest
+* Launcher: `$:Label$`
+* LauncherExecutable: `$Bench.Node:Exe$`
+* LauncherArguments: `"$Bench.Node:Dir$\node_modules\node-red\red.js"`
+
 ## Monitoring
 
 ### Prometheus
