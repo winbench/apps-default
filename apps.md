@@ -688,13 +688,13 @@ and is therefore, only available in _Windows PowerShell_ or _PowerShell_.
 * Dependencies: `Bench.JDK`
 * Website: <https://clojure.org>
 * License: EPL-1.0
-* LicenseUrl: <https://github.com/clojure/tools.deps.alpha/raw/master/LICENSE>
+* LicenseUrl: <https://github.com/clojure/tools.deps/raw/master/LICENSE>
 * Docs:
     + Deps and CLI Guide: <https://clojure.org/guides/deps_and_cli>
     + Clojure Documentation: <http://clojure-doc.org/>
     + Clojure Reference: <http://clojure.org/reference/documentation>
     + Clojure API: <http://clojure.github.io/clojure/>
-* Version: 1.11.1.1257
+* Version: 1.12.4.1618
 * Url: `https://download.clojure.org/install/$:ArchiveName$`
 * ArchiveName: `clojure-tools-$:Version$.zip`
 * ArchivePath: `ClojureTools`
