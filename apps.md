@@ -3280,6 +3280,32 @@ designed for smooth workflows and productive development.
 * VersionCheckJsonPath: `CL/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
+### JetBrains GoLand
+
+The IDE for Professional Development in Go
+designed to make things simpler. Just like Go.
+
+* ID: `Bench.GoLand`
+* Label: GoLand
+* Tags:
+    + gui
+    + ide
+    + go
+    + jetbrains
+* Website: <https://www.jetbrains.com/go/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/go/documentation/>
+* Version: 2026.1
+* Only64Bit: `true`
+* Url: `https://download.jetbrains.com/go/$:ArchiveName$`
+* ArchiveName: `goland-$:Version$.win.zip`
+* Dir: `bench\goland`
+* Exe: `bin\goland64.exe`
+* Launcher: `$:Label$`
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=GO&latest=true&type=release>
+* VersionCheckJsonPath: `GO/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
+
 ### R Studio
 
 RStudio is an IDE for R.
