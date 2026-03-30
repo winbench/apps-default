@@ -3169,12 +3169,12 @@ An IDE for C/C++ developers with Mylyn integration.
 * Register: `false`
 * Launcher: `$:Label$`
 
-### JetBrains IntelliJ IDEA Community
+### JetBrains IntelliJ IDEA
 
 Capable and Ergonomic IDE for JVM.
 
-* ID: `Bench.IdeaIC`
-* Label: IntelliJ IDEA Community
+* ID: `Bench.Idea`
+* Label: IntelliJ IDEA
 * Tags:
     + gui
     + ide
@@ -3191,15 +3191,15 @@ Capable and Ergonomic IDE for JVM.
 * Docs:
     + Documentation: <https://www.jetbrains.com/idea/documentation/>
 * License: Apache-2.0
-* Version: 2024.3.5
+* Version: 2026.1
 * Only64Bit: `true`
 * Url: `https://download.jetbrains.com/idea/$:ArchiveName$`
-* ArchiveName: `ideaIC-$:Version$.win.zip`
-* Dir: `bench\idea_community`
+* ArchiveName: `idea-$:Version$.win.zip`
+* Dir: `bench\idea`
 * Exe64Bit: `bin\idea64.exe`
 * Launcher: `$:Label$`
-* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release>
-* VersionCheckJsonPath: `IIC/0/version`
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release>
+* VersionCheckJsonPath: `IIU/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
 ### JetBrains PyCharm Community
