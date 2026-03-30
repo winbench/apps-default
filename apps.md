@@ -3280,6 +3280,32 @@ designed for smooth workflows and productive development.
 * VersionCheckJsonPath: `CL/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
+### JetBrains RustRover
+
+A Powerful IDE for Rust
+code, test, debug, and deploy – all right out of the box.
+
+* ID: `Bench.RustRover`
+* Label: RustRover
+* Tags:
+    + gui
+    + ide
+    + rust
+    + jetbrains
+* Website: <https://www.jetbrains.com/rust/>
+* Docs:
+    + Documentation: <https://www.jetbrains.com/rust/documentation/>
+* Version: 2025.3.5
+* Only64Bit: `true`
+* Url: `https://download.jetbrains.com/rustrover/$:ArchiveName$`
+* ArchiveName: `RustRover-$:Version$.win.zip`
+* Dir: `bench\rustrover`
+* Exe: `bin\rustrover64.exe`
+* Launcher: `$:Label$`
+* VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=RR&latest=true&type=release>
+* VersionCheckJsonPath: `RR/0/version`
+* VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
+
 ### JetBrains GoLand
 
 The IDE for Professional Development in Go
