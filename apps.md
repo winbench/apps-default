@@ -3202,12 +3202,12 @@ Capable and Ergonomic IDE for JVM.
 * VersionCheckJsonPath: `IIU/0/version`
 * VersionCheckPattern: `(?<Version>\d{4}\.\d+(?:\.\d+)?)`
 
-### JetBrains PyCharm Community
+### JetBrains PyCharm
 
 Python IDE for Professional Developers.
 
-* ID: `Bench.PyCharmCE`
-* Label: PyCharm Community
+* ID: `Bench.PyCharm`
+* Label: PyCharm
 * Tags:
     + gui
     + ide
@@ -3218,12 +3218,11 @@ Python IDE for Professional Developers.
 * Docs:
     + Documentation: <https://www.jetbrains.com/pycharm/documentation/>
 * License: Apache-2.0
-* Version: 2024.3.5
+* Version: 2025.3.4
 * Only64Bit: `true`
 * Url: `https://download.jetbrains.com/python/$:ArchiveName$`
-* ArchiveName: `pycharm-community-$:Version$.win.zip`
-* Dir: `bench\pycharm_community`
-* Exe324Bit: `bin\pycharm.exe`
+* ArchiveName: `pycharm-$:Version$.win.zip`
+* Dir: `bench\pycharm`
 * Exe64Bit: `bin\pycharm64.exe`
 * Launcher: `$:Label$`
 * VersionCheckUrl: <https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&type=release>
