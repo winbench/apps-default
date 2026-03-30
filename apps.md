@@ -3174,7 +3174,7 @@ An IDE for C/C++ developers with Mylyn integration.
 Capable and Ergonomic IDE for JVM.
 
 * ID: `Bench.Idea`
-* Label: IntelliJ IDEA
+* Label: JetBrains IntelliJ IDEA
 * Tags:
     + gui
     + ide
@@ -3207,7 +3207,7 @@ Capable and Ergonomic IDE for JVM.
 Python IDE for Professional Developers.
 
 * ID: `Bench.PyCharm`
-* Label: PyCharm
+* Label: JetBrains PyCharm
 * Tags:
     + gui
     + ide
@@ -3234,7 +3234,7 @@ Python IDE for Professional Developers.
 The world's most loved .NET and game dev IDE
 
 * ID: `Bench.Rider`
-* Label: Rider
+* Label: JetBrains Rider
 * Tags:
     + gui
     + ide
@@ -3260,7 +3260,7 @@ A cross-platform IDE for C and C++
 designed for smooth workflows and productive development.
 
 * ID: `Bench.CLion`
-* Label: CLion
+* Label: JetBrains CLion
 * Tags:
     + gui
     + ide
@@ -3286,7 +3286,7 @@ A Powerful IDE for Rust
 code, test, debug, and deploy – all right out of the box.
 
 * ID: `Bench.RustRover`
-* Label: RustRover
+* Label: JetBrains RustRover
 * Tags:
     + gui
     + ide
@@ -3312,7 +3312,7 @@ The IDE for Professional Development in Go
 designed to make things simpler. Just like Go.
 
 * ID: `Bench.GoLand`
-* Label: GoLand
+* Label: JetBrains GoLand
 * Tags:
     + gui
     + ide
