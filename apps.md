@@ -828,8 +828,8 @@ The build tools and compilers for platform independent .NET applications.
     + vb.net
     + visual basic
     + project automation
-* Version: 10.0.5
-* SdkVersion: 10.0.201
+* Version: 10.0.7
+* SdkVersion: 10.0.203
 * Website: <https://dotnet.microsoft.com/>
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/dotnet/core/master/LICENSE.TXT>
