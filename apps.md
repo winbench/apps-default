@@ -2994,27 +2994,6 @@ Python IDE for beginners
 * Launcher: `$:Label$`
 * LauncherIcon: `$:Dir$\Lib\site-packages\thonny\res\thonny.ico`
 
-### Nightcode
-
-An IDE for Clojure.
-
-* ID: `Bench.Nightcode`
-* Tags:
-    + gui
-    + editor
-    + ide
-    + clojure
-* Website: <https://sekao.net/nightcode/>
-* License: Public Domain
-* LicenseUrl: <https://raw.githubusercontent.com/oakes/Nightcode/master/UNLICENSE>
-* Version: 2.8.3
-* Url: `https://github.com/oakes/Nightcode/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `Nightcode-$:Version$.zip`
-* ArchivePath: `Nightcode-$:Version$`
-* Launcher: `$:Label$`
-* LauncherArguments: `--module-path`, `$Bench.JFX:ModulePath$`, `--add-modules=javafx.controls`, `-jar`, `$:Exe$`
-* LauncherArguments: `-jar`, `$:Exe$`
-
 ### Eclipse for Java
 
 The essential tools for any Java developer, including a Java IDE, a Git client,
