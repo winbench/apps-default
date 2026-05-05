@@ -2636,29 +2636,6 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
 * Launcher: `$:Label$`
 * ConfigurationDir: `$AppDataDir$\Notepad++`
 
-### Markdown Edit
-
-Markdown Edit (MDE) is low distraction editor for Windows. MDE focuses on producing text documents that can be transformed into Web pages and documents. It places an emphasis on content and keyboard shortcuts. Don't let this dissuade you. Markdown Edit is a power-house of an editor. It does its job quietly and without fanfare.
-
-* ID: `Bench.MarkdownEdit`
-* Label: Markdown Edit
-* Tags:
-    + gui
-    + editor
-    + markdown
-* Website: <http://markdownedit.com/>
-* License: MIT
-* LicenseUrl: <https://raw.githubusercontent.com/mike-ward/Markdown-Edit/master/LICENSE.txt>
-* Docs:
-    + Documentation: <https://github.com/mike-ward/Markdown-Edit/wiki/01.-Home>
-    + Keyboard Shortcuts: <https://github.com/mike-ward/Markdown-Edit/wiki/05.-Keyboard-Shortcuts>
-* Version: 1.35
-* Url: `https://github.com/mike-ward/Markdown-Edit/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName: `MarkdownEdit.zip`
-* Exe: `mde.exe`
-* Register: `false`
-* Launcher: `$:Label$`
-
 ### Boostnote
 
 An open source markdown editor for Mac, Windows and Linux app.  
