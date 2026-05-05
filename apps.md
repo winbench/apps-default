@@ -1184,11 +1184,11 @@ The ultimate automation scripting language for Windows.
 * LicenseUrl: license.txt
 * Docs:
     + Documentation: <https://autohotkey.com/docs/AutoHotkey.htm>
-* Version: 1.1.33.02
+* Version: 2.0.26
 * Url: `https://github.com/Lexikos/AutoHotkey_L/releases/download/v$:Version$/$:ArchiveName$`
-* ArchiveName: `AutoHotkey_$:Version$_setup.exe`
-* Exe32Bit: `AutoHotkeyU32.exe`
-* Exe64Bit: `AutoHotkeyU64.exe`
+* ArchiveName: `AutoHotkey_$:Version$.zip`
+* Exe32Bit: `AutoHotkey32.exe`
+* Exe64Bit: `AutoHotkey64.exe`
 * Launcher: `$:Label$`
 
 ### Vagrant
