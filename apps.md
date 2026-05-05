@@ -1201,7 +1201,7 @@ The ultimate automation scripting language for Windows.
 * Website: <https://www.vagrantup.com/>
 * License: MIT
 * LicenseUrl: <https://github.com/hashicorp/vagrant/blob/master/LICENSE>
-* Version: 2.4.0
+* Version: 2.4.9
 * Url: `https://releases.hashicorp.com/vagrant/$:Version$/$:ArchiveName$`
 * ArchiveName32Bit: `vagrant_$:Version$_windows_i686.msi`
 * ArchiveName64Bit: `vagrant_$:Version$_windows_amd64.msi`
