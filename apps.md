@@ -2994,29 +2994,6 @@ Python IDE for beginners
 * Launcher: `$:Label$`
 * LauncherIcon: `$:Dir$\Lib\site-packages\thonny\res\thonny.ico`
 
-### LightTable
-
-The next generation code editor.
-
-* ID: `Bench.LightTable`
-* Tags:
-    + gui
-    + editor
-    + ide
-    + clojure
-* Website: <http://lighttable.com>
-* License: MIT
-* LicenseUrl: <https://github.com/LightTable/LightTable/blob/master/LICENSE.md>
-* Docs:
-    + Documentation: <http://docs.lighttable.com/>
-* Version: 0.8.1
-* Url: `https://github.com/LightTable/LightTable/releases/download/$:Version$/$:ArchiveName$`
-* ArchiveName: `lighttable-$:Version$-windows.zip`
-* ArchivePath: `lighttable-$:Version$-windows`
-* Dir: `bench\lt`
-* Exe: `LightTable.exe`
-* Launcher: `$:Label$`
-
 ### Nightcode
 
 An IDE for Clojure.
