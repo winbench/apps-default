@@ -3909,13 +3909,12 @@ The user interface is displayed via a web browser.
 * License: PostgreSQL
 * LicenseUrl: <https://www.postgresql.org/about/licence/>
 * Docs:
-    + Documentation: <https://www.pgadmin.org/docs/pgadmin4/8.5/>
-* Version: 8.5
+    + Documentation: <https://www.pgadmin.org/docs/pgadmin4/8.14/>
+* Version: 8.14
 * Dir: `$Bench.PostgreSQL:Dir$`
 * Only64Bit: true
-* Url64Bit: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
-* ArchiveName32Bit: `pgadmin4-$:Version$-x86.exe`
-* ArchiveName64Bit: `pgadmin4-$:Version$-x64.exe`
+* Url: `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v$:Version$/windows/$:ArchiveName$`
+* ArchiveName: `pgadmin4-$:Version$-x64.exe`
 * ArchiveTyp: `inno`
 * Dir: `bench\pgadmin`
 * Path: `runtime`
