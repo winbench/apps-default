@@ -3811,17 +3811,16 @@ because the executables (e.g. `mysqld.exe`) are named the same._
     + Useful Queries: <https://mariadb.com/kb/en/library/useful-mariadb-queries/>
     + Documentation: <https://mariadb.com/kb/en/library/documentation/>
 * License: GPL-2.0
-* VersionMajor: 10
-* VersionMinor: 5
-* Revision: 5
+* VersionMajor: 12
+* VersionMinor: 2
+* Revision: 2
 * Version: `$:VersionMajor$.$:VersionMinor$.$:Revision$`
-* Url32Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/win32-packages/$:ArchiveName$?serve`
-* Url64Bit: `https://downloads.mariadb.org/f/mariadb-$:Version$/winx64-packages/$:ArchiveName$?serve`
+* Only64Bit: `true`
+* Url: `https://archive.mariadb.org/mariadb-$:Version$/winx64-packages/$:ArchiveName$`
 * ArchiveName: `$:ArchivePath$.zip`
-* ArchivePath32Bit: `mariadb-$:Version$-win32`
-* ArchivePath64Bit: `mariadb-$:Version$-winx64`
+* ArchivePath: `mariadb-$:Version$-winx64`
 * Path: `bin`
-* Exe: `bin\mysqld.exe`
+* Exe: `bin\mariadbd.exe`
 * MariaDbServerOptionFile: `$HomeDir$\mariadb.cnf`
 * MariaDbDataDir: `$HomeDir$\mariadb_data`
 * Environment:

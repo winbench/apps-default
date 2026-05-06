@@ -1,2 +1,2 @@
 @ECHO OFF
-"%~dp0mysqladmin.exe" -u root --password=bench shutdown
+"%~dp0mariadb-admin.exe" -u root --password=bench shutdown
