@@ -1846,6 +1846,21 @@ Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, c
 * License: MIT
 * LicenseUrl: <https://raw.githubusercontent.com/pypa/pipenv/master/LICENSE>
 
+### uv
+
+An extremely fast Python package and project manager, written in Rust.
+
+* ID: `Bench.Uv`
+* Label: uv
+* Tags:
+    + cli
+    + package manager
+    + python
+* Typ: `python-package`
+* Website: <https://github.com/astral-sh/uv>
+* Docs:
+    + Documentation: <https://docs.astral.sh/uv>
+
 ### Twine
 
 Twine is a utility for publishing Python packages on PyPI.
