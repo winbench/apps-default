@@ -3328,6 +3328,25 @@ Resource Hacker™ has been designed to be the complete resource editing tool: c
 * Dir: `bench\reshack`
 * Launcher: `$:Label$`
 
+### Zellij
+
+Terminal Workspace with Batteries Included
+
+* ID: `Bench.Zellij`
+* Dependencies:
+    + `Bench.WindowsTerminal`
+* Label: Zellij
+* Website: <https://zellij.dev/>
+* License: MIT
+* LicenseUrl: <https://github.com/zellij-org/zellij/blob/main/LICENSE.md>
+* Version: 0.44.3
+* Url: `https://github.com/zellij-org/zellij/releases/download/v$:Version$/zellij-x86_64-pc-windows-msvc.zip`
+* ArchiveName: `zellij-$:Version$-x86_64-pc-windows-msvc.zip`
+* Launcher: $:Label$
+* LauncherExecutable: `$Bench.WindowsTerminal:Exe$`
+* LauncherArguments: `$:Exe$`
+* LauncherIcon: `$:Exe$`
+
 ## Arduino IDE
 
 * ID: `Bench.ArduinoIDE`
