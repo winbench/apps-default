@@ -2931,6 +2931,31 @@ It is an improved version of the vi editor distributed with most UNIX systems.
 * VersionCheckXPath: `//table[@class='readme']/descendant::pre`
 * VersionCheckPattern: `-- version (?<Version>[\d\.]+) --`
 
+### Neovim
+
+* ID: `Bench.Neovim`
+* Dependencies:
+    + `Bench.WindowsTerminal`
+ Tags:
+    + tui
+    + editor
+    + ide
+    + text editor
+    + folder editor
+* Website: <https://neovim.io>
+* License: Apache-2
+* License-Url: <https://raw.githubusercontent.com/neovim/neovim/refs/heads/master/LICENSE.txt>
+* Version: latest
+* Url: <https://github.com/neovim/neovim/releases/latest/download/$:ArchiveName$>
+* ArchiveName: `nvim-win64.msi`
+* ArchivePath: `SourceDir\Neovim`
+* Exe: `bin\nvim.exe`
+* Path: `bin`
+* Launcher: $:Label$
+* LauncherExecutable: `$Bench.WindowsTerminal:Exe$`
+* LauncherArguments: `$:Exe$`
+* LauncherIcon: `$:Exe$`
+
 ### Spyder
 
 The Scientific PYthon Development EnviRonment
