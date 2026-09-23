@@ -3364,9 +3364,9 @@ Terminal Workspace with Batteries Included
 * Website: <https://zellij.dev/>
 * License: MIT
 * LicenseUrl: <https://github.com/zellij-org/zellij/blob/main/LICENSE.md>
-* Version: 0.44.3
-* Url: `https://github.com/zellij-org/zellij/releases/download/v$:Version$/zellij-x86_64-pc-windows-msvc.zip`
-* ArchiveName: `zellij-$:Version$-x86_64-pc-windows-msvc.zip`
+* Version: latest
+* Url: `https://github.com/zellij-org/zellij/releases/latest/download/zellij-x86_64-pc-windows-msvc.zip`
+* ArchiveName: `zellij-x86_64-pc-windows-msvc.zip`
 * Launcher: $:Label$
 * LauncherExecutable: `$Bench.WindowsTerminal:Exe$`
 * LauncherArguments: `$:Exe$`
